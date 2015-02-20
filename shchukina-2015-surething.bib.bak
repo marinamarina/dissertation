@@ -1,0 +1,156 @@
+%%
+%% WinShell 3.3.1.12
+%% http://www.winshell.org/
+%%
+
+% Strings
+
+
+% Preamble
+
+
+% BibTeX Entries
+@misc{html,
+	author={W3C \& WHATWG},
+	title={HTML (HyperText Markup Language)},
+	year=2014,
+	howpublished = {\url{http://www.w3.org/html/}}
+}
+@misc{bem,
+	author={Yandex},
+	title={BEM Methodology},
+	year=2005,
+	howpublished={\url{http://https://bem.info/}}
+}
+@misc{bem_for_small_projects,
+	author={Maxim Shirshin},
+	title={Scaling Down The BEM Methodology For Small Projects},
+	year=2014,
+	howpublished={\url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}},
+}
+@misc{sass,
+	author ={Hampton Catlin, Natalie Weizenbaum, Chris Eppstein and various contributors},
+	title ={SASS Preprocessor},
+	year=2015,
+	howpublished={\url{http://sass-lang.com/}}
+}
+@misc{bootstrap,
+	author={Twitter},
+	title={Twitter Bootstrap CSS3 Framework},
+	howpublished={\url{http://getbootstrap.com}}
+}
+@book{javascript,
+	author ={ECMA International},
+	title ={ECMAScript Language Specification},
+	publisher= {ECMA International},
+	edition={5.1 REV.6},
+	year=2011
+}
+@misc{jquery,
+	author={John Resig},
+	title={jQuery},
+	howpublished = {\url{http://jquery.com/}}
+}
+@misc{requirejs,
+	author = {tobeadded},
+	title = {RequireJS, JavaScript file and module loader},
+	howpublished = {\url{http://requirejs.org/}}
+}
+@misc{JSON,
+	author={Douglas Crockford},
+	title={JSON (JavaScript Object Notation)},
+	howpublished = {\url{http://martinfowler.com/articles/	continuousIntegration.html#PracticesOfContinuousIntegration}}
+}
+@misc{grunt,
+	author = {Bocoup, Open Web Community Development},
+	title = {The JavaScript Task Runner},
+	howpublished = {\url{http://gruntjs.com/}}
+}
+@misc{flask,
+	author={Armin Ronacher and various contributors},
+	title={Flask Micro Framework},
+	year = 2014,
+	howpublished={\url{http://flask.pocoo.org/}}
+}
+@misc{sqlalchemy,
+	author={Michael Bayer and various contributors},
+	title={SQLAlchemy ORM},
+	year=2014,
+	howpublished={\url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}}	
+}
+@book{book:Grindberg2014FlaskWebDevelopment,
+ author               = {Miguel Grindberg},
+ publisher            = {O’Reilly Media},
+ title                = {{Flask Web Development. Developing Web Applications
+with Python.}},
+ year                 = {2014},
+ }
+@misc{apiintegration,
+	author={Matt Makai},
+	title={API Integration},
+	year=2015,
+	howpublished={\url{http://www.fullstackpython.com/api-integration.html}}
+}
+@article{art:Moller2003HWRastArch,
+ author               = {Tomas Akenine-M{\"o}ller and Jacob Str{\"o}m},
+ journal              = {ACM Trans. Graph.},
+ number               = {3},
+ pages                = {801--808},
+ title                = {{Graphics for the Masses: A Hardware Rasterization Architecture for Mobile Phones}},
+ url                  = {http://www.cs.lth.se/home/Tomas_Akenine_Moller/pubs/masses.pdf},
+ volume               = {22},
+ year                 = {2003},
+ }
+
+
+
+@mastersthesis{msc:Edberg2007FluxgateMagnetometer,
+ author               = {Terry Edberg},
+ school               = {Royal Institute of Technology, Stockholm, Sweden},
+ title                = {{Evaluation and Optimisation of the SMILE Fluxgate Magnetometer}},
+ type                 = {MSc Thesis},
+ url                  = {http://www.ee.kth.se/php/modules/publications/reports/2007/XR-EE-SPP_2007_001.pdf},
+ year                 = {2007},
+ }
+
+@phdthesis{phd:Grace2004MiddlewareMobile,
+ author               = {Paul Grace},
+ school               = {Computing Department Lancaster University},
+ title                = {{Overcoming Middleware Heterogeneity in Mobile Computing Applications}},
+ type                 = {PhD Thesis},
+ url                  = {http://www.lancs.ac.uk/postgrad/gracep/thesisfinal.pdf},
+ year                 = {2004},
+ }
+
+@inproceedings{proc:Park2006UIMgtRmtRobots,
+ author               = {Ji Hwan Park and Ki Oh Kim and Jae Wook Jeon},
+ booktitle            = {SICE-ICASE, 2006. International Joint Conference},
+ month                = {Oct},
+ pages                = {417--420},
+ title                = {{PDA based User Interface Management System for Remote Control Robots}},
+ url                  = {10.1109/SICE.2006.315333},
+ year                 = {2006},
+ }
+
+@misc{web:berkeleyBOINC,
+ author               = {{Berkeley University}},
+ lastchecked          = {20 Sept 2010},
+ title                = {{Berkeley Open Infractructure for Network Computing}},
+ url                  = {http://boinc.berkeley.edu/},
+ year                 = {2010},
+ }
+ 
+ @misc{web:Fear2005BookTabs,
+		 author  = {Simon Fear},
+		 lastchecked          = {20 Sept 2010},
+		 title = {{Publication Quality Tables in \LaTeX}},
+		 url   = {http://www.ctan.org/pub/tex-archive/macros/latex/contrib/booktabs/booktabs.pdf},
+		 year  = {2005}
+}
+@article{zhou2005ada,
+	title = {Adaptive Successive Erosion-based Cell Image Segmentation for p53 Immunohistochemistry in Bladder 				 Inverted Papilloma.},
+	author={Zhou, H. and Mao, K.},
+	journal={Conf Proc IEEE Eng Med Biol Soc},
+	volume={6},
+	year={2005},
+}

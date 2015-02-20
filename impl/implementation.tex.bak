@@ -1,0 +1,179 @@
+\chapter{Implementation}\label{ch:Implementation}
+
+From a development point of view the aim of this project was to create a working web application that also makes use of the best development practices, high quality architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would allow many users to experience the application at once.
+
+This chapter examines the implementation of the project.
+
+\section{Choice of Technologies}
+\label{sec:choiceoftechnologies}
+
+	The application will be built using a set of front end and back end technologies.
+
+\subsection{Front End}
+	The markup of the future application will be coded using HTML 5\cite{html}. The application markup will be built using BEM front end development approach \cite{bem}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future\cite{bem_for_small_projects}.
+
+	CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \cite{sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
+
+	On the top of that, a popular CSS framework Bootstrap 3 \cite{bootstrap} will be used. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used in the development. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
+ 
+	JavaScript, specifically JQuery library\cite{jquery}, will be used to add animations and improve overall user experience from using the application.  
+
+	In order to handle time-consuming and repetitive tasks on the front end side, the task-based command-line tool Grunt will be used. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. 
+	
+	In addition, RequireJS\cite{requirejs}, a powerful asynchronous script loader will be used for effective management of JavaScript dependencies. It can load modules in asynchronous manner if desired and thus improve overall website performance.
+
+\subsection{Back End}
+	For making reasonably accurate football results predictions the application requires latest footaball data. Live data would have to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. Based on the above assumptions, Python was chosen as a primary back end language for this project being known as a language well suited to data manipulation.\par
+
+The back end of the web application will be built using Python web framework Flask\cite{flask}. It is a lightweight framework (the official name is Python microframework) with a great choice of third-parties libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the functionality of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the frameworks like Django that have a big amount of functionality already built-in in the basic installation. In addition, availability of developer-friendly documentation and low learning curve makes Flask a short way to get a simple, Python-powered web site up and running. Threfore, Flask appears to be a great choice for a small project like SureThing. \par
+
+SQLAlchemy was chosen as database solution for this project\cite{sqlalchemy}. This is a powerful database framework that supports several databases back ends and offers the high-level Object Relational Mapper (for short, ORM). Using ORM provides a great level of abstraction when working with databases. For example, SQLAlchemy uses classes that map to each table in a database. This means that the records interaction can be kept the same regardless of the underlying database system. This offers a lot of flexibility and, for example, allows to use different database systems for development and production environment. Furthermore, Flask-Migrate extension, based on a migration framework Alembic and written by a lead developer of SQLAlchemy, provides a powerful solution to handle database alterations and make database schema updates easily manageable\cite{book:Grindberg2014FlaskWebDevelopment}.\par
+	
+	
+	\citet{book:Grindberg2014FlaskWebDevelopment}''dakdaslkd''
+
+
+Cloud Deployment The latest trend in application hosting is to host in the “cloud.” This technology, which is formally known as Platform as a Service (PaaS), frees the application developer from the mundane tasks of installing and maintaining the hardware and software platforms on which the application runs. In the PaaS model, a service provider offers a fully managed platform in which applications can run. The application developer uses tools and libraries from the provider to integrate the application with the platform. The application is then uploaded to the servers maintained by the provider and usually is deployed within seconds. Most PaaS providers offer ways to dynamically “scale” the application by adding or removing servers as necessary to keep up with the number of requests received.
+
+
+\section{Application Architecture}
+own validation in forms
+own decorators
+fade out effect on alerts
+
+\subsection{Version Control}
+talk about labels annd how its cool that you can choose your own (edit a label, attach a screenshot)
+mentioned that you missed an option to set them as a list of priorities
+
+\subsection{Own Decorators}
+\subsection{Custom Macros}
+Custom macros in JINJA templates
+
+\subsection{Third Party API}
+	Many production Python web applications rely on external application programming interfaces (APIs). API can be also reffered to as "third party services" or "external platform".\cite{apiintegration}  For SureThing to work correctly, it requires constant access to live football data. After choosing an appropriate API, it has to be integrated into the application. 
+
+	There is a variety of tools available for developers for accessing web APIs. Those three options were considered when choosing an appropriate tool:
+	
+\begin{itemize}
+	\item Helper library (such as Runscope or Apiary)
+	Using a helper library has an overhead of learning how to use another piece of software.
+	\item urllib2, standard Python module
+	\emph{urllib2} module offers very simple implementation and provides most of the required HTTP capabilities, but the API is thoroughly broken and features critical for performance are missing, for example connection re-using/pooling. 
+	\item urllib3
+	\item requests, another Python library for handling HTTP requests. It offers a lot of control over the HTTP calls through the use of its powerful features.
+\end{itemize}
+		
+After some experiments with other urllib2, urllib3 and requests, \emph{requests} was chosen as the libarary for this project.\par
+		
+All interaction with the Football-API, including processing the received data, was separated out into a module \emph{football\_api\_wrapper\.py} or just "wrapper" for short. This module contains only one class, FootballAPIWrapper. Fields of the class accomodate the key elements of the interaction with the API that will be re-used in different methods of the wrapper, for example base url, path to the data directory. \par
+	
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/footballApiWrapperFields}
+\caption{Football API wrapper, fields} \label{fig:using:footballapiwrapperfields}
+\end{center}
+\end{figure}
+	
+	To get responce from Football-API takes about 11s, therefore it is needed to move the API calls into a task queue so they do not block the HTTP request-response cycle for the rest of the web application.
+
+\section{Features Implementation}
+
+In this section will be described the technical details of the project implementation. Each susbsection is bound to the high level feature of the application, as indroduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}.
+
+\subsection{Authentication}
+
+The application requires authentication functionality. 
+
+\subsection{Matches Overview}
+\subsection{Prediction}
+
+describe the way prediction settings apply, three levels of prediction settings
+how the overall prediction is calculated, weighted prediction
+
+\subsection{Upcoming Match View}
+\label{subsec:implementupcomingmatchview}
+
+Implementation of this view was one the most complex development tasks of the whole project. \par
+
+\subsubsection{User journey}
+\label{subsec:upcomingmatchviewuserjourney}
+
+The user can navigate to this view either from the matches overview on the main page or from the dashboard (if the match has already been saved to the dashboard).\par
+
+ If the user is coming to the upcoming match preview from the \emph{main page}, it will display the match header (containing general information about the teams, last played game, match kick-off time and date, etc.), a list of prediction modules and a \emph{prediction value} for each module calculated based on the relevant statistics for each of the teams. This information should be sufficient for the user to decide, whether it is worth saving the match to the dashboard for a latter revision. An unauthorised user would be able to see the same overview, but the "Save" button will be disabled. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchoverviewex_from_main_page}
+\caption{An example of a prediction module in the Match Preview, user navigated from the main page.} \label{fig:using: matchoverviewex_from_main_page}
+\end{center}
+\end{figure}
+
+If the user comes to the upcoming match preview from the \emph{dashboard}, they will be able to see more information related to the actual result prediction and betting.
+First of all, in each prediction module they will see an input fields for setting match specific prediction weights. Secondly, they will see a user hunch module. Finally, at the very bottom of the overview they will see calculated prediction result and two buttons - one to save the match specific settings and another to commit the bet.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchoverviewex_from_main_page}
+\caption{An example of a prediction module in the Match Preview, user navigated from the dashboard.} \label{fig:using: matchoverviewex_from_main_page}
+\end{center}
+\end{figure}
+
+
+ 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/hunchinfluence}
+\caption{Table, user hunch influences prediction result} \label{fig:using:footballapiwrapperfields}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/hunchinfluence}
+\caption{Table, user hunch influences prediction result} \label{fig:using:footballapiwrapperfields}
+\end{center}
+\end{figure}
+
+ most Explain how was implemented user hunch: combination of Flask Ajax and Sockets IO!!!
+ 
+ \subsubsection{Possible Enchancement}
+\label{subsubsec:upcomingmatchviewenchancement}
+
+Although, one of the key features of the application is to try not to overhelm user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture.
+
+\section{Application Performance}
+sockets, threads
+multithreading
+how I fixed performance on Match.update\_all\_matches
+
+
+\section{Factory Pattern}
+Application Factories
+The factory pattern is the first pattern to be implemented and used in any of my Flask applications. There is a small amount of documentation regarding application factories already. While the documentation is limited in scope, I believe it is there to encourage the usage of this pattern. That being said, there is not an established convention for implementing a factory method. Chances are your app will have its own unique requirements and thus your factory method should be tailored accordingly. Regardless of your implementation the factory method is, in my opinion, indispensable as it gives your more control over the creation of your application in different contexts such as in your production environment or while running tests.
+
+Within the Overholt source code you will find three different factory methods. There is one factory for each application and an additional factory which is shared by the individual application factories. The shared factory instantiates the application and configures the application with options that are shared between apps. The individual app factories further configure the application with options that are more specific to thir use. For example, the api application factory registers a custom JSONEncoder class and custom error handlers that render JSON responses. Whereas the frontend application factory initializes an assets pipeline and custom error handlers for HTTP responses.
+
+\section{Blueprints}
+Blueprints are crucial to my Flask applications as they allow me to group related endpoints together. I honestly couldn't live without Blueprints. The Flask documentation provides the best overview of what Blueprints are and why they are useful. There isn't much else I can describe about Blueprints themselves that Armin hasn't already. In the context of the Overholt source code, each application package contains various modules containing Blueprint instances. The API application contains three Blueprints located at overholt.api.products, overholt.api.stores and overholt.api.users. The frontend application contains but one Blueprint located at overholt.frontend.dashboard. All Blueprint modules are located in the same package as the application which allows me to use a simple method of registering them on their respective application. Within the shared application factory you should notice the register\_blueprints helper method. This method simply scans all the modules in the application package for Blueprint instances and registers them on the app instance.
+\section{Configuration}
+Configuration is always important for an application, especially for sensitive details such as API keys and passwords. I always provide a default configuration file that is checked into the project repository so that a developer can get up and running as quick as possible. This file contains default values that are specific to the virtual machine settings specified in the Vagrantfile. This default file is used to configure any apps created by the shared application factory. Additionally, the factory method attempts to override any default settings from a settings.cfg file located in the application's instance folder. Head over here for more information regarding Flask's instance folders. This additional file can be created by any developer working on the project to tweak any settings to be more specific to their local development environment. When it comes time to deploy the application to a development or production server the settings.cfg file will be created by the deployment tool, such as Chef or Fabric.
+\section{Database Migrations}
+In addition to using SQLAlchemy I always use Alembic. Alembic is a nice database migration tool made specifically for SQLAlchemy by Mike Bayer, the author of SQLAlchemy. What's nice about Alembic is that it includes a feature to autogenerate database versions from the model metadata. If you examine the alembic.env module you should notice the application specific imports. Further down is where the application's database URI and model metadata is handed off to Alembic. I've written previously about using Alembic with Flask and I would suggest reading that article for a little more detail.
+
+\section{RequireJS}
+
+\subsection{Deploying the Application}
+Cloud Deployment is the most recent trend in application hosting. The formal name of this technologu is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.
+
+The application will be hosted on 
+"The latest trend in application hosting is to host in the “cloud.” This technology, which is formally known as Platform as a Service (PaaS), frees the application developer from the mundane tasks of installing and maintaining the hardware and software platforms on which the application runs. In the PaaS model, a service provider offers a fully managed platform in which applications can run. The application developer uses tools and libraries from the provider to integrate the application with the platform. The application is then uploaded to the servers maintained by the provider and usually is deployed within seconds. Most PaaS providers offer ways to dynamically “scale” the application by adding or removing servers as necessary to keep up with the number of requests received. Cloud deployments offer great flexibility and are relatively simple to set up, but of course all that goodness comes at a price" Flask applications
+
+\section{Conclusions}
+
+The main conclusions for this chapter.
+
+

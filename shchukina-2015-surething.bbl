@@ -1,0 +1,118 @@
+\begin{thebibliography}{10}
+
+\bibitem{html}
+WHATWG W. HTML (HyperText Markup Language); 2014.
+\newblock \url{http://www.w3.org/html/}.
+
+\bibitem{bem}
+Yandex. BEM Methodology; 2005.
+\newblock \url{http://https://bem.info/}.
+
+\bibitem{bem_for_small_projects}
+Shirshin M. Scaling Down The BEM Methodology For Small Projects; 2014.
+\newblock
+  \url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}.
+
+\bibitem{sass}
+Hampton~Catlin CE Natalie~Weizenbaum, various contributors. SASS Preprocessor;
+  2015.
+\newblock \url{http://sass-lang.com/}.
+
+\bibitem{bootstrap}
+Twitter. Twitter Bootstrap CSS3 Framework;.
+\newblock \url{http://getbootstrap.com}.
+
+\bibitem{jquery}
+Resig J. jQuery;.
+\newblock \url{http://jquery.com/}.
+
+\bibitem{requirejs}
+tobeadded. RequireJS, JavaScript file and module loader;.
+\newblock \url{http://requirejs.org/}.
+
+\bibitem{flask}
+Ronacher A, various contributors. Flask Micro Framework; 2014.
+\newblock \url{http://flask.pocoo.org/}.
+
+\bibitem{sqlalchemy}
+Bayer M, various contributors. SQLAlchemy ORM; 2014.
+\newblock \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}.
+
+\bibitem{book:Grindberg2014FlaskWebDevelopment}
+Grindberg M.
+\newblock {Flask Web Development. Developing Web Applications with Python.}
+\newblock O’Reilly Media; 2014.
+
+\bibitem{apiintegration}
+Makai M. API Integration; 2015.
+\newblock \url{http://www.fullstackpython.com/api-integration.html}.
+
+\bibitem{web:berkeleyBOINC}
+{Berkeley University}. {Berkeley Open Infractructure for Network Computing};
+  2010.
+\newblock Available from: \url{http://boinc.berkeley.edu/} [cited 20 Sept
+  2010].
+
+\bibitem{art:Moller2003HWRastArch}
+Akenine-M{\"o}ller T, Str{\"o}m J.
+\newblock {Graphics for the Masses: A Hardware Rasterization Architecture for
+  Mobile Phones}.
+\newblock ACM Trans Graph. 2003;22(3):801--808.
+\newblock Available from:
+  \url{http://www.cs.lth.se/home/Tomas_Akenine_Moller/pubs/masses.pdf}.
+
+\bibitem{msc:Edberg2007FluxgateMagnetometer}
+Edberg T.
+\newblock {Evaluation and Optimisation of the SMILE Fluxgate Magnetometer} [MSc
+  Thesis].
+\newblock Royal Institute of Technology, Stockholm, Sweden; 2007.
+\newblock Available from:
+  \url{http://www.ee.kth.se/php/modules/publications/reports/2007/XR-EE-SPP_2007_001.pdf}.
+
+\bibitem{phd:Grace2004MiddlewareMobile}
+Grace P.
+\newblock {Overcoming Middleware Heterogeneity in Mobile Computing
+  Applications} [PhD Thesis].
+\newblock Computing Department Lancaster University; 2004.
+\newblock Available from:
+  \url{http://www.lancs.ac.uk/postgrad/gracep/thesisfinal.pdf}.
+
+\bibitem{proc:Park2006UIMgtRmtRobots}
+Park JH, Kim KO, Jeon JW.
+\newblock {PDA based User Interface Management System for Remote Control
+  Robots}.
+\newblock In: SICE-ICASE, 2006. International Joint Conference; 2006. p.
+  417--420.
+\newblock Available from: \url{10.1109/SICE.2006.315333}.
+
+\bibitem{web:Fear2005BookTabs}
+Fear S. {Publication Quality Tables in \LaTeX}; 2005.
+\newblock Available from:
+  \url{http://www.ctan.org/pub/tex-archive/macros/latex/contrib/booktabs/booktabs.pdf}
+  [cited 20 Sept 2010].
+
+\bibitem{javascript}
+International E.
+\newblock ECMAScript Language Specification.
+\newblock 5th ed. ECMA International; 2011.
+
+\bibitem{JSON}
+Crockford D. JSON (JavaScript Object Notation);.
+\newblock \url{http://martinfowler.com/articles/
+  continuousIntegration.html#PracticesOfContinuousIntegration}.
+
+\bibitem{grunt}
+Bocoup OWCD. The JavaScript Task Runner;.
+\newblock \url{http://gruntjs.com/}.
+
+\bibitem{optasports}
+Opta Sports; 2015.
+\newblock \url{http://www.optasports.com}.
+
+\bibitem{zhou2005ada}
+Zhou H, Mao K.
+\newblock Adaptive Successive Erosion-based Cell Image Segmentation for p53
+  Immunohistochemistry in Bladder Inverted Papilloma.
+\newblock Conf Proc IEEE Eng Med Biol Soc. 2005;6.
+
+\end{thebibliography}
