@@ -13,7 +13,8 @@ Overall, I feel the project has been very successful with a well-designed web ap
 \section{Improvements and Future Work}
 
 Further development that could be carried out in the future.
-In the future I expect to put more leagues, so any league is supported
-More modules (Injuries and suspensions, manager)
+In the future I expect to put more leagues, so more English and European leagues are supported
+More modules (Injuries and suspensions, manager), allowing user to choose from a large variety of inputs and even
 remove a module from the view
-more detiled information in the played match, a view containing feedback
+
+more detailed information in the played match, a view containing feedback

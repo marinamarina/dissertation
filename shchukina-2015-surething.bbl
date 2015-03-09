@@ -1,57 +1,94 @@
 \begin{thebibliography}{10}
 
-\bibitem{html}
+\bibitem{wiki:bet365}
+Wikipedia. Bet365 --- {W}ikipedia{,} The Free Encyclopedia; 2015.
+\newblock [Accessed 22-Feb-2015].
+\newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}.
+
+\bibitem{documentation:HTML}
 WHATWG W. HTML (HyperText Markup Language); 2014.
 \newblock \url{http://www.w3.org/html/}.
 
-\bibitem{bem}
-Yandex. BEM Methodology; 2005.
-\newblock \url{http://https://bem.info/}.
-
-\bibitem{bem_for_small_projects}
+\bibitem{article:BEMForSmallProjects}
 Shirshin M. Scaling Down The BEM Methodology For Small Projects; 2014.
 \newblock
   \url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}.
-
-\bibitem{sass}
-Hampton~Catlin CE Natalie~Weizenbaum, various contributors. SASS Preprocessor;
-  2015.
-\newblock \url{http://sass-lang.com/}.
-
-\bibitem{bootstrap}
-Twitter. Twitter Bootstrap CSS3 Framework;.
-\newblock \url{http://getbootstrap.com}.
-
-\bibitem{jquery}
-Resig J. jQuery;.
-\newblock \url{http://jquery.com/}.
-
-\bibitem{requirejs}
-tobeadded. RequireJS, JavaScript file and module loader;.
-\newblock \url{http://requirejs.org/}.
-
-\bibitem{flask}
-Ronacher A, various contributors. Flask Micro Framework; 2014.
-\newblock \url{http://flask.pocoo.org/}.
-
-\bibitem{sqlalchemy}
-Bayer M, various contributors. SQLAlchemy ORM; 2014.
-\newblock \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}.
 
 \bibitem{book:Grindberg2014FlaskWebDevelopment}
 Grindberg M.
 \newblock {Flask Web Development. Developing Web Applications with Python.}
 \newblock O’Reilly Media; 2014.
 
-\bibitem{apiintegration}
-Makai M. API Integration; 2015.
-\newblock \url{http://www.fullstackpython.com/api-integration.html}.
+\bibitem{article:goodArchitecture}
+Florestan N. Large web apps in Python: A good architecture.; 2015.
+\newblock [Online]. Available from:
+  \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html}.
 
-\bibitem{web:berkeleyBOINC}
-{Berkeley University}. {Berkeley Open Infractructure for Network Computing};
-  2010.
-\newblock Available from: \url{http://boinc.berkeley.edu/} [cited 20 Sept
-  2010].
+\bibitem{wiki:GitHub}
+Wikipedia. GitHub --- {W}ikipedia{,} The Free Encyclopedia; 2015.
+\newblock [Accessed 9-Mar-2015].
+\newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/GitHub}.
+
+\bibitem{article:httpRequestsExceptions}
+Boxall J. A Python guide to handling HTTP request failures; 2014.
+\newblock [Online]. Available from:
+  \url{http://www.mobify.com/blog/http-requests-are-hard/}.
+
+\bibitem{documentation:PythonRequests}
+Reitz K. Requests; 2015.
+\newblock [Online]. Available from:
+  \url{http://docs.python-requests.org/en/latest/api/}.
+
+\bibitem{documentation:BEM}
+Yandex. BEM Methodology; 2005.
+\newblock \url{http://https://bem.info/}.
+
+\bibitem{article:SASS}
+Hampton~Catlin CE Natalie~Weizenbaum, various contributors. SASS Preprocessor;
+  2015.
+\newblock [Online]. Available from: \url{http://sass-lang.com/}.
+
+\bibitem{documentation:Bootstrap3}
+Twitter. Twitter Bootstrap CSS3 Framework; 2015.
+\newblock [Online]. Available from: \url{http://getbootstrap.com}.
+
+\bibitem{documentation:Javascript}
+International E. ECMAScript Language Specification. ECMA International; 2011.
+
+\bibitem{documentation:jQuery}
+Resig J. jQuery;.
+\newblock [Online]. Available from: \url{http://jquery.com/}.
+
+\bibitem{documentation:RequireJS}
+tobeadded. RequireJS, JavaScript file and module loader;.
+\newblock [Online]. Available from: \url{http://requirejs.org/}.
+
+\bibitem{documentation:JSON}
+Crockford D. JSON (JavaScript Object Notation);.
+\newblock [Online]. Available from: \url{http://martinfowler.com/articles/
+  continuousIntegration.html#PracticesOfContinuousIntegration}.
+
+\bibitem{documentation:Grunt}
+Bocoup OWCD. The JavaScript Task Runner;.
+\newblock [Online]. Available from: \url{http://gruntjs.com/}.
+
+\bibitem{documentation:Flask}
+Ronacher A, various contributors. Flask Micro Framework; 2014.
+\newblock [Online]. Available from: \url{http://flask.pocoo.org/}.
+
+\bibitem{documentation:SqlAlchemy}
+Bayer M, various contributors. SQLAlchemy ORM; 2014.
+\newblock [Online]. Available from:
+  \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}.
+
+\bibitem{article:API_Integration}
+Makai M. API Integration; 2015.
+\newblock [Online]. Available from:
+  \url{http://www.fullstackpython.com/api-integration.html}.
+
+\bibitem{web:Oddschecker}
+Checker O. Your Bets Bet; 2015.
+\newblock [Online]. Available from: \url{ http://www.oddschecker.com/}.
 
 \bibitem{art:Moller2003HWRastArch}
 Akenine-M{\"o}ller T, Str{\"o}m J.
@@ -85,29 +122,17 @@ Park JH, Kim KO, Jeon JW.
   417--420.
 \newblock Available from: \url{10.1109/SICE.2006.315333}.
 
+\bibitem{web:berkeleyBOINC}
+{Berkeley University}. {Berkeley Open Infractructure for Network Computing};
+  2010.
+\newblock Available from: \url{http://boinc.berkeley.edu/} [cited 20 Sept
+  2010].
+
 \bibitem{web:Fear2005BookTabs}
 Fear S. {Publication Quality Tables in \LaTeX}; 2005.
 \newblock Available from:
   \url{http://www.ctan.org/pub/tex-archive/macros/latex/contrib/booktabs/booktabs.pdf}
   [cited 20 Sept 2010].
-
-\bibitem{javascript}
-International E.
-\newblock ECMAScript Language Specification.
-\newblock 5th ed. ECMA International; 2011.
-
-\bibitem{JSON}
-Crockford D. JSON (JavaScript Object Notation);.
-\newblock \url{http://martinfowler.com/articles/
-  continuousIntegration.html#PracticesOfContinuousIntegration}.
-
-\bibitem{grunt}
-Bocoup OWCD. The JavaScript Task Runner;.
-\newblock \url{http://gruntjs.com/}.
-
-\bibitem{optasports}
-Opta Sports; 2015.
-\newblock \url{http://www.optasports.com}.
 
 \bibitem{zhou2005ada}
 Zhou H, Mao K.

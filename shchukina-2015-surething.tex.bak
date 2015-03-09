@@ -77,9 +77,12 @@
     breakautoindent=true, %
     captionpos=b%
 } %\hypersetup{colorlinks=true, citecolor=\color{colIdentifier}}
+\renewcommand{\baselinestretch}{1.5}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 \sloppy %NOTE: To ensure the Right Hand Margin is used (Especially for long URLS)
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{1em}
 
 %NOTE: END of the document configuration settings
 
@@ -112,7 +115,6 @@
 \include{impl/implementation}
 \include{eval/evaluation}
 \include{conclude/conclude}
-\include{usingLatex/usingLatex}
 
 \appendix
 \input{appendix/appendix}

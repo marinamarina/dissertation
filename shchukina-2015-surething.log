@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.5)  19 FEB 2015 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.5)  9 MAR 2015 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,24 +618,23 @@ LaTeX Warning: Label `fig:using:footballapiwrapperfields' multiply defined.
 
 LaTeX Warning: Label `fig:using:footballapiwrapperfields' multiply defined.
 
-) (./eval/evaluation.aux) (./conclude/conclude.aux)
-(./usingLatex/usingLatex.aux))
+) (./eval/evaluation.aux) (./conclude/conclude.aux))
 \openout1 = `shchukina-2015-surething.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 86.
-LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -705,7 +704,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 86.
+Package hyperref Info: Link coloring ON on input line 89.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -714,9 +713,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count185
 )
-LaTeX Info: Redefining \ref on input line 86.
-LaTeX Info: Redefining \pageref on input line 86.
-LaTeX Info: Redefining \nameref on input line 86.
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
+LaTeX Info: Redefining \nameref on input line 89.
 
 (./shchukina-2015-surething.out) (./shchukina-2015-surething.out)
 \@outlinefile=\write4
@@ -725,7 +724,7 @@ LaTeX Info: Redefining \nameref on input line 86.
 \openout2 = `intro/abstract.aux'.
 
 
-(./intro/abstract.tex <rgulogo.pdf, id=426, 431.45189pt x 431.45189pt>
+(./intro/abstract.tex <rgulogo.pdf, id=397, 431.45189pt x 431.45189pt>
 File: rgulogo.pdf Graphic file (type pdf)
 
 <use rgulogo.pdf>
@@ -744,12 +743,12 @@ Missing character: There is no ô in font cmr10!
 ] [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -758,29 +757,29 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 (./shchukina-2015-surething.toc [5
 
-] [6])
+] [6] [7])
 \tf@toc=\write5
 \openout5 = `shchukina-2015-surething.toc'.
 
- [7] (./shchukina-2015-surething.lot)
+ [8]
+(./shchukina-2015-surething.lot)
 \tf@lot=\write6
 \openout6 = `shchukina-2015-surething.lot'.
 
-
-[8
+ [9
 
 ] (./shchukina-2015-surething.lof)
 \tf@lof=\write7
 \openout7 = `shchukina-2015-surething.lof'.
 
- [9
+ [10
 
-]) (./shchukina-2015-surething.toc)
+])
+(./shchukina-2015-surething.toc)
 \tf@toc=\write8
 \openout8 = `shchukina-2015-surething.toc'.
 
-
-[10
+ [11
 
 
 ]
@@ -842,55 +841,47 @@ Chapter 3.
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
-Missing character: There is no — in font cmr10!
-Missing character: There is no Å in font cmr10!
-
-<req/images/bbcsport.png, id=659, 758.835pt x 648.4225pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
+ [6]
+<req/images/bbcsport.png, id=637, 758.835pt x 648.4225pt>
 File: req/images/bbcsport.png Graphic file (type png)
 
 <use req/images/bbcsport.png>
-Package pdftex.def Info: req/images/bbcsport.png used on input line 61.
-(pdftex.def)             Requested size: 290.22107pt x 247.99606pt.
- [6]
-<req/images/squawka.png, id=674, 970.62625pt x 509.905pt>
+Package pdftex.def Info: req/images/bbcsport.png used on input line 54.
+(pdftex.def)             Requested size: 386.95897pt x 330.6614pt.
+ [7 <./req/images/bbcsport.png>]
+<req/images/squawka.png, id=647, 970.62625pt x 509.905pt>
 File: req/images/squawka.png Graphic file (type png)
 
 <use req/images/squawka.png>
-Package pdftex.def Info: req/images/squawka.png used on input line 92.
-(pdftex.def)             Requested size: 290.22107pt x 152.46693pt.
- [7 <./req/images/bbcsport.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 121--126
-\OT1/cmr/m/n/10.95 http://www.predictz.com/predictions/europe/champions-league/
-609828/ http://www.vitibet.com
- []
+Package pdftex.def Info: req/images/squawka.png used on input line 81.
+(pdftex.def)             Requested size: 386.95897pt x 203.28926pt.
+ [8 <./req/images/squawka.png>]
 
+Package natbib Warning: Author undefined for citation`wiki:bet365' 
+(natbib)                on page 9 on input line 107.
 
-Underfull \hbox (badness 6725) in paragraph at lines 121--126
-\OT1/cmr/m/n/10.95 http://www.forebet.com/en/ small pre-dic-tion tool at goal.c
-om: http://www.goal.com/en-
- []
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+[9]
 
-[8 <./req/images/squawka.png>]
+Package natbib Warning: Citation `oddschecker' on page 10 undefined on input li
+ne 125.
+
+[10] [11] [12]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [9] [10] [11]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- [12]
+ [13] [14] [15] [16]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -899,24 +890,31 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [17]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [13]) [14]
+ [18] [19]) [20]
 \openout2 = `design/design.aux'.
 
-
-(./design/design.tex
+ (./design/design.tex
 Chapter 4.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ¶ in font cmr10!
-[15
+[21
 
 
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
+ [22]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -929,26 +927,53 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [16]
-Underfull \hbox (badness 10000) in paragraph at lines 53--56
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 \OT1/cmr/m/n/10.95 what database was used Use this link to de-scribe the ORM an
 d its ad-van-tages:
  []
 
-) [17]
+[23]) [24]
 \openout2 = `impl/implementation.aux'.
 
  (./impl/implementation.tex
 Chapter 5.
-[18
+
+Package natbib Warning: Citation `bem' on page 25 undefined on input line 12.
+
+
+Package natbib Warning: Citation `sass' on page 25 undefined on input line 14.
+
+[25
 
 
 
-] [19]
+]
 
-Package natbib Warning: Author undefined for citation`book:Grindberg2014FlaskWe
-bDevelopment' 
-(natbib)                on page 20 on input line 33.
+Package natbib Warning: Citation `bootstrap' on page 26 undefined on input line
+ 16.
+
+
+Package natbib Warning: Citation `jquery' on page 26 undefined on input line 18
+.
+
+
+Package natbib Warning: Citation `requirejs' on page 26 undefined on input line
+ 22.
+
+[26]
+
+Package natbib Warning: Citation `flask' on page 27 undefined on input line 27.
+
+
+
+Package natbib Warning: Citation `sqlalchemy' on page 27 undefined on input lin
+e 29.
+
+
+Package natbib Warning: Author undefined for citation`article:goodArchitecture'
+ 
+(natbib)                on page 27 on input line 32.
 
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -956,49 +981,94 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-[20]
-<impl/images/footballApiWrapperFields.png, id=761, 617.30624pt x 128.48pt>
+
+Package natbib Warning: Author undefined for citation`article:goodArchitecture'
+ 
+(natbib)                on page 27 on input line 38.
+
+[27] [28] [29]
+
+Package natbib Warning: Author undefined for citation`wiki:GitHub' 
+(natbib)                on page 30 on input line 67.
+
+<impl/images/githubLabelsChoice.png, id=765, 966.61125pt x 486.81876pt>
+File: impl/images/githubLabelsChoice.png Graphic file (type png)
+
+<use impl/images/githubLabelsChoice.png>
+Package pdftex.def Info: impl/images/githubLabelsChoice.png used on input line 
+71.
+(pdftex.def)             Requested size: 435.32422pt x 219.24469pt.
+
+<impl/images/githubFunctionalityIssues.png, id=766, 955.57pt x 378.41376pt>
+File: impl/images/githubFunctionalityIssues.png Graphic file (type png)
+
+<use impl/images/githubFunctionalityIssues.png>
+Package pdftex.def Info: impl/images/githubFunctionalityIssues.png used on inpu
+t line 80.
+(pdftex.def)             Requested size: 435.32422pt x 172.39217pt.
+ [30 <./impl/images/githubLabelsChoice.png>] <impl/images/customValidator.png, 
+id=773, 792.9625pt x 196.735pt>
+File: impl/images/customValidator.png Graphic file (type png)
+
+<use impl/images/customValidator.png>
+Package pdftex.def Info: impl/images/customValidator.png used on input line 92.
+
+(pdftex.def)             Requested size: 435.32422pt x 108.00644pt.
+ [31 <./impl/images/githubFunctionalityIssues.png>] [32 <./impl/images/customVa
+lidator.png>]
+
+Package natbib Warning: Citation `apiintegration' on page 33 undefined on input
+ line 109.
+
+<impl/images/footballApiWrapperFields.png, id=788, 617.30624pt x 128.48pt>
 File: impl/images/footballApiWrapperFields.png Graphic file (type png)
 
 <use impl/images/footballApiWrapperFields.png>
 Package pdftex.def Info: impl/images/footballApiWrapperFields.png used on input
- line 72.
-(pdftex.def)             Requested size: 290.22107pt x 60.4052pt.
- [21 <./impl/images/footballApiWrapperFields.png>]
-<impl/images/matchoverviewex_from_main_page.png, id=769, 1169.36874pt x 472.766
+ line 128.
+(pdftex.def)             Requested size: 435.32422pt x 90.60585pt.
+ [33]
+<impl/images/matchesOverviewExample.png, id=795, 1192.455pt x 459.7175pt>
+File: impl/images/matchesOverviewExample.png Graphic file (type png)
+
+<use impl/images/matchesOverviewExample.png>
+Package pdftex.def Info: impl/images/matchesOverviewExample.png used on input l
+ine 150.
+(pdftex.def)             Requested size: 435.32422pt x 167.82706pt.
+ [34 <./impl/images/footballApiWrapperFields.png>]
+
+Package natbib Warning: Citation `subsec:definitions' on page 35 undefined on i
+nput line 159.
+
+[35 <./impl/images/matchesOverviewExample.png>]
+<impl/images/matchoverviewex_from_main_page.png, id=807, 1169.36874pt x 472.766
 25pt>
 File: impl/images/matchoverviewex_from_main_page.png Graphic file (type png)
  <use impl/images/matchoverviewex_from_main_page.png>
 Package pdftex.def Info: impl/images/matchoverviewex_from_main_page.png used on
- input line 107.
+ input line 179.
 (pdftex.def)             Requested size: 435.32422pt x 175.99562pt.
 File: impl/images/matchoverviewex_from_main_page.png Graphic file (type png)
 
 <use impl/images/matchoverviewex_from_main_page.png>
 Package pdftex.def Info: impl/images/matchoverviewex_from_main_page.png used on
- input line 117.
+ input line 189.
 (pdftex.def)             Requested size: 435.32422pt x 175.99562pt.
- [22 <./impl/images/matchoverviewex_from_main_page.png>]
-<impl/images/hunchinfluence.png, id=775, 827.09pt x 187.70125pt>
+ [36 <./impl/images/matchoverviewex_from_main_page.png>]
+<impl/images/hunchinfluence.png, id=813, 827.09pt x 187.70125pt>
 File: impl/images/hunchinfluence.png Graphic file (type png)
 
 <use impl/images/hunchinfluence.png>
-Package pdftex.def Info: impl/images/hunchinfluence.png used on input line 126.
+Package pdftex.def Info: impl/images/hunchinfluence.png used on input line 198.
 
 (pdftex.def)             Requested size: 435.32422pt x 98.79381pt.
 File: impl/images/hunchinfluence.png Graphic file (type png)
  <use impl/images/hunchinfluence.png>
-Package pdftex.def Info: impl/images/hunchinfluence.png used on input line 136.
+Package pdftex.def Info: impl/images/hunchinfluence.png used on input line 206.
 
 (pdftex.def)             Requested size: 435.32422pt x 98.79381pt.
 
-[23 <./impl/images/hunchinfluence.png>] [24]
+[37 <./impl/images/hunchinfluence.png>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -1011,12 +1081,24 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-) [25]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+) [38]
 \openout2 = `eval/evaluation.aux'.
 
  (./eval/evaluation.tex
 Chapter 6.
-) [26
+) [39
 
 
 
@@ -1025,64 +1107,13 @@ Chapter 6.
 
  (./conclude/conclude.tex
 Chapter 7.
-) [27
+) [40
 
 
 
-]
-\openout2 = `usingLatex/usingLatex.aux'.
-
- (./usingLatex/usingLatex.tex
-Chapter 8.
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-[28
-
-
-
-]
-<usingLatex/images/MobileMarketShare2006.pdf, id=805, 794.97pt x 614.295pt>
-File: usingLatex/images/MobileMarketShare2006.pdf Graphic file (type pdf)
-
-<use usingLatex/images/MobileMarketShare2006.pdf>
-Package pdftex.def Info: usingLatex/images/MobileMarketShare2006.pdf used on in
-put line 20.
-(pdftex.def)             Requested size: 193.47578pt x 112.48651pt.
-File: usingLatex/images/MobileMarketShare2006.pdf Graphic file (type pdf)
-
-<use usingLatex/images/MobileMarketShare2006.pdf>
-Package pdftex.def Info: usingLatex/images/MobileMarketShare2006.pdf used on in
-put line 31.
-(pdftex.def)             Requested size: 163.88841pt x 95.28471pt.
-File: usingLatex/images/MobileMarketShare2006.pdf Graphic file (type pdf)
-
-<use usingLatex/images/MobileMarketShare2006.pdf>
-Package pdftex.def Info: usingLatex/images/MobileMarketShare2006.pdf used on in
-put line 39.
-(pdftex.def)             Requested size: 163.88841pt x 95.28471pt.
-
-<usingLatex/images/samplepng.png, id=812, 935.74594pt x 928.97063pt>
-File: usingLatex/images/samplepng.png Graphic file (type png)
-
-<use usingLatex/images/samplepng.png>
-Package pdftex.def Info: usingLatex/images/samplepng.png used on input line 50.
-
-(pdftex.def)             Requested size: 164.45515pt x 163.25269pt.
- [29 <./usingLatex/images/MobileMarketShare2006.pdf, page is rotated 90 degrees
->]
-
-Package natbib Warning: Citation `book:einsteinBrownianMovement' on page 30 und
-efined on input line 61.
-
-[30 <./usingLatex/images/samplepng.png>]
-Underfull \hbox (badness 4595) in paragraph at lines 91--92
-[]\OT1/cmr/m/n/10.95 One may find the fol-low-ing spread-sheet tool ([][]$\OT1/
-cmtt/m/n/10.95 http : / / cobweb . ecn . purdue . edu / []zhang97 /
- []
-
-[31] (./usingLatex/myCodeFile.java) [32]) [33] (./appendix/appendix.tex
+] (./appendix/appendix.tex
 Appendix A.
-<appendix/images/wireframes.png, id=904, 1309.89375pt x 869.2475pt>
+<appendix/images/wireframes.png, id=833, 1309.89375pt x 869.2475pt>
 File: appendix/images/wireframes.png Graphic file (type png)
 
 <use appendix/images/wireframes.png>
@@ -1093,106 +1124,117 @@ File: appendix/images/wireframes.png Graphic file (type png)
 Package pdftex.def Info: appendix/images/wireframes.png used on input line 46.
 (pdftex.def)             Requested size: 483.69687pt x 320.97989pt.
 
-[34
+[41
 
 
-] [35 <./appendix/images/wireframes.png>]
+] [42 <./appendix/images/wireframes.png>]
 Appendix B.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-) [36
+) [43
 
 ]
 Appendix C.
-[37
+[44
 
 ]
 Appendix D.
-[38
+[45
 
 ]
 Appendix E.
-<appendix/images/samplepng.png, id=934, 935.74594pt x 928.97063pt>
+<appendix/images/samplepng.png, id=866, 935.74594pt x 928.97063pt>
 File: appendix/images/samplepng.png Graphic file (type png)
 
 <use appendix/images/samplepng.png>
 Package pdftex.def Info: appendix/images/samplepng.png used on input line 109.
 (pdftex.def)             Requested size: 596.37204pt x 592.08691pt.
- [39
+ [46
 
-] [40] [41 <./appendix/images/samplepng.png>]
+] [47] [48 <./appendix/images/samplepng.png>]
 Appendix F.
-[42
+[49
 
 ]
 Appendix G.
-) (./shchukina-2015-surething.bbl [43
+) (./shchukina-2015-surething.bbl [50
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [44
+
+Underfull \hbox (badness 1521) in paragraph at lines 52--54
+[]\OT1/cmr/m/n/10.95 Twitter. Twit-ter Boot-strap CSS3 Frame-work; 2015.  [On-l
+ine]. Avail-able from: [][]$\OT1/cmtt/m/n/10.95 http : / /
+ []
+
+[51
 
 ]
-Underfull \hbox (badness 1184) in paragraph at lines 100--103
-[]\OT1/cmr/m/n/10.95 Crockford D. JSON (JavaScript Ob-ject No-ta-tion);.  [][]$
-\OT1/cmtt/m/n/10.95 http : / / martinfowler . com / articles /
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+[]\OT1/cmr/m/n/10.95 Crockford D. JSON (JavaScript Ob-ject No-ta-tion);.  [On-l
+ine]. Avail-able
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+\OT1/cmr/m/n/10.95 from: [][]$\OT1/cmtt/m/n/10.95 http : / / martinfowler . com
+ / articles / continuousIntegration . html #
  []
 
 )
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 123.
-[45]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 123.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+[52]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
  (./shchukina-2015-surething.aux (./intro/abstract.aux)
 (./intro/introduction.aux) (./background/background.aux)
 (./req/requirements.aux) (./design/design.aux) (./impl/implementation.aux)
-(./eval/evaluation.aux) (./conclude/conclude.aux) (./usingLatex/usingLatex.aux)
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 123.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 123.
-Package rerunfilecheck Info: File `shchukina-2015-surething.out' has not change
-d.
-(rerunfilecheck)             Checksum: B14B6A76E19AC8BE13E0653AA13D8E06;7045.
+(./eval/evaluation.aux) (./conclude/conclude.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 
+
+Package rerunfilecheck Warning: File `shchukina-2015-surething.out' has changed
+.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `shchukina-2015-surething.out':
+(rerunfilecheck)             Before: 32DA7B8A23AE83B358BD257E42383D43;6641
+(rerunfilecheck)             After:  F1C9DF4988F93C03F34161CF9A2EA42D;6706.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13929 strings out of 493117
- 204462 string characters out of 6135433
- 399420 words of memory out of 5000000
- 16826 multiletter control sequences out of 15000+600000
- 21157 words of font info for 81 fonts, out of 8000000 for 9000
+ 13830 strings out of 493117
+ 204321 string characters out of 6135433
+ 362420 words of memory out of 5000000
+ 16757 multiletter control sequences out of 15000+600000
+ 15093 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,15n,47p,1152b,1073s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,10n,47p,1385b,1124s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on shchukina-2015-surething.pdf (55 pages, 3310362 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on shchukina-2015-surething.pdf (63 pages, 3301076 bytes).
 PDF statistics:
- 1107 PDF objects out of 1200 (max. 8388607)
- 996 compressed objects within 10 object streams
- 240 named destinations out of 1000 (max. 500000)
- 909 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1042 PDF objects out of 1200 (max. 8388607)
+ 927 compressed objects within 10 object streams
+ 223 named destinations out of 1000 (max. 500000)
+ 845 words of extra memory for PDF output out of 10000 (max. 10000000)
 

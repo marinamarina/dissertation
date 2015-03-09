@@ -10,87 +10,127 @@
 
 
 % BibTeX Entries
-@misc{html,
+@misc{documentation:HTML,
 	author={W3C \& WHATWG},
 	title={HTML (HyperText Markup Language)},
-	year=2014,
+	year={2014},
 	howpublished = {\url{http://www.w3.org/html/}}
 }
-@misc{bem,
+@misc{documentation:BEM,
 	author={Yandex},
 	title={BEM Methodology},
-	year=2005,
+	year={2005},
 	howpublished={\url{http://https://bem.info/}}
 }
-@misc{bem_for_small_projects,
+@misc{article:BEMForSmallProjects,
 	author={Maxim Shirshin},
 	title={Scaling Down The BEM Methodology For Small Projects},
-	year=2014,
+	year={2014},
 	howpublished={\url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}},
 }
-@misc{sass,
+@misc{article:SASS,
 	author ={Hampton Catlin, Natalie Weizenbaum, Chris Eppstein and various contributors},
 	title ={SASS Preprocessor},
-	year=2015,
-	howpublished={\url{http://sass-lang.com/}}
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://sass-lang.com/}}
 }
-@misc{bootstrap,
+@misc{documentation:Bootstrap3,
 	author={Twitter},
 	title={Twitter Bootstrap CSS3 Framework},
-	howpublished={\url{http://getbootstrap.com}}
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://getbootstrap.com}}
 }
-@book{javascript,
+@misc{documentation:Javascript,
 	author ={ECMA International},
 	title ={ECMAScript Language Specification},
 	publisher= {ECMA International},
 	edition={5.1 REV.6},
-	year=2011
+	year={2011}
 }
-@misc{jquery,
+@misc{documentation:jQuery,
 	author={John Resig},
 	title={jQuery},
-	howpublished = {\url{http://jquery.com/}}
+	howpublished = {[Online]. Available from: \url{http://jquery.com/}}
 }
-@misc{requirejs,
+@misc{documentation:RequireJS,
 	author = {tobeadded},
 	title = {RequireJS, JavaScript file and module loader},
-	howpublished = {\url{http://requirejs.org/}}
+	howpublished = {[Online]. Available from: \url{http://requirejs.org/}}
 }
-@misc{JSON,
+@misc{documentation:JSON,
 	author={Douglas Crockford},
 	title={JSON (JavaScript Object Notation)},
-	howpublished = {\url{http://martinfowler.com/articles/	continuousIntegration.html#PracticesOfContinuousIntegration}}
+	howpublished = {[Online]. Available from: \url{http://martinfowler.com/articles/	continuousIntegration.html#PracticesOfContinuousIntegration}}
 }
-@misc{grunt,
+@misc{documentation:Grunt,
 	author = {Bocoup, Open Web Community Development},
 	title = {The JavaScript Task Runner},
-	howpublished = {\url{http://gruntjs.com/}}
+	howpublished = {[Online]. Available from: \url{http://gruntjs.com/}}
 }
-@misc{flask,
+@misc{documentation:Flask,
 	author={Armin Ronacher and various contributors},
 	title={Flask Micro Framework},
-	year = 2014,
-	howpublished={\url{http://flask.pocoo.org/}}
+	year = {2014},
+	howpublished={[Online]. Available from: \url{http://flask.pocoo.org/}}
 }
-@misc{sqlalchemy,
+@misc{documentation:SqlAlchemy,
 	author={Michael Bayer and various contributors},
 	title={SQLAlchemy ORM},
-	year=2014,
-	howpublished={\url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}}	
+	year={2014},
+	howpublished={[Online]. Available from: \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}}	
 }
 @book{book:Grindberg2014FlaskWebDevelopment,
- author               = {Miguel Grindberg},
- publisher            = {O’Reilly Media},
- title                = {{Flask Web Development. Developing Web Applications
-with Python.}},
- year                 = {2014},
+	 author = {Miguel Grindberg},
+	 publisher = {O’Reilly Media},
+	 title = {{Flask Web Development. Developing Web Applications with Python.}},
+	 year = {2014},
  }
-@misc{apiintegration,
+@misc{article:goodArchitecture,
+	author={Nando Florestan},
+	title={Large web apps in Python: A good architecture.},
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html}}
+}
+@misc{article:httpRequestsExceptions,
+	author={John Boxall},
+	title={A Python guide to handling HTTP request failures},
+	year={2014},
+	howpublished={[Online]. Available from: \url{http://www.mobify.com/blog/http-requests-are-hard/}}
+}
+@misc{documentation:PythonRequests,
+	author={Kenneth Reitz},
+	title={Requests},
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://docs.python-requests.org/en/latest/api/}}
+}
+@misc{article:API_Integration,
 	author={Matt Makai},
 	title={API Integration},
-	year=2015,
-	howpublished={\url{http://www.fullstackpython.com/api-integration.html}}
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://www.fullstackpython.com/api-integration.html}}
 }
+@misc{wiki:GitHub,
+	author={Wikipedia},
+	title = {GitHub --- {W}ikipedia{,} The Free Encyclopedia},
+	year = {2015},
+	howpublished = {[Online]. Available from: \url{http://en.wikipedia.org/wiki/GitHub}},
+	note = {[Accessed 9-Mar-2015]}
+}
+@misc{wiki:Bet365,
+   author = {Wikipedia},
+   title = {Bet365 --- {W}ikipedia{,} The Free Encyclopedia},
+   year = {2015},
+  howpublished= {[Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}},
+  note = {[Accessed 22-Feb-2015]}
+ }
+ 
+@misc{web:Oddschecker,
+	author={Odds Checker},
+	title={Your Bets Bet},
+	year={2015},
+	howpublished={[Online]. Available from: \url{ http://www.oddschecker.com/}}
+}
+ 
 @article{art:Moller2003HWRastArch,
  author               = {Tomas Akenine-M{\"o}ller and Jacob Str{\"o}m},
  journal              = {ACM Trans. Graph.},

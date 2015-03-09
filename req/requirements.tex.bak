@@ -1,11 +1,9 @@
 \chapter{Requirement Analysis}
-	
-Before designing a piece of software, it is important to hold good understanding of the project requirements. In this chapter a number of functional and non-functional requirements will be listed covering all the aspects of the future project.
+Before designing a piece of software, it is important to have a good understanding of the project requirements. In this chapter a number of functional and non-functional requirements will be listed covering all the aspects of the future web application.
 
 \section{Target Audience}
 \label{sec:targetaudience}
-	
-The intended users of the application developed will be people with interest in football. More specifically, people interested in predictions of football results and football betting. With this in mind, the age range of potential users will be 18 and up.
+The intended users of the application will be people with interest in football. More specifically, people interested in predictions of football results and football betting. With this in mind, the age range of potential users will be 18 and up.
 
 \section{Target Audience Questionnaire}
 \label{sec:targetaudiencequestionnaire}
@@ -14,25 +12,23 @@ Due to the spread of target users, an electronic questionnaire was used to colle
 
 \section{Researching the Potential competitors}
 \label{sec:researchingcompetitors}
-Before gathering the project requirements, it is good practice to conduct research on what current websites are already available to football fans. The research can be a source of inspiration and would also help to avoid possible design mistakes. During the analysis, it is important to attempt to understand the main purpose of the analysed applications, as well as the way they present information and communicate with their users. \par
+Before gathering the project requirements, it is good practice to conduct research on what current websites are already available to football fans with interest in betting. The research can be a source of inspiration and could also help to avoid potential design mistakes. During the analysis, it is important to attempt to understand the main purpose of the analysed websites, as well as the way they present information to the user and communicate with them. 
 
-    
-This section is concerned with websites that can be useful for predicting football results. In our context, these are the online sources of information a football punter would turn to before making a betting decision unless the decision is based solely on punter's intuition. In general, several different types of such websites can be found online, namely:\par
+This section is concerned with websites that can be useful for predicting football results. In our context, these are the various online sources of information a football punter would turn to before making a betting decision unless the decision is based solely on intuition. In general, several different types of such websites can be found online, namely:
 		
 \begin{enumerate}
 	\item Sports news websites
 	\item Football statistics websites
-	\item Websites of betting providers 
+	\item Bookmakers websites 
 	\item Communities 
 	\item "Black-box" prediction applications
 \end{enumerate}
 
-This section of the report looks at one or two examples of each of the categories presented above, analysing the weak and strong points of the chosen website and discussing usefulness of the whole category from the point of view of a footaball punter.
+This section of the report looks at one or two examples of each of the categories presented above, analysing the weak and strong points of the chosen website and discussing usefulness of the whole category from the point of view of a football punter.
 	
-	\subsection{Sports news websites}
-	\label{subsec:sportsnewswebsites}
-
-This category represents football news websites. Into this category belong both general sports websites having a football section and football news websites, for example:
+\subsection{Sports news websites}
+\label{subsec:sportsnewswebsites}
+This category represents football news websites. Into this category fall both general sports websites with a football section and football news websites, such as:
 	
 \begin{itemize}
 	\item BBC Sport - \url{http://www.bbc.co.uk/sport}
@@ -45,116 +41,133 @@ This category represents football news websites. Into this category belong both 
 
 The sports news websites aim to present the news alongside the essential football statistics. The information is usually not as detailed as on the football stats websites, however the very latest football news compensates for this drawback. Each of the \emph{news} websites named above (BBC News, The Guardian, Sky Sports) have a football section that presents the reader with the combination of football news and stats.  One of the most popular football news websites is BBC Sport Football.
 	
-	\subsubsection{BBC Sport Football}
-	\label{subsubsec:bbcsportfootball}
-	
-BBC Sport Football is a brilliant news website. It offers very neat and simple interface and does not overwhelm the reader with irrelevant graphics. Although, it almost looks too minimalistic, the user can still find the most important information about football teams and players. The website provides authomatically updated live scores accross all featured football leagues.\par
+\subsubsection{BBC Sport Football}
+\label{subsubsec:bbcsportfootball}
+BBC Sport Football is a brilliant news website. It offers a very neat and simple interface and does not overwhelm the reader with irrelevant graphics. Although, it almost looks too minimalistic, the user can jstill get all the most important information about football teams and players. The website provides authomatically updated live scores accross all featured football leagues.
 
+BBC Sport has a very impressive news coverage of both major and minor British football leagues, as well as the main european leagues. It can also take pride in high quality writers (journalists) contributing to the website. An interesting feature is videos embedded in the webpage.
 
-BBC Sport has a very impressive news coverage of both major and minor British football leagues, as well as the main european leagues. It can also take pride in high quality writers (journalists) contributing to the website. An interesting feature is videos embedded in the webpage.\par
-
-
-As already mentioned above, the main drawback is that the stats are kept to a bear minimum. This can be a problem for a passionate football fan that wantс to analyse the  details of the game from all possible angles. However, for a purposes of a punter this level of statistics should be sufficient.\par
+As already mentioned above, the main drawback is that the stats are kept to a bare minimum. This can be a problem for a serious football fan that wants to analyse the details of the game from all possible angles. However, for the purpose of a punter this level of statistics should be sufficient.
 	
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{req/images/bbcsport.png}
+		\includegraphics[width=.80\linewidth,natwidth=610,natheight=642]{req/images/bbcsport.png}
 		\caption{BBC Sport - Football section} \label{fig:using:bbcsport}
 	\end{center}
 \end{figure}
 		
 \subsection{Football statistics websites}
 \label{subsec:footballstatswebsites}
-	
-Football statistics websites focus on detailed statistics and analysis on football matches, teams and players. These are some examples of such websites:
+There can be found a large selection of football statistics websites focusing on detailed stats and analysis on football matches, teams and players. These are some examples of websites in this category:
 			
-	\begin{itemize}
-		\item WhoScored - \url{http://www.whoscored.com}
-		\item Squawka - \url{http://www.squawka.com}
-		\item WhoIsInjured 	- \url{http://whoisinjured.com}
-	\end{itemize}
+\begin{itemize}
+	\item WhoScored - \url{http://www.whoscored.com}
+	\item Squawka - \url{http://www.squawka.com}
+	\item WhoIsInjured 	- \url{http://whoisinjured.com}
+\end{itemize}
 
-	\subsubsection{WhoScored}
-	\label{subsubsec:whoscored}
-	
-Among all football stats websites I have analysed, WhoScored is one of the most impressive ones. It has a lot of statistics, but most of it seems to be quite relevant. The website is extremely well designed, and its navigation is intuitive. The website is offering statistics and deep analysis on the major European divisions, as well as providing data on over 500 leagues and 15,000 teams. As to the data source, the website is supported by Opta, the biggest and a very reliable live sports data company standing behind BBC Sport, Sky Sports, etc.\par
+\subsubsection{WhoScored}
+\label{subsubsec:whoscored}
+Among all the football stats websites I have analysed, WhoScored is one of the most impressive ones. It has a lot of statistics, but most of it seems to be quite relevant. The website is extremely well designed, and its navigation is intuitive. WhoScored offers statistics and deep analysis on the major European divisions, as well as providing data on over 500 leagues and 15,000 teams. As to the data source, the website is supported by Opta, the largest and a very reliable live sports data company that stands behind BBC Sport, Sky Sports and other significant UK sports news providers.
 
-
-The way "WhoScored" presents information on particular matches to the user can be very inspirational for this project. \par
+The way "WhoScored" presents information on particular matches, both upcoming and played, is detailed while being uncluttered,which makes it both very useful and easy to use. This is definitely an aim of this particular project and I will be using a similar format when designing the website. 
 
 \subsubsection{Squawka}
-\label{subsub}
-	
-Squawka is another websites worth looking at. It is an award-winning application for football fans that uses real-time data visualisations to explain the game. The main idea behind is to help users to understand the game. 
+\label{subsub}	
+Squawka is another website worth looking at. 
 		
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{req/images/squawka.png}
+		\includegraphics[width=.80\linewidth,natwidth=610,natheight=642]{req/images/squawka.png}
 		\caption{Squawka} \label{fig:using:squawka}
 	\end{center}
 \end{figure}
 	
-From a visual point of view, Squawka has a nicely designed, pleasant interface. However, it is a little bit heavy on the client-side (Javascript), which contributes to sometimes slow performance. Another downside of the website is an extensive amount of adverts that distracts the user form the main content.\par
+It is an application for football fans that uses real-time data visualisations to explain the game. The main idea behind it is to show users the live stats as the game is being played. 
+
+From a visual point of view, Squawka has a nicely designed, pleasant interface. However, it is a little bit heavy on the client-side (Javascript), which contributes to sometimes slow performance. Another downside of the website is an extensive amount of adverts that distracts the user form the main content.
 	
-\subsection{Websites of betting providers}
-\label{subsec:websitesofbettingproviders}
+\subsection{Bookmakers Websites}
+\label{subsec:bookmakerswebsites}
 	
-In this category can be named many websites.
-	
-	
+With the arrival of the Internet many existing bookmakers opened up web based operations to complement their existing business. Within short period of time online sports became very popular with punters all around the world. Most online bookmakers contain high quality sports statistics that aims to support users' betting decisions.
+
+Names like Ladbrokes, Bet365, Williamhill are probably one of the most popular bookmakers online.
+
+\begin{itemize}
+	\item Paddy Power \url{http://www.paddypower.com/bet}
+	\item Ladbrokes \url{http://betting.ladbrokes.com/en/football-betting}
+	\item Bet365 \url{http://www.bet365.com}
+	\item WilliamHill \url{http://sports.williamhill.com/bet/en-gb/betting/y/5/Football.html}
+\end{itemize}
+
+\subsubsection{Bet365}
+\label{susubsec:bet365}
+
+According to the \citet{wiki:bet365}, "Bet 365 Group Limited, is a United Kingdom based gambling company. Bet365 is one of the world’s leading online gambling groups with over 14 million customers in two hundred countries". In my opinion, Bet365 is one of the nicest websites among bookmakers. The website is very well structured, it has intuitive, user-friendly navigation and is easy to use. Bet365 offers a free live streaming service and an impressive coverage of live sports statistics.
+
 \subsection{Communities}
 \label{subsec:communities}
-	
-Communities is an category of the websites with an interesting idea behind. These websites are specialised social networks for sports fans and punters. There are two websites in this category:
+Communities is a category of websites with an interesting idea behind it. These websites are specialised social networks for sports fans and punters. So far, websites of this type are not extremely popular, maybe because gambling is more of an individual pursuit.
+
+Many of the features of websites in this category, such as experts tips, users' comments, forums, can be very useful from a punter's perspective, especially when dealing with a league you are not overly familiar with. I have analysed three websites in this category.
 	
 \begin{itemize}
 	\item OLGB Betting Community - \url{http://www.olgb.com}
 	\item Vital Football News and Fans community - \url{http://www.vitalfootball.co.uk}
+	\item Punters Lounge - \url{http://www.punterslounge.com/}
 \end{itemize}
+
+OLGB is a friendly community for punters with many interesting features and tools. It will be analysed in more detail in a separate subsection below. Vital Football is an Internet sports network website. It has individual site for every football club from the Premier League and the Football League in England and the Scottish Premier League with each "club site" having their home page, own editors and a forum. Punters Lounge is a "betting and poker community". Its most interesting feature is a forum for sports punters. The website also offers free betting advice tips, live sports streaming and odds comparison.
 	
+\subsection{OLGB Betting Community}
+\label{subsec:olgb}
+OLGB community market themselves as a website for punters who share their expertise and work together to maximise their betting profit, so it is very relevant to this project. OLGB has a wide variety of features and tools. However, real punters' opinion and tips is the main focus of this website. For example, the user can navigate to an upcoming event page on OLGB website (in the section "free tips") and check how many other users predicted either team to win. Users' choice is usually justified with an comment. For each option OLGB suggests the best odds from one of the most popular bookies. This saves user the trouble of going to a website like OddsChecker\cite{oddschecker} to compare the odds. The comments feature is very interesting and it can be applied as an "optional requirement" for this project.
+
+OLBG also runs a virtual betting game (tipster competition) where users can "bet" virtual money on real betting events. The tipsters in the top 100 of the tables for each sport each month receive a real money prize. Users of the website can also see a leaderboard of the most successfull tipsters. The leaderboard contains information on the amount of tips made within certain period of time, LSP (Level Strike Profit), ROI (Return on Investment) for each tipster. The virtual betting feature is very relevant to this project. A simplified version of the leaderboard could also be implemented. 
+
+OLGB has more to offer. It is a punter's paradise in a way. For example, there is a betting forum, betting blogs section, betting school and much more. The community website has a tight connection to several popular bookmaker websites. For example, it offers a tool to help users to compare bookmakers websites. It also promotes free bets and various "bookies" promotions.
+
+The website has also several drawbacks. Firstly, the interface looks a little outdated and it takes a while to find your way through the complicated and rather confusing navigation. Secondly, the "Help" section does only answers some questions and can be slightly disorientating for a new user.
 
 
-	
 \subsection{Black-box prediction applications}
 \label{subsec:blackboxapplications}
-	
-	http://www.predictz.com/predictions/europe/champions-league/609828/
-	http://www.vitibet.com
-	http://www.forebet.com/en/
-	small prediction tool at goal.com:
-	http://www.goal.com/en-gb/match/psg-vs-chelsea/1974582?ICID=FX
+These are betting applications that are being marketed as systems that can predict the outcome of a football match using their own unique statistical models and calculations. Known as black-box systems, these applications avoid sharing the exact logic used inside the system with the user. The punter subscribes to a betting system online and simply follows its suggestions, for example, estimated outcome of a football match, overestimated events that the user should bet on, etc. These are the example apps in this category:
 
+\begin{itemize}
+	\item Math Betting  - \url{https://apps.betfair.com/trading/mathbetting/}
+	\item Footbee - \url{http://footbe.net/en/}
+	\item Vitibet - \url{http://www.vitibet.com/}
+	\item Forebet.com - Mathematical Prediction \url{http://www.forebet.com/en/}
+\end{itemize}
 
-Firstly, there are websites containing detailed football statistics and its analysis. Some of them may also attempt (not nessesarily) to make predictions based on these statistics, however, this is not the main purpose of such websites. among \par
+When paying for the subscription for a black-box betting application, the users assume that they are gaining access to a smart system created by football experts. Additionally, there is an expectation that the application has complicated statistical models and calculation analysing a large database of football statistics behind each betting tip. The users also hope that they are paying for a \emph{secret} betting system that is known to and is used by only limited number of other punters. Summing up, a black-box system application sounds like an easy way to sustainable profit. Unfortunately, this does not have to be the case. 
 
-	  	
-After having analysed the above websites from various categories, I came to the following conclusion. A well-chosen combination of several websites will be definitely able to provide enough information to make a thoughtful betting decision. \par
+First of all, the complexity of a betting system does not necessarily correlate with its profitability. The logic behind a successful betting system can be relatively simple and would still work. Secondly, in order to predict a football match result, it might be enough to analyse only relatively recent events (for example last 6 matches, recent players' performance, etc.), without having to perform computations on large set of historic football data. This is due to the fact that over time many various factors can cause change in team performance. Therefore, analysing data from several months ago would not help the punter to make more precise prediction. (put reference to the article!!!)
 
- 		
-Most punters would have their own football betting system (betting strategy). Although even the best system cannot guarantee success, it can greatly increase the prospects of making a profitable bet. Therefore, when predicting football match result, a potential punter will have to make a small research each time. The aim of such research would be to make note of the relevant statistics for the teams involved in the game (depending on the "input variables" of the betting system), for example previous results for both teams, their performance at home and away, players statistics (injuries, suspensions, transfers), recent change of team managers, etc. The problem is that many football stats websites offer way too detailed information for this purpose, therefore the relevant stats needs to be "hand-picked" from several sources for each match. \par
+\subsection{Conclusion}
+After having analysed the above websites, I came to the following conclusion. A well-chosen combination of several websites would definitely be able to provide enough information to make a thoughtful betting decision.
 
+Many punters have their own football betting system (betting strategy). Although even the best system cannot guarantee success, it can greatly increase the prospects of making a profitable bet. Therefore, before making a prediction, such a punter will conduct a little research each time. The aim of such research would be to make note of the relevant statistics for the teams involved in the game (depending on the "input variables" of the betting system), for example previous results for both teams, their performance at home and away, players statistics (injuries, suspensions, transfers), recent change of team managers, etc. The problem is that many football stats websites offer way too detailed information for this purpose, therefore the relevant stats needs to be "hand-picked" from several sources for each match. 
  	
-The application will attept to put all the relevant statistics in one place and break the information down into logical "prediction modules". In addition, the application will enable users to pick the input variables and assign them a weight of user's choice, representing the importance of the input variable for the match results prediction.\par
-
+The application will attempt to put all the relevant statistics in one place and break the information down into logical "prediction modules". In addition, the application will enable users to pick the input variables and assign them a weight of user's choice, representing the importance of the input variable for the match results prediction.
  
-\section{Requirement Analysis}
-\label{sec:requirementanalysis}
+\section{Requirements}
+\label{sec:requirements}
 
-Computer Systems life cycle consists of five phases: Requirements and Analysis, Design, Implementation, Testing and Evolution. Then, after Evolution, the cycle can start again with an additional set of requirements. Therefore, the Requirements analysis is a crucial part of the project and the cornerstone of the software development life cycle. Requirements analysis involves gathering information in order to meet customer needs and defining what the future application is expected to do. This phase is especially important in the real world environment, when developing an application for a customer. In this case, clarifying the requirements in the early stages of the project would help to ensure that both sides understand and agree on the feature set of the future application. \par
+Computer Systems life cycle consists of five phases: Requirements and Analysis, Design, Implementation, Testing and Evolution. Then, after Evolution, the cycle can start again with an additional set of requirements. Therefore, the Requirements analysis is a crucial part of the project and the cornerstone of the software development life cycle. Requirements analysis involves gathering information in order to meet customer needs and defining what the future application is expected to do. This phase is especially important in the real world environment, when developing an application for a customer. In this case, clarifying the requirements in the early stages of the project would help to ensure that both sides understand and agree on the feature set of the future application. 
 
+Although it is not very likely that requirements for this project will change during the development process, defining requirements can be very beneficial. The detailed requirements analysis will aid understanding how different parts of the project are expected to interact with each other, as well as how the application will communicate with its users.
 
-Although it is not very likely that requirements for this project will change during the development process, defining requirements can be very beneficial. The detailed requirements analysis will aid understanding how different parts of the project are expected to interact with each other, as well as how the application will communicate with its users.\par
+For better transparency project requirements have been split into functional and non-functional requirements.
 
-
-For better transparency project requirements have been split into functional and non-functional requirements.\par
-
-
-Before outlining project requirements, I would like to start with some definitions relevant to the whole project.\par
+Before outlining project requirements, I would like to start with some definitions relevant to the whole project.
 
 \subsection{Definitions}
-\label{sec:definition}
+\label{subsec:definitions}
 
-\textbf{Application Football League} - in order to reduce unnecessary complexity at this stage of the project, the application will be only supporting one league (Premier Barclays League)
+\textbf{Application Football League} - in order to reduce unnecessary complexity at this stage of the project, the application will be only supporting one league (Premier Barclays League). 
 
 \textbf{Matches Overview} – a list of upcoming and played matches presented on the main page of the application
 
@@ -170,20 +183,18 @@ Before outlining project requirements, I would like to start with some definitio
 
 \textbf{Match Specific Prediction Settings} - each user of the application can also save a set of prediction settings specific for only one match. 
 
-\textbf{Match result} - "Home Win" in case of the win of the hometeam, "Away Win" in case of the win of the awayteam, "Draw"for the draw
-
+\textbf{Match result} - "Home Win" in case of the win of the hometeam, "Away Win" in case of the win of the awayteam, "Draw" for the draw
 
 \subsection{Functional Requirements}
 \label{sec:functionalrequirements}
 
-Functional requirements describe the behaviour of the application in terms of its functionality. These are the "must have" functions of the application addressing the business targets that application must satisfy. Good functional requirements must be concise, complete and unambiguous.\par
+Functional requirements describe the behaviour of the application in terms of its functionality. These are the "must have" functions of the application addressing the business targets that application must satisfy. Good functional requirements must be concise, complete and unambiguous.
  
-In order to add structure to the design and development process, the project was broken down into high level features of the future application. The functional requirements are grouped by the functionality related to those features.\par
+In order to add structure to the design and development process, the project has been broken down into high level features of the future application. The functional requirements are grouped by the functionality related to these features.
 
 \subsubsection{General Web Application Requirements }
 \label{sec:generalwebrequirements}
-
-These are the requirements related to the basic functionality of the web application, such as account registration, login and account management.\par
+These are the requirements related to the basic functionality of the web application, such as account registration, login and account management.
 
 \begin{itemize}
   	\item The application should allow users to register and create a new account with the application
@@ -202,8 +213,7 @@ These are the requirements related to the basic functionality of the web applica
 
 \subsubsection{Matches Overview}
 \label{sec:matchesoverviewrequirements}
-
-Below are the requirements relating to the matches overview.\par
+Below are listed requirements relating to the matches overview.
 
 \begin{itemize}
 	\item On the main page of the application user will be presented with a list of upcoming matches for the current season in the league
@@ -215,45 +225,49 @@ Below are the requirements relating to the matches overview.\par
 
 \subsubsection{Prediction}
 \label{sec:prediction}
+The predicted outcome of a football match will be calculated after evaluating several factors that can influence the match result. An example of such a factor could be a previous match result, league position of each team, team performance at home or away, the recent change in team management or players' injuries and suspensions. Each of those factors will be represented by an equivalent "prediction module" in the application and a match view. The main outcome of each prediction module will be a "prediction value" expressed as a percentage. This value will tell the user how likely is either team to win the match. 
 
-The predicted outcome of a football match in the application will be calculated after evaluating several factors that can influence the match result. An example of such a factor could be a previous match result, league position of each team or a team's performance at home. Each of those factors is represented by an equivalent "prediction module" in the match view. These are the requirements related to the prediction of the overall match result. \par
+Finally, the betting system will assign a weight (depending on user settings) to each prediction value. The weights (or prediction settings) determine the relative importance of each factor. By applying the weights user indicates that some factors are more important to the outcome of this particular game than others. The final result will be calculated as a weighted average.
+
+These are the requirements related to the prediction of a football match result.
 	
 \begin{itemize}
   \item To calculate prediction values for each module, application uses default system settings in absense of default user prediction settings or match specific settings
-  \item Application uses default user prediction settings in absence of match specific settings
-   \item Application uses match specific settings in case user set them for this match
- \end{itemize}
+  \item The application uses default user prediction settings (explicitly set by the user using specil form) in absence of match specific settings
+  \item Application uses match specific settings in case user has set them for this match
+  \item Match result outcome will be calculated as a weighted average of prediction values for each of the prediction modules
+\end{itemize}
 
 \subsubsection{Upcoming Match View}
 \label{sec:generalpredictionrequirements}
-
-Users should be able to view detailed statistics of the upcoming match. These are the requirements related to this functionality.\par
+Users should be able to view detailed statistics of the upcoming match. These are the requirements related to this functionality.
 
 \begin{itemize}
-	\item The information presented in the unplayed match view will be divided into two major sections: prediction modules and additional information 
-	\item For an unplayed match user should be able to see a set of prediction modules
+	\item User should be able to see a set of prediction modules
 	\item Each module should contain relevant piece of football statistics
-	\item For each module it should be clear which team is a winner for the module and what is a probability for this outcome if the prediction wuld be based solely on this prediction module
-	re will be several prediction modules and the football information for each team
-	The details will include statistic data for each of the playing teams, such as team standings, results of 6 previous matches, results of previous 6 matches played at home, results of previous 6 matches played away, results of previous meetings with the opponnent within current season. 
-	\item from the prediction module user can see stats of the website population
+	\item For each module it should be clear, which team is more likely to win and what is a probability of this outcome, given that match prediction is based solely on this module
+	\item User should be able to see what weights are being used for each prediction module
+	\item User should be able to set new match specific prediction weights
 \end{itemize}
 
 \subsubsection{Played Match View}
+After the game has been played, the user will be able to navigate to the played match page and view information summarising the performance of all users who placed the bet, as well as personal feedback for the current user. This view should be more about the retrospective analysis of the users' betting strategies, ie. the weights used for modules,  rather than the statistics from the actual match, ie. shots on target, possession, etc. Hopefully, the information presented in this view will allow users to compare their results with the fellow punters and encourage them to analyse their own betting strategy and optimise performance.
 
-After the game has been played, the application will offer prediction statistics and some feedback to the user. Hopefully, this will allow users to compare their betting strategy with the fellow punters and analyse their own betting settings. These are the requirements related to the played match view.
+These are the requirements related to the played match view.
 
 \begin{itemize}
-	\item
+	\item User should be able to see general match information
+	\item User should be able to see brief summary of football stats related to different prediction modules and recorded at the time the match was played
+	\item User should be able to see an overview of the website population performance, more specifically performance of users, who committed bet for this match
+	\item User should be able to see visualisation of the website population's choice of prediction weights used for this match
+	\item It should be clear from the view what was the result of a bet for the user. The view should also indicate the user's choice and prediction percentage
 \end{itemize}
-
 
 \subsubsection{Dashboard}
 \label{sec:dashboardrequirements}
+Dashboard is a key view of the application.
 
-Dashboard is a key view of the application.\par
-
-The idea behind the dashboard in this application is similar to online shoppping experience: user saves an item to the shopping basket and from the basket can submit a purchase or cancel it. In our case, user browses through the matches overview and save matches to the dashboard for a latter review. The requirements outlined below describe the dashboard functionality in more detail.\par
+The idea behind the dashboard in this application is similar to online shoppping experience: user saves an item to the shopping basket and can later submit a purchase or cancel it. In our case, user browses through the list of matches on the main page of the application and can save matches to the dashboard for a latter review. The requirements outlined below describe the dashboard functionality in more detail.
 
 \begin{itemize}
 	\item from the overview of the matches on the main page, user can add a match and save it to the dashboard
@@ -271,14 +285,17 @@ Played games are marked in the dashboard (grey font)
 Once user committed games has started (observer, onchange on a filed), it should indicate the winnings and write to db
 Fix the kits
 
+\subsubsection{Optional requirements}
+\label{sec:optionalrequirements}
+
 \subsection{Non-functional Requirements}
 \label{sec:nonfunctional}
 
-Non-functional requirements specify how the system is going to perform.\par
+Non-functional requirements specify how the system is going to perform.
 
 \subsubsection{Testability}
 The application should be testable – the behaviour of the application should be verifiable through a suite of automated tests. 
-A set of test cases will be written for the application, testing features such as logging in, account registration, integration with third-parties API used in the application, as well as various scenarios of database models interactions. In addition to these tests, the business logic in the match prediction must also be predictable, consistent and testable. 
+A set of test cases will be written for the application, testing features such as logging in, account registration, integration with third-party API used in the application, as well as various scenarios of database models interactions. In addition to these tests, the business logic in the match prediction must also be predictable, consistent and testable. 
 
 
 Maintainability
@@ -298,14 +315,14 @@ accessibility security
 
 
 \section{Overall Architecture}
-Provide a list of all the chapters within the thesis and a brief summary of the content.
+The high level components of this system are quite simple. 
 
 \textbf Design of an application a a whole, overall design (just boxes and lines)
 \textbf Architectural diagram (overview) (aosabook.org/en/moodle.html -example), quite high level
 
 
-\section{Choice of Third Parties API}
-\label{sec:thirdpartiesapi}
+\section{Choice of Third Party API}
+\label{sec:thirdpartyapi}
 	
 	After analysing the functional requirements, it became apparent that this type of application will need the latest football data in order to operate correctly. The easiest way to load such data into the application would be to integrate the application with a third party API. The process of finding an appropriate API for the project will be described in this section. 
 	
