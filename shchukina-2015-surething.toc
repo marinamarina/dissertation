@@ -28,18 +28,18 @@
 \contentsline {subsection}{\numberline {3.3.4}Communities}{9}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}OLGB Betting Community}{10}{subsection.3.3.5}
 \contentsline {subsection}{\numberline {3.3.6}Black-box prediction applications}{11}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Conclusion}{12}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.7}Conclusion}{11}{subsection.3.3.7}
 \contentsline {section}{\numberline {3.4}Requirements}{12}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Definitions}{13}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Functional Requirements}{14}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.2}Functional Requirements}{13}{subsection.3.4.2}
 \contentsline {subsubsection}{\numberline {3.4.2.1}General Web Application Requirements }{14}{subsubsection.3.4.2.1}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Matches Overview}{15}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Matches Overview}{14}{subsubsection.3.4.2.2}
 \contentsline {subsubsection}{\numberline {3.4.2.3}Prediction}{15}{subsubsection.3.4.2.3}
 \contentsline {subsubsection}{\numberline {3.4.2.4}Upcoming Match View}{16}{subsubsection.3.4.2.4}
 \contentsline {subsubsection}{\numberline {3.4.2.5}Played Match View}{16}{subsubsection.3.4.2.5}
 \contentsline {subsubsection}{\numberline {3.4.2.6}Dashboard}{17}{subsubsection.3.4.2.6}
-\contentsline {subsubsection}{\numberline {3.4.2.7}Optional requirements}{18}{subsubsection.3.4.2.7}
-\contentsline {subsection}{\numberline {3.4.3}Non-functional Requirements}{18}{subsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.2.7}Optional requirements}{17}{subsubsection.3.4.2.7}
+\contentsline {subsection}{\numberline {3.4.3}Non-functional Requirements}{17}{subsection.3.4.3}
 \contentsline {subsubsection}{\numberline {3.4.3.1}Testability}{18}{subsubsection.3.4.3.1}
 \contentsline {subsubsection}{\numberline {3.4.3.2}Security}{18}{subsubsection.3.4.3.2}
 \contentsline {section}{\numberline {3.5}Overall Architecture}{18}{section.3.5}
@@ -58,28 +58,28 @@
 \contentsline {chapter}{\numberline {5}Implementation}{25}{chapter.5}
 \contentsline {section}{\numberline {5.1}Choice of Technologies}{25}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Front End}{25}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Back End}{26}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Application Architecture}{27}{section.5.2}
-\contentsline {section}{\numberline {5.3}Application Structure}{28}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Factory Pattern}{28}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.1.2}Back End}{27}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Application Architecture}{28}{section.5.2}
+\contentsline {section}{\numberline {5.3}Implementation Processes}{29}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Application Factory}{29}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Blueprints}{29}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Configuration}{29}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Database Migrations}{29}{subsection.5.3.4}
-\contentsline {subsection}{\numberline {5.3.5}Version Control}{30}{subsection.5.3.5}
-\contentsline {subsection}{\numberline {5.3.6}Own Validation in Forms}{31}{subsection.5.3.6}
-\contentsline {subsection}{\numberline {5.3.7}Custom Macros}{32}{subsection.5.3.7}
-\contentsline {subsection}{\numberline {5.3.8}Exceptions}{32}{subsection.5.3.8}
-\contentsline {subsection}{\numberline {5.3.9}Integration with third-party API}{33}{subsection.5.3.9}
-\contentsline {subsection}{\numberline {5.3.10}Visual Effects}{34}{subsection.5.3.10}
-\contentsline {section}{\numberline {5.4}Features Implementation}{34}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Authentication}{34}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Matches Overview}{34}{subsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.2.1}User Journey}{35}{subsubsection.5.4.2.1}
-\contentsline {subsection}{\numberline {5.4.3}Prediction}{35}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Upcoming Match View}{35}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.3.3}Database Migrations}{30}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Version Control}{30}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Own Validation in Forms}{31}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.6}Custom Macros}{32}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.7}Exceptions}{33}{subsection.5.3.7}
+\contentsline {subsection}{\numberline {5.3.8}Integration with third-party API}{33}{subsection.5.3.8}
+\contentsline {subsection}{\numberline {5.3.9}Visual Effects}{34}{subsection.5.3.9}
+\contentsline {subsection}{\numberline {5.3.10}Responsive Design}{35}{subsection.5.3.10}
+\contentsline {section}{\numberline {5.4}Features Implementation}{35}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Authentication and User Profile}{35}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Matches Overview}{35}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}User Journey}{36}{subsubsection.5.4.2.1}
+\contentsline {subsection}{\numberline {5.4.3}Prediction}{36}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Upcoming Match View}{36}{subsection.5.4.4}
 \contentsline {subsubsection}{\numberline {5.4.4.1}User journey}{36}{subsubsection.5.4.4.1}
-\contentsline {subsection}{\numberline {5.4.5}Played Match View}{37}{subsection.5.4.5}
-\contentsline {subsection}{\numberline {5.4.6}Possible Future Enchancement}{37}{subsection.5.4.6}
+\contentsline {subsection}{\numberline {5.4.5}Played Match View}{38}{subsection.5.4.5}
+\contentsline {subsection}{\numberline {5.4.6}Possible Future Enchancement}{38}{subsection.5.4.6}
 \contentsline {section}{\numberline {5.5}Application Performance}{38}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Deploying the Application}{38}{subsection.5.5.1}
 \contentsline {section}{\numberline {5.6}Conclusions}{38}{section.5.6}

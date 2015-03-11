@@ -28,7 +28,7 @@
 	year={2014},
 	howpublished={\url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}},
 }
-@misc{article:SASS,
+@misc{documentation:SASS,
 	author ={Hampton Catlin, Natalie Weizenbaum, Chris Eppstein and various contributors},
 	title ={SASS Preprocessor},
 	year={2015},
@@ -50,28 +50,47 @@
 @misc{documentation:jQuery,
 	author={John Resig},
 	title={jQuery},
-	howpublished = {[Online]. Available from: \url{http://jquery.com/}}
+	year={2015},
+	howpublished = {[Online]. Available from: \url{http://jquery.com/}},
+	note = {[Accessed 4-Jan-2015]}
 }
 @misc{documentation:RequireJS,
 	author = {tobeadded},
 	title = {RequireJS, JavaScript file and module loader},
-	howpublished = {[Online]. Available from: \url{http://requirejs.org/}}
-}
+	year={2015},
+	howpublished = {[Online]. Available from: \url{http://requirejs.org/}},
+	note = {[Accessed 4-Jan-2015]}
+} 
 @misc{documentation:JSON,
 	author={Douglas Crockford},
 	title={JSON (JavaScript Object Notation)},
+	year={2015},
 	howpublished = {[Online]. Available from: \url{http://martinfowler.com/articles/	continuousIntegration.html#PracticesOfContinuousIntegration}}
 }
 @misc{documentation:Grunt,
 	author = {Bocoup, Open Web Community Development},
 	title = {The JavaScript Task Runner},
+	year={2015},
 	howpublished = {[Online]. Available from: \url{http://gruntjs.com/}}
 }
 @misc{documentation:Flask,
 	author={Armin Ronacher and various contributors},
 	title={Flask Micro Framework},
-	year = {2014},
+	year = {2015},
 	howpublished={[Online]. Available from: \url{http://flask.pocoo.org/}}
+}
+@misc{documentation:FlaskApplicationFactories,
+	author={Armin Ronacher and various contributors},
+	title={Flask Micro Framework - Application Factories},
+	year = {2015},
+	howpublished={[Online]. Available from: \url{http://flask.pocoo.org/docs/0.10/patterns/appfactories/}}
+}
+@misc{documentation:Jinja2,
+	author={},
+	title={Jinja2, full featured template engine for Python},
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://jinja.pocoo.org/}},
+	note = {[Accessed 14-Oct-2014]}
 }
 @misc{documentation:SqlAlchemy,
 	author={Michael Bayer and various contributors},
@@ -89,7 +108,8 @@
 	author={Nando Florestan},
 	title={Large web apps in Python: A good architecture.},
 	year={2015},
-	howpublished={[Online]. Available from: \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html}}
+	howpublished={[Online]. Available from: \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html}},
+	note = {[Accessed 5-Mar-2015]}
 }
 @misc{article:httpRequestsExceptions,
 	author={John Boxall},
@@ -120,8 +140,8 @@
    author = {Wikipedia},
    title = {Bet365 --- {W}ikipedia{,} The Free Encyclopedia},
    year = {2015},
-  howpublished= {[Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}},
-  note = {[Accessed 22-Feb-2015]}
+   howpublished= {[Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}},
+   note = {[Accessed 22-Feb-2015]}
  }
  
 @misc{web:Oddschecker,
@@ -129,68 +149,4 @@
 	title={Your Bets Bet},
 	year={2015},
 	howpublished={[Online]. Available from: \url{ http://www.oddschecker.com/}}
-}
- 
-@article{art:Moller2003HWRastArch,
- author               = {Tomas Akenine-M{\"o}ller and Jacob Str{\"o}m},
- journal              = {ACM Trans. Graph.},
- number               = {3},
- pages                = {801--808},
- title                = {{Graphics for the Masses: A Hardware Rasterization Architecture for Mobile Phones}},
- url                  = {http://www.cs.lth.se/home/Tomas_Akenine_Moller/pubs/masses.pdf},
- volume               = {22},
- year                 = {2003},
- }
-
-
-
-@mastersthesis{msc:Edberg2007FluxgateMagnetometer,
- author               = {Terry Edberg},
- school               = {Royal Institute of Technology, Stockholm, Sweden},
- title                = {{Evaluation and Optimisation of the SMILE Fluxgate Magnetometer}},
- type                 = {MSc Thesis},
- url                  = {http://www.ee.kth.se/php/modules/publications/reports/2007/XR-EE-SPP_2007_001.pdf},
- year                 = {2007},
- }
-
-@phdthesis{phd:Grace2004MiddlewareMobile,
- author               = {Paul Grace},
- school               = {Computing Department Lancaster University},
- title                = {{Overcoming Middleware Heterogeneity in Mobile Computing Applications}},
- type                 = {PhD Thesis},
- url                  = {http://www.lancs.ac.uk/postgrad/gracep/thesisfinal.pdf},
- year                 = {2004},
- }
-
-@inproceedings{proc:Park2006UIMgtRmtRobots,
- author               = {Ji Hwan Park and Ki Oh Kim and Jae Wook Jeon},
- booktitle            = {SICE-ICASE, 2006. International Joint Conference},
- month                = {Oct},
- pages                = {417--420},
- title                = {{PDA based User Interface Management System for Remote Control Robots}},
- url                  = {10.1109/SICE.2006.315333},
- year                 = {2006},
- }
-
-@misc{web:berkeleyBOINC,
- author               = {{Berkeley University}},
- lastchecked          = {20 Sept 2010},
- title                = {{Berkeley Open Infractructure for Network Computing}},
- url                  = {http://boinc.berkeley.edu/},
- year                 = {2010},
- }
- 
- @misc{web:Fear2005BookTabs,
-		 author  = {Simon Fear},
-		 lastchecked          = {20 Sept 2010},
-		 title = {{Publication Quality Tables in \LaTeX}},
-		 url   = {http://www.ctan.org/pub/tex-archive/macros/latex/contrib/booktabs/booktabs.pdf},
-		 year  = {2005}
-}
-@article{zhou2005ada,
-	title = {Adaptive Successive Erosion-based Cell Image Segmentation for p53 Immunohistochemistry in Bladder 				 Inverted Papilloma.},
-	author={Zhou, H. and Mao, K.},
-	journal={Conf Proc IEEE Eng Med Biol Soc},
-	volume={6},
-	year={2005},
 }

@@ -120,6 +120,6 @@
 \input{appendix/appendix}
 
 \nocite{*}
-\bibliographystyle{vancouver}
+\bibliographystyle{plainnat}
 \bibliography{shchukina-2015-surething}
 \end{document}
