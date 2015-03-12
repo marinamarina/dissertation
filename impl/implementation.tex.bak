@@ -1,8 +1,8 @@
 \chapter{Implementation}
 \label{ch:implementation}
-From a practical point of view, the aim of this project was to create a working web application that also makes use of the best available development practices, well-designed architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would allow many users to experience the application at the same time.
+From a practical point of view, the aim of this project was to create a working web application that also makes use of the best available development practices, well-designed architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would support a large number of concurrent requests and stay highly responsive. Therefore, great emphasis will be put on the scalability and performance.  
 
-This chapter examines the implementation of the web application.
+This chapter examines the process of implementation of the web application. 
 
 \section{Choice of Technologies}
 \label{sec:choiceoftechnologies}
@@ -17,7 +17,7 @@ On the top of that, a popular CSS framework Bootstrap 3 \cite{documentation:Boot
  
 JavaScript, specifically JQuery library \cite{documentation:jQuery}, will be used to add animations and improve overall user experience from using the application.  
 
-In order to handle time-consuming and repetitive tasks on the front end side, the task-based command-line tool Grunt will be used. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of running grunt for this project in terminal.
+In order to handle time-consuming and repetitive tasks on the front end side, the task-based command-line tool Grunt will be used. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
 
 \begin{figure}[H]
 	\begin{center}
@@ -47,37 +47,37 @@ However, on the top of the standard MVC architecture SureThing requires few extr
 
 \begin{itemize}
     \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
-    \item \textbf{View Layer.} Holds association between URLs requested in the browser and Python functions or \emph{routes}. Routes are declared using an appropriate function decorator, for example:
+    \item \textbf{View Layer.} Holds association between URLs requested in the browser and Python functions or \emph{routes}. Routes are declared using an appropriate function decorator. Below can be found an excerpt from the application code. This is an route representing the index page.
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/indexPageRoute}
+        \includegraphics[width=.40\linewidth,natwidth=610,natheight=642]{impl/images/indexPageRoute}
         \caption{Index page route example.} \label{fig:using:indexPageRoute}
     \end{center}
 \end{figure}     
         
     \item \textbf{Template Layer.} This is the mediator layer between an HTTP request and the application logic. It consists of a number of Jinja2 templates holding only     presentation logic. 
     \item \textbf{External Services Layer} \cite{article:goodArchitecture}. Contains API wrapper class that accesses and manipulates live football data. In general, the functionality of the application can be further extended in many ways. In the future, Football-API might not be the only external source of information. The project might make use of another third-party API or even web scrapping. Eventually, all additional modules related to the interaction with external sources of data will become part of this layer.
-    \item \textbf{Threading.} The application requests live football data frequently. Loading the data is a costly I/O operation that may become a bottleneck. This component defines a class \emph{DataUpdateThread} that takes care of writing the data to the server every 100 seconds. This task is carried out in a separate thread. 
+    \item \textbf{Threading.} The application requests live football data frequently. Loading the data is a costly I/O operation that may become a bottleneck unless performed asynchronously. Threading component of the apllication defines a class \emph{DataUpdateThread} that takes care of writing the data to the server every 100 seconds. This task is carried out in a separate thread. 
 \end{itemize}
 
-During the development process, a lot of effort was put into keeping the Template Layer thin as possible in order to reduce the loading time in the browser and improve the overall performance of the application.
+During the development process, a lot of effort was put into keeping the Template Layer as thin as possible in order to reduce the loading time in the browser and improve the overall performance of the application.
 
-\section{Implementation Processes}
-In this section a number of  various techniques and tools used during application development will be described and explained. 
+\section{Patterns And Conventions}
+Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives a developer a lot of freedom to decide how to structure the application. According to a Software Engineer Matt Wright \cite{article:howIstructureMyFlaskApps}, " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during application development will be described and explained. 
 
 \subsection{Application Factory}
 The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. As described in the \cite{book:Grindberg2014FlaskWebDevelopment}, the problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and makes testing of various confurations easier.\cite{documentation:FlaskApplicationFactories} 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/createApp}
+		\includegraphics[width=.40\linewidth,natwidth=610,natheight=642]{impl/images/createApp}
 		\caption{Function responsible for creation of the application.} \label{fig:using:createApp}
 	\end{center}
 \end{figure}
 
 \subsection{Blueprints}
-Blueprints are related to the View Layer introduced in the section Application Architecture \cite{sec:applicationarchitecture}. A large application is divided into smaller parts and each part is implemented with help of a blueprint. This concept helps to develop a \emph{modular} web application. SureThing was divided into two parts: \emph{main} and \emph{auth}. \emph{auth} holds the endpoints associated with the authentication and user profile related tasks, for example \emph{login}, \emph{edit\_profile}. On the other hand \emph{main} is in charge of the rest of the application. Please notice how those different blueprints are registered on the application instance inside the create\_app function:
+Blueprints are related to the View Layer introduced in the section Application Architecture \cite{sec:applicationarchitecture}. A large application is divided into smaller parts and each part is implemented with help of a blueprint. This concept helps to develop a \emph{modular} web application. SureThing was divided into two parts: \emph{main} and \emph{auth}. \emph{auth} holds the endpoints associated with the authentication and user profile related tasks, for example \emph{login()}, \emph{edit\_profile()}. On the other hand \emph{main} is in charge of the rest of the application. Notice how those different blueprints are registered on the application instance inside the \emph{create\_app()} function:
 
 \begin{figure}[H]
 	\begin{center}
@@ -88,6 +88,14 @@ Blueprints are related to the View Layer introduced in the section Application A
 
 \subsection{Database Migrations}
 The database scheme for this project was designed in an iterative way, models and relationships between them were added gradually as the application was growing. Therefore, it was crucial to find a tool that allows effortless updates of the database. To manage frequent database updates was used Alembic database migration tool that was developed specifically by Mike Bayer, the author of SQLAlchemy. The tool can be added to Flask as an external plugin, Flask-migrate. After installation and initial configuration of the plugin, it allows to migrate the database with two simple commands to be subsequentially run in the terminal: \emph{db upgrade} and \emph{db migrate}. Alembic makes migration easier and prevents the developer from the necessity to delete and recreate the database each time there is a need for migration.
+
+ \subsection{Exceptions}
+The application will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
+
+As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_call\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors. \cite{documentation:PythonRequests} If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
+
+\section{Other Implementation Processes}
+In this section a number of other implementation processes and used tools will be discussed.
 
 \subsection{Version Control}
 Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \cite{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... (It also) provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, performance, design, bug, optional tasks, etc. 
@@ -129,11 +137,6 @@ One of the example usages was rendering form fields. Each form field related mac
 
 Another macro, \emph{teamkitimage(match, home=1)} renders an image representing a football club. Based on the provided arguments, the function displays an image of a home or away team kit for a specific club. 
 
-\subsection{Exceptions}
-The application will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
-
-As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_call\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors. \cite{documentation:PythonRequests} If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
-
 \subsection{Integration with third-party API}
 Many production Python web applications rely on external application programming interfaces (APIs). API can be also reffered to as "third party services" or "external platform".\cite{apiintegration}  SureThing requires constant access to current football data. After choosing an appropriate API, it has to be integrated into the application. 
 
@@ -153,23 +156,68 @@ After some experiments with other urllib2, urllib3 and requests, \emph{requests}
 All interaction with the Football-API, including processing the received data, was separated out into a module \emph{football\_api\_wrapper\.py} or just "wrapper" for short. This module contains only one class, FootballAPIWrapper. Fields of the class accomodate the key elements of the interaction with the API that will be re-used in different methods of the wrapper, for example base url, path to the data directory.
 	
 \begin{figure}[H]
-\begin{center}
-\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/footballApiWrapperFields}
-\caption{Football API wrapper, fields} \label{fig:using:footballapiwrapperfields}
-\end{center}
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/footballApiWrapperFields}
+		\caption{Football API wrapper, fields} \label{fig:using:footballapiwrapperfields}
+	\end{center}
 \end{figure}
 	
 To get the response from Football-API takes about 11s, therefore it is nessessary to move the API calls into a task queue so they do not block the HTTP request-response cycle for the rest of the web application.
 
 \subsection{Visual Effects}
-Various visual effects were implemented with the help of jQuery, AJAX and the Flask-SocketsIO. 
+A number of visual effects was implemented with the help of jQuery, AJAX and the Flask-SocketsIO to improve the user experience. 
 
-A good example is an alert dismissal. SureThing generates many alerts that give the user feedback with regards to the action they have just taken. User has to dismiss the alert manually each time. To avoid this extra thing for a user to do, the alerts are removed from the page using jQuery fadeOut animation effect.
+A good example is an alert dismissal. SureThing generates many alerts that give the user feedback with regards to the action they have just taken. User has to dismiss the alert manually each time. To avoid this extra thing for a user to do, the alerts are removed from the page using jQuery fadeOut() and then slideUp() animation methods that fades the pop-up and then removes it with a sliding motion after 200ms of its appearance on the page. For compactness the screenshot shows the page opened in a browser simulation of an iPhone screen size. Responsive web design with regards to this project will be examined in more detail in the following subsection.
 
-picture
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/alert}
+		\caption{An example of an alert on the page appearing after user has logged out} \label{fig:alert}
+	\end{center}
+\end{figure}
 
-New message
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/alertFadeOut}
+		\caption{The same alert fading out.} \label{fig:alertFadeOut}
+	\end{center}
+\end{figure}
 
+Another example is a new message notification. Once user received a new in-app message notifying them about the results of their bets, the envelope-shaped icon on the top navigation menu that represents the in-app Inbox turns orange. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/alertFadeOut}
+		\caption{The same alert fading out.} \label{fig:alertFadeOut}
+	\end{center}
+\end{figure}
+
+When user navigates to the Inbox and reads or deletes all the new messages, the icon immediately turns grey notifying that there are no more unread messages in the box.
+ 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/newMessagesDesktopView}
+		\caption{You have new messages. Desktop View.} \label{fig:newMessagesDesktopView}
+	\end{center}
+\end{figure}
+
+This is what the same top navigation menu looks like for mobile users. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/newMessagesMobileView}
+		\caption{You have new messages. Mobile View.} \label{fig:newMessagesMobileView}
+	\end{center}
+\end{figure}
+
+User has opened the last unread message and the message icon has turned grey. Notice, how the top navigation menu partly covers the message view. The menu rolls back into a compact mode once the user clicks on the menu icon in the top right corner.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/noMoreNewMessages}
+		\caption{User just read the last new message, the icon turns grey.} \label{fig:noMoreNewMessages}
+	\end{center}
+\end{figure}
 
 \subsection{Responsive Design}
 The application is fully responsive. 
@@ -184,20 +232,50 @@ In this section will be described the technical details of the project implement
 The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was used to handle the common tasks of logging in and out, as well as new users registration. For the new users the application sends an email with verification token, expecting the user to confirm their email address. 
 
 \subsection{Matches Overview}
-Matches overview is a view diplayed on the main page of the application. It contains a list of upcoming and played matches.
+Matches Overview is a view diplayed on the main page of the application. It contains a list of upcoming and played matches (user can toggle between those two lists using navigation buttons). In both lists matches are grouped by dates as follows:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchesOverviewExample}
-		\caption{Matches Overview} \label{fig:using:matchesoverview}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchesGrouped}
+		\caption{Matches in the overview are grouped by date.} \label{fig:using:matchesgrouped}
+	\end{center}
+\end{figure}
+ 
+Each item in the list contains the most basic information about the match, such as names of teams participating in the match, kick-off date and time. This is an example of an unplayed match. The navigation buttons can be seen just above the first match in the list. Saved match is indicated by an floppy disk icon on the right hand side on the panel representing the match.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/unplayedMatch}
+		\caption{Example of an unplayed match displayed in the overview.} \label{fig:using:unplayedmatch}
+	\end{center}
+\end{figure}
+
+Below is an example of a played match. Notice that the final score of the match is displayed and instead of two buttons "Save" and "Preview" there is only one button "View match stats".
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/playedMatch}
+		\caption{Example of a played match displayed in the overview.} \label{fig:using:playedmatch}
+	\end{center}
+\end{figure}
+
+In case the match is being played at the very moment, it  is still shown in the list of "unplayed" matches and is displayed with a small badge "LIVE", indicating live event. A match is considered as "played" as soon as the full time score is available. Hence, it is possible to make match result prediction until the match is considered "played".
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/liveMatch}
+		\caption{Example of a live match displayed in the overview.} \label{fig:using:livematch}
 	\end{center}
 \end{figure}
 
 \subsubsection{User Journey}
-On the main page of the application user can see a list of upcoming matches. Above the list can be found simple navigation allowing to switch between lists of unplayed and played matches. The overview displays the most basic information about each match, such as names of teams participating in the match, kick-off date and time. On the right hand side of each list item there is a "Preview" button for an upcoming match and a "View Stats" button for a played match. By clicking those buttons user can navigate to views with more detailed information about the match. 
+\label{subsec:matchesoviewuserjourney}
+Just above the list can be found simple navigation allowing to switch between the lists of unplayed and played matches. On the right hand side of each list item there is a "Preview" button for an upcoming match and a "View match stats" button for a played match. By clicking those buttons user can navigate to views with more detailed information about the match. User can save the match to the dashboard by clicking "Save" button. This action can be carried out only for an unplayed match.  
 
 \subsection{Prediction}
-The implementation of the prediction feature was already outlined in the chapter "Requirements Analysis", subsection "Definitions" \cite{subsec:definitions}. In this subsection I would like to decribe this key feature of the application in more detail. The application has three levels of prediction settings (weights). Firstly, it is the "default prediction settings" - a set of weights recommended to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also allows users to set match specific settings that will only apply to one match. 
+\label{subsec:matchesoviewuserjourney}
+
+The implementation of the prediction feature was already briefly outlined in the chapter "Requirements Analysis", subsection "Definitions" \cite{subsec:definitions}. In this subsection I would like to decribe this key feature of the application in more detail. The application has three levels of prediction settings (weights). Firstly, it is the "default prediction settings" - a set of weights recommended to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also allows users to set match specific settings that will only apply to one match. 
  
 
 
@@ -205,13 +283,17 @@ how the overall prediction is calculated, weighted prediction
 
 \subsection{Upcoming Match View}
 \label{subsec:implementupcomingmatchview}
-Implementation of this view was one the most complex development tasks of the whole project.
+Implementation of this view was one the most complex development tasks of the whole project. The view allows user to preduct the match result.
+
+SureThing user can navigate to this view either from the \emph{upcoming matches overview} on the main page or from the \emph{dashboard} (if the match has already been saved to the dashboard). Depending on the user route to this view, the Upcoming Match Preview will be displayed differently.
+
+If the user is coming to the Upcoming Match Preview from the \emph{main page}, the view will display the match header (containing general information about the teams, last played game, match kick-off time and date, etc.), a list of prediction modules and a \textbf{prediction value} for each module, calculated based on the relevant piece of statistics for each of the teams. This information should be sufficient for the user to decide, whether it is worth saving the match to the dashboard for a later revision. An unauthorised user would be able to see the same overview, but the "Save" button will be disabled. It is possible to say that if user navigates to the Upcoming Match View from the main page, they can see the view in the "read-only" mode. 
+
+In case user has already saved the match to the dashboard and navigates to the view by clicking on the saved match panel, the view will enable the prediction feature. In the each of the prediction modules user will be able to see an embedded input field with weight percentages inside the field. The value displayed inside the field is the value that will be used for calculating the match result prediction. If this is the first time user previews the match, the prediction weights will be either the \emph{system default} (in case user has not set overriden the default settings yet) or the \emph{user} prediction settings. As mentioned in the User can set the 
 
 \subsubsection{User journey}
 \label{subsec:upcomingmatchviewuserjourney}
-The user can navigate to this view either from the matches overview on the main page or from the dashboard (if the match has already been saved to the dashboard).
 
- If the user is coming to the upcoming match preview from the \emph{main page}, it will display the match header (containing general information about the teams, last played game, match kick-off time and date, etc.), a list of prediction modules and a \emph{prediction value} for each module calculated based on the relevant statistics for each of the teams. This information should be sufficient for the user to decide, whether it is worth saving the match to the dashboard for a latter revision. An unauthorised user would be able to see the same overview, but the "Save" button will be disabled. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -236,18 +318,34 @@ First of all, in each prediction module they will see an input fields for settin
 \subsection{Played Match View}
 \label{subsec:playedmatchview}
 
-\subsection{Possible Future Enchancement}
-\label{subsec:enchancement}
+\subsection{Dashboard}
+\label{subsec:dashboard}
 
-Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture.
+
+\subsection{Notifications}
+\label{subsec:notifications}
+
 
 \section{Application Performance}
+\label{sec:applicationperformance}
+Performance is a very important aspect of a web application. DEF 
+
+response time 
+
 sockets, threads
 multithreading
 how I fixed performance on Match.update\_all\_matches
 
 \subsection{Deploying the Application}
 Cloud Deployment is the most recent trend in application hosting. The formal name of this technologu is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.
+
+\section{Possible Future Enchancement}
+\label{sec:enchancement}
+The application can be further developed in many ways.  
+
+When putting together the project requirements, a number of optional requirements were outlined. 
+
+Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture.
 
 \section{Conclusions}
 The main conclusions for this chapter.

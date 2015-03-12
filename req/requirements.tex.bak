@@ -156,11 +156,12 @@ The application will attempt to put all the relevant statistics in one place and
 \section{Requirements}
 \label{sec:requirements}
 
-Computer Systems life cycle consists of five phases: Requirements and Analysis, Design, Implementation, Testing and Evolution. Then, after Evolution, the cycle can start again with an additional set of requirements. Therefore, the Requirements analysis is a crucial part of the project and the cornerstone of the software development life cycle. Requirements analysis involves gathering information in order to meet customer needs and defining what the future application is expected to do. This phase is especially important in the real world environment, when developing an application for a customer. In this case, clarifying the requirements in the early stages of the project would help to ensure that both sides understand and agree on the feature set of the future application. 
+Computer Systems life cycle consists of five phases: Requirements and Analysis, Design, Implementation, Testing and Evolution. Then, after Evolution, the cycle can start again with an additional set of requirements. \cite{book:softwareengineering} defines requirement as follows: "A \emph{requirement} conveys an essential property that the system must or should satisfy." Requirements analysis involves gathering information in order to meet customer needs and defining what the future application is expected to do. 
+This phase of software engineering is especially important in the industrial environment, when developing an application for a customer. In this case, clarifying the requirements in the early stages of the project would help to ensure that both sides understand and agree on the feature set of the future application. 
 
 Although it is not very likely that requirements for this project will change during the development process, defining requirements can be very beneficial. The detailed requirements analysis will aid understanding how different parts of the project are expected to interact with each other, as well as how the application will communicate with its users.
 
-For better transparency project requirements have been split into functional and non-functional requirements.
+For better transparency project requirements have been split into functional and non-functional requirements. Functional requirements will be further subdivided into mandatory and optional, depending on the degree of constraints.
 
 Before outlining project requirements, I would like to start with some definitions relevant to the whole project.
 
@@ -192,8 +193,8 @@ Functional requirements describe the behaviour of the application in terms of it
  
 In order to add structure to the design and development process, the project has been broken down into high level features of the future application. The functional requirements are grouped by the functionality related to these features.
 
-\subsubsection{General Web Application Requirements }
-\label{sec:generalwebrequirements}
+\subsubsection{Authentication and User Profile}
+\label{sec:authrequirements}
 These are the requirements related to the basic functionality of the web application, such as account registration, login and account management.
 
 \begin{itemize}
@@ -284,6 +285,10 @@ Committed games are marked in the dashboard (red dot)
 Played games are marked in the dashboard (grey font)
 Once user committed games has started (observer, onchange on a filed), it should indicate the winnings and write to db
 Fix the kits
+
+\subsubsection{Notifications}
+\label{sec:notifications}
+Below are listed requirements relating to the messages.
 
 \subsubsection{Optional requirements}
 \label{sec:optionalrequirements}
