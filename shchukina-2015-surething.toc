@@ -82,21 +82,21 @@
 \contentsline {subsection}{\numberline {5.5.5}Played Match View}{45}{subsection.5.5.5}
 \contentsline {subsection}{\numberline {5.5.6}Dashboard}{45}{subsection.5.5.6}
 \contentsline {subsection}{\numberline {5.5.7}Notifications}{45}{subsection.5.5.7}
-\contentsline {section}{\numberline {5.6}Application Performance}{45}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Deploying the Application}{45}{subsection.5.6.1}
-\contentsline {section}{\numberline {5.7}Possible Future Enchancement}{45}{section.5.7}
-\contentsline {section}{\numberline {5.8}Conclusions}{45}{section.5.8}
-\contentsline {chapter}{\numberline {6}Evaluation \& Testing}{46}{chapter.6}
-\contentsline {section}{\numberline {6.1}Conclusions}{46}{section.6.1}
-\contentsline {chapter}{\numberline {7}Conclusion}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}Assessment of Success}{47}{section.7.1}
-\contentsline {section}{\numberline {7.2}Improvements and Future Work}{47}{section.7.2}
-\contentsline {chapter}{\numberline {A}Wireframes}{48}{appendix.A}
-\contentsline {chapter}{\numberline {B}Installation Instructions}{50}{appendix.B}
-\contentsline {chapter}{\numberline {C}Project Specification}{51}{appendix.C}
-\contentsline {section}{\numberline {C.1}Functional Requirements}{51}{section.C.1}
-\contentsline {section}{\numberline {C.2}Non-Functional Requirements}{51}{section.C.2}
-\contentsline {chapter}{\numberline {D}Project Management}{52}{appendix.D}
-\contentsline {chapter}{\numberline {E}Another Appendix}{53}{appendix.E}
-\contentsline {chapter}{\numberline {F}Implementation}{56}{appendix.F}
-\contentsline {chapter}{\numberline {G}Project Log}{57}{appendix.G}
+\contentsline {section}{\numberline {5.6}Application Performance}{46}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Deploying the Application}{46}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}Possible Future Enchancement}{47}{section.5.7}
+\contentsline {section}{\numberline {5.8}Conclusions}{47}{section.5.8}
+\contentsline {chapter}{\numberline {6}Evaluation \& Testing}{48}{chapter.6}
+\contentsline {section}{\numberline {6.1}Conclusions}{48}{section.6.1}
+\contentsline {chapter}{\numberline {7}Conclusion}{49}{chapter.7}
+\contentsline {section}{\numberline {7.1}Assessment of Success}{49}{section.7.1}
+\contentsline {section}{\numberline {7.2}Improvements and Future Work}{49}{section.7.2}
+\contentsline {chapter}{\numberline {A}Wireframes}{50}{appendix.A}
+\contentsline {chapter}{\numberline {B}Installation Instructions}{52}{appendix.B}
+\contentsline {chapter}{\numberline {C}Project Specification}{53}{appendix.C}
+\contentsline {section}{\numberline {C.1}Functional Requirements}{53}{section.C.1}
+\contentsline {section}{\numberline {C.2}Non-Functional Requirements}{53}{section.C.2}
+\contentsline {chapter}{\numberline {D}Project Management}{54}{appendix.D}
+\contentsline {chapter}{\numberline {E}Another Appendix}{55}{appendix.E}
+\contentsline {chapter}{\numberline {F}Implementation}{58}{appendix.F}
+\contentsline {chapter}{\numberline {G}Project Log}{59}{appendix.G}

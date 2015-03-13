@@ -342,7 +342,7 @@ The overall prediction is displayed underneath all modules, in a separate panel.
 \label{subsec:upcomingmatchviewuserjourney}
 In the \textbf{read-only} mode the user can save the match to the dashboard by clicking "Save" button. 
 
-In the \textbf{prediction} mode the user can update the prediction settings by overriding the current values in each of the input fields and pressing the button "Update" that is located at the bottom of the view. The overall prediction output will change every time the user updates the prediction settings or changes the hunch value. Once satisfied with the prediction outcome, the user can commit the match by pressing "Commit" button that is located next to "Update". Before the end of the match, the user can still navigate to the view and see the match info and the prediction. However, this time "Update" and "Commit" buttons will be disabled.
+In the \textbf{prediction} mode the user can update the prediction settings by overriding the current values in each of the input fields and pressing the button "Update" that is located at the bottom of the view. The overall prediction output will change every time the user updates the prediction settings or changes the hunch value. Once satisfied with the prediction outcome, the user can commit the match by pressing "Commit" button that is located next to "Update". Before the end of the match, the user can still navigate to the committed match view and see the all the details, including the prediction values, used weights and the final prediction. However, this time "Update" and "Commit" buttons will be disabled.
 
 \begin{figure}[H]
 	\begin{center}
@@ -372,10 +372,42 @@ how the overall prediction is calculated, weighted prediction
 
 \subsection{Dashboard}
 \label{subsec:dashboard}
+Dashboard is the user's personal area. User can save matches to the dashboard, view them and make predictions using the dashboard as a starting point. 
+
+\subsubsection*{User journey}
+\label{subsec:dashboarduserjourney}
 
 
 \subsection{Notifications}
 \label{subsec:notifications}
+\emph{Notifications} feature represents the one-way communication flow from SureThing to the application user. Every time a match commited by the user is finished (from the technical point of view, the match is changing its status to "played"), the application sends users messages notifying them whether their prediction guess was successfull. Message contains some detailed information about the user prediction, as well as a link to the \emph{Played Match View}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/message}
+		\caption{An example of a message sent to the user.} \label{fig:using: message}
+	\end{center}
+\end{figure}
+
+\subsubsection*{User journey}
+\label{subsec:notificationsuserjourney}
+Authenticated user can navigate to the notifications inbox by pressing the envelope-shaped icon located on the right-hand side of the navigation menu. Notice how the icon is orange in the screenshot below. It means that the inbox contains unread messages.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/navigationMenu}
+		\caption{Navi} \label{fig:using: navigationMenu}
+	\end{center}
+\end{figure}
+
+This is the notifications inbox. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/inbox}
+		\caption{User inbox.} \label{fig:using: inbox}
+	\end{center}
+\end{figure}
 
 
 \section{Application Performance}

@@ -372,10 +372,42 @@ how the overall prediction is calculated, weighted prediction
 
 \subsection{Dashboard}
 \label{subsec:dashboard}
+Dashboard is the user's personal area. User can save matches to the dashboard, view them and make predictions using the dashboard as a starting point. 
+
+\subsubsection*{User journey}
+\label{subsec:dashboarduserjourney}
 
 
 \subsection{Notifications}
 \label{subsec:notifications}
+\emph{Notifications} feature represents the one-way communication flow from SureThing to the application user. Every time a match commited by the user is finished (from the technical point of view, the match is changing its status to "played"), the application sends users messages notifying them whether their prediction guess was successfull. Message contains some detailed information about the user prediction, as well as a link to the \emph{Played Match View}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/message}
+		\caption{An example of a message sent to the user.} \label{fig:using: message}
+	\end{center}
+\end{figure}
+
+\subsubsection*{User journey}
+\label{subsec:notificationsuserjourney}
+Authenticated user can navigate to the notifications inbox by pressing the envelope-shaped icon located on the right-hand side of the navigation menu. Notice how the icon is orange in the screenshot below. It means that the inbox contains unread messages.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/navigationMenu}
+		\caption{Navigation menu panel with an inbox icon.} \label{fig:using: navigationMenu}
+	\end{center}
+\end{figure}
+
+Once the user clicks on the icon, the application takes them to the notifications inbox. Notice that unread messages are displayed in bold font.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/inbox}
+		\caption{User inbox.} \label{fig:using: inbox}
+	\end{center}
+\end{figure}
 
 
 \section{Application Performance}
