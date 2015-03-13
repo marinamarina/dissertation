@@ -22,7 +22,7 @@ In order to handle time-consuming and repetitive tasks on the front end side, th
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.60\linewidth,natwidth=610,natheight=540]{impl/images/gruntInAction}
-		\caption{Grunt running in terminal.} \label{fig:using:gruntInAction}
+		\caption{A screenshot from the terminal output after running Grunt.} \label{fig:using:gruntInAction}
 	\end{center}
 \end{figure}
 	
@@ -165,7 +165,7 @@ All interaction with the Football-API, including processing the received data, w
 To get the response from Football-API takes about 11s, therefore it is nessessary to move the API calls into a task queue so they do not block the HTTP request-response cycle for the rest of the web application.
 
 \subsection{Visual Effects}
-A number of visual effects was implemented with the help of jQuery, AJAX and the Flask-SocketsIO to improve the user experience. 
+A number of visual effects was implemented with the help of jQuery, AJAX and the Websockets (Flask extention Flask-SocketsIO) to improve the user experience. 
 
 A good example is an alert dismissal. SureThing generates many alerts that give the user feedback with regards to the action they have just taken. User has to dismiss the alert manually each time. To avoid this extra thing for a user to do, the alerts are removed from the page using jQuery fadeOut() and then slideUp() animation methods that fades the pop-up and then removes it with a sliding motion after 200ms of its appearance on the page. For compactness the screenshot shows the page opened in a browser simulation of an iPhone screen size. Responsive web design with regards to this project will be examined in more detail in the following subsection.
 
@@ -220,19 +220,19 @@ User has opened the last unread message and the message icon has turned grey. No
 \end{figure}
 
 \subsection{Responsive Design}
-The application is fully responsive. 
+SureThing is a fully responsive web application. The application utilizes Bootstrap3. 
 see Appendices
 
 
 \section{Features Implementation}
-In this section will be described the technical details of the project implementation. Each susbsection is bound to the high level feature of the application, as indroduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}.
+In this section will be described the technical details of the project implementation. Each susbsection is bound to the high level feature of the application, as indroduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}. "User journey", or possible user interactions with the system, will be demonstrated for each view.
 
 \subsection{Authentication and User Profile}
 
 The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was used to handle the common tasks of logging in and out, as well as new users registration. For the new users the application sends an email with verification token, expecting the user to confirm their email address. 
 
 \subsection{Matches Overview}
-Matches Overview is a view diplayed on the main page of the application. It contains a list of upcoming and played matches (user can toggle between those two lists using navigation buttons). In both lists matches are grouped by dates as follows:
+Matches Overview is a view displayed on the main page of the application. It contains lists of upcoming and played matches and the user can toggle between those two lists using navigation buttons. In both lists matches are grouped by dates as follows:
 
 \begin{figure}[H]
 	\begin{center}
@@ -241,7 +241,7 @@ Matches Overview is a view diplayed on the main page of the application. It cont
 	\end{center}
 \end{figure}
  
-Each item in the list contains the most basic information about the match, such as names of teams participating in the match, kick-off date and time. This is an example of an unplayed match. The navigation buttons can be seen just above the first match in the list. Saved match is indicated by an floppy disk icon on the right hand side on the panel representing the match.
+Each panel representing a match contains the most basic information about the event, such as names of participating teams, kick-off date and time. The screenshot below is an example of a panel displaying an unplayed match. The navigation buttons can be seen just above the first match in the list. Match already saved to the Dashboard by the authenticated user is indicated by a floppy disk icon on the right hand side of the panel.
 
 \begin{figure}[H]
 	\begin{center}
@@ -250,7 +250,7 @@ Each item in the list contains the most basic information about the match, such 
 	\end{center}
 \end{figure}
 
-Below is an example of a played match. Notice that the final score of the match is displayed and instead of two buttons "Save" and "Preview" there is only one button "View match stats".
+Below can be found a screenshot of a played match panel. Notice that the final score of the match is displayed and instead of two buttons "Save" and "Preview" there is only one button - "View match stats".
 
 \begin{figure}[H]
 	\begin{center}
@@ -259,7 +259,7 @@ Below is an example of a played match. Notice that the final score of the match 
 	\end{center}
 \end{figure}
 
-In case the match is being played at the very moment, it  is still shown in the list of "unplayed" matches and is displayed with a small badge "LIVE", indicating live event. A match is considered as "played" as soon as the full time score is available. Hence, it is possible to make match result prediction until the match is considered "played".
+In case the match is being played at the very moment, it still belongs to the list of "unplayed" matches and is displayed with a small badge "LIVE", indicating live event. A match is considered as "played" as soon as the full time score is available. Hence, it is possible to make "bets" until the moment the match is considered "played".
 
 \begin{figure}[H]
 	\begin{center}
@@ -268,31 +268,81 @@ In case the match is being played at the very moment, it  is still shown in the 
 	\end{center}
 \end{figure}
 
-\subsubsection{User Journey}
+\subsubsection*{User Journey}
 \label{subsec:matchesoviewuserjourney}
-Just above the list can be found simple navigation allowing to switch between the lists of unplayed and played matches. On the right hand side of each list item there is a "Preview" button for an upcoming match and a "View match stats" button for a played match. By clicking those buttons user can navigate to views with more detailed information about the match. User can save the match to the dashboard by clicking "Save" button. This action can be carried out only for an unplayed match.  
-
-\subsection{Prediction}
-\label{subsec:predictionimplementation}
-The implementation of the prediction feature was already briefly outlined in the chapter "Requirements Analysis", subsection "Definitions" \cite{subsec:definitions}. In this subsection I would like to decribe this key feature of the application in more detail. The application has three levels of prediction settings (weights). Firstly, it is the "default prediction settings" - a set of weights recommended to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also allows users to set match specific settings that will only apply to one match. 
- 
-
-
-how the overall prediction is calculated, weighted prediction
+Just above the list can be found simple navigation allowing to switch between the lists of unplayed and played matches. On the right hand side of each list item there is a "Preview" button for an upcoming match and a "View match stats" button for a played match. By clicking those buttons user can navigate to views with more detailed information about the match (\emph{Upcoming Match View} or \emph{Played Match View}). User can save the match to the dashboard by clicking "Save" button. This action can be carried out only for an unplayed match.  
 
 \subsection{Upcoming Match View}
 \label{subsec:implementupcomingmatchview}
-Implementation of this view was one the most complex development tasks of the whole project. The view allows user to preduct the match result.
+Implementation of this view was one the most complex development tasks of the whole project. This is the essense of SureThing - view allowing the user to predict match results. 
 
-SureThing user can navigate to this view either from the \emph{upcoming matches overview} on the main page or from the \emph{dashboard} (if the match has already been saved to the dashboard). Depending on the user route to this view, the Upcoming Match Preview will be displayed differently.
+Authenticated SureThing user can navigate to this view either by clicking a "Preview" button on an upcoming match panel in the \emph{Matches Overview} or by clicking the same button on a saved match panel in the user \emph{Dashboard} (if the match has already been saved by the user). Depending on the user route to this view, the Upcoming Match Preview will be displayed differently.
 
-If the user is coming to the Upcoming Match Preview from the \emph{main page}, the view will display the match header (containing general information about the teams, last played game, match kick-off time and date, etc.), a list of prediction modules and a \textbf{prediction value} for each module, calculated based on the relevant piece of statistics for each of the teams. This information should be sufficient for the user to decide, whether it is worth saving the match to the dashboard for a later revision. An unauthorised user would be able to see the same overview, but the "Save" button will be disabled. It is possible to say that if user navigates to the Upcoming Match View from the main page, they can see the view in the "read-only" mode. 
+\subsubsection*{Read-only mode}
+If the user is coming to the Upcoming Match Preview from the \emph{main page}, the view will display the match header (containing general information about the teams, last played game, match kick-off time and date, etc.) and a list of prediction modules with \textbf{prediction values} calculated based on the relevant piece of statistics for each of the teams. These are the prediction modules available in this view: 
 
-In case user has already saved the match to the dashboard and navigates to the view by clicking on the saved match panel, the view will enable the prediction feature. In the each of the prediction modules user will be able to see an embedded input field with weight percentages inside the field. The value displayed inside the field is the value that will be used for calculating the match result prediction. If this is the first time user previews the match, the prediction weights will be either the \emph{system default} (in case user has not set overriden the default settings yet) or the \emph{user} prediction settings. As mentioned in the \cite{subsec:predictionimplementation}user can set the match specific prediction settings by simply changing the input values in the fields and submitting the weights by clicking "Save" button.
+\begin{enumerate}
+	\item Module League Position
+	\item Module Form
+	\item Module Home/Away
+\end{enumerate}
 
-\subsubsection{User journey}
+"Save" button can be found at the very bottom of the view.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/upcomingMatchView}
+		\caption{Upcoming Match View in the "read-only" mode: match header and the first prediction module, Module League Position.} 
+		\label{fig:using:upcominmatchview}
+	\end{center}
+\end{figure}
+
+This information should be sufficient for the user to decide, whether it is worth saving the match to the dashboard for a later revision. An unauthorised user would be able to see the same content, but the "Save" button will be disabled. We can say that if user navigates to the Upcoming Match View from the main page, they can see the view in the \textbf{read-only mode}. It is also important to note that this is one of few views that are available for an unauthorised user.
+
+\subsubsection*{Prediction mode}
+In case user has already saved the match to the dashboard and navigates to the view by clicking on a saved match panel, the view will enable the prediction feature. This time the view is displayed in the \textbf{prediction mode}. In each of the prediction modules user will be able to see an embedded input field with weight percentages inside the field. Below can be found a screenshot of a same part of the view as the one above, displayed in prediction mode.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/upcomingMatchViewSM}
+		\caption{Upcoming Match View in the "prediction" mode: match header and the first prediction module, Module League Position.} \label{fig:using:upcominmatchviewSM}
+	\end{center}
+\end{figure}
+
+The values displayed inside the fields will be used for calculating the overall match result prediction. If this is the first time user previews the match, the prediction weights will be either the \textbf{system default} (in case user has not set the prediction settings in the dashboard yet) or the \textbf{user default} prediction settings. If user has already visited this page before and set the match specific settings, the values displayed inside the input fields will be the \textbf{match specific} ones. Any module can be eliminated from the prediction by setting its weight to 0\%. The total sum of prediction weights must equal to 100\%.
+
+These are the prediction modules available to the user in the prediction mode:
+
+\begin{enumerate}
+	\item Module League Position
+	\item Module Form
+	\item Module Home/Away
+	\item User Hunch
+\end{enumerate}
+
+Notice, the extra module is available in this view - User Hunch. This module is very important to the prediction process. User can personalise the prediction by choosing Home, Away or Draw value in the User Hunch module panel. The module will be explained in more detail in the subsection, "Prediction" \cite{subsec:predictionimplementation}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/userHunch}
+		\caption{Module User Hunch.} \label{fig:using:userHunch}
+	\end{center}
+\end{figure}
+
+The overall prediction is displayed underneath all modules, in a separate panel.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/prediction}
+		\caption{Match result prediction.} \label{fig:using:prediction}
+	\end{center}
+\end{figure}
+
+\subsubsection*{User journey}
 \label{subsec:upcomingmatchviewuserjourney}
+In the \textbf{read-only} mode the user can save the match to the dashboard by clicking "Save" button. 
 
+In the \textbf{prediction} mode the user can update the prediction settings by overriding the current values in each of the input fields and pressing the button "Update" that is located at the bottom of the view. The overall prediction output will change every time the user updates the prediction settings or changes the hunch value. Once satisfied with the prediction outcome, the user can commit the match by pressing "Commit" button that is located next to "Update". Before the end of the match, the user can still navigate to the committed match view and see the all the details, including the prediction values, used weights and the final prediction. However, this time "Update" and "Commit" buttons will be disabled.
 
 \begin{figure}[H]
 	\begin{center}
@@ -304,16 +354,19 @@ In case user has already saved the match to the dashboard and navigates to the v
 If the user comes to the upcoming match preview from the \emph{dashboard}, they will be able to see more information related to the actual result prediction and betting.
 First of all, in each prediction module they will see an input fields for setting match specific prediction weights. Secondly, they will see a user hunch module. Finally, at the very bottom of the overview they will see calculated prediction result and two buttons - one to save the match specific settings and another to commit the bet.
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchoverviewex_from_main_page}
-		\caption{An example of a prediction module in the Match Preview, user navigated from the dashboard.} \label{fig:using: matchoverviewex_from_main_page}
-	\end{center}
-\end{figure}
 
-
- most Explain how was implemented user hunch: combination of Flask Ajax and Sockets IO!!!
+most Explain how was implemented user hunch: combination of Flask Ajax and Sockets IO!!!
  
+\subsection{Prediction}
+\label{subsec:predictionimplementation}
+After getting familiar with the \emph{Upcoming Match View}, the next logical step is to introduce the reader of this report with the Prediction feature of the application. This will aid understanding how to use the \emph{Upcoming Match View} and what kind of information is available to us in this view.
+
+The implementation of the Prediction feature was already briefly outlined in the chapter "Requirements Analysis", subsection "Definitions" \cite{subsec:definitions}. In this subsection I would like to decribe this key feature of the application in more detail. The application has three levels of prediction settings (weights). Firstly, it is the "default prediction settings" - a set of weights recommended to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also allows users to set match specific settings that will only apply to one match. 
+ 
+
+
+how the overall prediction is calculated, weighted prediction
+
 \subsection{Played Match View}
 \label{subsec:playedmatchview}
 

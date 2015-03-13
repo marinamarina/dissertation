@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Squawka\relax }}{8}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Grunt running in terminal.\relax }}{26}{figure.caption.10}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A screenshot from the terminal output after running Grunt.\relax }}{26}{figure.caption.10}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Index page route example.\relax }}{28}{figure.caption.11}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Function responsible for creation of the application.\relax }}{29}{figure.caption.12}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Blueprints registration.\relax }}{30}{figure.caption.13}
@@ -24,17 +24,20 @@
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Example of an unplayed match displayed in the overview.\relax }}{39}{figure.caption.25}
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Example of a played match displayed in the overview.\relax }}{39}{figure.caption.26}
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Example of a live match displayed in the overview.\relax }}{39}{figure.caption.27}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces An example of a prediction module in the Match Preview, user navigated from the main page.\relax }}{41}{figure.caption.28}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces An example of a prediction module in the Match Preview, user navigated from the dashboard.\relax }}{42}{figure.caption.29}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Upcoming Match View in the "read-only" mode: match header and the first prediction module, Module League Position.\relax }}{41}{figure.caption.30}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Upcoming Match View in the "prediction" mode: match header and the first prediction module,\textbf {Module League Position}.\relax }}{42}{figure.caption.32}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Module User Hunch.\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Match result prediction.\relax }}{43}{figure.caption.34}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces An example of a prediction module in the Match Preview, user navigated from the main page.\relax }}{44}{figure.caption.36}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Wireframes, initial design\relax }}{47}{figure.caption.30}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Inital sketch of wireframe ideas\relax }}{47}{figure.caption.31}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Wireframes, initial design\relax }}{49}{figure.caption.37}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Inital sketch of wireframe ideas\relax }}{49}{figure.caption.38}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces A Sideways Figure}}{53}{figure.caption.33}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces A Sideways Figure}}{55}{figure.caption.40}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
