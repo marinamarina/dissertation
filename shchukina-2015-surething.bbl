@@ -1,143 +1,158 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{25}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{wiki:bet365}
-Wikipedia. Bet365 --- {W}ikipedia{,} The Free Encyclopedia; 2015.
-\newblock [Accessed 22-Feb-2015].
-\newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}.
+\bibitem[ADDED(2015)]{documentation:Jinja2}
+TO~BE ADDED.
+\newblock Jinja2, full featured template engine for python.
+\newblock [Online]. Available from: \url{http://jinja.pocoo.org/}, 2015.
+\newblock [Accessed 14-Oct-2014].
 
-\bibitem{documentation:HTML}
-WHATWG W. HTML (HyperText Markup Language); 2014.
-\newblock \url{http://www.w3.org/html/}.
-
-\bibitem{article:BEMForSmallProjects}
-Shirshin M. Scaling Down The BEM Methodology For Small Projects; 2014.
-\newblock
-  \url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}.
-
-\bibitem{book:Grindberg2014FlaskWebDevelopment}
-Grindberg M.
-\newblock {Flask Web Development. Developing Web Applications with Python.}
-\newblock O’Reilly Media; 2014.
-
-\bibitem{article:goodArchitecture}
-Florestan N. Large web apps in Python: A good architecture.; 2015.
+\bibitem[Bayer and various contributors(2014)]{documentation:SqlAlchemy}
+Michael Bayer and various contributors.
+\newblock Sqlalchemy orm.
 \newblock [Online]. Available from:
-  \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html}.
+  \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}, 2014.
 
-\bibitem{wiki:GitHub}
-Wikipedia. GitHub --- {W}ikipedia{,} The Free Encyclopedia; 2015.
-\newblock [Accessed 9-Mar-2015].
-\newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/GitHub}.
+\bibitem[Bocoup(2015)]{documentation:Grunt}
+Open Web Community~Development Bocoup.
+\newblock The javascript task runner.
+\newblock [Online]. Available from: \url{http://gruntjs.com/}, 2015.
 
-\bibitem{article:httpRequestsExceptions}
-Boxall J. A Python guide to handling HTTP request failures; 2014.
+\bibitem[Boxall(2014)]{article:httpRequestsExceptions}
+John Boxall.
+\newblock A python guide to handling http request failures.
 \newblock [Online]. Available from:
-  \url{http://www.mobify.com/blog/http-requests-are-hard/}.
+  \url{http://www.mobify.com/blog/http-requests-are-hard/}, 2014.
 
-\bibitem{documentation:PythonRequests}
-Reitz K. Requests; 2015.
-\newblock [Online]. Available from:
-  \url{http://docs.python-requests.org/en/latest/api/}.
+\bibitem[Checker(2015)]{web:Oddschecker}
+Odds Checker.
+\newblock Your bets bet.
+\newblock [Online]. Available from: \url{ http://www.oddschecker.com/}, 2015.
 
-\bibitem{documentation:BEM}
-Yandex. BEM Methodology; 2005.
-\newblock \url{http://https://bem.info/}.
-
-\bibitem{article:SASS}
-Hampton~Catlin CE Natalie~Weizenbaum, various contributors. SASS Preprocessor;
-  2015.
-\newblock [Online]. Available from: \url{http://sass-lang.com/}.
-
-\bibitem{documentation:Bootstrap3}
-Twitter. Twitter Bootstrap CSS3 Framework; 2015.
-\newblock [Online]. Available from: \url{http://getbootstrap.com}.
-
-\bibitem{documentation:Javascript}
-International E. ECMAScript Language Specification. ECMA International; 2011.
-
-\bibitem{documentation:jQuery}
-Resig J. jQuery;.
-\newblock [Online]. Available from: \url{http://jquery.com/}.
-
-\bibitem{documentation:RequireJS}
-tobeadded. RequireJS, JavaScript file and module loader;.
-\newblock [Online]. Available from: \url{http://requirejs.org/}.
-
-\bibitem{documentation:JSON}
-Crockford D. JSON (JavaScript Object Notation);.
+\bibitem[Crockford(2015)]{documentation:JSON}
+Douglas Crockford.
+\newblock Json (javascript object notation).
 \newblock [Online]. Available from: \url{http://martinfowler.com/articles/
-  continuousIntegration.html#PracticesOfContinuousIntegration}.
+  continuousIntegration.html#PracticesOfContinuousIntegration}, 2015.
 
-\bibitem{documentation:Grunt}
-Bocoup OWCD. The JavaScript Task Runner;.
-\newblock [Online]. Available from: \url{http://gruntjs.com/}.
-
-\bibitem{documentation:Flask}
-Ronacher A, various contributors. Flask Micro Framework; 2014.
-\newblock [Online]. Available from: \url{http://flask.pocoo.org/}.
-
-\bibitem{documentation:SqlAlchemy}
-Bayer M, various contributors. SQLAlchemy ORM; 2014.
+\bibitem[Florestan(2015)]{article:goodArchitecture}
+Nando Florestan.
+\newblock Large web apps in python: A good architecture.
 \newblock [Online]. Available from:
-  \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}.
+  \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html},
+  2015.
+\newblock [Accessed 5-Mar-2015].
 
-\bibitem{article:API_Integration}
-Makai M. API Integration; 2015.
+\bibitem[Grindberg(2014)]{book:Grindberg2014FlaskWebDevelopment}
+Miguel Grindberg.
+\newblock \emph{{Flask Web Development. Developing Web Applications with
+  Python.}}
+\newblock O’Reilly Media, 2014.
+
+\bibitem[Hampton~Catlin and various contributors(2015)]{documentation:sass}
+Chris~Eppstein Hampton~Catlin, Natalie~Weizenbaum and various contributors.
+\newblock Sass preprocessor.
+\newblock [Online]. Available from: \url{http://sass-lang.com/}, 2015.
+
+\bibitem[International(2011)]{documentation:Javascript}
+ECMA International.
+\newblock Ecmascript language specification, 2011.
+
+\bibitem[Makai(2015)]{article:API_Integration}
+Matt Makai.
+\newblock Api integration.
 \newblock [Online]. Available from:
-  \url{http://www.fullstackpython.com/api-integration.html}.
+  \url{http://www.fullstackpython.com/api-integration.html}, 2015.
 
-\bibitem{web:Oddschecker}
-Checker O. Your Bets Bet; 2015.
-\newblock [Online]. Available from: \url{ http://www.oddschecker.com/}.
+\bibitem[Percival(2014)]{book:percival2014test}
+Harry~JW Percival.
+\newblock \emph{Test-Driven Development with Python}.
+\newblock " O'Reilly Media, Inc.", 2014.
 
-\bibitem{art:Moller2003HWRastArch}
-Akenine-M{\"o}ller T, Str{\"o}m J.
-\newblock {Graphics for the Masses: A Hardware Rasterization Architecture for
-  Mobile Phones}.
-\newblock ACM Trans Graph. 2003;22(3):801--808.
-\newblock Available from:
-  \url{http://www.cs.lth.se/home/Tomas_Akenine_Moller/pubs/masses.pdf}.
+\bibitem[Radice and Phillips(1998)]{sofwareenglineering}
+Ronald~A. Radice and Richard~W. Phillips.
+\newblock \emph{Software Engineering. An Industrial Approach.}
+\newblock Prentice-Hall, Inc., 1998.
 
-\bibitem{msc:Edberg2007FluxgateMagnetometer}
-Edberg T.
-\newblock {Evaluation and Optimisation of the SMILE Fluxgate Magnetometer} [MSc
-  Thesis].
-\newblock Royal Institute of Technology, Stockholm, Sweden; 2007.
-\newblock Available from:
-  \url{http://www.ee.kth.se/php/modules/publications/reports/2007/XR-EE-SPP_2007_001.pdf}.
+\bibitem[Reitz(2015)]{documentation:PythonRequests}
+Kenneth Reitz.
+\newblock Requests.
+\newblock [Online]. Available from:
+  \url{http://docs.python-requests.org/en/latest/api/}, 2015.
 
-\bibitem{phd:Grace2004MiddlewareMobile}
-Grace P.
-\newblock {Overcoming Middleware Heterogeneity in Mobile Computing
-  Applications} [PhD Thesis].
-\newblock Computing Department Lancaster University; 2004.
-\newblock Available from:
-  \url{http://www.lancs.ac.uk/postgrad/gracep/thesisfinal.pdf}.
+\bibitem[Resig(2015)]{documentation:jQuery}
+John Resig.
+\newblock jquery.
+\newblock [Online]. Available from: \url{http://jquery.com/}, 2015.
+\newblock [Accessed 4-Jan-2015].
 
-\bibitem{proc:Park2006UIMgtRmtRobots}
-Park JH, Kim KO, Jeon JW.
-\newblock {PDA based User Interface Management System for Remote Control
-  Robots}.
-\newblock In: SICE-ICASE, 2006. International Joint Conference; 2006. p.
-  417--420.
-\newblock Available from: \url{10.1109/SICE.2006.315333}.
+\bibitem[Ronacher and various
+  contributors(2015{\natexlab{a}})]{documentation:Flask}
+Armin Ronacher and various contributors.
+\newblock Flask micro framework.
+\newblock [Online]. Available from: \url{http://flask.pocoo.org/},
+  2015{\natexlab{a}}.
 
-\bibitem{web:berkeleyBOINC}
-{Berkeley University}. {Berkeley Open Infractructure for Network Computing};
-  2010.
-\newblock Available from: \url{http://boinc.berkeley.edu/} [cited 20 Sept
-  2010].
+\bibitem[Ronacher and various
+  contributors(2015{\natexlab{b}})]{documentation:FlaskApplicationFactories}
+Armin Ronacher and various contributors.
+\newblock Flask micro framework - application factories.
+\newblock [Online]. Available from:
+  \url{http://flask.pocoo.org/docs/0.10/patterns/appfactories/},
+  2015{\natexlab{b}}.
 
-\bibitem{web:Fear2005BookTabs}
-Fear S. {Publication Quality Tables in \LaTeX}; 2005.
-\newblock Available from:
-  \url{http://www.ctan.org/pub/tex-archive/macros/latex/contrib/booktabs/booktabs.pdf}
-  [cited 20 Sept 2010].
+\bibitem[Shirshin(2014)]{article:BEMForSmallProjects}
+Maxim Shirshin.
+\newblock Scaling down the bem methodology for small projects.
+\newblock
+  \url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/},
+  2014.
 
-\bibitem{zhou2005ada}
-Zhou H, Mao K.
-\newblock Adaptive Successive Erosion-based Cell Image Segmentation for p53
-  Immunohistochemistry in Bladder Inverted Papilloma.
-\newblock Conf Proc IEEE Eng Med Biol Soc. 2005;6.
+\bibitem[tobeadded(2015)]{documentation:RequireJS}
+tobeadded.
+\newblock Requirejs, javascript file and module loader.
+\newblock [Online]. Available from: \url{http://requirejs.org/}, 2015.
+\newblock [Accessed 4-Jan-2015].
+
+\bibitem[Twitter(2015)]{documentation:Bootstrap3}
+Twitter.
+\newblock Twitter bootstrap css3 framework.
+\newblock [Online]. Available from: \url{http://getbootstrap.com}, 2015.
+
+\bibitem[WHATWG(2014)]{documentation:HTML}
+W3C~\& WHATWG.
+\newblock Html (hypertext markup language).
+\newblock \url{http://www.w3.org/html/}, 2014.
+
+\bibitem[Wikipedia(2015{\natexlab{a}})]{wiki:GitHub}
+Wikipedia.
+\newblock Github --- {W}ikipedia{,} the free encyclopedia.
+\newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/GitHub},
+  2015{\natexlab{a}}.
+\newblock [Accessed 9-Mar-2015].
+
+\bibitem[Wikipedia(2015{\natexlab{b}})]{wiki:bet365}
+Wikipedia.
+\newblock Bet365 --- {W}ikipedia{,} the free encyclopedia.
+\newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365},
+  2015{\natexlab{b}}.
+\newblock [Accessed 22-Feb-2015].
+
+\bibitem[Wright(2013)]{article:howIstructureMyFlaskApps}
+Matt Wright.
+\newblock How i structure my flask applications.
+\newblock [Online]. Available from:
+  \url{http://mattupstate.com/python/2013/06/26/how-i-structure-my-flask-applications.html#s2l},
+  2013.
+\newblock [Accessed 12-Mar-2015].
+
+\bibitem[Yandex(2005)]{documentation:BEM}
+Yandex.
+\newblock Bem methodology.
+\newblock \url{http://https://bem.info/}, 2005.
 
 \end{thebibliography}

@@ -1,6 +1,47 @@
-\chapter{Evaluation \& Testing}\label{ch:Evaluation}
+\chapter{Testing \& Evaluation}\label{ch:TestAndEval}
 
 This chapter evaluates the overall project and provides results of tests carried out.
+
+\section{Testing}
+\subsection{Unit Testing}
+The implementaion phase of the project was carried out in accordance with Agile Development. One of the cornerstones of Agile philosophy is Test Driven Development or TDD. The essense of TDD is to write the tests before even writing the production code . 
+
+According to Miguel Grindberg\citep{book:Grindberg2014FlaskWebDevelopment}, "There are two very good reasons for writing unit tests. When implementing new functionality, unit tests are used to confirm that the new code is working in the expected way. ... A second, more important reason is that each time the application is modified, all the unit tests built around it can be executed to ensure that there are no regressions  in the existing code; in other words, that the new changes did not affect the way the older code works."
+
+ For this project it was especially important to provide good tests coverage for the business logic behind the model layer and the external service layer of the application \cite{sec:applicationarchitecture}. 
+
+Tests in this project are performed using Python \emph{unittest} library. 
+
+\subsection{Continuous Integration with Travis CI}
+As the application grows, it may become to take too long to run the unit tests. Therefore, it is worth automating this process by setting up a "Continuous Integration" or CI server. As a CI server was chosen Travis CI being easy to set up and available for free as a part of the GitHub Student Developer Pack. 
+The service takes care of the unit testing allowing the developer to focus purely on the development process. Travis builds are triggered automatically when developer checks in the project code into the GitHub repository. Intergating Travis CI was just a matter of creation a configuration file, travis.yml. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=540]{eval/images/travisYml}
+		\caption{Travis CI configuration file.} \label{fig:using:travisyml}
+\end{center}
+	
+A Travis status icon indicating whether the tests passed or failed was embedded into the README file. This is a convinient feature that helped to keep an eye on the build status from the GitHub repository.
+
+\end{figure}\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{eval/images/travisBadge}
+		\caption{An extract from README on GitHub. Travis status icon indicates that the last build passed.} \label{fig:using:travisbadge}
+	\end{center}
+\end{figure}
+
+\subsection{System Testing}
+
+
+System Testing – This will test the system as a whole. This will be run by the developer taking into account the users requirements. Test cases will be created from the requirements with the inputs and expected outputs noted before the testing starts. Some of the test cases may satisfy more than one of the requirements. The tests will be carried out via the black box testing technique.
+
+\subsection{User Acceptance Testing}
+
+\section{Evaluation}
+\subsection{}
+\subsection{Future Development}
+
 
 \section{Conclusions}
 

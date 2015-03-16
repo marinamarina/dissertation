@@ -9,106 +9,53 @@ A level-1 auxiliary file: design/design.aux
 A level-1 auxiliary file: impl/implementation.aux
 A level-1 auxiliary file: eval/evaluation.aux
 A level-1 auxiliary file: conclude/conclude.aux
-The style file: vancouver.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=20001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+The style file: plainnat.bst
 Database file #1: shchukina-2015-surething.bib
 Warning--I didn't find a database entry for "oddschecker"
-Warning--I didn't find a database entry for "bem"
-Warning--I didn't find a database entry for "sass"
-Warning--I didn't find a database entry for "bootstrap"
-Warning--I didn't find a database entry for "jquery"
-Warning--I didn't find a database entry for "requirejs"
-Warning--I didn't find a database entry for "flask"
-Warning--I didn't find a database entry for "sqlalchemy"
+Warning--I didn't find a database entry for "book:softwareengineering"
+Warning--I didn't find a database entry for "sec:applicationarchitecture"
 Warning--I didn't find a database entry for "apiintegration"
+Warning--I didn't find a database entry for "subsec:predictionimplementation"
 Warning--I didn't find a database entry for "subsec:definitions"
-Warning--empty author and editor in wiki:bet365
-Warning--missing publisher in wiki:bet365
-Warning--empty author and editor in documentation:HTML
-Warning--missing publisher in documentation:HTML
-Warning--empty author and editor in article:BEMForSmallProjects
-Warning--missing publisher in article:BEMForSmallProjects
-Warning--empty author and editor in article:goodArchitecture
-Warning--missing publisher in article:goodArchitecture
-Warning--empty author and editor in wiki:GitHub
-Warning--missing publisher in wiki:GitHub
-Warning--empty author and editor in article:httpRequestsExceptions
-Warning--missing publisher in article:httpRequestsExceptions
-Warning--empty author and editor in documentation:PythonRequests
-Warning--missing publisher in documentation:PythonRequests
-Warning--empty author and editor in documentation:BEM
-Warning--missing publisher in documentation:BEM
-Warning--empty author and editor in article:SASS
-Warning--missing publisher in article:SASS
-Warning--empty author and editor in documentation:Bootstrap3
-Warning--missing publisher in documentation:Bootstrap3
-Warning--empty author and editor in documentation:Javascript
-Warning--empty author and editor in documentation:jQuery
-Warning--missing publisher in documentation:jQuery
-Warning--there's a month but no year in documentation:jQuery
-Warning--empty author and editor in documentation:RequireJS
-Warning--missing publisher in documentation:RequireJS
-Warning--there's a month but no year in documentation:RequireJS
-Warning--empty author and editor in documentation:JSON
-Warning--missing publisher in documentation:JSON
-Warning--there's a month but no year in documentation:JSON
-Warning--empty author and editor in documentation:Grunt
-Warning--missing publisher in documentation:Grunt
-Warning--there's a month but no year in documentation:Grunt
-Warning--empty author and editor in documentation:Flask
-Warning--missing publisher in documentation:Flask
-Warning--empty author and editor in documentation:SqlAlchemy
-Warning--missing publisher in documentation:SqlAlchemy
-Warning--empty author and editor in article:API_Integration
-Warning--missing publisher in article:API_Integration
-Warning--empty author and editor in web:Oddschecker
-Warning--missing publisher in web:Oddschecker
-Warning--empty author and editor in web:berkeleyBOINC
-Warning--missing publisher in web:berkeleyBOINC
-Warning--empty author and editor in web:Fear2005BookTabs
-Warning--missing publisher in web:Fear2005BookTabs
-You've used 27 entries,
-            3169 wiz_defined-function locations,
-            809 strings with 9381 characters,
-and the built_in function-call counts, 18450 in all, are:
-= -- 2140
-> -- 136
-< -- 1
-+ -- 70
-- -- 34
-* -- 1284
-:= -- 2200
-add.period$ -- 67
-call.type$ -- 27
-change.case$ -- 4
-chr.to.int$ -- 0
-cite$ -- 72
-duplicate$ -- 1535
-empty$ -- 1849
-format.name$ -- 40
-if$ -- 4356
-int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 174
-newline$ -- 122
-num.names$ -- 27
-pop$ -- 429
+You've used 25 entries,
+            2773 wiz_defined-function locations,
+            736 strings with 9166 characters,
+and the built_in function-call counts, 7762 in all, are:
+= -- 679
+> -- 305
+< -- 25
++ -- 117
+- -- 90
+* -- 381
+:= -- 1200
+add.period$ -- 81
+call.type$ -- 25
+change.case$ -- 102
+chr.to.int$ -- 23
+cite$ -- 50
+duplicate$ -- 390
+empty$ -- 801
+format.name$ -- 125
+if$ -- 1673
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 6
+newline$ -- 139
+num.names$ -- 100
+pop$ -- 306
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 80
 quote$ -- 0
-skip$ -- 437
+skip$ -- 326
 stack$ -- 0
-substring$ -- 2562
-swap$ -- 392
-text.length$ -- 1
+substring$ -- 50
+swap$ -- 29
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 45
-while$ -- 124
-width$ -- 29
-write$ -- 265
-(There were 55 warnings)
+type$ -- 260
+warning$ -- 0
+while$ -- 75
+width$ -- 0
+write$ -- 319
+(There were 6 warnings)

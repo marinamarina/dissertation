@@ -1,23 +1,23 @@
 \chapter{Implementation}
 \label{ch:implementation}
-From a practical point of view, the aim of this project was to create a working web application that also makes use of the best available development practices, well-designed architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would support a large number of concurrent requests and stay highly responsive. Therefore, great emphasis will be put on the scalability and performance.  
+From a practical point of view, the aim of this project was to create a working web application that also makes use of the best available development practices, well-designed architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would support a large number of concurrent requests and stay highly responsive. Therefore, great emphasis was put on the scalability and performance.  
 
-This chapter examines the process of implementation of the web application. 
+This chapter examines the process of SureThing development. 
 
 \section{Choice of Technologies}
 \label{sec:choiceoftechnologies}
-The application will be built using a set of front end and back end technologies. In this section will be justified the choice made in favour of each separate technology used in the project. 
+The application will be built using a set of front end and back end technologies. In this section will be justified the choice made in favour of each particular technology used in the project. 
 
 \subsection{Front End}
 The markup of the future application will be coded using HTML 5 \cite{documentation:HTML}. The application markup will be built using BEM front end development approach \cite{documentation:BEM}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future \cite{article:BEMForSmallProjects}.
 
-CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \cite{documentation:SASS} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
+CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \cite{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
 
-On the top of that, a popular CSS framework Bootstrap 3 \cite{documentation:Bootstrap3} will be used. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used in the development. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
+In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3 \cite{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used in the development. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
  
 JavaScript, specifically JQuery library \cite{documentation:jQuery}, will be used to add animations and improve overall user experience from using the application.  
 
-In order to handle time-consuming and repetitive tasks on the front end side, the task-based command-line tool Grunt will be used. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
+In order to handle time-consuming and repetitive tasks on the front end side, the application will utilize the task-based command-line tool Grunt. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
 
 \begin{figure}[H]
 	\begin{center}
@@ -37,42 +37,42 @@ SQLAlchemy was chosen as database solution for this project \cite{documentation:
 
 \section{Application Architecture}
 \label{sec:applicationarchitecture}
-Application architecture is a base of a good quality software. The architecture of SureThing was from a big part dictated by the used framework, Flask, that uses a variation of MVC for Python called "MTV" (Model-Template-Controller). \cite{article:goodArchitecture} in his blog post describes this pattern in the following way:
+Application architecture is a base of a good quality software. The architecture of SureThing was from a big part dictated by the used framework Flask, that uses a variation of MVC for Python called "MTV" (Model-Template-Controller). Nando Florestan \cite{article:goodArchitecture} in his blog post describes this pattern in the following way:
 
 \begin{quote}
 "The template contains HTML content and presentation logic. It is written in a templating language ... It gets data from the view and outputs a web page. The view (also sometimes called “controller”), written in Python, is just glue code. It uses the web framework to put everything together. The model layer is essentially a persistence layer: its most important dependency is SQLAlchemy. The model knows how to save the data, constituting the most reusable code in the entire project."
 \end{quote}
 
-However, on the top of the standard MVC architecture SureThing requires few extra components to manage the loading of the data from an external source. Thus, this is the final structure of the architecture:
+However, on the top of the standard MVC architecture SureThing requires few extra components to manage the loading of the data from an external source. Hence, this is the final layout of the application architecture:
 
 \begin{itemize}
-    \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
-    \item \textbf{View Layer.} Holds association between URLs requested in the browser and Python functions or \emph{routes}. Routes are declared using an appropriate function decorator. Below can be found an excerpt from the application code. This is an route representing the index page.
+    \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to Florestan, \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
+    \item \textbf{View Layer.} Holds association between URLs requested in the browser and Python functions or \emph{routes}. Routes are declared using an appropriate function decorator. Below can be found an excerpt from the application code. This is a header of a route function that represents the index page.
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=.40\linewidth,natwidth=610,natheight=642]{impl/images/indexPageRoute}
+        \includegraphics[width=.50\linewidth,natwidth=610,natheight=642]{impl/images/indexPageRoute}
         \caption{Index page route example.} \label{fig:using:indexPageRoute}
     \end{center}
 \end{figure}     
         
     \item \textbf{Template Layer.} This is the mediator layer between an HTTP request and the application logic. It consists of a number of Jinja2 templates holding only     presentation logic. 
     \item \textbf{External Services Layer} \cite{article:goodArchitecture}. Contains API wrapper class that accesses and manipulates live football data. In general, the functionality of the application can be further extended in many ways. In the future, Football-API might not be the only external source of information. The project might make use of another third-party API or even web scrapping. Eventually, all additional modules related to the interaction with external sources of data will become part of this layer.
-    \item \textbf{Threading.} The application requests live football data frequently. Loading the data is a costly I/O operation that may become a bottleneck unless performed asynchronously. Threading component of the apllication defines a class \emph{DataUpdateThread} that takes care of writing the data to the server every 100 seconds. This task is carried out in a separate thread. 
+    \item \textbf{Threading.} The application requests live football data frequently. Loading the data is a costly I/O operation that may become a bottleneck unless performed asynchronously. Threading component of the apllication defines a class \emph{DataUpdateThread} that takes care of writing the data to the server every 100 seconds. This task is performed in a separate thread. 
 \end{itemize}
 
 During the development process, a lot of effort was put into keeping the Template Layer as thin as possible in order to reduce the loading time in the browser and improve the overall performance of the application.
 
 \section{Patterns And Conventions}
-Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives a developer a lot of freedom to decide how to structure the application. According to a Software Engineer Matt Wright \cite{article:howIstructureMyFlaskApps}, " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during application development will be described and explained. 
+Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives a developer a lot of freedom to decide how to structure the application. As Matt Wright \cite{article:howIstructureMyFlaskApps} puts it: " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during application development will be described and explained. 
 
 \subsection{Application Factory}
-The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. As described in the \cite{book:Grindberg2014FlaskWebDevelopment}, the problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and makes testing of various confurations easier.\cite{documentation:FlaskApplicationFactories} 
+The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. The problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." \cite{book:Grindberg2014FlaskWebDevelopment} To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and make testing of various confurations easier.\cite{documentation:FlaskApplicationFactories} 
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.40\linewidth,natwidth=610,natheight=642]{impl/images/createApp}
-		\caption{Function responsible for creation of the application.} \label{fig:using:createApp}
+		\caption{Function responsible for creating the application instance.} \label{fig:using:createApp}
 	\end{center}
 \end{figure}
 
@@ -90,12 +90,17 @@ Blueprints are related to the View Layer introduced in the section Application A
 The database scheme for this project was designed in an iterative way, models and relationships between them were added gradually as the application was growing. Therefore, it was crucial to find a tool that allows effortless updates of the database. To manage frequent database updates was used Alembic database migration tool that was developed specifically by Mike Bayer, the author of SQLAlchemy. The tool can be added to Flask as an external plugin, Flask-migrate. After installation and initial configuration of the plugin, it allows to migrate the database with two simple commands to be subsequentially run in the terminal: \emph{db upgrade} and \emph{db migrate}. Alembic makes migration easier and prevents the developer from the necessity to delete and recreate the database each time there is a need for migration.
 
  \subsection{Exceptions}
-The application will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
+In general, it is considered a good practice to take advantage of standard libararies of a programming language, in our case Python. First of all, it allows developer to save time implementing a piece of functionality from scratch. Secondly, it makes it easier for other developers to read and maintain the code. Exceptions are built into Python at the language level. Using them will lead to cleaner code with no major performance impact. "In a way, try blocks are like transactions. [The] catch has to leave ... program in a consistent state, no matter what happens in the try. For this reason it is good practice to start with a try- catch- finally statement when you are writing code that could throw exceptions. "\cite{book:martin2011robert}
+ 
+SureThing will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
 
-As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_call\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors. \cite{documentation:PythonRequests} If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
+As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_all\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors. \cite{documentation:PythonRequests} If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
 
 \section{Other Implementation Processes}
 In this section a number of other implementation processes and used tools will be discussed.
+
+\subsection{PEP8}
+\subsection{PyLint}
 
 \subsection{Version Control}
 Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \cite{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... (It also) provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, performance, design, bug, optional tasks, etc. 
@@ -229,7 +234,17 @@ In this section will be described the technical details of the project implement
 
 \subsection{Authentication and User Profile}
 
-The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was used to handle the common tasks of logging in and out, as well as new users registration. For the new users the application sends an email with verification token, expecting the user to confirm their email address. 
+The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was utilised to handle the common tasks of logging in and out, as well as new users registration. For the new users the application offers a registration form. On form submission, the application sends user an email with verification token, expecting them to confirm the email address and complete the registration. It should be noted that both username and the email address provided during the registration should be unique, otherwise the application throws a validation error.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/registrationFormError}
+		\caption{SureThing offers registration form for the new users. However, the email address is expected to be unique.} \label{fig:registrationformerror}
+	\end{center}
+\end{figure}
+
+
+
 
 \subsection{Matches Overview}
 Matches Overview is a view displayed on the main page of the application. It contains lists of upcoming and played matches and the user can toggle between those two lists using navigation buttons. In both lists matches are grouped by dates as follows:
@@ -237,7 +252,7 @@ Matches Overview is a view displayed on the main page of the application. It con
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchesGrouped}
-		\caption{Matches in the overview are grouped by date.} \label{fig:using:matchesgrouped}
+		\caption{Matches in the overview are grouped by dates sorted in ascending order.} \label{fig:using:matchesgrouped}
 	\end{center}
 \end{figure}
  
@@ -369,10 +384,90 @@ how the overall prediction is calculated, weighted prediction
 
 \subsection{Played Match View}
 \label{subsec:playedmatchview}
+User can navigate to this view by clicking the button "View match stats" on a panel representing a match that has already been played. Unlike the \emph{Upcoming Match View}, the \emph{Played Match View} looks the same to the users coming to this page both from their dashboards and from the matches overview page. 
+
+The view contains already familiar match header, prediction statistics and a personalised feedback for the authenticated user. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchHeader}
+		\caption{Played Match View, match header.} \label{fig:matchheader}
+	\end{center}
+\end{figure}
+
+Prediction statistics block contains information on the betting performance accross the SureThing users with regards to this match. Stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match, won or lost the bet. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/predictionStats}
+		\caption{Played Match View, users' prediction statistics.} \label{fig:predictionStats}
+	\end{center}
+\end{figure}
+
+The view also displays a bar chart illustrating a breakdown of the result prediction, namely how many users bet on "home", "draw" and "away" result.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/predictionBreakdown}
+		\caption{Prediction breakdown.} \label{fig:predictionBreakdown}
+	\end{center}
+\end{figure}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/feedback}
+		\caption{Played Match View, feedback provided for authenticated users.} \label{fig:feedback}
+	\end{center}
+\end{figure}
+
 
 \subsection{Dashboard}
 \label{subsec:dashboard}
-Dashboard is the user's personal area. User can save matches to the dashboard, view them and make predictions using the dashboard as a starting point. 
+SureThing dashboard is a centralised user space that provides convinient shortcuts to all the important prediction-related pages and tools. Dashboard can be used to store and view matches, change default prediction weights and make bets. It can be navigated to by clicking on item "Dashboard" in the navigation menu of the website, located at the top of the page. On navigating to the dashboard user can see a list of saved matches ordered by date and a \emph{dashboard menu} icon in the top left corner of the view. This is a screenshot of a typical dashboard view (only one match is saved):
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/typicalDashboard}
+		\caption{Dashboard view.} \label{fig:typicaldashboard}
+	\end{center}
+\end{figure}
+
+Matches that already have been committed by the user have grey background and the predicted winner is highlighted. If the match has already been played, the result of the bet, either "Win" or "Loss" also appears on the match panel.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/dashboardCommittedMatches}
+		\caption{An example of a Dashboard View with matches that have been committed and played.} \label{fig:dashboardcommittedmatches}
+	\end{center}
+\end{figure}
+
+In case user does not have any matches saved, the dashboard looks as follows:
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/noSavedMatches}
+		\caption{Dashboard with no saved matches.} \label{fig:using: nosavedmatches}
+	\end{center}
+\end{figure}
+
+
+In the top left corner user can see a small menu icon representing the dashboard menu. Clicking the button opens up the menu containing three items:
+
+\begin{itemize}
+	\item{Upcoming Matches. Displays all saved matches that have not been played yet. }
+	\item{Archived Matches. Displays all saved matches that have already been played.}
+	\item{Prediction Settings. A form that allows the user to set default prediction weights.}
+\end{itemize}
+
+A panel containing the dashboard menu slides in and covers part of the page. It can be easily dissmissed by choosing an item from the menu or clicking the "close" icon.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/dashboardMenu}
+		\caption{Dashboard menu.} \label{fig:using: dashboardmenu}
+	\end{center}
+\end{figure}
 
 \subsubsection*{User journey}
 \label{subsec:dashboarduserjourney}
@@ -380,7 +475,7 @@ Dashboard is the user's personal area. User can save matches to the dashboard, v
 
 \subsection{Notifications}
 \label{subsec:notifications}
-\emph{Notifications} feature represents the one-way communication flow from SureThing to the application user. Every time a match commited by the user is finished (from the technical point of view, the match is changing its status to "played"), the application sends users messages notifying them whether their prediction guess was successfull. Message contains some detailed information about the user prediction, as well as a link to the \emph{Played Match View}.
+This feature represents the one-way communication flow from SureThing to the application user. Every time a match previously commited by the user is finished (from the technical point of view, the match is changing its status to "played"), the application sends users messages notifying them whether their prediction guess was successfull. Such messages contain detailed information about the user prediction, as well as a link to the relevant \emph{Played Match View}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -391,21 +486,32 @@ Dashboard is the user's personal area. User can save matches to the dashboard, v
 
 \subsubsection*{User journey}
 \label{subsec:notificationsuserjourney}
-Authenticated user can navigate to the notifications inbox by pressing the envelope-shaped icon located on the right-hand side of the navigation menu. Notice how the icon is orange in the screenshot below. It means that the inbox contains unread messages.
+Authenticated user can navigate to the notifications inbox by clicking at the envelope-shaped icon located on the right-hand side of the navigation menu. The orange colour of the icon in the screenshot below indicates that the inbox contains unread messages, otherwise the icon color is grey.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/navigationMenu}
-		\caption{Navigation menu panel with an inbox icon.} \label{fig:using: navigationMenu}
+		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/navigationMenu}
+		\caption{Navigation menu panel with an inbox icon.} \label{fig:using: navigationmenu}
 	\end{center}
 \end{figure}
 
-Once the user clicks on the icon, the application takes them to the notifications inbox. Notice that unread messages are displayed in bold font.
+On clicking the icon user is taken to the notifications inbox. Unread messages are displayed in bold font.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/inbox}
 		\caption{User inbox.} \label{fig:using: inbox}
+	\end{center}
+\end{figure}
+
+\subsection{Leaderboard}
+\label{subsec:leaderboard}
+The Leaderboard is a view that offers a table capturing betting performance accross the population of the website. This page can be navigated to by clicking a "Leaderboard" entry in the navigation menu of the application. The Leaderboard displays the most basic information about application users: usernames, location and a favourite team. It also contains the bets related statistics: games committed, won and lost. The table is ordered by the amount of win points of each user.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/leaderboard}
+		\caption{Leaderboard.} \label{fig:using: leaderboard}
 	\end{center}
 \end{figure}
 
@@ -420,7 +526,7 @@ sockets, threads
 multithreading
 how I fixed performance on Match.update\_all\_matches
 
-\subsection{Deploying the Application}
+\section{Deploying the Application}
 Cloud Deployment is the most recent trend in application hosting. The formal name of this technologu is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.
 
 \section{Possible Future Enchancement}

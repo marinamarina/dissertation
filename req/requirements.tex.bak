@@ -286,44 +286,33 @@ Played games are marked in the dashboard (grey font)
 Once user committed games has started (observer, onchange on a filed), it should indicate the winnings and write to db
 Fix the kits
 
-\subsubsection{Notifications}
-\label{sec:notifications}
-Below are listed requirements relating to the messages.
-
 \subsubsection{Optional requirements}
 \label{sec:optionalrequirements}
+
+\begin{itemize}
+	\item A simple yet effective notifications system should be implemented. The application will notify users about their betting performace, eg. whether the user won or lost the bet, how did the user do compared to other bettors.
+	\item The system will provide the users with the latest sports news.
+\end{itemize}
 
 \subsection{Non-functional Requirements}
 \label{sec:nonfunctional}
 
-Non-functional requirements specify how the system is going to perform.
+Non-functional requirements specify how the system is going to perform. 
 
-\subsubsection{Testability}
-The application should be testable – the behaviour of the application should be verifiable through a suite of automated tests. 
-A set of test cases will be written for the application, testing features such as logging in, account registration, integration with third-party API used in the application, as well as various scenarios of database models interactions. In addition to these tests, the business logic in the match prediction must also be predictable, consistent and testable. 
-
-
-Maintainability
-Scalability
-Documentation
-Performance
-Responsiveness
-Usability
-Usability means how easily can users learn how to use an application. The key would be to reduce an effort to understand 
-
-\subsubsection{Security}
-The nature of the application requires from user to provide some confidential information. Users need to be assured that the confidential details remains secure, and that the system is protected against XSS, CSRF and SQL injection attacks.
-
-
-graceful degradation?
-accessibility security
-
+\begin{itemize}
+	\item \textbf{Usability} - The application interface should be easy to understand and learn for a new user. The navigation of the website should be highly intuitive.
+	\item \textbf{Responsiveness} - The application should be fully responsive. The websites will be tested for a variety of screen resolutions and the minimum screen resolution will be 640x960 (DVGA - iPhone).
+	\item \textbf{Performance} - Optimising performance will be crucial for the application, as there is a direct correlation between the application response time and the user experience.  Performace problems will be detected and eliminated as soon as they appear. 
+	\item \textbf{Cross-browser support}. The application will be supported on a minimum set of web browsers, such as Chrome, Internet Explorer 9+, Safari, Firefox.
+	\item \textbf{Maintainability} - The focus should be on delivering clear and maintainable code. The code needs to be easily understandable by other developers. For this purpose the best practices of software development and the used languages will be utilised throughtout the implementation phase of the project.
+	\item \textbf{Extensibility} – The system will be developed with a large-scale application in mind. It should be easy to apply ongoing changes to the project.
+\end{itemize}
 
 \section{Overall Architecture}
 The high level components of this system are quite simple. 
 
-\textbf Design of an application a a whole, overall design (just boxes and lines)
-\textbf Architectural diagram (overview) (aosabook.org/en/moodle.html -example), quite high level
+Design of an application a a whole, overall design (just boxes and lines)
+Architectural diagram (overview) (aosabook.org/en/moodle.html -example), quite high level
 
 
 \section{Choice of Third Party API}
