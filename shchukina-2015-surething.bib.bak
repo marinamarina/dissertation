@@ -19,14 +19,6 @@
 
 }
 @book{book:martin2011robert,
-  title={The Robert C. Martin Clean Code Collection (Collection)},
-  author={Martin, Robert C},
-  year={2011},
-  publisher={Prentice Hall},
-  note = {[Accessed 16-Mar-2015]}
-
-}
-@book{book:martin2011robert,
 	 author={Martin, Robert C},
 	 publisher = {Prentice Hall},
 	 title = {{The Robert C. Martin Clean Code Collection (Collection)}},
@@ -120,6 +112,12 @@
 	title={SQLAlchemy ORM},
 	year={2014},
 	howpublished={[Online]. Available from: \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}}	
+}
+@misc{source:gravatar,
+	author={Automattic Inc.},
+	title={A Globally Recognized Avatar},
+	year={2015},
+	howpublished={[Online]. Available from: https://en.gravatar.com/}
 }
 @book{book:Grindberg2014FlaskWebDevelopment,
 	 author = {Miguel Grindberg},

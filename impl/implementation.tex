@@ -9,6 +9,7 @@ This chapter examines the process of SureThing development.
 The application will be built using a set of front end and back end technologies. In this section will be justified the choice made in favour of each particular technology used in the project. 
 
 \subsection{Front End}
+\label{subsec:frontend}
 The markup of the future application will be coded using HTML 5 \cite{documentation:HTML}. The application markup will be built using BEM front end development approach \cite{documentation:BEM}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future \cite{article:BEMForSmallProjects}.
 
 CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \cite{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
@@ -29,6 +30,7 @@ In order to handle time-consuming and repetitive tasks on the front end side, th
 In addition, RequireJS  \cite{documentation:RequireJS}, a powerful asynchronous script loader will be used for effective management of JavaScript dependencies. It can load modules in asynchronous manner if desired and thus improve overall website performance.
 
 \subsection{Back End}
+\label{subsec:backend}
 For making reasonably accurate football results predictions the application requires latest footaball data. Live data would have to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. Based on the above assumptions, Python was chosen as a primary back end language for this project being known as a language well suited to data manipulation.
 
 The back end of the web application will be built using Python web framework Flask \cite{documentation:Flask}. It is a lightweight framework (the official name is "Python microframework") with a great choice of third-party libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the feature set of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the full-featured frameworks like Django that have a lot of functionality already built-in in the basic installation. In addition, availability of developer-friendly documentation and low learning curve makes Flask a short way to get a simple, Python-powered web site up and running. Therefore, Flask appears to be a great choice for a small project like SureThing. 
@@ -64,9 +66,11 @@ However, on the top of the standard MVC architecture SureThing requires few extr
 During the development process, a lot of effort was put into keeping the Template Layer as thin as possible in order to reduce the loading time in the browser and improve the overall performance of the application.
 
 \section{Patterns And Conventions}
+\label{sec:patternsandconventions}
 Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives developer a lot of freedom to decide how to structure the application. As Matt Wright \cite{article:howIstructureMyFlaskApps} puts it: " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during the implementation phase will be described and explained. 
 
 \subsection{Application Factory}
+\label{subsec:applicationfactory}
 The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. The problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." \cite{book:Grindberg2014FlaskWebDevelopment} To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and make testing of various confurations easier.\cite{documentation:FlaskApplicationFactories} 
 
 \begin{figure}[H]
@@ -77,6 +81,7 @@ The use of factory pattern is crucial to a Flask application. For example, SureT
 \end{figure}
 
 \subsection{Blueprints}
+\label{subsec:blueprints}
 Blueprints are related to the View Layer introduced in the section Application Architecture \cite{sec:applicationarchitecture}. A large application is divided into smaller parts and each part is implemented with help of a blueprint. This concept helps to develop a \emph{modular} web application. SureThing was divided into two parts: \emph{main} and \emph{auth}. \emph{auth} holds the endpoints associated with the authentication and user profile related tasks, for example \emph{login()}, \emph{edit\_profile()}. On the other hand \emph{main} is in charge of the rest of the application. Notice how those different blueprints are registered on the application instance inside the \emph{create\_app()} function:
 
 \begin{figure}[H]
@@ -87,9 +92,11 @@ Blueprints are related to the View Layer introduced in the section Application A
 \end{figure}
 
 \subsection{Database Migrations}
+\label{subsec:databasemigrations}
 The database scheme for this project was designed in an iterative way, models and relationships between them were added gradually as the application was growing. Therefore, it was crucial to find a tool that allows effortless updates of the database. To manage frequent database updates was used Alembic database migration tool that was developed specifically by Mike Bayer, the author of SQLAlchemy. The tool can be added to Flask as an external plugin, Flask-migrate. After installation and initial configuration of the plugin, it allows to migrate the database with two simple commands to be subsequentially run in the terminal: \emph{db upgrade} and \emph{db migrate}. Alembic makes migration easier and prevents the developer from the necessity to delete and recreate the database each time there is a need for migration.
 
- \subsection{Exceptions}
+\subsection{Exceptions}
+\label{subsec:exceptions}
 In general, it is considered a good practice to take advantage of standard libararies of a programming language, in our case Python. First of all, it allows developer to save time implementing a piece of functionality from scratch. Secondly, it makes it easier for other developers to read and maintain the code. Exceptions are built into Python at the language level. Using them will lead to cleaner code and will not have any impact on the performance. "In a way, try blocks are like transactions. [The] catch has to leave ... program in a consistent state, no matter what happens in the try. For this reason it is good practice to start with a try- catch- finally statement when you are writing code that could throw exceptions " \cite{book:martin2011robert}.
  
 SureThing will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
@@ -97,12 +104,14 @@ SureThing will make use of Exceptions in order to identify and manage failures w
 As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_all\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors \cite{documentation:PythonRequests}. If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
 
 \section{Other Implementation Processes}
+\label{sec:otherprocesses}
 In this section a number of other implementation processes and used tools will be discussed.
 
 \subsection{PEP8}
 \subsection{PyLint}
 
 \subsection{Version Control}
+\label{subsec:git}
 Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \cite{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... [It also] provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, "performance", "design", "bug", "optional", etc. 
 
 \begin{figure}[H]
@@ -124,7 +133,7 @@ GitHub also allows the users to filter out the issues of a similar type, based o
 Critically speaking, I missed the option to assign issues various level of importance and order the issues based on their priority.
 
 \subsection{Own Validation in Forms}
-\label{sec:ownvalidationimpl}
+\label{subsec:validations}
 Flask-WTF is a Flask extension that offers integration with WTForms and it was used to handle forms in this project. In order to make sure the application is secure, the validation has to be implemented preferably on the server side or both on the client- and server-side of the application. WTForms has many built-in validators that can simplify developer's life. For example \textbf{DataRequired} makes the input field mandatory, \textbf{Email} checks that the provided input is a valid email address, \textbf{EqualTo} helps to ensure that the passwords in the fields "Password" and "Confirm Password" supplied during the user registration are identical. However, sometimes the built-in functionality does not cover all the application needs. In that case, there is an option to create a custom validator that is a basically a Python function returning another function (a validator) that throws an exception every time the user violates the prescribed validation rule. Custom validators can be imported into the module describing forms and used in the same way as a built-in validator would be used. I have separated the validators out into a separate module. The set of custom validators can be further extended, however, there is just one at the moment: \emph{validator\_user\_already\_registered()}. 
 
 \begin{figure}[H]
@@ -237,24 +246,73 @@ In this section will be described the technical details of the project implement
 
 \subsection{Authentication and User Profile}
 
-The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was utilised to handle the common tasks of logging in and out, as well as new users registration. For the new users the application offers a registration form. On form submission, the application sends user an email with verification token, expecting them to confirm the email address and complete the registration. It should be noted that both username and the email address provided during the registration should be unique, otherwise the application throws a validation error \cite{sec:ownvalidationimpl}.
+\subsubsection*{Authentication}
+The application requires authentication functionality. In order to simplify the development process, a useful Flask extention, Flask-Login, was utilised to handle the common tasks of logging in and out, as well as new users registration. For the new users the application offers a registration form. On form submission, SureThing sends user an email with verification token, expecting them to confirm the email address and complete the registration. It should be noted that both username and email address provided during the registration should be unique, otherwise the application throws a validation error.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/registrationFormError}
+		\includegraphics[width=.90\columnwidth]{impl/images/registrationFormError}
 		\caption{SureThing offers registration form for the new users. However, the email address is expected to be unique.} \label{fig:registrationformerror}
 	\end{center}
 \end{figure}
 
+Once user has created a SureThing account, they can login using a standard login form.  An email address and a password are both required fields. A validation error will be thrown in case the provided email or password are invalid, or the user with the provided email address was not found in the database.
 
+An authorised user will see the icon with their avatar picture in the top right corner of the application navigation menu, as it can be seen in the screenshot below. Gravatar stands for "Globally recognized avatar" and it is one of the most popular avatar services. User can register with the service (\url{http://gravatar.com}) and upload their images that can be used as avatars accross many popular websites, such as GitHub (\url{http://www.github.com}), Stackoverflow (\url{http://www.stackoverflow.com}) and WorldPress (\url{http://www.worldpress.com}). Therefore, newly registered user does not have to upload an avatar image to be used in SureThing. The app will access the avatar associated with their email address and pull it from the Gravatar servers. 
 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\columnwidth]{impl/images/gravatar}
+		\caption{User settings and the profile page can be accessed by clicking on the gravatar icon located on the application navigation menu panel.} \label{fig:gravatar}
+	\end{center}
+\end{figure}
+
+In case the user is not registered with the Gravatar, SureThing will generate a dummy avatar to be used in the application.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\columnwidth]{impl/images/dummyGravatar}
+		\caption{An example of a dummy gravatar for user \textbf{gannet}.} \label{fig:dummygravatar}
+	\end{center}
+\end{figure}
+
+\subsubsection*{User Profile}
+The options available in the dropdown menu, as displayed in the figure ~\ref{fig:gravatar}, enable the users editing their profiles, changing password and email address. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\columnwidth]{impl/images/changePassword}
+		\caption{Users can change their passwords for securiy reasons.} \label{fig:changePassword}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\columnwidth]{impl/images/editProfile}
+		\caption{After the registration users can share more information about themselves by editing their profile.} \label{fig:editprofile}
+	\end{center}
+\end{figure}
+
+Clicking on the dropdown option "Profile" will take the user to a separate page containing all the information about the user, for example: profile information, preferences, section "about me", recent won bets including the prediction weights used for these bets, etc. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\textwidth]{impl/images/profile}
+		\caption{User profile page.} 
+		\label{fig:profile}
+	\end{center}
+\end{figure}
+
+\subsubsection*{User Journey}
+\label{subsec:authandprofileuserjourney}
+User can also navigate to the "Edit profile" form in a different way, namely by clicking on the light blue "Edit Profile" button located in the top left corner of the profile page. 
 
 \subsection{Matches Overview}
 Matches Overview is a view displayed on the main page of the application. It contains lists of upcoming and played matches and the user can toggle between those two lists using navigation buttons. In both lists matches are grouped by dates as follows:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchesGrouped}
+		\includegraphics[width=.90\textwidth]{impl/images/matchesGrouped}
 		\caption{Matches in the overview are grouped by dates sorted in ascending order.} \label{fig:using:matchesgrouped}
 	\end{center}
 \end{figure}
@@ -263,7 +321,7 @@ Each panel representing a match contains the most basic information about the ev
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/unplayedMatch}
+		\includegraphics[width=.90\textwidth]{impl/images/unplayedMatch}
 		\caption{Example of an unplayed match displayed in the overview.} \label{fig:using:unplayedmatch}
 	\end{center}
 \end{figure}
@@ -272,7 +330,7 @@ Below can be found a screenshot of a played match panel. Notice that the final s
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/playedMatch}
+		\includegraphics[width=.90\textwidth]{impl/images/playedMatch}
 		\caption{Example of a played match displayed in the overview.} \label{fig:using:playedmatch}
 	\end{center}
 \end{figure}
@@ -281,7 +339,7 @@ In case the match is being played at the very moment, it still belongs to the li
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/liveMatch}
+		\includegraphics[width=.90\textwidth]{impl/images/liveMatch}
 		\caption{Example of a live match displayed in the overview.} \label{fig:using:livematch}
 	\end{center}
 \end{figure}
@@ -309,7 +367,7 @@ If the user is coming to the Upcoming Match Preview from the \emph{main page}, t
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/upcomingMatchView}
+		\includegraphics[width=.90\textwidth]{impl/images/upcomingMatchView}
 		\caption{Upcoming Match View in the "read-only" mode: match header and the first prediction module, Module League Position.} 
 		\label{fig:using:upcominmatchview}
 	\end{center}
@@ -322,8 +380,8 @@ In case user has already saved the match to the dashboard and navigates to the v
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/upcomingMatchViewSM}
-		\caption{Upcoming Match View in the "prediction" mode: match header and the first prediction module, Module League Position.} \label{fig:using:upcominmatchviewSM}
+		\includegraphics[width=.90\textwidth]{impl/images/upcomingMatchViewSM}
+		\caption{Upcoming Match View in the "prediction" mode: match header and the first prediction module, Module League Position.} 	  \label{fig:using:upcominmatchviewSM}
 	\end{center}
 \end{figure}
 
@@ -342,7 +400,7 @@ Notice, the extra module is available in this view - User Hunch. This module is 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/userHunch}
+		\includegraphics[width=.90\textwidth]{impl/images/userHunch}
 		\caption{Module User Hunch.} \label{fig:using:userHunch}
 	\end{center}
 \end{figure}
@@ -351,7 +409,7 @@ The overall prediction is displayed underneath all modules, in a separate panel.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/prediction}
+		\includegraphics[width=.90\textwidth]{impl/images/prediction}
 		\caption{Match result prediction.} \label{fig:using:prediction}
 	\end{center}
 \end{figure}
@@ -364,7 +422,7 @@ In the \textbf{prediction} mode the user can update the prediction settings by o
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchoverviewex_from_main_page}
+		\includegraphics[width=.90\textwidth]{impl/images/matchoverviewex_from_main_page}
 		\caption{An example of a prediction module in the Match Preview, user navigated from the main page.} \label{fig:using: matchoverviewex_from_main_page}
 	\end{center}
 \end{figure}
@@ -393,37 +451,41 @@ The view contains already familiar match header, prediction statistics and a per
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/matchHeader}
+		\includegraphics[width=.90\textwidth]{impl/images/matchHeader}
 		\caption{Played Match View, match header.} \label{fig:matchheader}
 	\end{center}
 \end{figure}
 
-Prediction statistics block contains information on the betting performance accross the SureThing users with regards to this match. Stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match, won or lost the bet. 
+Prediction statistics block contains information on the betting performance accross the SureThing users population with regards to this match. Stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match, won or lost the bet. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/predictionStats}
+		\includegraphics[width=.90\textwidth]{impl/images/predictionStats}
 		\caption{Played Match View, users' prediction statistics.} \label{fig:predictionStats}
 	\end{center}
 \end{figure}
 
-The view also displays a bar chart illustrating a breakdown of the result prediction, namely how many users bet on "home", "draw" and "away" result.
+The view also offers a bar chart illustrating a breakdown of user preferences, namely how many users bet on "home", "draw" and "away" result.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/predictionBreakdown}
+		\includegraphics[width=.90\textwidth]{impl/images/predictionBreakdown}
 		\caption{Prediction breakdown.} \label{fig:predictionBreakdown}
 	\end{center}
 \end{figure}
 
+An authenticated user can also view a basic feedback indicating whether this particular user won or lost the bet.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/feedback}
+		\includegraphics[width=.90\textwidth]{impl/images/feedback}
 		\caption{Played Match View, feedback provided for authenticated users.} \label{fig:feedback}
 	\end{center}
 \end{figure}
 
+\subsubsection*{User journey}
+\label{subsec:playedmatchviewuserjourney}
+The view is static and does not offer any additional interactions.
 
 \subsection{Dashboard}
 \label{subsec:dashboard}
@@ -431,7 +493,7 @@ SureThing dashboard is a centralised user space that provides convinient shortcu
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/typicalDashboard}
+		\includegraphics[width=.90\columnwidth]{impl/images/typicalDashboard}
 		\caption{Dashboard view.} \label{fig:typicaldashboard}
 	\end{center}
 \end{figure}
@@ -440,7 +502,7 @@ Matches that already have been committed by the user have grey background and th
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/dashboardCommittedMatches}
+		\includegraphics[width=.90\textwidth]{impl/images/dashboardCommittedMatches}
 		\caption{An example of a Dashboard View with matches that have been committed and played.} \label{fig:dashboardcommittedmatches}
 	\end{center}
 \end{figure}
@@ -449,12 +511,13 @@ In case user does not have any matches saved, the dashboard looks as follows:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/noSavedMatches}
+		\includegraphics[width=.90\textwidth]{impl/images/noSavedMatches}
 		\caption{Dashboard with no saved matches.} \label{fig:using: nosavedmatches}
 	\end{center}
 \end{figure}
 
-
+\subsubsection*{User journey}
+\label{subsec:dashboarduserjourney}
 In the top left corner user can see a small menu icon representing the dashboard menu. Clicking the button opens up the menu containing three items:
 
 \begin{itemize}
@@ -467,14 +530,12 @@ A panel containing the dashboard menu slides in and covers part of the page. It 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/dashboardMenu}
+		\includegraphics[width=.90\textwidth]{impl/images/dashboardMenu}
 		\caption{Dashboard menu.} \label{fig:using: dashboardmenu}
 	\end{center}
 \end{figure}
 
-\subsubsection*{User journey}
-\label{subsec:dashboarduserjourney}
-
+If there no saved matches in the dashboard, user can navigate to the main pages containing upcoming events by clicking the link "Start saving your matches now >".
 
 \subsection{Notifications}
 \label{subsec:notifications}
@@ -482,7 +543,7 @@ This feature represents the one-way communication flow from SureThing to the app
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/message}
+		\includegraphics[width=.90\textwidth]{impl/images/message}
 		\caption{An example of a message sent to the user.} \label{fig:using: message}
 	\end{center}
 \end{figure}
@@ -493,7 +554,7 @@ Authenticated user can navigate to the notifications inbox by clicking at the en
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/navigationMenu}
+		\includegraphics[width=.90\textwidth]{impl/images/navigationMenu}
 		\caption{Navigation menu panel with an inbox icon.} \label{fig:using: navigationmenu}
 	\end{center}
 \end{figure}
@@ -502,22 +563,25 @@ On clicking the icon user is taken to the notifications inbox. Unread messages a
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/inbox}
+		\includegraphics[width=.90\textwidth]{impl/images/inbox}
 		\caption{User inbox.} \label{fig:using: inbox}
 	\end{center}
 \end{figure}
 
 \subsection{Leaderboard}
 \label{subsec:leaderboard}
-The Leaderboard is a view that offers a table capturing betting performance accross the population of the website. This page can be navigated to by clicking a "Leaderboard" entry in the navigation menu of the application. The Leaderboard displays the most basic information about application users: usernames, location and a favourite team. It also contains the bets related statistics: games committed, won and lost. The table is ordered by the amount of win points of each user.
+Leaderboard is a view that contains a table capturing betting performance accross the population of the website. This page can be navigated to by clicking a "Leaderboard" entry in the navigation menu of the application. Each line of the Leaderboard table contains the most basic information about application users: usernames, location and their favourite team as well as the betting statistics: games committed, won and lost. The table is ordered by the amount of win points for each user. Thus, the winners are located on the top of the table. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/leaderboard}
+		\includegraphics[width=.90\textwidth]{impl/images/leaderboard}
 		\caption{Leaderboard.} \label{fig:using: leaderboard}
 	\end{center}
 \end{figure}
 
+\subsubsection*{User Journey}
+\label{subsec:leaderboarduserjourney}
+Each username in the table is also a link. Clicking on the username of a user will take us to this user's profile page. Thus, an authenticated user can also view profiles of fellow users.
 
 \section{Application Performance}
 \label{sec:applicationperformance}
@@ -535,10 +599,9 @@ Cloud Deployment is the most recent trend in application hosting. The formal nam
 \section{Possible Future Enchancement}
 \label{sec:enchancement}
 The application can be further developed in many ways.  
-
 When putting together the project requirements, a number of optional requirements were outlined. 
 
-Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture.
+Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture. 
 
 \section{Conclusions}
 The main conclusions for this chapter.
