@@ -22,7 +22,7 @@ In order to handle time-consuming and repetitive tasks on the front end side, th
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.60\linewidth,natwidth=610,natheight=540]{impl/images/gruntInAction}
-		\caption{A screenshot from the terminal output after running Grunt.} \label{fig:using:gruntInAction}
+		\caption{A screenshot from the terminal output running Grunt.} \label{fig:using:gruntInAction}
 	\end{center}
 \end{figure}
 	
@@ -46,7 +46,7 @@ Application architecture is a base of a good quality software. The architecture 
 However, on the top of the standard MVC architecture SureThing requires few extra components to manage the loading of the data from an external source. Hence, this is the final layout of the application architecture:
 
 \begin{itemize}
-    \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to Florestan, \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
+    \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to Florestan \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
     \item \textbf{View Layer.} Holds association between URLs requested in the browser and Python functions or \emph{routes}. Routes are declared using an appropriate function decorator. Below can be found an excerpt from the application code. This is a header of a route function that represents the index page.
 
 \begin{figure}[H]
@@ -64,7 +64,7 @@ However, on the top of the standard MVC architecture SureThing requires few extr
 During the development process, a lot of effort was put into keeping the Template Layer as thin as possible in order to reduce the loading time in the browser and improve the overall performance of the application.
 
 \section{Patterns And Conventions}
-Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives a developer a lot of freedom to decide how to structure the application. As Matt Wright \cite{article:howIstructureMyFlaskApps} puts it: " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during application development will be described and explained. 
+Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives developer a lot of freedom to decide how to structure the application. As Matt Wright \cite{article:howIstructureMyFlaskApps} puts it: " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during the implementation phase will be described and explained. 
 
 \subsection{Application Factory}
 The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. The problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." \cite{book:Grindberg2014FlaskWebDevelopment} To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and make testing of various confurations easier.\cite{documentation:FlaskApplicationFactories} 
@@ -90,11 +90,11 @@ Blueprints are related to the View Layer introduced in the section Application A
 The database scheme for this project was designed in an iterative way, models and relationships between them were added gradually as the application was growing. Therefore, it was crucial to find a tool that allows effortless updates of the database. To manage frequent database updates was used Alembic database migration tool that was developed specifically by Mike Bayer, the author of SQLAlchemy. The tool can be added to Flask as an external plugin, Flask-migrate. After installation and initial configuration of the plugin, it allows to migrate the database with two simple commands to be subsequentially run in the terminal: \emph{db upgrade} and \emph{db migrate}. Alembic makes migration easier and prevents the developer from the necessity to delete and recreate the database each time there is a need for migration.
 
  \subsection{Exceptions}
-In general, it is considered a good practice to take advantage of standard libararies of a programming language, in our case Python. First of all, it allows developer to save time implementing a piece of functionality from scratch. Secondly, it makes it easier for other developers to read and maintain the code. Exceptions are built into Python at the language level. Using them will lead to cleaner code with no major performance impact. "In a way, try blocks are like transactions. [The] catch has to leave ... program in a consistent state, no matter what happens in the try. For this reason it is good practice to start with a try- catch- finally statement when you are writing code that could throw exceptions. "\cite{book:martin2011robert}
+In general, it is considered a good practice to take advantage of standard libararies of a programming language, in our case Python. First of all, it allows developer to save time implementing a piece of functionality from scratch. Secondly, it makes it easier for other developers to read and maintain the code. Exceptions are built into Python at the language level. Using them will lead to cleaner code and will not have any impact on the performance. "In a way, try blocks are like transactions. [The] catch has to leave ... program in a consistent state, no matter what happens in the try. For this reason it is good practice to start with a try- catch- finally statement when you are writing code that could throw exceptions " \cite{book:martin2011robert}.
  
 SureThing will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
 
-As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_all\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors. \cite{documentation:PythonRequests} If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
+As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_all\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors \cite{documentation:PythonRequests}. If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
 
 \section{Other Implementation Processes}
 In this section a number of other implementation processes and used tools will be discussed.
@@ -103,12 +103,12 @@ In this section a number of other implementation processes and used tools will b
 \subsection{PyLint}
 
 \subsection{Version Control}
-Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \cite{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... (It also) provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, performance, design, bug, optional tasks, etc. 
+Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \cite{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... [It also] provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, "performance", "design", "bug", "optional", etc. 
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/githubLabelsChoice}
-		\caption{GitHub. Custom labels.} \label{fig:using:githubLabelsChoice}
+		\caption{GitHub allows developers to add custom labels.} \label{fig:using:githubLabelsChoice}
 	\end{center}
 \end{figure}
 
@@ -124,6 +124,7 @@ GitHub also allows the users to filter out the issues of a similar type, based o
 Critically speaking, I missed the option to assign issues various level of importance and order the issues based on their priority.
 
 \subsection{Own Validation in Forms}
+\label{sec:ownvalidationimpl}
 Flask-WTF is a Flask extension that offers integration with WTForms and it was used to handle forms in this project. In order to make sure the application is secure, the validation has to be implemented preferably on the server side or both on the client- and server-side of the application. WTForms has many built-in validators that can simplify developer's life. For example \textbf{DataRequired} makes the input field mandatory, \textbf{Email} checks that the provided input is a valid email address, \textbf{EqualTo} helps to ensure that the passwords in the fields "Password" and "Confirm Password" supplied during the user registration are identical. However, sometimes the built-in functionality does not cover all the application needs. In that case, there is an option to create a custom validator that is a basically a Python function returning another function (a validator) that throws an exception every time the user violates the prescribed validation rule. Custom validators can be imported into the module describing forms and used in the same way as a built-in validator would be used. I have separated the validators out into a separate module. The set of custom validators can be further extended, however, there is just one at the moment: \emph{validator\_user\_already\_registered()}. 
 
 \begin{figure}[H]
@@ -136,14 +137,14 @@ Flask-WTF is a Flask extension that offers integration with WTForms and it was u
 In the example above the validator function checks if a user with provided username is already in the database. If the user is found, the ValidationError exception is thrown and the new user is prevented from submitting the form.
 
 \subsection{Custom Macros}
-Jinja2 is a default template engine that comes in one package with Flask. It is also one of the most widely used template engines for Python. In order to add some extra presentation logic to our application, custom macros can be used. Jinja2 macro is simply a template function that can be used within HTML in order to avoid developers writing repetitive code. For this project I found macros extremely useful. Custom macros were separated out into a separate template file \_macros.html.
+Jinja2 is a default template engine that comes in one package with Flask. It is also one of the most widely used template engines for Python. In order to add some extra presentation logic to our application, custom macros can be used. Jinja2 macro is simply a template function that can be used within HTML in order to avoid developers writing repetitive code. For this project I found macros extremely useful. Custom macros were separated out into a separate template file \emph{\_macros.html}.
 
 One of the example usages was rendering form fields. Each form field related macro contained a piece of HTML code specifically designed for forms in this application, as well as logic for dispaying error messages. Among this type of macros can be named \emph{render\_field(field)}, \emph{render\_checkbox(field)}, \emph{render\_submit\_field(field)}. Some of those macros needed to be adjusted to enable their usage in a specific view. These are the examples of such "adjusted" macros: \emph{render\_submit\_field\_match\_preview(field)}, \emph{render\_embedded\_field(field)}. For example, \emph{render\_field} takes care of rendering any standard input field accross the application, whereas \emph{render\_embedded\_field(field)} manages rendering an input field embedded within a prediction module on the Upcoming Match View. 
 
 Another macro, \emph{teamkitimage(match, home=1)} renders an image representing a football club. Based on the provided arguments, the function displays an image of a home or away team kit for a specific club. 
 
 \subsection{Integration with third-party API}
-Many production Python web applications rely on external application programming interfaces (APIs). API can be also reffered to as "third party services" or "external platform".\cite{apiintegration}  SureThing requires constant access to current football data. After choosing an appropriate API, it has to be integrated into the application. 
+Many production Python web applications rely on external application programming interfaces (APIs). API can be also reffered to as "third party services" or "external platform" \cite{article:API_Integration}.  SureThing requires constant access to current football data. After choosing an appropriate API, it has to be integrated into the application. 
 
 There is a variety of tools available for developers for accessing web APIs. Those three options were considered when choosing an appropriate tool:
 	
@@ -158,7 +159,7 @@ There is a variety of tools available for developers for accessing web APIs. Tho
 		
 After some experiments with other urllib2, urllib3 and requests, \emph{requests} was chosen as the libarary for this project.
 		
-All interaction with the Football-API, including processing the received data, was separated out into a module \emph{football\_api\_wrapper\.py} or just "wrapper" for short. This module contains only one class, FootballAPIWrapper. Fields of the class accomodate the key elements of the interaction with the API that will be re-used in different methods of the wrapper, for example base url, path to the data directory.
+All interaction with the Football-API, including processing the received data, was separated out into a module \emph{football\_api\_wrapper.py} or just "wrapper" for short. This module contains only one class, FootballAPIWrapper. Fields of the class accomodate the key elements of the interaction with the API that will be re-used in different methods of the wrapper, for example base url, path to the data directory.
 	
 \begin{figure}[H]
 	\begin{center}
@@ -172,6 +173,7 @@ To get the response from Football-API takes about 11s, therefore it is nessessar
 \subsection{Visual Effects}
 A number of visual effects was implemented with the help of jQuery, AJAX and the Websockets (Flask extention Flask-SocketsIO) to improve the user experience. 
 
+\subsubsection*{Alerts}
 A good example is an alert dismissal. SureThing generates many alerts that give the user feedback with regards to the action they have just taken. User has to dismiss the alert manually each time. To avoid this extra thing for a user to do, the alerts are removed from the page using jQuery fadeOut() and then slideUp() animation methods that fades the pop-up and then removes it with a sliding motion after 200ms of its appearance on the page. For compactness the screenshot shows the page opened in a browser simulation of an iPhone screen size. Responsive web design with regards to this project will be examined in more detail in the following subsection.
 
 \begin{figure}[H]
@@ -188,6 +190,7 @@ A good example is an alert dismissal. SureThing generates many alerts that give 
 	\end{center}
 \end{figure}
 
+\subsubsection*{New message notifications}
 Another example is a new message notification. Once user received a new in-app message notifying them about the results of their bets, the envelope-shaped icon on the top navigation menu that represents the in-app Inbox turns orange. 
 
 \begin{figure}[H]
@@ -197,7 +200,7 @@ Another example is a new message notification. Once user received a new in-app m
 	\end{center}
 \end{figure}
 
-When user navigates to the Inbox and reads or deletes all the new messages, the icon immediately turns grey notifying that there are no more unread messages in the box.
+When user navigates to the Inbox and reads or deletes all the new messages, the icon immediately turns greyindicating that there are no more unread messages in the box.
  
 \begin{figure}[H]
 	\begin{center}
@@ -234,7 +237,7 @@ In this section will be described the technical details of the project implement
 
 \subsection{Authentication and User Profile}
 
-The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was utilised to handle the common tasks of logging in and out, as well as new users registration. For the new users the application offers a registration form. On form submission, the application sends user an email with verification token, expecting them to confirm the email address and complete the registration. It should be noted that both username and the email address provided during the registration should be unique, otherwise the application throws a validation error.
+The application requires authentication functionality. In order to simplify the development process, one of the useful Flask's extentions, Flask-Login, was utilised to handle the common tasks of logging in and out, as well as new users registration. For the new users the application offers a registration form. On form submission, the application sends user an email with verification token, expecting them to confirm the email address and complete the registration. It should be noted that both username and the email address provided during the registration should be unique, otherwise the application throws a validation error \cite{sec:ownvalidationimpl}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -395,7 +398,16 @@ The view contains already familiar match header, prediction statistics and a per
 	\end{center}
 \end{figure}
 
-Prediction statistics block contains information on the betting performance accross the SureThing users with regards to this match. Stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match, won or lost the bet. The view also displays a bar chart illustrating a breakdown of the result prediction, namely how many users bet on "home", "draw" and "away" result.
+Prediction statistics block contains information on the betting performance accross the SureThing users with regards to this match. Stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match, won or lost the bet. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/predictionStats}
+		\caption{Played Match View, users' prediction statistics.} \label{fig:predictionStats}
+	\end{center}
+\end{figure}
+
+The view also displays a bar chart illustrating a breakdown of the result prediction, namely how many users bet on "home", "draw" and "away" result.
 
 \begin{figure}[H]
 	\begin{center}
@@ -403,6 +415,15 @@ Prediction statistics block contains information on the betting performance accr
 		\caption{Prediction breakdown.} \label{fig:predictionBreakdown}
 	\end{center}
 \end{figure}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/feedback}
+		\caption{Played Match View, feedback provided for authenticated users.} \label{fig:feedback}
+	\end{center}
+\end{figure}
+
 
 \subsection{Dashboard}
 \label{subsec:dashboard}

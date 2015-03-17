@@ -14,48 +14,48 @@ Database file #1: shchukina-2015-surething.bib
 Warning--I didn't find a database entry for "oddschecker"
 Warning--I didn't find a database entry for "book:softwareengineering"
 Warning--I didn't find a database entry for "sec:applicationarchitecture"
-Warning--I didn't find a database entry for "apiintegration"
+Warning--I didn't find a database entry for "sec:ownvalidationimpl"
 Warning--I didn't find a database entry for "subsec:predictionimplementation"
 Warning--I didn't find a database entry for "subsec:definitions"
-You've used 25 entries,
+You've used 26 entries,
             2773 wiz_defined-function locations,
-            736 strings with 9166 characters,
-and the built_in function-call counts, 7762 in all, are:
-= -- 679
-> -- 305
-< -- 25
-+ -- 117
-- -- 90
-* -- 381
-:= -- 1200
-add.period$ -- 81
-call.type$ -- 25
-change.case$ -- 102
-chr.to.int$ -- 23
-cite$ -- 50
-duplicate$ -- 390
-empty$ -- 801
-format.name$ -- 125
-if$ -- 1673
+            742 strings with 9321 characters,
+and the built_in function-call counts, 8081 in all, are:
+= -- 707
+> -- 315
+< -- 26
++ -- 121
+- -- 93
+* -- 396
+:= -- 1254
+add.period$ -- 87
+call.type$ -- 26
+change.case$ -- 105
+chr.to.int$ -- 24
+cite$ -- 52
+duplicate$ -- 410
+empty$ -- 833
+format.name$ -- 129
+if$ -- 1740
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 139
-num.names$ -- 100
-pop$ -- 306
+missing$ -- 8
+newline$ -- 147
+num.names$ -- 104
+pop$ -- 315
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 83
 quote$ -- 0
-skip$ -- 326
+skip$ -- 338
 stack$ -- 0
-substring$ -- 50
-swap$ -- 29
+substring$ -- 52
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 260
+type$ -- 266
 warning$ -- 0
-while$ -- 75
+while$ -- 78
 width$ -- 0
-write$ -- 319
+write$ -- 337
 (There were 6 warnings)

@@ -1,10 +1,6 @@
 \chapter{Requirement Analysis}
 Before designing a piece of software, it is important to have a good understanding of the project requirements. In this chapter a number of functional and non-functional requirements will be listed covering all the aspects of the future web application.
 
-\section{Target Audience}
-\label{sec:targetaudience}
-The intended users of the application will be people with interest in football. More specifically, people interested in predictions of football results and football betting. With this in mind, the age range of potential users will be 18 and up.
-
 \section{Target Audience Questionnaire}
 \label{sec:targetaudiencequestionnaire}
 The target audience research aims to gather information on how...
