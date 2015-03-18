@@ -151,7 +151,6 @@ The application will attempt to put all the relevant statistics in one place and
  
 \section{Requirements}
 \label{sec:requirements}
-
 Computer Systems life cycle consists of five phases: Requirements and Analysis, Design, Implementation, Testing and Evolution. Then, after Evolution, the cycle can start again with an additional set of requirements. \cite{book:softwareengineering} defines requirement as follows: "A \emph{requirement} conveys an essential property that the system must or should satisfy." Requirements analysis involves gathering information in order to meet customer needs and defining what the future application is expected to do. 
 This phase of software engineering is especially important in the industrial environment, when developing an application for a customer. In this case, clarifying the requirements in the early stages of the project would help to ensure that both sides understand and agree on the feature set of the future application. 
 
@@ -163,7 +162,6 @@ Before outlining project requirements, I would like to start with some definitio
 
 \subsection{Definitions}
 \label{subsec:definitions}
-
 \textbf{Application Football League} - in order to reduce unnecessary complexity at this stage of the project, the application will be only supporting one league (Premier Barclays League). 
 
 \textbf{Matches Overview} – a list of upcoming and played matches presented on the main page of the application
@@ -221,10 +219,10 @@ Below are listed requirements relating to the matches overview.
 \end{itemize}
 
 \subsubsection{Prediction}
-\label{sec:prediction}
+\label{subsec:prediction_requirements}
 The predicted outcome of a football match will be calculated after evaluating several factors that can influence the match result. An example of such a factor could be a previous match result, league position of each team, team performance at home or away, the recent change in team management or players' injuries and suspensions. Each of those factors will be represented by an equivalent "prediction module" in the application and a match view. The main outcome of each prediction module will be a "prediction value" expressed as a percentage. This value will tell the user how likely is either team to win the match. 
 
-Finally, the betting system will assign a weight (depending on user settings) to each prediction value. The weights (or prediction settings) determine the relative importance of each factor. By applying the weights user indicates that some factors are more important to the outcome of this particular game than others. The final result will be calculated as a weighted average.
+Finally, the betting system will assign a weight (the value will depend on user settings) to each prediction value. The weights (or prediction settings) determine the relative importance of each factor. By applying the weights, user indicates that some factors are more important to the outcome of this particular game than others. The final result will be calculated as a weighted average.
 
 These are the requirements related to the prediction of a football match result.
 	

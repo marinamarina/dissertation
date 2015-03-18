@@ -11,13 +11,13 @@ In general, Agile methodology focuses on team communication and project transpar
 In summary, in this section requirements from the analysis phase will be converted into the system design. First, several design cornerstones (website structure using Mind maps, wireframes, …) were set in order to complete the initial prototype of the application. Other elements of the application design (use cases, database diagram) were updated in iterations inline with the Agile methodology. 
 
 \section{Mind Map}
-\label{sec:mind map}
+\label{sec:mindmap_prototype}
 After defining the set of use cases, I have created a block diagram of the future application. To accomplish this task, was used a program called MindJet enabling creation of a big scale mind maps. , project structure using mindset 
 
 The first step was made a block diagram of the project. I used a mind map as brainstorming tool taking the useless into consideration. It helped me to break my application down into separate webpages and blocks and to define the navigation between them. 
 
-\section{Competitors}
-\label{sec:designcompetitors}
+\section{Inspiration}
+\label{sec:inspiration_prototype}
 After all the important requirements and ideas were put on paper, it is worth taking a look at the potential competitors’ websites and application. This step is an important stage of an application prototyping process: it allows to learn from the best practices and possibly avoid potential errors.
 
 Basically considered, of course, direct competitors. We studied not only the top social networking sites, but less popular. Delved into a huge reservoir of applications: all they had to learn to understand their behavior, how they communicate with the user, as they present the information.
@@ -25,7 +25,7 @@ Basically considered, of course, direct competitors. We studied not only the top
 We also analyzed the experience of indirect competitors. For example, for our section of music is iTunes and other specialized applications. When it comes to photos, then we photographed absolutely everything - in Instagram, Mobli etc. All this has given us an understanding of how to lead the audience in a variety of applications.
 
 \section{Wireframes}
-\label{sec:wireframes}
+\label{sec:wireframes_prototype}
 When speaking about prototyping, in the early stages the first choice of many designers is often a piece of paper and a pencil. Sketching has a number of advantages when compared to the use of the editors, such as Fireworks or Photoshop for prototyping. When using editors, it is easy to get distracted by brushing up unnecessary details too early. On the opposite side, sketches offer a lot of flexibility. It is easy to add notes, make small changes or replace an outdated sketch with a fresh one.
 
 In case of this project, each of the sketches represented a separate “view” of the website. The scale of a “view” might differ. For example, some sketches represented a whole page (home page, dashboard page, etc.), others just outlined certain blocks of the website, such as header, footer, user profile container in more detail. I always added a lot of comments to explain the navigation and sometimes expected output. Sketches were one of the most powerful tools I used during the prototype process. 
@@ -36,14 +36,14 @@ First website prototype in a photoshop/Fireworks
 Early prototype using html and css, using bootstrap should be quick and easy
 
 \section{Visual Design: Branding, icons, Font}
-\label{sec:visdesign}
+\label{sec:visdesign_prototype}
 Branding - number of names for the application
 Bootstrap was used as a framework on the front-end.
 Flat design is a big trend of the last years. It was decided to use the flat design in order to not distract user from the content.
 The design is a mixture of free templates and UI freebies created specifically for Bootstrap.
 
 \section{Use Cases}
-\label{usecases}
+\label{usecases_prototype}
 As mentioned above, use cases and the database diagram presented below, were prototyped in iterations. In this report will be presented a completed, merged version of the set of use cases and the database design. For use cases UML will be used to design in a clear and readable manner.
 
 \section{Database Design}

@@ -14,16 +14,16 @@ The markup of the future application will be coded using HTML 5 \cite{documentat
 
 CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \cite{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
 
-In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3 \cite{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used in the development. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
+In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
  
-JavaScript, specifically JQuery library \cite{documentation:jQuery}, will be used to add animations and improve overall user experience from using the application.  
+JavaScript, specifically JQuery library \cite{documentation:jQuery}, will be utilised to add animations and improve overall user experience from using the application.  
 
-In order to handle time-consuming and repetitive tasks on the front end side, the application will utilize the task-based command-line tool Grunt. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
+In order to handle time-consuming and repetitive tasks on the front end side, the application will utilise the task-based command-line tool Grunt. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=540]{impl/images/gruntInAction}
-		\caption{A screenshot from the terminal output running Grunt.} \label{fig:using:gruntInAction}
+		\includegraphics[width=.60\columnwidth]{impl/images/gruntInAction}
+		\caption{A screenshot from the terminal output running Grunt.} \label{fig:using:gruntinaction}
 	\end{center}
 \end{figure}
 	
@@ -49,17 +49,17 @@ However, on the top of the standard MVC architecture SureThing requires few extr
 
 \begin{itemize}
     \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to Florestan \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
-    \item \textbf{View Layer.} Holds association between URLs requested in the browser and Python functions or \emph{routes}. Routes are declared using an appropriate function decorator. Below can be found an excerpt from the application code. This is a header of a route function that represents the index page.
+    \item \textbf{View Layer.} Holds association between URL rules and view functions that are defined with a help of a module-level decorator \emph{route()}. Below can be found an excerpt from the application code, a header of a view function that represents the dashboard page. When a browser requests \url{/dashboard} URL, the associated view function is called and the return value is sent back to the browser. 
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=.50\linewidth,natwidth=610,natheight=642]{impl/images/indexPageRoute}
-        \caption{Index page route example.} \label{fig:using:indexPageRoute}
+        \includegraphics[width=.70\columnwidth]{impl/images/routeExample}
+        \caption{Dashboard view function.} \label{fig:using:routeexample}
     \end{center}
 \end{figure}     
         
     \item \textbf{Template Layer.} This is the mediator layer between an HTTP request and the application logic. It consists of a number of Jinja2 templates holding only     presentation logic. 
-    \item \textbf{External Services Layer} \cite{article:goodArchitecture}. Contains API wrapper class that accesses and manipulates live football data. In general, the functionality of the application can be further extended in many ways. In the future, Football-API might not be the only external source of information. The project might make use of another third-party API or even web scrapping. Eventually, all additional modules related to the interaction with external sources of data will become part of this layer.
+    \item \textbf{External Services Layer} \cite{article:goodArchitecture}. Contains API wrapper class that accesses and manipulates live football data. In general, the functionality of the application can be further extended in many ways. In the future, Football-API might not be the only external source of data. The project might make use of another third-party API or even use web scraping technique to extract data from other websites . Eventually, all additional modules related to the interaction with external sources of data will become part of this layer.
     \item \textbf{Threading.} The application requests live football data frequently. Loading the data is a costly I/O operation that may become a bottleneck unless performed asynchronously. Threading component of the apllication defines a class \emph{DataUpdateThread} that takes care of writing the data to the server every 100 seconds. This task is performed in a separate thread. 
 \end{itemize}
 
@@ -75,8 +75,8 @@ The use of factory pattern is crucial to a Flask application. For example, SureT
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.40\linewidth,natwidth=610,natheight=642]{impl/images/createApp}
-		\caption{Function responsible for creating the application instance.} \label{fig:using:createApp}
+		\includegraphics[width=.50\columnwidth]{impl/images/createApp}
+		\caption{Function responsible for creating the application instance.} \label{fig:using:createapp}
 	\end{center}
 \end{figure}
 
@@ -86,8 +86,8 @@ Blueprints are related to the View Layer introduced in the section Application A
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/blueprintsRegistration}
-		\caption{Blueprints registration.} \label{fig:using:blueprintsRegistration}
+		\includegraphics[width=.50\columnwidth]{impl/images/blueprintsRegistration}
+		\caption{Blueprints registration.} \label{fig:using:blueprintsregistration}
 	\end{center}
 \end{figure}
 
@@ -116,8 +116,8 @@ Git version control system was used throughout the development process. Git is k
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/githubLabelsChoice}
-		\caption{GitHub allows developers to add custom labels.} \label{fig:using:githubLabelsChoice}
+		\includegraphics[width=.90\columnwidth]{impl/images/githubLabelsChoice}
+		\caption{GitHub allows developers to add custom labels.} \label{fig:using:githublabelschoice}
 	\end{center}
 \end{figure}
 
@@ -125,8 +125,8 @@ GitHub also allows the users to filter out the issues of a similar type, based o
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/githubFunctionalityIssues}
-		\caption{GitHub. Issues related to the functionality of the application.} \label{fig:using:githubFunctionalityIssues}
+		\includegraphics[width=.90\columnwidth]{impl/images/githubFunctionalityIssues}
+		\caption{GitHub. Issues related to the functionality of the application.} \label{fig:using:githubfunctionalityissues}
 	\end{center}
 \end{figure}
 
@@ -138,7 +138,7 @@ Flask-WTF is a Flask extension that offers integration with WTForms and it was u
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/customValidator}
+		\includegraphics[width=.90\columnwidth]{impl/images/customValidator}
 		\caption{Validator function that checks if user with this username has already been registered with the SureThing application} \label{fig:using:customValidator}
 	\end{center}
 \end{figure}
@@ -172,7 +172,7 @@ All interaction with the Football-API, including processing the received data, w
 	
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\linewidth,natwidth=610,natheight=642]{impl/images/footballApiWrapperFields}
+		\includegraphics[width=.90\columnwidth]{impl/images/footballApiWrapperFields}
 		\caption{Football API wrapper, fields} \label{fig:using:footballapiwrapperfields}
 	\end{center}
 \end{figure}
@@ -187,14 +187,14 @@ A good example is an alert dismissal. SureThing generates many alerts that give 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/alert}
+		\includegraphics[width=.60\columnwidth]{impl/images/alert}
 		\caption{An example of an alert on the page appearing after user has logged out} \label{fig:alert}
 	\end{center}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/alertFadeOut}
+		\includegraphics[width=.60\columnwidth]{impl/images/alertFadeOut}
 		\caption{The same alert fading out.} \label{fig:alertFadeOut}
 	\end{center}
 \end{figure}
@@ -204,7 +204,7 @@ Another example is a new message notification. Once user received a new in-app m
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/alertFadeOut}
+		\includegraphics[width=.60\columnwidth]{impl/images/alertFadeOut}
 		\caption{The same alert fading out.} \label{fig:alertFadeOut}
 	\end{center}
 \end{figure}
@@ -213,8 +213,8 @@ When user navigates to the Inbox and reads or deletes all the new messages, the 
  
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/newMessagesDesktopView}
-		\caption{You have new messages. Desktop View.} \label{fig:newMessagesDesktopView}
+		\includegraphics[width=.60\columnwidth]{impl/images/newMessagesDesktopView}
+		\caption{You have new messages. Desktop View.} \label{fig:newmessagesdesktopview}
 	\end{center}
 \end{figure}
 
@@ -222,8 +222,8 @@ This is what the same top navigation menu looks like for mobile users.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/newMessagesMobileView}
-		\caption{You have new messages. Mobile View.} \label{fig:newMessagesMobileView}
+		\includegraphics[width=.60\columnwidth]{impl/images/newMessagesMobileView}
+		\caption{You have new messages. Mobile View.} \label{fig:newmessagesmobileview}
 	\end{center}
 \end{figure}
 
@@ -231,15 +231,31 @@ User has opened the last unread message and the message icon has turned grey. No
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth,natwidth=610,natheight=642]{impl/images/noMoreNewMessages}
-		\caption{User just read the last new message, the icon turns grey.} \label{fig:noMoreNewMessages}
+		\includegraphics[width=.60\columnwidth]{impl/images/noMoreNewMessages}
+		\caption{User just read the last new message, the icon turns grey.} \label{fig:nomorenewmessages}
 	\end{center}
 \end{figure}
 
 \subsection{Responsive Design}
-SureThing is a fully responsive web application. The application utilizes Bootstrap3. 
-see Appendices
+According to the popular portal Statista, "As of 2013, worldwide mobile phone internet user penetration was 73.4 percent. In 2017, figures suggest that more than 90 percent of internet users will access online content through their phones" \cite{statistaReport}. There is no doubt that developers need to adapt to the increasing number of people using small screen devices to access information online. The solution to this is \emph{responsive web design}. The term was first used by Ethan Marcotte. He put together three already known techniques (flexible grid layout, flexible images, and media and media queries) into a combined approach and named it responsive web design \cite{book:frain2012responsive}. 
 
+SureThing utilises Bootstrap3 framework \cite{documentation:Bootstrap3} to increase the speed of development and to handle the responsiveness of the website. To create a responsive design we need a good quality grid and Bootstrap offers an excellent responsive fluid grid system that can adjust to any device or viewport size. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices. 
+
+SureThing is a fully responsive web application, it supports all screen sizes starting from DVGA - iPhone (640 x 960). These are the screenshots of some of the application pages resized to this screen size:
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.50\columnwidth]{impl/images/responsiveDashboard}
+		\caption{Dashboard view, DVGA screen size.} \label{fig:using:responsivedashboard}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.50\columnwidth]{impl/images/responsiveModuleLeaguePosition}
+		\caption{Module League Position in the Upcoming Match View, DVGA screen size.} \label{fig:using:responsivemoduleleagueposition}
+	\end{center}
+\end{figure}
 
 \section{Features Implementation}
 In this section will be described the technical details of the project implementation. Each susbsection is bound to the high level feature of the application, as indroduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}. "User journey", or possible user interactions with the system, will be demonstrated for each view.
@@ -258,7 +274,7 @@ The application requires authentication functionality. In order to simplify the 
 
 Once user has created a SureThing account, they can login using a standard login form.  An email address and a password are both required fields. A validation error will be thrown in case the provided email or password are invalid, or the user with the provided email address was not found in the database.
 
-An authorised user will see the icon with their avatar picture in the top right corner of the application navigation menu, as it can be seen in the screenshot below. Gravatar stands for "Globally recognized avatar" and it is one of the most popular avatar services. User can register with the service (\url{http://gravatar.com}) and upload their images that can be used as avatars accross many popular websites, such as GitHub (\url{http://www.github.com}), Stackoverflow (\url{http://www.stackoverflow.com}) and WorldPress (\url{http://www.worldpress.com}). Therefore, newly registered user does not have to upload an avatar image to be used in SureThing. The app will access the avatar associated with their email address and pull it from the Gravatar servers. 
+An authorised user will see the icon with their avatar picture in the top right corner of the application navigation menu, as it can be seen in the screenshot below. Gravatar stands for "Globally recognized avatar" and it is one of the most popular avatar services. User can register with the service (\url{http://gravatar.com}) and upload their images that can be used as avatars accross many popular websites, such as GitHub (\url{http://www.github.com}), Stackoverflow (\url{http://www.stackoverflow.com}) and WorldPress (\url{http://www.worldpress.com}). Therefore, newly registered user does not have to upload an avatar image to be used in our application. The app will access the avatar associated with their email address and pull it from the Gravatar servers. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -435,13 +451,13 @@ most Explain how was implemented user hunch: combination of Flask Ajax and Socke
  
 \subsection{Prediction}
 \label{subsec:predictionimplementation}
-After getting familiar with the \emph{Upcoming Match View}, the next logical step is to introduce the reader of this report with the Prediction feature of the application. This will aid understanding how to use the \emph{Upcoming Match View} and what kind of information is available to us in this view.
+After getting familiar with the \emph{Upcoming Match View}, the next logical step is to introduce the reader of this report to the Prediction feature of the application. This will aid understanding how to use the \emph{Upcoming Match View} and what kind of information this view offers to an intended user. The implementation of the Prediction feature was already explained in the chapter "Requirements Analysis", subsection "Prediction" \cite{subsec:prediction_requirements}. However, in this subsection I would like to outline the three levels of prediction settings used in the application, explain the calculation used behind each of the prediction values and also link the Prediction feature to other views. 
 
-The implementation of the Prediction feature was already briefly outlined in the chapter "Requirements Analysis", subsection "Definitions" \cite{subsec:definitions}. In this subsection I would like to decribe this key feature of the application in more detail. The application has three levels of prediction settings (weights). Firstly, it is the "default prediction settings" - a set of weights recommended to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also allows users to set match specific settings that will only apply to one match. 
- 
+The application has three levels of prediction settings (weights). Firstly, the \emph{system default} prediction settings - a set of weights "recommended" to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings, \emph{user default} prediction settings. This can be done through a "Prediction Settings" form, as explained in the subsection "Dashboard" \cite{subsec:dashboard}. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also enables setting \emph {match specific} prediction settings that will only apply to one match. User can set match specific settings through the Upcoming Match view page.
 
-
-how the overall prediction is calculated, weighted prediction
+There is a quite simple and logical equasions behind each of the prediction values that are displayed on the prediction modules panels and are used to calculate the overall match prediction. 
+Equasions
+An excel tables showing how the weighted average is calculated (check the hunch subsection, dont repeat yourself)
 
 \subsection{Played Match View}
 \label{subsec:playedmatchview}

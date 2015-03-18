@@ -55,6 +55,18 @@
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://getbootstrap.com}}
 }
+@misc{statistaReport,
+	author={Statista Inc.},
+	title={The Statistics Portal.},
+	year={2015},
+	howpublished={[Online]. Available from: \url{http://www.statista.com/}}
+}
+@book{book:frain2012responsive,
+  title={Responsive web design with HTML5 and CSS3},
+  author={Frain, Ben},
+  year={2012},
+  publisher={Packt Publishing Ltd}
+}
 @misc{documentation:Javascript,
 	author ={ECMA International},
 	title ={ECMAScript Language Specification},

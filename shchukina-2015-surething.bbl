@@ -1,4 +1,4 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -47,6 +47,11 @@ Nando Florestan.
   2015.
 \newblock [Accessed 5-Mar-2015].
 
+\bibitem[Frain(2012)]{book:frain2012responsive}
+Ben Frain.
+\newblock \emph{Responsive web design with HTML5 and CSS3}.
+\newblock Packt Publishing Ltd, 2012.
+
 \bibitem[Grindberg(2014)]{book:Grindberg2014FlaskWebDevelopment}
 Miguel Grindberg.
 \newblock \emph{{Flask Web Development. Developing Web Applications with
@@ -57,6 +62,18 @@ Miguel Grindberg.
 Chris~Eppstein Hampton~Catlin, Natalie~Weizenbaum and various contributors.
 \newblock Sass preprocessor.
 \newblock [Online]. Available from: \url{http://sass-lang.com/}, 2015.
+
+\bibitem[Inc.(2015{\natexlab{a}})]{source:gravatar}
+Automattic Inc.
+\newblock A globally recognized avatar.
+\newblock [Online]. Available from: https://en.gravatar.com/,
+  2015{\natexlab{a}}.
+
+\bibitem[Inc.(2015{\natexlab{b}})]{statistaReport}
+Statista Inc.
+\newblock The statistics portal.
+\newblock [Online]. Available from: \url{http://www.statista.com/},
+  2015{\natexlab{b}}.
 
 \bibitem[International(2011)]{documentation:Javascript}
 ECMA International.
@@ -70,9 +87,9 @@ Matt Makai.
 
 \bibitem[Martin(2011)]{book:martin2011robert}
 Robert~C Martin.
-\newblock \emph{The Robert C. Martin Clean Code Collection (Collection)}.
+\newblock \emph{{The Robert C. Martin Clean Code Collection (Collection)}}.
 \newblock Prentice Hall, 2011.
-\newblock [Accessed 16-Mar-2015].
+\newblock [Accessed 17-Mar-2015].
 
 \bibitem[Percival(2014)]{book:percival2014test}
 Harry~JW Percival.
