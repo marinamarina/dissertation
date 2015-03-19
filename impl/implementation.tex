@@ -22,7 +22,7 @@ In order to handle time-consuming and repetitive tasks on the front end side, th
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/gruntInAction}
+		\includegraphics[width=.60\linewidth]{impl/images/gruntInAction}
 		\caption{A screenshot from the terminal output running Grunt.} \label{fig:using:gruntinaction}
 	\end{center}
 \end{figure}
@@ -53,7 +53,7 @@ However, on the top of the standard MVC architecture SureThing requires few extr
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=.70\columnwidth]{impl/images/routeExample}
+        \includegraphics[width=.70\linewidth]{impl/images/routeExample}
         \caption{Dashboard view function.} \label{fig:using:routeexample}
     \end{center}
 \end{figure}     
@@ -237,11 +237,11 @@ User has opened the last unread message and the message icon has turned grey. No
 \end{figure}
 
 \subsection{Responsive Design}
-According to the popular portal Statista, "As of 2013, worldwide mobile phone internet user penetration was 73.4 percent. In 2017, figures suggest that more than 90 percent of internet users will access online content through their phones" \cite{statistaReport}. There is no doubt that developers need to adapt to the increasing number of people using small screen devices to access information online. The solution to this is \emph{responsive web design}. The term was first used by Ethan Marcotte. He put together three already known techniques (flexible grid layout, flexible images, and media and media queries) into a combined approach and named it responsive web design \cite{book:frain2012responsive}. 
+According to the popular portal Statista, "As of 2013, worldwide mobile phone internet user penetration was 73.4 percent. In 2017, figures suggest that more than 90 percent of internet users will access online content through their phones" \cite{statistaReport}. There is no doubt that developers need to adapt to the increasing combinations of screen resolution and browsers used by people to access information online. The solution to the expanding variability of the web is to develop a layout that can adapt to any viewport. This approach is known as \emph{responsive web design}. The term was first used by Ethan Marcotte. He combined three already known techniques (flexible grid layout, flexible images, and media and media queries) into a unified approach \cite{book:frain2012responsive}. 
 
-SureThing utilises Bootstrap3 framework \cite{documentation:Bootstrap3} to increase the speed of development and to handle the responsiveness of the website. To create a responsive design we need a good quality grid and Bootstrap offers an excellent responsive fluid grid system that can adjust to any device or viewport size. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices. 
+Based on the above, we should assume that the majority of users will access our website through a device that is not a desktop. We need a good fluid grid to build a responsive web application. To handle the responsiveness and to increase development speed SureThing utilises Bootstrap framework \cite{documentation:Bootstrap3}. that offers an responsive fluid grid system that can adjust to the variety of devices or screen sizes. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices. 
 
-SureThing is a fully responsive web application, it supports all screen sizes starting from DVGA - iPhone (640 x 960). These are the screenshots of some of the application pages resized to this screen size:
+SureThing is a fully responsive web application, and the minimum screen resolution supported is 640 x 960 pixels (an example device is iPhone 4). These are the screenshots of some of the application pages tested with this resolution:
 
 \begin{figure}[H]
 	\begin{center}
@@ -453,7 +453,7 @@ most Explain how was implemented user hunch: combination of Flask Ajax and Socke
 \label{subsec:predictionimplementation}
 After getting familiar with the \emph{Upcoming Match View}, the next logical step is to introduce the reader of this report to the Prediction feature of the application. This will aid understanding how to use the \emph{Upcoming Match View} and what kind of information this view offers to an intended user. The implementation of the Prediction feature was already explained in the chapter "Requirements Analysis", subsection "Prediction" \cite{subsec:prediction_requirements}. However, in this subsection I would like to outline the three levels of prediction settings used in the application, explain the calculation used behind each of the prediction values and also link the Prediction feature to other views. 
 
-The application has three levels of prediction settings (weights). Firstly, the \emph{system default} prediction settings - a set of weights "recommended" to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings, \emph{user default} prediction settings. This can be done through a "Prediction Settings" form, as explained in the subsection "Dashboard" \cite{subsec:dashboard}. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also enables setting \emph {match specific} prediction settings that will only apply to one match. User can set match specific settings through the Upcoming Match view page.
+The application has three levels of prediction settings or weights. Firstly, the \emph{system default} prediction settings - a set of weights "recommended" to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings, \emph{user default} prediction settings. This can be done through a "Prediction Settings" form, as explained in the subsection "Dashboard" \cite{subsec:dashboard}. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also enables setting \emph {match specific} prediction settings that will only apply to one match. User can set match specific settings through the Upcoming Match view page.
 
 There is a quite simple and logical equasions behind each of the prediction values that are displayed on the prediction modules panels and are used to calculate the overall match prediction. 
 Equasions
