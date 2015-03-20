@@ -6,7 +6,7 @@ This chapter evaluates the overall project and provides results of tests carried
 \subsection{Unit Testing}
 The implementaion phase of the project was carried out in accordance with Agile Development. One of the cornerstones of Agile philosophy is Test Driven Development or TDD. The essense of TDD is to write the tests before even writing the production code . 
 
-According to Miguel Grindberg\citep{book:Grindberg2014FlaskWebDevelopment}, "There are two very good reasons for writing unit tests. When implementing new functionality, unit tests are used to confirm that the new code is working in the expected way. ... A second, more important reason is that each time the application is modified, all the unit tests built around it can be executed to ensure that there are no regressions  in the existing code; in other words, that the new changes did not affect the way the older code works."
+According to Miguel Grindberg \citep{book:Grindberg2014FlaskWebDevelopment}, "There are two very good reasons for writing unit tests. When implementing new functionality, unit tests are used to confirm that the new code is working in the expected way. ... A second, more important reason is that each time the application is modified, all the unit tests built around it can be executed to ensure that there are no regressions  in the existing code; in other words, that the new changes did not affect the way the older code works."
 
  For this project it was especially important to provide good tests coverage for the business logic behind the model layer and the external service layer of the application \cite{sec:applicationarchitecture}. 
 
@@ -39,14 +39,9 @@ System Testing – This will test the system as a whole. This will be run by the
 \subsection{User Acceptance Testing}
 
 \section{Evaluation and Future Development}
-From my point of view the project was a success. I started with zero knowledge of Python language and now I feel that I have developed a very good knowledge of Python and would be able to use it on industrial level. The project also made me realise the importance of Test Driven Development, as the application has complicated logic in the background and good test coverage was a must. The Acceptance Testing allowed me to 
+From my point of view, the project was successful. I started with zero knowledge of Python and now I feel that I would be able to use it on an industrial level. The project also made me realise the importance of Test Driven Development, as the application has complicated business logic in the background and good test coverage was a must to ensure smooth development process. The Acceptance Testing allowed me to get valuable user feedback and alter the design/navigation accordingly. In general, I am very pleased with the result and will continue to develop the application further.
 
-Overall I feel this project was a success. I started off with limited knowledge of the Flash and Flex technologies and now feel I have developed a good understanding of these technologies and a new skill. Knowing what I know now about the application development process, if asked to do the application again I would have spent a lot more time in the designing phase. Although I feel the application provides an intuitive and aesthetically pleasing interface I feel it could look a bit more refined and not as basic. I feel it was important for me to run User Acceptance Testing as it allowed me progress the application. I think for future software developments I will try and put myself in the mindset of the user implementation. I am very pleased with the result of the application and will continue to develop it further.
-75
-The application has the potential for improvement.
-
-\subsection{Future Development}
-
+The application has a lot of potential for improvement.
 
 \section{Conclusions}
 

@@ -10,36 +10,36 @@ The application will be built using a set of front end and back end technologies
 
 \subsection{Front End}
 \label{subsec:frontend}
-The markup of the future application will be coded using HTML 5 \cite{documentation:HTML}. The application markup will be built using BEM front end development approach \cite{documentation:BEM}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future \cite{article:BEMForSmallProjects}.
+The markup of the future application will be coded using HTML 5 \citet{documentation:HTML}. The application markup will be built using BEM front end development approach \citet{documentation:BEM}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future \citet{article:BEMForSmallProjects}.
 
 CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \cite{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
 
 In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
  
-JavaScript, specifically JQuery library \cite{documentation:jQuery}, will be utilised to add animations and improve overall user experience from using the application.  
+JavaScript, specifically JQuery library \citet{documentation:jQuery}, will be utilised to add animations and improve overall user experience from using the application.  
 
 In order to handle time-consuming and repetitive tasks on the front end side, the application will utilise the task-based command-line tool Grunt. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\linewidth]{impl/images/gruntInAction}
+		\includegraphics[width=.60\textwidth]{impl/images/gruntInAction}
 		\caption{A screenshot from the terminal output running Grunt.} \label{fig:using:gruntinaction}
 	\end{center}
 \end{figure}
 	
-In addition, RequireJS  \cite{documentation:RequireJS}, a powerful asynchronous script loader will be used for effective management of JavaScript dependencies. It can load modules in asynchronous manner if desired and thus improve overall website performance.
+In addition, RequireJS  \citet{documentation:RequireJS}, a powerful asynchronous script loader will be used for effective management of JavaScript dependencies. It can load modules in asynchronous manner if desired and thus improve overall website performance.
 
 \subsection{Back End}
 \label{subsec:backend}
 For making reasonably accurate football results predictions the application requires latest footaball data. Live data would have to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. Based on the above assumptions, Python was chosen as a primary back end language for this project being known as a language well suited to data manipulation.
 
-The back end of the web application will be built using Python web framework Flask \cite{documentation:Flask}. It is a lightweight framework (the official name is "Python microframework") with a great choice of third-party libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the feature set of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the full-featured frameworks like Django that have a lot of functionality already built-in in the basic installation. In addition, availability of developer-friendly documentation and low learning curve makes Flask a short way to get a simple, Python-powered web site up and running. Therefore, Flask appears to be a great choice for a small project like SureThing. 
+The back end of the web application will be built using Python web framework Flask \citet{documentation:Flask}. It is a lightweight framework (the official name is "Python microframework") with a great choice of third-party libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the feature set of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the full-featured frameworks like Django that have a lot of functionality already built-in in the basic installation. In addition, availability of developer-friendly documentation and low learning curve makes Flask a short way to get a simple, Python-powered web site up and running. Therefore, Flask appears to be a great choice for a small project like SureThing. 
 
-SQLAlchemy was chosen as database solution for this project \cite{documentation:SqlAlchemy}. This is a powerful database framework that supports several databases back ends and offers the high-level Object Relational Mapper (for short, ORM). Using ORM provides a great level of abstraction when working with databases. For example, SQLAlchemy uses classes that map to each table in a database. This means that the records interaction can be kept the same regardless of the underlying database system. This offers a lot of flexibility and, for example, allows to use different database systems for development and production environment. According to \cite{book:Grindberg2014FlaskWebDevelopment}, "Flask-Migrate extension, based on a migration framework Alembic and written by a lead developer of SQLAlchemy, provides a powerful solution to handle database alterations and make database schema updates easily manageable" 
+SQLAlchemy was chosen as database solution for this project \citet{documentation:SqlAlchemy}. This is a powerful database framework that supports several databases back ends and offers the high-level Object Relational Mapper (for short, ORM). Using ORM provides a great level of abstraction when working with databases. For example, SQLAlchemy uses classes that map to each table in a database. This means that the records interaction can be kept the same regardless of the underlying database system. This offers a lot of flexibility and, for example, allows to use different database systems for development and production environment. According to \citet{book:Grindberg2014FlaskWebDevelopment}, "Flask-Migrate extension, based on a migration framework Alembic and written by a lead developer of SQLAlchemy, provides a powerful solution to handle database alterations and make database schema updates easily manageable" 
 
 \section{Application Architecture}
 \label{sec:applicationarchitecture}
-Application architecture is a base of a good quality software. The architecture of SureThing was from a big part dictated by the used framework Flask, that uses a variation of MVC for Python called "MTV" (Model-Template-Controller). Nando Florestan \cite{article:goodArchitecture} in his blog post describes this pattern in the following way:
+Application architecture is a base of a good quality software. The architecture of SureThing was from a big part dictated by the used framework Flask, that uses a variation of MVC for Python called "MTV" (Model-Template-Controller). Nando Florestan \citet{article:goodArchitecture} in his blog post describes this pattern in the following way:
 
 \begin{quote}
 "The template contains HTML content and presentation logic. It is written in a templating language ... It gets data from the view and outputs a web page. The view (also sometimes called “controller”), written in Python, is just glue code. It uses the web framework to put everything together. The model layer is essentially a persistence layer: its most important dependency is SQLAlchemy. The model knows how to save the data, constituting the most reusable code in the entire project."
@@ -48,18 +48,18 @@ Application architecture is a base of a good quality software. The architecture 
 However, on the top of the standard MVC architecture SureThing requires few extra components to manage the loading of the data from an external source. Hence, this is the final layout of the application architecture:
 
 \begin{itemize}
-    \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to Florestan \cite{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
+    \item \textbf{Model Layer.} Contains Python classes that represent database models and related logic. According to Florestan \citet{article:goodArchitecture}, model layer "represents the essence of your system without the details of a user interface."
     \item \textbf{View Layer.} Holds association between URL rules and view functions that are defined with a help of a module-level decorator \emph{route()}. Below can be found an excerpt from the application code, a header of a view function that represents the dashboard page. When a browser requests \url{/dashboard} URL, the associated view function is called and the return value is sent back to the browser. 
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[width=.70\linewidth]{impl/images/routeExample}
+        \includegraphics[width=.70\textwidth]{impl/images/routeExample}
         \caption{Dashboard view function.} \label{fig:using:routeexample}
     \end{center}
 \end{figure}     
         
     \item \textbf{Template Layer.} This is the mediator layer between an HTTP request and the application logic. It consists of a number of Jinja2 templates holding only     presentation logic. 
-    \item \textbf{External Services Layer} \cite{article:goodArchitecture}. Contains API wrapper class that accesses and manipulates live football data. In general, the functionality of the application can be further extended in many ways. In the future, Football-API might not be the only external source of data. The project might make use of another third-party API or even use web scraping technique to extract data from other websites . Eventually, all additional modules related to the interaction with external sources of data will become part of this layer.
+    \item \textbf{External Services Layer} \citet{article:goodArchitecture}. Contains API wrapper class that accesses and manipulates live football data. In general, the functionality of the application can be further extended in many ways. In the future, Football-API might not be the only external source of data. The project might make use of another third-party API or even use web scraping technique to extract data from other websites . Eventually, all additional modules related to the interaction with external sources of data will become part of this layer.
     \item \textbf{Threading.} The application requests live football data frequently. Loading the data is a costly I/O operation that may become a bottleneck unless performed asynchronously. Threading component of the apllication defines a class \emph{DataUpdateThread} that takes care of writing the data to the server every 100 seconds. This task is performed in a separate thread. 
 \end{itemize}
 
@@ -67,26 +67,26 @@ During the development process, a lot of effort was put into keeping the Templat
 
 \section{Patterns And Conventions}
 \label{sec:patternsandconventions}
-Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives developer a lot of freedom to decide how to structure the application. As Matt Wright \cite{article:howIstructureMyFlaskApps} puts it: " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during the implementation phase will be described and explained. 
+Flask offers an excellent extendable core of functionality; its API is also very minimalistic and easy to understand. One of the  main advantages of this framework is that it gives developer a lot of freedom to decide how to structure the application. As Matt Wright \citet{article:howIstructureMyFlaskApps} puts it: " without patterns or conventions your applications will loose architectural integrity and be difficult to understand by others". In this section a number of various patterns, conventions and tools used during the implementation phase will be described and explained. 
 
 \subsection{Application Factory}
 \label{subsec:applicationfactory}
-The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. The problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." \cite{book:Grindberg2014FlaskWebDevelopment} To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and make testing of various confurations easier.\cite{documentation:FlaskApplicationFactories} 
+The use of factory pattern is crucial to a Flask application. For example, SureThing app defines various configurations to be used in different environments (development, testing, production). However, because the application instance is created in the global scope, there is no way to apply those configurations. The problem is that "by the time the script is running, the application instance has already been created, so it is already too late to make configuration changes." \citet{book:Grindberg2014FlaskWebDevelopment} To get around this problem a creation of the application was moved into a separate function, \emph{create\_app()}. The name of configuration name is passed into the function as a parameter. This solution also allows us to create multiple instances of the application and make testing of various confurations easier.\citet{documentation:FlaskApplicationFactories} 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.50\columnwidth]{impl/images/createApp}
+		\includegraphics[width=.50\textwidth]{impl/images/createApp}
 		\caption{Function responsible for creating the application instance.} \label{fig:using:createapp}
 	\end{center}
 \end{figure}
 
 \subsection{Blueprints}
 \label{subsec:blueprints}
-Blueprints are related to the View Layer introduced in the section Application Architecture \cite{sec:applicationarchitecture}. A large application is divided into smaller parts and each part is implemented with help of a blueprint. This concept helps to develop a \emph{modular} web application. SureThing was divided into two parts: \emph{main} and \emph{auth}. \emph{auth} holds the endpoints associated with the authentication and user profile related tasks, for example \emph{login()}, \emph{edit\_profile()}. On the other hand \emph{main} is in charge of the rest of the application. Notice how those different blueprints are registered on the application instance inside the \emph{create\_app()} function:
+Blueprints are related to the View Layer introduced in the section Application Architecture \citet{sec:applicationarchitecture}. A large application is divided into smaller parts and each part is implemented with help of a blueprint. This concept helps to develop a \emph{modular} web application. SureThing was divided into two parts: \emph{main} and \emph{auth}. \emph{auth} holds the endpoints associated with the authentication and user profile related tasks, for example \emph{login()}, \emph{edit\_profile()}. On the other hand \emph{main} is in charge of the rest of the application. Notice how those different blueprints are registered on the application instance inside the \emph{create\_app()} function:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.50\columnwidth]{impl/images/blueprintsRegistration}
+		\includegraphics[width=.50\textwidth]{impl/images/blueprintsRegistration}
 		\caption{Blueprints registration.} \label{fig:using:blueprintsregistration}
 	\end{center}
 \end{figure}
@@ -97,11 +97,11 @@ The database scheme for this project was designed in an iterative way, models an
 
 \subsection{Exceptions}
 \label{subsec:exceptions}
-In general, it is considered a good practice to take advantage of standard libararies of a programming language, in our case Python. First of all, it allows developer to save time implementing a piece of functionality from scratch. Secondly, it makes it easier for other developers to read and maintain the code. Exceptions are built into Python at the language level. Using them will lead to cleaner code and will not have any impact on the performance. "In a way, try blocks are like transactions. [The] catch has to leave ... program in a consistent state, no matter what happens in the try. For this reason it is good practice to start with a try- catch- finally statement when you are writing code that could throw exceptions " \cite{book:martin2011robert}.
+In general, it is considered a good practice to take advantage of standard libararies of a programming language, in our case Python. First of all, it allows developer to save time implementing a piece of functionality from scratch. Secondly, it makes it easier for other developers to read and maintain the code. Exceptions are built into Python at the language level. Using them will lead to cleaner code and will not have any impact on the performance. "In a way, try blocks are like transactions. [The] catch has to leave ... program in a consistent state, no matter what happens in the try. For this reason it is good practice to start with a try- catch- finally statement when you are writing code that could throw exceptions " \citet{book:martin2011robert}.
  
 SureThing will make use of Exceptions in order to identify and manage failures when making an API call over HTTP. The FootballAPIWrapper class has a private method that calls the API and collects the data in a JSON format from the remote server: \emph{\_call\_api(action=None, **kwargs)}. The method takes into account the possibility of errors occuring during code execution. When the program calls the API, either JSON data is returned or an Exception is thrown. 
 
-As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_all\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \cite{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors \cite{documentation:PythonRequests}. If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
+As it can be seen from the method definition above, one of the required parameters is \emph{action} that is set to None, unless the value is passed in during the method call. Action is a string that needs to be added to the base url in order to indicate the set of data that is being accessed. Specifying the action is required by the API and the possible values of the parameters (actions) are: competition, standings, today, fixtures, commentaries. For example action \emph{today} will returns the matches scheduled today. The \emph{\_all\_api} method will raise an Exception, if the action is not being supplied. Various exceptions are thrown when the program is attempting to connect to the remote server \citet{article:httpRequestsExceptions}. Python library \emph{requests} is used to take care of this type of errors \citet{documentation:PythonRequests}. If the domain name does not resolve, the HTTP request will fail before we establish connection. In that case, the program will throw a \emph{requests.exceptions.ConnectionError}. If the remote server is not functioning or the request is structured incorrectly, the server will respond with an bad response status code and the \emph{\_call\_api} method will raise a \emph{requests.exceptions.HTTPError}.
 
 \section{Other Implementation Processes}
 \label{sec:otherprocesses}
@@ -112,11 +112,11 @@ In this section a number of other implementation processes and used tools will b
 
 \subsection{Version Control}
 \label{subsec:git}
-Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \cite{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... [It also] provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, "performance", "design", "bug", "optional", etc. 
+Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it has also many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is \citet{wiki:GitHub} "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... [It also] provides web-based graphical interface". For this project GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, "performance", "design", "bug", "optional", etc. 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/githubLabelsChoice}
+		\includegraphics[width=.90\textwidth]{impl/images/githubLabelsChoice}
 		\caption{GitHub allows developers to add custom labels.} \label{fig:using:githublabelschoice}
 	\end{center}
 \end{figure}
@@ -125,7 +125,7 @@ GitHub also allows the users to filter out the issues of a similar type, based o
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/githubFunctionalityIssues}
+		\includegraphics[width=.90\textwidth]{impl/images/githubFunctionalityIssues}
 		\caption{GitHub. Issues related to the functionality of the application.} \label{fig:using:githubfunctionalityissues}
 	\end{center}
 \end{figure}
@@ -138,7 +138,7 @@ Flask-WTF is a Flask extension that offers integration with WTForms and it was u
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/customValidator}
+		\includegraphics[width=.90\textwidth]{impl/images/customValidator}
 		\caption{Validator function that checks if user with this username has already been registered with the SureThing application} \label{fig:using:customValidator}
 	\end{center}
 \end{figure}
@@ -153,7 +153,7 @@ One of the example usages was rendering form fields. Each form field related mac
 Another macro, \emph{teamkitimage(match, home=1)} renders an image representing a football club. Based on the provided arguments, the function displays an image of a home or away team kit for a specific club. 
 
 \subsection{Integration with third-party API}
-Many production Python web applications rely on external application programming interfaces (APIs). API can be also reffered to as "third party services" or "external platform" \cite{article:API_Integration}.  SureThing requires constant access to current football data. After choosing an appropriate API, it has to be integrated into the application. 
+Many production Python web applications rely on external application programming interfaces (APIs). API can be also reffered to as "third party services" or "external platform" \citet{article:API_Integration}.  SureThing requires constant access to current football data. After choosing an appropriate API, it has to be integrated into the application. 
 
 There is a variety of tools available for developers for accessing web APIs. Those three options were considered when choosing an appropriate tool:
 	
@@ -172,7 +172,7 @@ All interaction with the Football-API, including processing the received data, w
 	
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/footballApiWrapperFields}
+		\includegraphics[width=.90\textwidth]{impl/images/footballApiWrapperFields}
 		\caption{Football API wrapper, fields} \label{fig:using:footballapiwrapperfields}
 	\end{center}
 \end{figure}
@@ -187,14 +187,14 @@ A good example is an alert dismissal. SureThing generates many alerts that give 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/alert}
+		\includegraphics[width=.60\textwidth]{impl/images/alert}
 		\caption{An example of an alert on the page appearing after user has logged out} \label{fig:alert}
 	\end{center}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/alertFadeOut}
+		\includegraphics[width=.60\textwidth]{impl/images/alertFadeOut}
 		\caption{The same alert fading out.} \label{fig:alertFadeOut}
 	\end{center}
 \end{figure}
@@ -204,7 +204,7 @@ Another example is a new message notification. Once user received a new in-app m
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/alertFadeOut}
+		\includegraphics[width=.60\textwidth]{impl/images/alertFadeOut}
 		\caption{The same alert fading out.} \label{fig:alertFadeOut}
 	\end{center}
 \end{figure}
@@ -213,7 +213,7 @@ When user navigates to the Inbox and reads or deletes all the new messages, the 
  
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/newMessagesDesktopView}
+		\includegraphics[width=.60\textwidth]{impl/images/newMessagesDesktopView}
 		\caption{You have new messages. Desktop View.} \label{fig:newmessagesdesktopview}
 	\end{center}
 \end{figure}
@@ -222,7 +222,7 @@ This is what the same top navigation menu looks like for mobile users.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/newMessagesMobileView}
+		\includegraphics[width=.60\textwidth]{impl/images/newMessagesMobileView}
 		\caption{You have new messages. Mobile View.} \label{fig:newmessagesmobileview}
 	\end{center}
 \end{figure}
@@ -231,28 +231,28 @@ User has opened the last unread message and the message icon has turned grey. No
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.60\columnwidth]{impl/images/noMoreNewMessages}
+		\includegraphics[width=.60\textwidth]{impl/images/noMoreNewMessages}
 		\caption{User just read the last new message, the icon turns grey.} \label{fig:nomorenewmessages}
 	\end{center}
 \end{figure}
 
 \subsection{Responsive Design}
-According to the popular portal Statista, "As of 2013, worldwide mobile phone internet user penetration was 73.4 percent. In 2017, figures suggest that more than 90 percent of internet users will access online content through their phones" \cite{statistaReport}. There is no doubt that developers need to adapt to the increasing combinations of screen resolution and browsers used by people to access information online. The solution to the expanding variability of the web is to develop a layout that can adapt to any viewport. This approach is known as \emph{responsive web design}. The term was first used by Ethan Marcotte. He combined three already known techniques (flexible grid layout, flexible images, and media and media queries) into a unified approach \cite{book:frain2012responsive}. 
+According to the popular portal Statista, "As of 2013, worldwide mobile phone internet user penetration was 73.4 percent. In 2017, figures suggest that more than 90 percent of internet users will access online content through their phones" \citet{statistaReport}. There is no doubt that developers need to adapt to the increasing combinations of screen resolution and browsers used by people to access information online. The solution to the expanding variability of the web is to develop a layout that can adapt to any viewport. This approach is known as \emph{responsive web design}. The term was first used by Ethan Marcotte. He combined three already known techniques (flexible grid layout, flexible images, and media and media queries) into a unified approach \citet{book:frain2012responsive}. 
 
-Based on the above, we should assume that the majority of users will access our website through a device that is not a desktop. To build a responsive web application we need a good fluid grid. To handle the responsiveness and to increase development speed SureThing utilises Bootstrap framework \cite{documentation:Bootstrap3}. that offers an responsive fluid grid system that can adjust to the variety of devices or screen sizes. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices. 
+Based on the above, we should assume that the majority of users will access our website through a device that is not a desktop. We need a good fluid grid to build a responsive web application. To handle the responsiveness and to increase development speed SureThing utilises Bootstrap framework \citet{documentation:Bootstrap3}. that offers an responsive fluid grid system that can adjust to the variety of devices or screen sizes. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices. 
 
-SureThing is a fully responsive web application, it supports all screen sizes starting from DVGA - iPhone (640 x 960). These are the screenshots of some of the application pages resized to this screen size:
+SureThing is a fully responsive web application, and the minimum screen resolution supported is 640 x 960 pixels (an example device is an iPhone 4). These are the screenshots of some of the application pages tested with this resolution:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.50\columnwidth]{impl/images/responsiveDashboard}
+		\includegraphics[width=.50\textwidth]{impl/images/responsiveDashboard}
 		\caption{Dashboard view, DVGA screen size.} \label{fig:using:responsivedashboard}
 	\end{center}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.50\columnwidth]{impl/images/responsiveModuleLeaguePosition}
+		\includegraphics[width=.50\textwidth]{impl/images/responsiveModuleLeaguePosition}
 		\caption{Module League Position in the Upcoming Match View, DVGA screen size.} \label{fig:using:responsivemoduleleagueposition}
 	\end{center}
 \end{figure}
@@ -267,7 +267,7 @@ The application requires authentication functionality. In order to simplify the 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/registrationFormError}
+		\includegraphics[width=.90\textwidth]{impl/images/registrationFormError}
 		\caption{SureThing offers registration form for the new users. However, the email address is expected to be unique.} \label{fig:registrationformerror}
 	\end{center}
 \end{figure}
@@ -278,7 +278,7 @@ An authorised user will see the icon with their avatar picture in the top right 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/gravatar}
+		\includegraphics[width=.90\textwidth]{impl/images/gravatar}
 		\caption{User settings and the profile page can be accessed by clicking on the gravatar icon located on the application navigation menu panel.} \label{fig:gravatar}
 	\end{center}
 \end{figure}
@@ -287,7 +287,7 @@ In case the user is not registered with the Gravatar, SureThing will generate a 
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/dummyGravatar}
+		\includegraphics[width=.90\textwidth]{impl/images/dummyGravatar}
 		\caption{An example of a dummy gravatar for user \textbf{gannet}.} \label{fig:dummygravatar}
 	\end{center}
 \end{figure}
@@ -297,14 +297,14 @@ The options available in the dropdown menu, as displayed in the figure ~\ref{fig
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/changePassword}
+		\includegraphics[width=.90\textwidth]{impl/images/changePassword}
 		\caption{Users can change their passwords for securiy reasons.} \label{fig:changePassword}
 	\end{center}
 \end{figure}
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/editProfile}
+		\includegraphics[width=.90\textwidth]{impl/images/editProfile}
 		\caption{After the registration users can share more information about themselves by editing their profile.} \label{fig:editprofile}
 	\end{center}
 \end{figure}
@@ -392,7 +392,8 @@ If the user is coming to the Upcoming Match Preview from the \emph{main page}, t
 This information should be sufficient for the user to decide, whether it is worth saving the match to the dashboard for a later revision. An unauthorised user would be able to see the same content, but the "Save" button will be disabled. We can say that if user navigates to the Upcoming Match View from the main page, they can see the view in the \textbf{read-only mode}. It is also important to note that this is one of few views that are available for an unauthorised user.
 
 \subsubsection*{Prediction mode}
-In case user has already saved the match to the dashboard and navigates to the view by clicking on a saved match panel, the view will enable the prediction feature. This time the view is displayed in the \textbf{prediction mode}. In each of the prediction modules user will be able to see an embedded input field with weight percentages inside the field. Below can be found a screenshot of a same part of the view as the one above, displayed in prediction mode.
+\label{subsubsec:predictionmode_implementation}
+In case user has already saved the match to the dashboard and navigates to the Upcoming Match View by clicking on a saved match panel, the view will enable the prediction feature. This time the view is displayed in the \textbf{prediction mode}. In each of the prediction modules user will be able to see an embedded input field with weight percentages inside the field. Below can be found a screenshot of a same part of the view as the one above, displayed in prediction mode.
 
 \begin{figure}[H]
 	\begin{center}
@@ -412,7 +413,7 @@ These are the prediction modules available to the user in the prediction mode:
 	\item User Hunch
 \end{enumerate}
 
-Notice, the extra module is available in this view - User Hunch. This module is very important to the prediction process. User can personalise the prediction by choosing Home, Away or Draw value in the User Hunch module panel. The module will be explained in more detail in the subsection, "Prediction" \cite{subsec:predictionimplementation}
+Notice, the extra module is available in this view - User Hunch. This module is very important to the prediction process. User can personalise the prediction by choosing Home, Away or Draw value in the User Hunch module panel. The module will be explained in more detail in the following subsection, "Prediction" \ref{subsec:prediction_implementation}
 
 \begin{figure}[H]
 	\begin{center}
@@ -450,13 +451,83 @@ First of all, in each prediction module they will see an input fields for settin
 most Explain how was implemented user hunch: combination of Flask Ajax and Sockets IO!!!
  
 \subsection{Prediction}
-\label{subsec:predictionimplementation}
-After getting familiar with the \emph{Upcoming Match View}, the next logical step is to introduce the reader of this report to the Prediction feature of the application. This will aid understanding how to use the \emph{Upcoming Match View} and what kind of information this view offers to an intended user. The implementation of the Prediction feature was already explained in the chapter "Requirements Analysis", subsection "Prediction" \cite{subsec:prediction_requirements}. However, in this subsection I would like to outline the three levels of prediction settings used in the application, explain the calculation used behind each of the prediction values and also link the Prediction feature to other views. 
+\label{subsec:prediction_implementation}
+After getting familiar with the \emph{Upcoming Match View}, the next logical step is to introduce the reader of this report to the Prediction feature of the application. This will aid understanding how to use the \emph{Upcoming Match View} and what kind of information this view offers to an intended user. The implementation of the Prediction feature was already briefly outlined in the chapter "Requirements Analysis", subsection "Prediction" \ref{subsec:prediction_requirements}. In this part of the report, I would like to illustrate the practical side of this feature. In this subsection will be explained several levels of prediction settings used in the application, the way the prediction values are calculated and the logic behind the prediction of the match result. 
 
-The application has three levels of prediction settings or weights. Firstly, the \emph{system default} prediction settings - a set of weights "recommended" to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the default settings, \emph{user default} prediction settings. This can be done through a "Prediction Settings" form, as explained in the subsection "Dashboard" \cite{subsec:dashboard}. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also enables setting \emph {match specific} prediction settings that will only apply to one match. User can set match specific settings through the Upcoming Match view page.
+\subsubsection*{Three levels of prediction weights}
+SureThing has three levels of prediction settings or weights. Firstly, the \emph{system default} prediction settings - a set of weights "recommended" to the new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the system default settings - \emph{user default} prediction settings. This can be done through a "Prediction Settings" form, as explained in the subsection "Dashboard" \ref{subsec:dashboard}. From the moment those weights are saved in the database, they will apply to every newly saved match. The application also enables setting \emph {match specific} prediction settings that will only apply to one match. User can set match specific weights through the Upcoming Match view page in prediction mode \ref{subsubsec:predictionmode_implementation}.
 
-There is a quite simple and logical equasions behind each of the prediction values that are displayed on the prediction modules panels and are used to calculate the overall match prediction. 
-Equasions
+The prediction of match result is expressed in percentage and is calculated as a weighted average of a set of prediction values with different levels of relevance. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.80\textwidth]{impl/images/predictionValues}
+		\caption{Prediction values can be found on the panels for each module.} \label{fig:using: predictionvalues}
+	\end{center}
+\end{figure}
+
+\subsubsection*{How the prediction values are calculated}
+There are quite simple and logical equations behind each of the prediction values. Note that \emph{prediction\_league\_position()}, \emph{prediction\_form()} and \emph{prediction\_homeaway()} functions that hold the calculation code are implemented as properties of a class representing the database model \emph{Match} and therefore can be easily accessed from any part of the code. 
+
+Module League position compares positions in the league table for each of the teams. To calculate the prediction value behind module League Position we first "revert" the league position of each team by subtracting it from the total number of positions in the league, which is 20 for the Premier League. The maximum "reverted" value that may be achieved by each team is 19 (as the top league position is 1). Next, we find the difference between the two obtained values and divide it by the maximum "reverted" value, which is again 19.  Below can be found the equation and the code implementing it.
+
+\begin{equation}
+   prediction\_value = \frac{(20-hometeam\_position)-(20-awayteam\_position)}{19}
+\end{equation}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.80\textwidth]{impl/images/predictionLeaguePosition}
+		\caption{The calculation behind the prediction value for the module League Position.} \label{fig:using: predictionleagueposition}
+	\end{center}
+\end{figure}
+
+Module Form takes into consideration team performance in the last 6 games. To calculate the prediction value for the Form module, we need to consider the difference between points achieved by the teams in the last 6 games (this value is taken directly from the league standings table). Obtained difference is then divided by 18, the maximum number of points a team can achieve.
+
+\begin{equation}
+   prediction\_value = \frac{(hometeam\_points)-(awayteam\_points)}{18}
+\end{equation}
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.80\textwidth]{impl/images/predictionForm}
+		\caption{The calculation behind the prediction value for the Form module.} \label{fig:using: predictionform}
+	\end{center}
+\end{figure}
+
+For the Home/Away module we consider the last 6 matches for the home team played \emph{at home} and for the away team played \emph{away}. The equasion behind the prediction value for the module Home/Away is similar to the one above. However, this time we compare points representing \emph{home} performance for the home team and \emph{away} performance for the away team. 
+
+\begin{equation}
+   prediction\_value = \frac{(hometeam\_home\_points)-(awayteam\_away\_points)}{18}
+\end{equation}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.80\textwidth]{impl/images/predictionHomeAway}
+		\caption{The calculation behind the prediction value for the Home/Away module.} \label{fig:using: predictionhomeaway}
+	\end{center}
+\end{figure}
+
+A simple rule of thumb works for all modules: a positive prediction value represents higher chances for the hometeam to win. The higher the value the higher is the probability of this event to happen. On the other hand, the negative value means that the awayteam is more likely to win the match. 
+
+\subsubsection*{How the is the match result predicted}
+As already mentioned above, the overall match result is calculated as a weighted average of the prediction values. Application only has to decide which set of weights to use, depending on whether the user provided match specific or user specific settings. Below is an example of how this calculation is performed.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.80\textwidth]{impl/images/overallPredictionCalculation}
+		\caption{The table illustrates the calculation behind prediction of match result.} \label{fig:using: overallpredictioncalculation}
+	\end{center}
+\end{figure}
+
+As it can be seen in the table above, modules' League Position and Form prediction values indicate that the hometeam has strong chances to win the match, as the values are positive (78\% and 44\%). However, the negative value of the module Home/Away implies that there is 14\% probability that the awayteam will be the winner. It is also obvious that the user is favouring the hometeam, as the user hunch prediction value is positive and equals 100\%. These values are averaged by the user default weights as follows: 
+
+\begin{equation}
+   match\_result\_prediction = \frac{78%*20% + 44%*20% -14%*10% + 100%*50%}{100%}
+\end{equation}
+
+78, 44, -40, 100
 An excel tables showing how the weighted average is calculated (check the hunch subsection, dont repeat yourself)
 
 \subsection{Played Match View}
@@ -509,7 +580,7 @@ SureThing dashboard is a centralised user space that provides convinient shortcu
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\columnwidth]{impl/images/typicalDashboard}
+		\includegraphics[width=.90\textwidth]{impl/images/typicalDashboard}
 		\caption{Dashboard view.} \label{fig:typicaldashboard}
 	\end{center}
 \end{figure}

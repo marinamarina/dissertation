@@ -37,29 +37,34 @@
 \contentsline {figure}{\numberline {5.29}{\ignorespaces Module User Hunch.\relax }}{50}{figure.caption.46}
 \contentsline {figure}{\numberline {5.30}{\ignorespaces Match result prediction.\relax }}{50}{figure.caption.47}
 \contentsline {figure}{\numberline {5.31}{\ignorespaces An example of a prediction module in the Match Preview, user navigated from the main page.\relax }}{51}{figure.caption.49}
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Played Match View, match header.\relax }}{52}{figure.caption.50}
-\contentsline {figure}{\numberline {5.33}{\ignorespaces Played Match View, users' prediction statistics.\relax }}{53}{figure.caption.51}
-\contentsline {figure}{\numberline {5.34}{\ignorespaces Prediction breakdown.\relax }}{53}{figure.caption.52}
-\contentsline {figure}{\numberline {5.35}{\ignorespaces Played Match View, feedback provided for authenticated users.\relax }}{53}{figure.caption.53}
-\contentsline {figure}{\numberline {5.36}{\ignorespaces Dashboard view.\relax }}{54}{figure.caption.55}
-\contentsline {figure}{\numberline {5.37}{\ignorespaces An example of a Dashboard View with matches that have been committed and played.\relax }}{55}{figure.caption.56}
-\contentsline {figure}{\numberline {5.38}{\ignorespaces Dashboard with no saved matches.\relax }}{55}{figure.caption.57}
-\contentsline {figure}{\numberline {5.39}{\ignorespaces Dashboard menu.\relax }}{56}{figure.caption.59}
-\contentsline {figure}{\numberline {5.40}{\ignorespaces An example of a message sent to the user.\relax }}{56}{figure.caption.60}
-\contentsline {figure}{\numberline {5.41}{\ignorespaces Navigation menu panel with an inbox icon.\relax }}{57}{figure.caption.62}
-\contentsline {figure}{\numberline {5.42}{\ignorespaces User inbox.\relax }}{57}{figure.caption.63}
-\contentsline {figure}{\numberline {5.43}{\ignorespaces Leaderboard.\relax }}{58}{figure.caption.64}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Prediction values can be found on the panels for each module.\relax }}{52}{figure.caption.51}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces The calculation behind the prediction value for the module League Position.\relax }}{53}{figure.caption.53}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces The calculation behind the prediction value for the Form module.\relax }}{53}{figure.caption.54}
+\contentsline {figure}{\numberline {5.35}{\ignorespaces The calculation behind the prediction value for the Home/Away module.\relax }}{54}{figure.caption.55}
+\contentsline {figure}{\numberline {5.36}{\ignorespaces The table illustrates the calculation behind prediction of match result.\relax }}{54}{figure.caption.57}
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Played Match View, match header.\relax }}{55}{figure.caption.58}
+\contentsline {figure}{\numberline {5.38}{\ignorespaces Played Match View, users' prediction statistics.\relax }}{56}{figure.caption.59}
+\contentsline {figure}{\numberline {5.39}{\ignorespaces Prediction breakdown.\relax }}{56}{figure.caption.60}
+\contentsline {figure}{\numberline {5.40}{\ignorespaces Played Match View, feedback provided for authenticated users.\relax }}{56}{figure.caption.61}
+\contentsline {figure}{\numberline {5.41}{\ignorespaces Dashboard view.\relax }}{57}{figure.caption.63}
+\contentsline {figure}{\numberline {5.42}{\ignorespaces An example of a Dashboard View with matches that have been committed and played.\relax }}{58}{figure.caption.64}
+\contentsline {figure}{\numberline {5.43}{\ignorespaces Dashboard with no saved matches.\relax }}{58}{figure.caption.65}
+\contentsline {figure}{\numberline {5.44}{\ignorespaces Dashboard menu.\relax }}{59}{figure.caption.67}
+\contentsline {figure}{\numberline {5.45}{\ignorespaces An example of a message sent to the user.\relax }}{59}{figure.caption.68}
+\contentsline {figure}{\numberline {5.46}{\ignorespaces Navigation menu panel with an inbox icon.\relax }}{60}{figure.caption.70}
+\contentsline {figure}{\numberline {5.47}{\ignorespaces User inbox.\relax }}{60}{figure.caption.71}
+\contentsline {figure}{\numberline {5.48}{\ignorespaces Leaderboard.\relax }}{61}{figure.caption.72}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Travis CI configuration file.\relax }}{61}{figure.caption.66}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces An extract from README on GitHub. Travis status icon indicates that the last build passed.\relax }}{61}{figure.caption.67}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Travis CI configuration file.\relax }}{64}{figure.caption.74}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces An extract from README on GitHub. Travis status icon indicates that the last build passed.\relax }}{64}{figure.caption.75}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Wireframes, initial design\relax }}{65}{figure.caption.68}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Inital sketch of wireframe ideas\relax }}{65}{figure.caption.69}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Wireframes, initial design\relax }}{69}{figure.caption.76}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Inital sketch of wireframe ideas\relax }}{69}{figure.caption.77}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces A Sideways Figure}}{71}{figure.caption.71}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces A Sideways Figure}}{75}{figure.caption.79}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
