@@ -6,65 +6,65 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Squawka\relax }}{9}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A screenshot from the terminal output running Grunt.\relax }}{27}{figure.caption.10}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Dashboard view function.\relax }}{29}{figure.caption.11}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Function responsible for creating the application instance.\relax }}{31}{figure.caption.12}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Blueprints registration.\relax }}{31}{figure.caption.13}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces GitHub allows developers to add custom labels.\relax }}{33}{figure.caption.14}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces GitHub. Issues related to the functionality of the application.\relax }}{34}{figure.caption.15}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Validator function that checks if user with this username has already been registered with the SureThing application\relax }}{35}{figure.caption.16}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Football API wrapper, fields\relax }}{36}{figure.caption.17}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces An example of an alert on the page appearing after user has logged out\relax }}{37}{figure.caption.19}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces The same alert fading out.\relax }}{37}{figure.caption.20}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces The same alert fading out.\relax }}{38}{figure.caption.22}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces You have new messages. Desktop View.\relax }}{38}{figure.caption.23}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces You have new messages. Mobile View.\relax }}{38}{figure.caption.24}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces User just read the last new message, the icon turns grey.\relax }}{39}{figure.caption.25}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Dashboard view, DVGA screen size.\relax }}{40}{figure.caption.26}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Module League Position in the Upcoming Match View, DVGA screen size.\relax }}{40}{figure.caption.27}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces SureThing offers registration form for the new users. However, the email address is expected to be unique.\relax }}{41}{figure.caption.29}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces User settings and the profile page can be accessed by clicking on the gravatar icon located on the application navigation menu panel.\relax }}{42}{figure.caption.30}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces An example of a dummy gravatar for user \textbf {gannet}.\relax }}{42}{figure.caption.31}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Users can change their passwords for securiy reasons.\relax }}{43}{figure.caption.33}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces After the registration users can share more information about themselves by editing their profile.\relax }}{43}{figure.caption.34}
-\contentsline {figure}{\numberline {5.22}{\ignorespaces User profile page.\relax }}{44}{figure.caption.35}
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Matches in the overview are grouped by dates sorted in ascending order.\relax }}{45}{figure.caption.37}
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Example of an unplayed match displayed in the overview.\relax }}{45}{figure.caption.38}
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Example of a played match displayed in the overview.\relax }}{46}{figure.caption.39}
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Example of a live match displayed in the overview.\relax }}{46}{figure.caption.40}
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Upcoming Match View in the "read-only" mode: match header and the first prediction module, Module League Position.\relax }}{48}{figure.caption.43}
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Upcoming Match View in the "prediction" mode: match header and the first prediction module, Module League Position.\relax }}{49}{figure.caption.45}
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Module User Hunch.\relax }}{50}{figure.caption.46}
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Match result prediction.\relax }}{50}{figure.caption.47}
-\contentsline {figure}{\numberline {5.31}{\ignorespaces An example of a prediction module in the Match Preview, user navigated from the main page.\relax }}{51}{figure.caption.49}
-\contentsline {figure}{\numberline {5.32}{\ignorespaces Prediction values can be found on the panels for each module.\relax }}{52}{figure.caption.51}
-\contentsline {figure}{\numberline {5.33}{\ignorespaces The calculation behind the prediction value for the module League Position.\relax }}{53}{figure.caption.53}
-\contentsline {figure}{\numberline {5.34}{\ignorespaces The calculation behind the prediction value for the Form module.\relax }}{53}{figure.caption.54}
-\contentsline {figure}{\numberline {5.35}{\ignorespaces The calculation behind the prediction value for the Home/Away module.\relax }}{54}{figure.caption.55}
-\contentsline {figure}{\numberline {5.36}{\ignorespaces The table illustrates the calculation behind prediction of match result.\relax }}{54}{figure.caption.57}
-\contentsline {figure}{\numberline {5.37}{\ignorespaces Played Match View, match header.\relax }}{55}{figure.caption.58}
-\contentsline {figure}{\numberline {5.38}{\ignorespaces Played Match View, users' prediction statistics.\relax }}{56}{figure.caption.59}
-\contentsline {figure}{\numberline {5.39}{\ignorespaces Prediction breakdown.\relax }}{56}{figure.caption.60}
-\contentsline {figure}{\numberline {5.40}{\ignorespaces Played Match View, feedback provided for authenticated users.\relax }}{56}{figure.caption.61}
-\contentsline {figure}{\numberline {5.41}{\ignorespaces Dashboard view.\relax }}{57}{figure.caption.63}
-\contentsline {figure}{\numberline {5.42}{\ignorespaces An example of a Dashboard View with matches that have been committed and played.\relax }}{58}{figure.caption.64}
-\contentsline {figure}{\numberline {5.43}{\ignorespaces Dashboard with no saved matches.\relax }}{58}{figure.caption.65}
-\contentsline {figure}{\numberline {5.44}{\ignorespaces Dashboard menu.\relax }}{59}{figure.caption.67}
-\contentsline {figure}{\numberline {5.45}{\ignorespaces An example of a message sent to the user.\relax }}{59}{figure.caption.68}
-\contentsline {figure}{\numberline {5.46}{\ignorespaces Navigation menu panel with an inbox icon.\relax }}{60}{figure.caption.70}
-\contentsline {figure}{\numberline {5.47}{\ignorespaces User inbox.\relax }}{60}{figure.caption.71}
-\contentsline {figure}{\numberline {5.48}{\ignorespaces Leaderboard.\relax }}{61}{figure.caption.72}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A screenshot from the terminal output running Grunt.\relax }}{28}{figure.caption.12}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Dashboard view function.\relax }}{30}{figure.caption.13}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Function responsible for creating the application instance.\relax }}{32}{figure.caption.14}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Blueprints registration.\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces GitHub allows developers to add custom labels.\relax }}{34}{figure.caption.16}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces GitHub. Issues related to the functionality of the application.\relax }}{35}{figure.caption.17}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Validator function that checks if user with this username has already been registered with the SureThing application\relax }}{36}{figure.caption.18}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Football API wrapper, fields\relax }}{37}{figure.caption.19}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces An example of an alert on the page appearing after user has logged out\relax }}{38}{figure.caption.21}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces The same alert fading out.\relax }}{38}{figure.caption.22}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces The same alert fading out.\relax }}{39}{figure.caption.24}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces You have new messages. Desktop View.\relax }}{39}{figure.caption.25}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces You have new messages. Mobile View.\relax }}{39}{figure.caption.26}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces User just read the last new message, the icon turns grey.\relax }}{40}{figure.caption.27}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Dashboard view, DVGA screen size.\relax }}{41}{figure.caption.28}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Module League Position in the Upcoming Match View, DVGA screen size.\relax }}{41}{figure.caption.29}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces SureThing offers registration form for the new users. However, the email address is expected to be unique.\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces User settings and the profile page can be accessed by clicking on the avatar icon located on the application navigation menu panel.\relax }}{43}{figure.caption.32}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces An example of a dummy gravatar for user \textbf {gannet}, who is not registered with Gravatar services.\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Users can change their passwords for security reasons.\relax }}{44}{figure.caption.35}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces After the registration users can share more information about themselves by editing their profile.\relax }}{44}{figure.caption.36}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces User profile page.\relax }}{45}{figure.caption.37}
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Matches in the overview are grouped by dates sorted in ascending order.\relax }}{46}{figure.caption.39}
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Example of an unplayed match displayed in the overview.\relax }}{46}{figure.caption.40}
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Example of a played match displayed in the overview.\relax }}{47}{figure.caption.41}
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Example of a live match displayed in the overview.\relax }}{47}{figure.caption.42}
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Upcoming Match View in the "read-only" mode: match header and the first prediction module, Module League Position.\relax }}{49}{figure.caption.45}
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Upcoming Match View in the "prediction" mode: match header and the first prediction module, Module League Position.\relax }}{50}{figure.caption.47}
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Module User Hunch.\relax }}{51}{figure.caption.48}
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Match result prediction.\relax }}{51}{figure.caption.49}
+\contentsline {figure}{\numberline {5.31}{\ignorespaces An example of a prediction module in the Match Preview, user navigated from the main page.\relax }}{52}{figure.caption.51}
+\contentsline {figure}{\numberline {5.32}{\ignorespaces Prediction values can be found on the panels for each module.\relax }}{53}{figure.caption.53}
+\contentsline {figure}{\numberline {5.33}{\ignorespaces The calculation behind the prediction value for the module League Position.\relax }}{54}{figure.caption.55}
+\contentsline {figure}{\numberline {5.34}{\ignorespaces The calculation behind the prediction value for the Form module.\relax }}{54}{figure.caption.56}
+\contentsline {figure}{\numberline {5.35}{\ignorespaces The calculation behind the prediction value for the Home/Away module.\relax }}{55}{figure.caption.57}
+\contentsline {figure}{\numberline {5.36}{\ignorespaces The table illustrates the calculation behind prediction of match result.\relax }}{55}{figure.caption.59}
+\contentsline {figure}{\numberline {5.37}{\ignorespaces Played Match View, match header.\relax }}{56}{figure.caption.60}
+\contentsline {figure}{\numberline {5.38}{\ignorespaces Played Match View, users' prediction statistics.\relax }}{57}{figure.caption.61}
+\contentsline {figure}{\numberline {5.39}{\ignorespaces Prediction breakdown.\relax }}{57}{figure.caption.62}
+\contentsline {figure}{\numberline {5.40}{\ignorespaces Played Match View, feedback provided for authenticated users.\relax }}{57}{figure.caption.63}
+\contentsline {figure}{\numberline {5.41}{\ignorespaces Dashboard view.\relax }}{58}{figure.caption.65}
+\contentsline {figure}{\numberline {5.42}{\ignorespaces An example of a Dashboard View with matches that have been committed and played.\relax }}{59}{figure.caption.66}
+\contentsline {figure}{\numberline {5.43}{\ignorespaces Dashboard with no saved matches.\relax }}{59}{figure.caption.67}
+\contentsline {figure}{\numberline {5.44}{\ignorespaces Dashboard menu.\relax }}{60}{figure.caption.69}
+\contentsline {figure}{\numberline {5.45}{\ignorespaces An example of a message sent to the user.\relax }}{60}{figure.caption.70}
+\contentsline {figure}{\numberline {5.46}{\ignorespaces Navigation menu panel with an inbox icon.\relax }}{61}{figure.caption.72}
+\contentsline {figure}{\numberline {5.47}{\ignorespaces User inbox.\relax }}{61}{figure.caption.73}
+\contentsline {figure}{\numberline {5.48}{\ignorespaces Leaderboard.\relax }}{62}{figure.caption.74}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Travis CI configuration file.\relax }}{64}{figure.caption.74}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces An extract from README on GitHub. Travis status icon indicates that the last build passed.\relax }}{64}{figure.caption.75}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Wireframes, initial design\relax }}{69}{figure.caption.76}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Inital sketch of wireframe ideas\relax }}{69}{figure.caption.77}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Travis CI configuration file.\relax }}{65}{figure.caption.76}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces An extract from README on GitHub. Travis status icon indicates that the last build passed.\relax }}{65}{figure.caption.77}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Wireframes, initial design\relax }}{70}{figure.caption.78}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Inital sketch of wireframe ideas\relax }}{70}{figure.caption.79}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces A Sideways Figure}}{75}{figure.caption.79}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces A Sideways Figure}}{76}{figure.caption.81}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

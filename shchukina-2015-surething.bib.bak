@@ -10,12 +10,12 @@
 
 
 % BibTeX Entries
-@book{sofwareenglineering,
-	author={Ronald A. Radice and Richard W. Phillips},
-	title={Software Engineering. An Industrial Approach.},
-	year={1998},
-	publisher={Prentice-Hall, Inc.},
-	note = {[Accessed 8-Mar-2015]}
+@book{book:radice1998software,
+  title={Software engineering: an industrial approach.},
+  author={Radice, Ronald A and Phillips, Richard W},
+  year={1998},
+  publisher={Prentice-Hall, Inc.},
+  note = {[Accessed 8-Mar-2015]}
 
 }
 @book{book:martin2011robert,
@@ -25,6 +25,21 @@
 	 year = {2011},
 	 note = {[Accessed 17-Mar-2015]}
  }
+ @misc{art:simplebettingsystem,
+	author={Jim Macos},
+	title={Simple betting System},
+	year={2014},
+	howpublished={\url{http://www.betstories.com/2014/09/24/simple-betting-system/}},
+	note={Available online. [Accessed 13-10-2014]} 
+ }
+  @misc{art:bettingsystemvariableparameters,
+	author={Jim Macos},
+	title={Parameters and System Variables in a Football Betting System},
+	year={2013},
+	howpublished={\url{ http://www.betstories.com/2013/12/06/football-betting-system-variables-parameters/}},
+	note={Available online. [Accessed 13-10-2014]} 
+ }
+ 
 @misc{documentation:HTML,
 	author={W3C \& WHATWG},
 	title={HTML (HyperText Markup Language)},

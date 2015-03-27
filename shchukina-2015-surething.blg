@@ -12,49 +12,47 @@ A level-1 auxiliary file: conclude/conclude.aux
 The style file: plainnat.bst
 Database file #1: shchukina-2015-surething.bib
 Warning--I didn't find a database entry for "oddschecker"
-Warning--I didn't find a database entry for "book:softwareengineering"
+Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "sec:applicationarchitecture"
-Warning--I didn't find a database entry for "subsec:predictionimplementation"
-Warning--I didn't find a database entry for "subsec:definitions"
-You've used 29 entries,
+You've used 31 entries,
             2773 wiz_defined-function locations,
-            756 strings with 9650 characters,
-and the built_in function-call counts, 8965 in all, are:
-= -- 781
-> -- 345
-< -- 29
-+ -- 134
-- -- 102
-* -- 441
-:= -- 1392
-add.period$ -- 96
-call.type$ -- 29
-change.case$ -- 116
-chr.to.int$ -- 26
-cite$ -- 58
-duplicate$ -- 460
-empty$ -- 929
-format.name$ -- 141
-if$ -- 1929
+            761 strings with 9922 characters,
+and the built_in function-call counts, 9571 in all, are:
+= -- 837
+> -- 365
+< -- 31
++ -- 142
+- -- 108
+* -- 467
+:= -- 1486
+add.period$ -- 104
+call.type$ -- 31
+change.case$ -- 124
+chr.to.int$ -- 28
+cite$ -- 62
+duplicate$ -- 490
+empty$ -- 993
+format.name$ -- 149
+if$ -- 2061
 int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 10
-newline$ -- 162
-num.names$ -- 116
-pop$ -- 351
+newline$ -- 174
+num.names$ -- 124
+pop$ -- 375
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 98
 quote$ -- 0
-skip$ -- 373
+skip$ -- 397
 stack$ -- 0
-substring$ -- 58
-swap$ -- 35
+substring$ -- 62
+swap$ -- 37
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 294
+type$ -- 316
 warning$ -- 0
-while$ -- 87
+while$ -- 93
 width$ -- 0
-write$ -- 373
-(There were 5 warnings)
+write$ -- 401
+(There were 3 warnings)

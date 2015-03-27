@@ -1,13 +1,14 @@
 \chapter{Introduction}
-\pagenumbering{arabic} \setcounter{page}{1}
+\pagenumbering{arabic} 
+\setcounter{page}{1}
 
 \section{Motivation}
 \label{sec:motivation_intro}
-This project will aim to build an application that does something.
+This aim of this project will be building a web application that will help users find interesting events to bet on and provide information supporting the betting decision. Another aim - help user building a betting system taht will help them to make a betting decision. 
 
 \section{Problem Statement}
 \label{sec:problemstatement_intro}
-A web application aiming to predict football match results is nothing new. As it will be discussed in section 1.1, other applications either overhelm the users detailed statistics leaving the prediction decision to the user, or work as a self-contained black-box prediction tool dissallowing the user to participate in the process of prediction. To the best of my knowledge no other software offers the same experience as the one proposed in this dissertation.
+A web application aiming to predict football match results is nothing new. As it will be discussed in chapter "Requirements Analysis", section "Researching Current Solutions" \ref{sec:currentsolutions_req}, other applications either overhelm the users detailed statistics leaving the prediction decision to the user, or work as a self-contained black-box prediction tool dissallowing the user to participate in the process of prediction. To the best of my knowledge no other software offers the same experience as the one proposed in this dissertation.
 
 The aim of this project is to create a web application that would simulate betting, provide the users with some information ad allow them to infuence prediction. We aim to encourage responsible and thoughful gambling. 
 

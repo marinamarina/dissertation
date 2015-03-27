@@ -18,9 +18,9 @@
 \contentsline {section}{\numberline {2.4}Social, legal and ethical issues}{5}{section.2.4}
 \contentsline {chapter}{\numberline {3}Requirement Analysis}{6}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target Audience Questionnaire}{6}{section.3.1}
-\contentsline {section}{\numberline {3.2}Researching the Potential competitors}{6}{section.3.2}
+\contentsline {section}{\numberline {3.2}Researching Current Solutions}{6}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Sports news websites}{7}{subsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.1.1}BBC Sport Football}{7}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}BBC Sport Football}{8}{subsubsection.3.2.1.1}
 \contentsline {subsection}{\numberline {3.2.2}Football statistics websites}{8}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}WhoScored}{9}{subsubsection.3.2.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2.2}Squawka}{9}{subsubsection.3.2.2.2}
@@ -34,75 +34,77 @@
 \contentsline {subsection}{\numberline {3.3.1}Definitions}{14}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Functional Requirements}{14}{subsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.2.1}Authentication and User Profile}{15}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Matches Overview}{15}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Matches Overview}{16}{subsubsection.3.3.2.2}
 \contentsline {subsubsection}{\numberline {3.3.2.3}Prediction}{16}{subsubsection.3.3.2.3}
 \contentsline {subsubsection}{\numberline {3.3.2.4}Upcoming Match View}{17}{subsubsection.3.3.2.4}
-\contentsline {subsubsection}{\numberline {3.3.2.5}Played Match View}{17}{subsubsection.3.3.2.5}
+\contentsline {subsubsection}{\numberline {3.3.2.5}Played Match View}{18}{subsubsection.3.3.2.5}
 \contentsline {subsubsection}{\numberline {3.3.2.6}Dashboard}{18}{subsubsection.3.3.2.6}
-\contentsline {subsubsection}{\numberline {3.3.2.7}Optional requirements}{18}{subsubsection.3.3.2.7}
-\contentsline {subsection}{\numberline {3.3.3}Non-functional Requirements}{19}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Overall Architecture}{19}{section.3.4}
-\contentsline {section}{\numberline {3.5}Choice of Third Party API}{19}{section.3.5}
-\contentsline {section}{\numberline {3.6}Project Plan}{20}{section.3.6}
-\contentsline {section}{\numberline {3.7}Conclusion}{21}{section.3.7}
-\contentsline {chapter}{\numberline {4}Application Prototype}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Mind Map}{23}{section.4.1}
-\contentsline {section}{\numberline {4.2}Inspiration}{23}{section.4.2}
-\contentsline {section}{\numberline {4.3}Wireframes}{24}{section.4.3}
-\contentsline {section}{\numberline {4.4}Visual Design: Branding, icons, Font}{24}{section.4.4}
-\contentsline {section}{\numberline {4.5}Use Cases}{24}{section.4.5}
-\contentsline {section}{\numberline {4.6}Database Design}{25}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Database Schema}{25}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Database Class Diagram}{25}{subsection.4.6.2}
-\contentsline {chapter}{\numberline {5}Implementation}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Choice of Technologies}{26}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Front End}{26}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Back End}{28}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Application Architecture}{29}{section.5.2}
-\contentsline {section}{\numberline {5.3}Patterns And Conventions}{30}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Application Factory}{30}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Blueprints}{31}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Database Migrations}{31}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Exceptions}{31}{subsection.5.3.4}
-\contentsline {section}{\numberline {5.4}Other Implementation Processes}{32}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}PEP8}{33}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}PyLint}{33}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Version Control}{33}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Own Validation in Forms}{34}{subsection.5.4.4}
-\contentsline {subsection}{\numberline {5.4.5}Custom Macros}{35}{subsection.5.4.5}
-\contentsline {subsection}{\numberline {5.4.6}Integration with third-party API}{35}{subsection.5.4.6}
-\contentsline {subsection}{\numberline {5.4.7}Visual Effects}{37}{subsection.5.4.7}
-\contentsline {subsection}{\numberline {5.4.8}Responsive Design}{39}{subsection.5.4.8}
-\contentsline {section}{\numberline {5.5}Features Implementation}{40}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Authentication and User Profile}{41}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Matches Overview}{44}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Upcoming Match View}{47}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Prediction}{51}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Played Match View}{55}{subsection.5.5.5}
-\contentsline {subsection}{\numberline {5.5.6}Dashboard}{57}{subsection.5.5.6}
-\contentsline {subsection}{\numberline {5.5.7}Notifications}{59}{subsection.5.5.7}
-\contentsline {subsection}{\numberline {5.5.8}Leaderboard}{60}{subsection.5.5.8}
-\contentsline {section}{\numberline {5.6}Application Performance}{61}{section.5.6}
-\contentsline {section}{\numberline {5.7}Deploying the Application}{61}{section.5.7}
-\contentsline {section}{\numberline {5.8}Possible Future Enchancement}{61}{section.5.8}
-\contentsline {section}{\numberline {5.9}Conclusions}{62}{section.5.9}
-\contentsline {chapter}{\numberline {6}Testing \& Evaluation}{63}{chapter.6}
-\contentsline {section}{\numberline {6.1}Testing}{63}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Unit Testing}{63}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Continuous Integration with Travis CI}{63}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}System Testing}{64}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}User Acceptance Testing}{65}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}Evaluation and Future Development}{65}{section.6.2}
-\contentsline {section}{\numberline {6.3}Conclusions}{65}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclusion}{66}{chapter.7}
-\contentsline {section}{\numberline {7.1}Assessment of Success}{66}{section.7.1}
-\contentsline {section}{\numberline {7.2}Improvements and Future Work}{66}{section.7.2}
-\contentsline {chapter}{\numberline {A}Wireframes}{68}{appendix.A}
-\contentsline {chapter}{\numberline {B}Installation Instructions}{70}{appendix.B}
-\contentsline {chapter}{\numberline {C}Project Specification}{71}{appendix.C}
-\contentsline {section}{\numberline {C.1}Functional Requirements}{71}{section.C.1}
-\contentsline {section}{\numberline {C.2}Non-Functional Requirements}{71}{section.C.2}
-\contentsline {chapter}{\numberline {D}Project Management}{72}{appendix.D}
-\contentsline {chapter}{\numberline {E}Another Appendix}{73}{appendix.E}
-\contentsline {chapter}{\numberline {F}Implementation}{76}{appendix.F}
-\contentsline {chapter}{\numberline {G}Project Log}{77}{appendix.G}
+\contentsline {subsubsection}{\numberline {3.3.2.7}Notifications}{19}{subsubsection.3.3.2.7}
+\contentsline {subsubsection}{\numberline {3.3.2.8}Leaderboard}{19}{subsubsection.3.3.2.8}
+\contentsline {subsubsection}{\numberline {3.3.2.9}Optional requirements}{20}{subsubsection.3.3.2.9}
+\contentsline {subsection}{\numberline {3.3.3}Non-functional Requirements}{20}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Overall Architecture}{20}{section.3.4}
+\contentsline {section}{\numberline {3.5}Choice of Third Party API}{21}{section.3.5}
+\contentsline {section}{\numberline {3.6}Project Plan}{22}{section.3.6}
+\contentsline {section}{\numberline {3.7}Conclusion}{22}{section.3.7}
+\contentsline {chapter}{\numberline {4}Application Prototype}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Mind Map}{24}{section.4.1}
+\contentsline {section}{\numberline {4.2}Inspiration}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}Wireframes}{25}{section.4.3}
+\contentsline {section}{\numberline {4.4}Visual Design: Branding, icons, Font}{25}{section.4.4}
+\contentsline {section}{\numberline {4.5}Use Cases}{25}{section.4.5}
+\contentsline {section}{\numberline {4.6}Database Design}{26}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Database Schema}{26}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Database Class Diagram}{26}{subsection.4.6.2}
+\contentsline {chapter}{\numberline {5}Implementation}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Choice of Technologies}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Front End}{27}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Back End}{29}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Application Architecture}{30}{section.5.2}
+\contentsline {section}{\numberline {5.3}Patterns And Conventions}{31}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Application Factory}{31}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Blueprints}{32}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Database Migrations}{32}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Exceptions}{32}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Other Implementation Processes}{33}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}PEP8}{34}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}PyLint}{34}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Version Control}{34}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Own Validation in Forms}{35}{subsection.5.4.4}
+\contentsline {subsection}{\numberline {5.4.5}Custom Macros}{36}{subsection.5.4.5}
+\contentsline {subsection}{\numberline {5.4.6}Integration with third-party API}{36}{subsection.5.4.6}
+\contentsline {subsection}{\numberline {5.4.7}Visual Effects}{38}{subsection.5.4.7}
+\contentsline {subsection}{\numberline {5.4.8}Responsive Design}{40}{subsection.5.4.8}
+\contentsline {section}{\numberline {5.5}Features Implementation}{41}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Authentication and User Profile}{42}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Matches Overview}{45}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Upcoming Match View}{48}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Prediction}{52}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Played Match View}{56}{subsection.5.5.5}
+\contentsline {subsection}{\numberline {5.5.6}Dashboard}{58}{subsection.5.5.6}
+\contentsline {subsection}{\numberline {5.5.7}Notifications}{60}{subsection.5.5.7}
+\contentsline {subsection}{\numberline {5.5.8}Leaderboard}{61}{subsection.5.5.8}
+\contentsline {section}{\numberline {5.6}Application Performance}{62}{section.5.6}
+\contentsline {section}{\numberline {5.7}Deploying the Application}{62}{section.5.7}
+\contentsline {section}{\numberline {5.8}Possible Future Enchancement}{62}{section.5.8}
+\contentsline {section}{\numberline {5.9}Conclusions}{63}{section.5.9}
+\contentsline {chapter}{\numberline {6}Testing \& Evaluation}{64}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testing}{64}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Unit Testing}{64}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Continuous Integration with Travis CI}{65}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}System Testing}{65}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}User Acceptance Testing}{66}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}Evaluation and Future Development}{66}{section.6.2}
+\contentsline {section}{\numberline {6.3}Conclusions}{66}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclusion}{67}{chapter.7}
+\contentsline {section}{\numberline {7.1}Assessment of Success}{67}{section.7.1}
+\contentsline {section}{\numberline {7.2}Improvements and Future Work}{67}{section.7.2}
+\contentsline {chapter}{\numberline {A}Wireframes}{69}{appendix.A}
+\contentsline {chapter}{\numberline {B}Installation Instructions}{71}{appendix.B}
+\contentsline {chapter}{\numberline {C}Project Specification}{72}{appendix.C}
+\contentsline {section}{\numberline {C.1}Functional Requirements}{72}{section.C.1}
+\contentsline {section}{\numberline {C.2}Non-Functional Requirements}{72}{section.C.2}
+\contentsline {chapter}{\numberline {D}Project Management}{73}{appendix.D}
+\contentsline {chapter}{\numberline {E}Another Appendix}{74}{appendix.E}
+\contentsline {chapter}{\numberline {F}Implementation}{77}{appendix.F}
+\contentsline {chapter}{\numberline {G}Project Log}{78}{appendix.G}
