@@ -12,47 +12,46 @@ A level-1 auxiliary file: conclude/conclude.aux
 The style file: plainnat.bst
 Database file #1: shchukina-2015-surething.bib
 Warning--I didn't find a database entry for "oddschecker"
-Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "sec:applicationarchitecture"
-You've used 31 entries,
+You've used 55 entries,
             2773 wiz_defined-function locations,
-            761 strings with 9922 characters,
-and the built_in function-call counts, 9571 in all, are:
-= -- 837
+            860 strings with 12012 characters,
+and the built_in function-call counts, 15634 in all, are:
+= -- 1507
 > -- 365
 < -- 31
-+ -- 142
++ -- 166
 - -- 108
-* -- 467
-:= -- 1486
-add.period$ -- 104
-call.type$ -- 31
-change.case$ -- 124
-chr.to.int$ -- 28
-cite$ -- 62
-duplicate$ -- 490
-empty$ -- 993
+* -- 779
+:= -- 2084
+add.period$ -- 199
+call.type$ -- 55
+change.case$ -- 220
+chr.to.int$ -- 52
+cite$ -- 110
+duplicate$ -- 850
+empty$ -- 1833
 format.name$ -- 149
-if$ -- 2061
+if$ -- 3595
 int.to.chr$ -- 4
 int.to.str$ -- 1
 missing$ -- 10
-newline$ -- 174
+newline$ -- 317
 num.names$ -- 124
-pop$ -- 375
+pop$ -- 639
 preamble$ -- 1
-purify$ -- 98
+purify$ -- 170
 quote$ -- 0
-skip$ -- 397
+skip$ -- 686
 stack$ -- 0
-substring$ -- 62
-swap$ -- 37
+substring$ -- 110
+swap$ -- 61
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 316
+type$ -- 580
 warning$ -- 0
 while$ -- 93
 width$ -- 0
-write$ -- 401
-(There were 3 warnings)
+write$ -- 735
+(There were 2 warnings)

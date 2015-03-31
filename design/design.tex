@@ -1,43 +1,44 @@
 \chapter{Application Prototype}
 \label{ch:Prototype}
-
 Before making a start on of the implementation phase, a lot of effort was put into the creation of the application prototype. Prototyping is a process of developing the initial model of the future application in order to determine the correct application structure, its functionality and the general concept. A prototype is just a model and may differ from the final product.
 
-The project requirements outlined in the previous chapter of this report were used in order to create a mind map representing the navigation between the pages. This helped understanding what exactly is expected to be seen on each page of the website and what is the user journey in terms of the navigation. Wireframes were created for all the pages of the website. For this purpose was used just paper and pencils to aim flexibility.
+The project requirements outlined in the previous chapter of this report were used in order to create a mind map representing pages of the future application. This helped understanding what exactly is expected to be seen on each page of the website and what is the user journey in terms of the navigation. Wireframes were created for all the pages of the website. For this purpose was used just paper and pencils to aim flexibility.
 
 In terms of the methodology, a hybrid of Agile and the traditional Waterfall approach was used for this project. Speaking of the traditional Waterfall approach, some of planning was made beforehands, for example requirements specifications, use-case diagrams, wireframes, etc. On the other hand, for the whole implementation phase was used test-driven approach that utilises the best of the agile techniques.
 
-In general, Agile methodology focuses on team communication and project transparency. Nevertheless, one of its advantages is an extreme flexibility, therefore most of the basic components of Agile can still be effectively used by a single person. The key feature of the version of Agile adopted for the project was breaking down the project workload into clearly defined units of work, each associated with an iteration, and setting a milestone for each of them. Excel sheets were used for defining the set of tasks for each iteration. GitHub issue tracker was also used as a supporting productivity tool for this project. Code related tasks were recorded as issues for the project GitHub repository. The issue tracker appeared to be a very efficient tool for keeping the focus. TDD or test driven develoment was another key Agile technique adopted for the project. The unit tests covering business logic were always written before the implementation and the next sprint has not been started unless all tests from the previous sprint passed. 
+In general, Agile methodology focuses on team communication and project transparency. Nevertheless, one of its advantages is an extreme flexibility, therefore most of the basic components of Agile can still be effectively used by a single person. The key feature of the version of Agile adopted for the project was breaking down the project workload into clearly defined units of work (high-level features introduced in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}), each associated with an iteration, and setting a milestone for each of them. Excel sheets were used for defining the set of tasks for each iteration. GitHub issue tracker was also used as a supporting productivity tool for this project. Code related tasks were recorded as "issues" for the project GitHub repository. The GitHub issue tracker appeared to be a very efficient tool for keeping the focus. TDD or test driven develoment was another key Agile technique adopted for the project. The unit tests covering business logic were always written before the implementation and the next sprint has not been started unless all tests from the previous sprint passed. 
 
-In summary, in this section requirements from the analysis phase will be converted into the system design. First, several design cornerstones (website structure using Mind maps, wireframes, …) were set in order to complete the initial prototype of the application. Other elements of the application design (use cases, database diagram) were updated in iterations inline with the Agile methodology. 
+In summary, in this section will be described the process of transforming project requirements into the system design. Several design cornerstones (website structure mind map, a set of wireframes) were produced beforehands. Other elements of the application design (use cases, database schema) were updated in iterations, inline with the Agile methodology. 
 
-\section{Mind Map}
-\label{sec:mindmap_prototype}
-After defining the set of use cases, I have created a block diagram of the future application. To accomplish this task, was used a program called MindJet enabling creation of a big scale mind maps. , project structure using mindset 
+\section{Application Structure}
+\label{sec:applicationstructure_prototype}
+The prototyping process started with producing a large mind map of the future application.  I found mindmapping a very useful way to brainstorm on my ideas, capture and organise them. The final version of the diagram puts together the structure of application pages, navigation scenarios and other ideas relevant to the design. A full mind map can be found in the figure below.
 
-The first step was made a block diagram of the project. I used a mind map as brainstorming tool taking the useless into consideration. It helped me to break my application down into separate webpages and blocks and to define the navigation between them. 
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\textwidth]{design/images/mindmap}
+		\caption{Mind map capturing the result of the initial brainstorming on the application structure and navigation scenarios.} \label{fig:using:mindmap}
+	\end{center}
+\end{figure}
 
 \section{Inspiration}
 \label{sec:inspiration_prototype}
-After all the important requirements and ideas were put on paper, it is worth taking a look at the potential competitors’ websites and application. This step is an important stage of an application prototyping process: it allows to learn from the best practices and possibly avoid potential errors.
-
-Basically considered, of course, direct competitors. We studied not only the top social networking sites, but less popular. Delved into a huge reservoir of applications: all they had to learn to understand their behavior, how they communicate with the user, as they present the information.
-
-We also analyzed the experience of indirect competitors. For example, for our section of music is iTunes and other specialized applications. When it comes to photos, then we photographed absolutely everything - in Instagram, Mobli etc. All this has given us an understanding of how to lead the audience in a variety of applications.
+As the next step, I took another look at the currently available websites, hoping to get some ideas on how to approach the visual side of the project and to improve its usability. This step is an important stage of an application prototyping process: it allows to learn from the best design practices and possibly avoid potential errors. The usual practice is to first concentrate on several websites of the direct competition. However, the future application does not really have any direct competitors, as the idea behind the project is quite new. Therefore, I concentrated on the football statistics and news websites (listed in the chapter \ref{ch:Requirements Analysis}, subsection "Current Solutions") making a note of how those websites present football statistics to their users.
 
 \section{Wireframes}
 \label{sec:wireframes_prototype}
-When speaking about prototyping, in the early stages the first choice of many designers is often a piece of paper and a pencil. Sketching has a number of advantages when compared to the use of the editors, such as Fireworks or Photoshop for prototyping. When using editors, it is easy to get distracted by brushing up unnecessary details too early. On the opposite side, sketches offer a lot of flexibility. It is easy to add notes, make small changes or replace an outdated sketch with a fresh one.
+When speaking about prototyping, in the early stages the first choice of many designers is often a piece of paper and a pencil. Sketching has a number of advantages when compared to the use of the editors, such as Fireworks or Photoshop. When using editors, it is easy to get distracted by brushing up unnecessary details too early. On the opposite side, sketches offer a lot of flexibility. It is easy to add notes, make small changes or replace an outdated sketch with a fresh one.
 
-In case of this project, each of the sketches represented a separate “view” of the website. The scale of a “view” might differ. For example, some sketches represented a whole page (home page, dashboard page, etc.), others just outlined certain blocks of the website, such as header, footer, user profile container in more detail. I always added a lot of comments to explain the navigation and sometimes expected output. Sketches were one of the most powerful tools I used during the prototype process. 
+In case of this project, each of the sketches represented a separate “view” of the website. The scale of a “view” might differ. For example, some sketches show a whole page (home page, dashboard page, etc.), others just showed certain blocks of the website, such as header, footer, user profile container in more detail. I always added a lot of comments to explain the navigation and sometimes expected output. Sketches were one of the most powerful tools I used during the prototyping process. 
 
 
 Scans of the drawings
-First website prototype in a photoshop/Fireworks
-Early prototype using html and css, using bootstrap should be quick and easy
 
 \section{Visual Design: Branding, icons, Font}
 \label{sec:visdesign_prototype}
+First website prototype in a photoshop/Fireworks
+Early prototype using html and css, using bootstrap should be quick and easy
+
 The project clearly needs an identity. As a placeholder, I created a logo a couple of weeks ago, entitled “SureThing”. It seemed a fairly good and appropriate name: my platform offers ..., but in a smart way, ... user driven prediction..
 
 
