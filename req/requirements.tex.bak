@@ -4,8 +4,50 @@ Before designing a piece of software, it is important to hold good understanding
 
 \section{Target Audience Questionnaire}
 \label{sec:targetaudiencequestionnaire_req}
-The target audience research aims to gather information on how...
-Due to the spread of target users, an electronic questionnaire was used to collect the results. A full break down of the questions asked and the answers received can be found in the appendices, reference X.
+The target audience research aims to gather information on the way football punters make their betting decisions. Questions were specifically tailored to find out what kind of content would appeal to the potential users of the application. Due to the spread of target users, an online questionnaire was used to collect the answers. There were only 9 respondents by cause of the specifity of the topic. A full break down of the questions asked and the answers received can be found in the appendices \ref{ch:questionnaire_appendix}.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.50\columnwidth]{req/images/howMuchDoYouBet.png}
+		\caption{A pie chart illustrating the answers of the questionnaire respondents when asked how many times a week do they bet on football or other sporting events.} \label{fig:using:howmuchdoyoubet}
+	\end{center}
+\end{figure}
+
+Accross the participants of the survey, most people appeared to be occasional punters, with the amount of placed bets 2 or more per week. 
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.50\columnwidth]{req/images/howManySources.png}
+		\caption{A pie chart displaying the answers of the respondents when asked how many sources of information (websites, newspapers, mobile apps) do they check before placing a bet.} 
+		\label{fig:using:howmanysources}
+	\end{center}
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=1.0\columnwidth]{req/images/listTheSources.png}
+		\caption{A bar chart illustrating the answers of the respondents when asked to specify the sources of information that they use to support a betting decision.} 
+		\label{fig:using:llistthesources}
+	\end{center}
+\end{figure}
+
+An interesting observation coming from the two above charts is that punters turn to a wide range of sources before placing their bets. It only proves a need for an application that can reduce the amount of time people spend switching between different type of media to obtain all the information they need.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.50\columnwidth]{req/images/listYourFactors.png}
+		\caption{A pie chart illustrating the answers of the respondents when asked to specify the factors they take into account the most before making a betting decision.} 
+		\label{fig:using:howmanysources}
+	\end{center}
+\end{figure}
+
+The respondents were asked to list all the factors that they consider before making a betting decision. They were provided with a long list to choose from and asked to add their own ones if needed. Three factors appeared to be clear winners: form, league position and home/away performance. 18\% of the respondents mentioned own hunch. Incorporating user hunch criterium into the application will be a clear challenge for me as a developer. However, it looks like the potential application user would like to be able to include it in the prediction formula. 
+
+It was also expected to get a higher interest in the home and away performance, however this is probably one of the prediction factors that needs an extra effort to calculate, as the performance cannot be expressed by a single number to be found in a league table.
+
+One of the respondents named an interesting factor in the field "other": "whether or not the odds appear to offer good value". 
+
+Despite the limited amount of respondents, the answers collected with the questionnaire appeared to be a very valuable input to the phase of the project planning. 
 
 \section{Researching Current Solutions}
 \label{sec:currentsolutions_req}
@@ -239,16 +281,17 @@ In this part of the report, the Prediction feature of the application will be ex
 
 The outcome of a football match will be calculated after evaluating several factors that can influence football match result. An example of such factor could be previous match result, position in the league, team performance at home or away, the recent change in team management, individual performance, as well as injuries and suspensions of team players. When considered as a part of a betting system, factor is basically an \emph{input system variable} \cite{art:simplebettingsystem}. As already mentioned above in the "Definitions" \ref{subsec:definitions_req}, each of those input variables will have a "prediction module" representing it in the application and the main outcome of each prediction module will be a "prediction value", percentage that tells the user which team is more likely to win the match.
 
-Finally, the betting system will assign a weight (the value will depend on user settings) to each of the prediction values. The weights or prediction settings determine the relative importance of each factor. By applying the weights, user indicates that some factors are more important to the outcome of this particular game than the others. The final result will be calculated as a weighted average.
+Finally, the betting system will assign a weight, a value of which will depend on user settings, to each of the prediction values. The weights or prediction settings determine the relative importance of each factor. By applying the weights, user indicates that some factors are more important to the outcome of this particular game than the others. The final result will be calculated as a weighted average.
 
-As it can be seen from the above explanation, the list of factors that can be considered in the application can be quite long. To simplify the development process, this list was limited to the following three factors:
+As it can be seen from the above explanation, the list of factors that can be considered in the application can be quite long. To simplify the development process, it was decided to limit this list to only three factors. Factors listed below were chosen based on the analysis of the data obtained from the target audience questionnaire \ref{sec:targetaudiencequestionnaire_req}. "League position" and "Form" were two top answers when answering the question
+
 \begin{itemize}
 	\item League position of each of the two teams
 	\item Form of each of the two teams
 	\item Home/Away performance of each of the two teams
 \end{itemize}
 
-Factors listed above will be transformed into prediction modules and integrated into the application. On the top of that, an extra prediction module, "User Hunch" will be created. This is a special module that will allow the users to incorporate their intuition into the prediction calculation and thus influence the result of prediction.
+During the implementation phase these factors will be transformed into prediction modules and integrated into the application. On the top of that, an extra prediction module, "User Hunch" will be created. This is a special module that will allow the users to incorporate their intuition into the prediction calculation and thus influence the result of prediction. "Own Hunch" was also one of the most common responses among the questionnaire participants.
 
 Below can be found the requirements relating to the prediction feature of the application.
 

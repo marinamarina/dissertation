@@ -12,7 +12,7 @@ In summary, in this section will be described the process of transforming projec
 
 \section{Application Structure}
 \label{sec:applicationstructure_prototype}
-The prototyping process started with producing a large mind map of the future application.  I found mindmapping a very useful way to brainstorm on my ideas, capture and organise them. The final version of the diagram puts together the structure of application pages, navigation scenarios and other ideas relevant to the design. A full mind map can be found in the figure below.
+The prototyping process started with producing a large mind map of the future application. I found mindmapping a very useful way to brainstorm on my ideas, capture and organise them. The final version of the diagram puts together the structure of application pages, navigation scenarios and other ideas relevant to the design. A full mind map can be found in the figure below.
 
 \begin{figure}[H]
 	\begin{center}
@@ -23,19 +23,22 @@ The prototyping process started with producing a large mind map of the future ap
 
 \section{Inspiration}
 \label{sec:inspiration_prototype}
-As the next step, I took another good look at the currently available websites. This step is an important stage of an application prototyping process: it allows to learn from the best design practices and possibly avoid potential errors. A large scale of existing websites (including the ones mentioned in the previous chapter, section "Current Solutions") were carefully analysed from the design perspective. I was very interested in the application I was mostly interested in what kind of football statistics is available to the users and how it is presented on the page.
+As the next step, I took another look at the existing websites, hoping to get some ideas on how to approach the visual side of the project and to improve its usability. This step is an important stage of an application prototyping process: it allows to learn from the best design practices and possibly avoid potential errors. The usual practice is to first concentrate on few websites of the direct competition. However, our future application does not really have any direct competitors, as the idea behind the project is quite unique. Therefore, I analysed several football statistics and community websites, namely \emph{WhoScored?} \citep{source:whoscored}, {Goal.com} \citep{source:goal} and OLGB Betting Community \citep{source:olgb}, making a note of how those websites present football statistics to their users, what are the main difference between the information presented for unplayed and played matches, what interesting features each website have. This analysis served as a great source of inspiration and the basis for the next step, producing the wireframes.
 
 \section{Wireframes}
 \label{sec:wireframes_prototype}
 When speaking about prototyping, in the early stages the first choice of many designers is often a piece of paper and a pencil. Sketching has a number of advantages when compared to the use of the editors, such as Fireworks or Photoshop. When using editors, it is easy to get distracted by brushing up unnecessary details too early. On the opposite side, sketches offer a lot of flexibility. It is easy to add notes, make small changes or replace an outdated sketch with a fresh one.
 
-In case of this project, each of the sketches represented a separate “view” of the website. The scale of a “view” might differ. For example, some sketches show a whole page (home page, dashboard page, etc.), others just showed certain blocks of the website, such as header, footer, user profile container in more detail. I always added a lot of comments to explain the navigation and sometimes expected output. Sketches were one of the most powerful tools I used during the prototyping process. 
+In case of this project, each of the sketches represented a separate “view” of the website. The scale of a “view” might differ. For example, some sketches show a whole page (home page, dashboard page, etc.), others were just capturing certain blocks of the website, such as header, footer, user profile container in more detail. I always added a lot of comments to explain the navigation and sometimes expected output. Sketches were one of the most powerful tools I used during the prototyping process. 
 
 
 Scans of the drawings
 
 \section{Visual Design: Branding, icons, Font}
 \label{sec:visdesign_prototype}
+At this stage of the project I started thinking of coming up with a suitable name for a project. These are the names
+
+
 First website prototype in a photoshop/Fireworks
 Early prototype using html and css, using bootstrap should be quick and easy
 
@@ -49,7 +52,21 @@ The design is a mixture of free templates and UI freebies created specifically f
 
 \section{Use Cases}
 \label{usecases_prototype}
-As mentioned above, use cases and the database diagram presented below, were prototyped in iterations. In this report will be presented a completed, merged version of the set of use cases and the database design. For use cases UML will be used to design in a clear and readable manner.
+As mentioned above, use cases and the database scheme presented below, were developed in iterations. In this report will be presented a completed, merged version of the set of the use cases and the database design diagram. 
+
+This section will concentrate on the use cases - the graphical illustration of the system functionality. UML will be used to design in a clear and readable manner. 
+
+As a User I would like to view the most popular blu-ray discs sold
+
+
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=.90\textwidth]{design/images/mindmap}
+		\caption{This use case diagram shows the typical sequence of steps a user will take when saving a match to the dashboard.} \label{fig:using:usecase1}
+	\end{center}
+\end{figure}
+This Diagram shows the typical activities a user will complete when using the shared expense area of the application, and how the activities the system will need to complete as a result of some user actions
 
 \section{Database Design}
 \label{databasedesign}
