@@ -1,19 +1,19 @@
-\chapter{Requirement Analysis}
+\chapter{Requirement Analysis and Specification}
 \label{ch:requirementanalysis}
 Before designing a piece of software, it is important to hold good understanding of what the final product is supposed to do. During the requirements analysis phase, a number of steps were taken previously to producing a final list of requirements. First of all, a target audience questionnaire was produced and sent out to the potential application users. The results of the survey were then compiled and analysed. Secondly, a number of existing websites that could at least partly solve the problem outlined in the ”Problem Statement” \ref{sec:problemstatement_intro}  were examined and evaluated. Finally, a list of functional and non-functional requirements covering all the aspects of the future web application was developed and documented in this report.
 
 \section{Target Audience Questionnaire}
 \label{sec:targetaudiencequestionnaire_req}
-The target audience research aims to gather information on the way football punters make their betting decisions. Questions were specifically tailored to find out what kind of content would appeal to the potential users of the application. Due to the spread of target users, an online questionnaire was used to collect the answers. There were only 9 respondents by cause of the specifity of the topic. A full break down of the questions asked and the answers received can be found in the appendices \ref{ch:questionnaire_appendix}.
+The target audience research aims to gather information on the way football punters make their betting decisions. Questions were specifically tailored to find out what kind of content would appeal to the potential users of the application \ref{sec:targetaudience_intro}. Due to the spread of target users, an online questionnaire was used to collect the answers. There were only 9 respondents due to the specifity of the topic. A full break down of the questions asked and the answers received can be found in the appendices \ref{ch:questionnaire_appendix}.
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.50\columnwidth]{req/images/howMuchDoYouBet.png}
-		\caption{A pie chart illustrating the answers of the questionnaire respondents when asked how many times a week do they bet on football or other sporting events.} \label{fig:using:howmuchdoyoubet}
+		\caption{A pie chart illustrating the answers of the questionnaire respondents when asked how many times a week do they bet.} \label{fig:using:howmuchdoyoubet}
 	\end{center}
 \end{figure}
 
-Accross the participants of the survey, most people appeared to be occasional punters, with the amount of placed bets 2 or more per week. 
+As it can be seen from figure \ref{fig:using:howmuchdoyoubet}, most of the survey participants are active punters, with the number of placed bets 2 or more per week. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -31,23 +31,27 @@ Accross the participants of the survey, most people appeared to be occasional pu
 	\end{center}
 \end{figure}
 
-An interesting observation coming from the two above charts is that punters turn to a wide range of sources before placing their bets. It only proves a need for an application that can reduce the amount of time people spend switching between different type of media to obtain all the information they need.
+Charts in figures \ref{fig:using:howmanysources} and \ref{fig:using:llistthesources} demonstrate that punters tend to analyse data from several sources before placing their bets. This proves a need for an application that can reduce the amount of time people spend switching between different type of media to obtain all the information they need. Among the most popular sources were mentioned TV programmes, sports info websites and newspapers.
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.50\columnwidth]{req/images/listYourFactors.png}
-		\caption{A pie chart illustrating the answers of the respondents when asked to specify the factors they take into account the most before making a betting decision.} 
-		\label{fig:using:howmanysources}
+		\includegraphics[width=1.0\columnwidth]{req/images/listYourFactors.png}
+		\caption{A bar chart illustrating the answers of the respondents when asked to specify the factors they consider before placing a bet.} 
+		\label{fig:using:listyourfactors}
 	\end{center}
 \end{figure}
 
-The respondents were asked to list all the factors that they consider before making a betting decision. They were provided with a long list to choose from and asked to add their own ones if needed. Three factors appeared to be clear winners: form, league position and home/away performance. 18\% of the respondents mentioned own hunch. Incorporating user hunch criterium into the application will be a clear challenge for me as a developer. However, it looks like the potential application user would like to be able to include it in the prediction formula. 
+The respondents were asked to list all the factors that they take into consideration before making a betting decision. They were provided with a long list to choose from and asked to specify their own factors if needed. The bar chart in figure \ref{fig:using:listyourfactors} illustrates the answers. Three factors appeared to be clear winners: form, league position and home/away performance. An interesting point is that punters often use inuition in the decision-making process, as 66\% of the respondents mentioned "own hunch" as one of the factors. Incorporating user hunch into the prediction formula will be a clear challenge for me as a developer, however, it looks like the potential application users would like to be able to include it into the calculation. 
 
-It was also expected to get a higher interest in the home and away performance, however this is probably one of the prediction factors that needs an extra effort to calculate, as the performance cannot be expressed by a single number to be found in a league table.
+It was expected that more respondents will mention home/away performance as one of the top influences in making betting decisions. The relatively low interest in this factor can be possibly explained by the fact that the value representing home/away performance cannot be simply found in a league table, and a punter needs to make an extra effort to calculate it.
 
-One of the respondents named an interesting factor in the field "other": "whether or not the odds appear to offer good value". 
+One of the respondents specified an own factor in the field "other": "whether or not the odds appear to offer good value". Considering that most survey participants mentioned that they only use one favourite betting provider when placing a bet, this seems to be an interesting point. It looks like the future application will benefit from offering its users odds comparison and possibly a recommendation, such as "odds of the day".
 
-Despite the limited amount of respondents, the answers collected with the questionnaire appeared to be a very valuable input to the phase of the project planning. 
+Another interesting fact is that 100\% of the respondents answered "no" when asked whether they track their betting performance. The answers prove that monitoring performance seems like an extra step for the majority of punters. This observation led me to an idea to consider including a tracking tool into the application. 
+
+Finally, most of the survey participants answered "yes" when asked whether they would find useful a "web application allowing you to participate in the prediction of a match result by making up you own prediction formula".  
+
+Despite the limited amount of respondents, the answers collected with the questionnaire appeared to be a very valuable input to the phase of the project planning.
 
 \section{Researching Current Solutions}
 \label{sec:currentsolutions_req}
@@ -191,7 +195,7 @@ Many punters have their own football betting system (betting strategy) \cite{art
  	
 The developed application will attempt to put all the relevant statistics in one place and break the information down into logical modules. In addition, the application will enable users to pick the input variables and assign them a weight of user's choice, representing the importance of the input variable for the match results prediction.
  
-\section{Requirements}
+\section{Requirements Specification}
 \label{sec:requirements_req}
  \citet{book:radice1998software} define project requirement as follows: "A \emph{requirement} conveys an essential property that the system must or should satisfy." Requirements analysis involves gathering information in order to meet customer needs and defining what the future application is expected to do. 
 This phase of software engineering is especially important in the industrial environment, when developing an application for a customer. In that case, clarifying the requirements in the early stages of the project would help to ensure that both sides understand and agree on the feature set of the future application. 
@@ -378,14 +382,15 @@ The application will have a Leaderboard, which is a table comparing the current 
 \label{sec:optional_req}
 The functional requirements were split into two main groups: mandatory and optional. This is due to the fact that the application was developed over a relatively short period of time and there was not enough time to implement all of the intended functionality. Mandatory requirements represent the "minimum viable product", a product with the core features. 
 
-On the other hand, the optional requirements illustrate possible improvements that can be made to the application in the future. Additional analysis will be needed in order to decide which of the features listed bellow will be most useful for the application users.(???) (sm. )
+On the other hand, the optional requirements illustrate possible improvements that can be made to the application in the future. Additional research will be needed in order to decide which of the features listed bellow will be the most useful for the target users.
 
 \begin{itemize}
     \item The application will implement "Sign In with Facebook" functionality allowing its users to login with a single click.
-    \item The application will have more prediction modules. Suggested modules are "recent change of a team manager", "injuries and suspensions of players", "individual players' performance", "previous game result", etc.
+    \item The application will have more prediction modules. Suggested modules are "Recent change of a team manager", "Injuries and suspensions of players", "Individual players' performance", "Previous game result", etc.
     \item The user will be able to add/remove any prediction module from the Upcoming Match View. This will help keep the focus on only relevant information from the user's point of view.
-    \item The application will offer its users odds comparison functionality. It is a known fact that the odds for the same event may vary greatly between different bookmakers. The application will compare the odds across the most popular bookmakers and suggest the best option with regards to the user's prediction (home win, away win or draw). (???) Clicking on the suggested odds will take the user to the bookmaker's website or open a bet slip.
-    \item The application will have some features of a sports fans community. Users will be able to leave comments on each match explaining the prediction they made and also follow each other. Followers will see the comments from the followed users in their news feed (accessible from the dashboard).
+    \item The application will offer a betting performance tracking tool that will record the details of the past bets and also keep track on whether the punter is profitable in the long run.
+    \item The application will offer its users odds comparison functionality. It is a known fact that the odds for the same event may vary greatly between different bookmakers. The application will compare the odds across the most popular bookmakers and suggest the best option with regards to the user's prediction (home win, away win or draw). Clicking on the suggested odds will take the user to the bookmaker's website or open a bet slip.
+    \item The application will get some features of a sports fans community. Users will be able to leave comments on each match explaining the prediction they made and also follow each other. Followers will see the comments from the followed users in their news feed. The news feed will be accessible from the dashboard.
 \end{itemize}
 
 \subsection{Non-functional Requirements}
@@ -430,7 +435,7 @@ This is a paid API service. The API restricts by IP addresses and limit calls ba
 		
 \end{itemize}
 	
-Football API was chosen to be integrated with the application. As already mentioned in the "Definitions" \ref{subsec:definitions_req}, it was decided to support only one league for the time being. Football API offers its users free access to the English Premier League, which seems to be a great choice for our application, as this league's worldwide popularity will hopefully make it easier to find other league-related data and information we might need during the development process.
+Football API was chosen to be integrated with the application. As already mentioned in the "Definitions" \ref{subsec:definitions_req}, it was decided to support only one league for the time being. Football API offers its users free access to the English Premier League, which seems to be a great choice for our application, as this league's worldwide popularity will hopefully make it easier to find other league-related data and information that might be needed during the development process.
 
 \section{Project Plan}
 \label{projectplan_req}

@@ -18,6 +18,8 @@
 \usepackage[biblabel]{cite}
 \usepackage[numbers]{natbib}
 \usepackage{tabularx}
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.3\hsize}X}
 
 \usepackage[ruled] {algorithm2e}
 \usepackage{url,amsmath,amssymb,fancybox,listings,pdfpages,caption,multicol,datetime,rotating, booktabs}

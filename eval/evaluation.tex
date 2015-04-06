@@ -1,5 +1,4 @@
 \chapter{Testing \& Evaluation}\label{ch:TestAndEval}
-
 This chapter evaluates the overall project and provides results of tests carried out.
 
 \section{Testing}
@@ -8,7 +7,7 @@ The implementaion phase of the project was carried out in accordance with Agile 
 
 According to Miguel Grindberg \citep{book:Grindberg2014FlaskWebDevelopment}, "There are two very good reasons for writing unit tests. When implementing new functionality, unit tests are used to confirm that the new code is working in the expected way. ... A second, more important reason is that each time the application is modified, all the unit tests built around it can be executed to ensure that there are no regressions  in the existing code; in other words, that the new changes did not affect the way the older code works."
 
- For this project it was especially important to provide good tests coverage for the business logic behind the model layer and the external service layer of the application \cite{sec:applicationarchitecture}. SureThing has a suite of unit tests that can be run anytime to validate the full functionality of the application.
+ For this project it was especially important to provide good tests coverage for the business logic behind the model layer and the external service layer of the application \ref{sec:applicationarchitecture_impl}. SureThing has a suite of unit tests that can be run anytime to validate the full functionality of the application.
 
 Tests in this project are performed using Python \emph{unittest} library. 
 
@@ -37,14 +36,9 @@ A Travis status icon indicating whether the tests passed or failed was embedded 
 System Testing – This will test the system as a whole. This will be run by the developer taking into account the users requirements. Test cases will be created from the requirements with the inputs and expected outputs noted before the testing starts. Some of the test cases may satisfy more than one of the requirements. The tests will be carried out via the black box testing technique.
 
 \subsection{User Acceptance Testing}
+%Юзабилити-тестирование — это всегда вызов для разработчика. Для тестирования нужно предусмотреть и прописать все сценарии взаимодействия: %как пользователь будет себя вести, куда будет нажимать и попадать, что мы должны получить от пользователей (чтобы понять, соответствует ли %результат нашим ожиданиям).
 
 \section{Evaluation and Future Development}
 From my point of view, the project was successful. I started with zero knowledge of Python and now I feel that I would be able to use it on an industrial level. The project also made me realise the importance of Test Driven Development, as the application has complicated business logic in the background and good test coverage was a must to ensure smooth development process. The Acceptance Testing allowed me to get valuable user feedback and alter the design/navigation accordingly. In general, I am very pleased with the result and will continue to develop the application further.
 
 The application has a lot of potential for improvement.
-
-\section{Conclusions}
-
-The main conclusions for this chapter.
-
-
