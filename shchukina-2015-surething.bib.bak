@@ -10,8 +10,45 @@
 
 
 % BibTeX Entries
+@misc{art:historyofonlinegambling,
+	 key={The History of Online Gambling},
+	 title = {{The History of Online Gambling}},
+	 year={2015},
+	 howpublished={\url{http://www.onlinegambling.com/online-gambling-history.htm}},
+	 note = {[Accessed 12-Apr-2015]}
+}
+@misc{source:microgaming,
+	key={Microgaming},
+	title={{Microgaming, our story}},
+	year={2015},
+	howpublished={\url{http://www.microgaming.co.uk/our-story}},
+	note={[Accessed 13-Apr-2015]}
+}
+@misc{source:gamblingsites,
+	key={Gambling sites},
+	title={{Gambling sites}},
+	year={2015},
+	howpublished={\url{http://www.gamblingsites.com/history/microgaming/}},
+	note={[Accessed 13-Apr-2015]}
+}
+@misc{britannica2015gamblingandsports,
+    key={Gambling and sports},
+	title={{Gambling and sports}},
+    author = {Joseph Anthony Maguire},
+    title = {{Gambling and sports}},
+    year = {2015},
+    note={[Accessed 13-Apr-2015]}
+}
+@misc{footballbettinggamblingindustry,
+    key={Football betting},
+    author = {Frank Keogh and Gary Rose},
+    title = {{Football betting - the global gambling industry worth billions}},
+    year = {2013},
+    note={[Accessed 13-Apr-2015]}
+}
+
 @book{book:radice1998software,
-  title={Software engineering: an industrial approach.},
+  title={{Software engineering: an industrial approach.}},
   author={Radice, Ronald A and Phillips, Richard W},
   year={1998},
   publisher={Prentice-Hall, Inc.},
@@ -27,7 +64,7 @@
  }
  @misc{art:simplebettingsystem,
 	author={Jim Macos},
-	title={Simple betting System},
+	title={{Simple betting System}},
 	year={2014},
 	howpublished={\url{http://www.betstories.com/2014/09/24/simple-betting-system/}},
 	note={Available online. [Accessed 13-10-2014]} 

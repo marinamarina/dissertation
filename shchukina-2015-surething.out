@@ -2,105 +2,103 @@
 \BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}% 2
 \BOOKMARK [0][-]{chapter*.3}{Declaration}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 4
-\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.2}{Target Audience}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.3}{Problems Addressed}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.4}{Project Aims \046 Objectives}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.5}{Report Structure}{chapter.1}% 9
-\BOOKMARK [0][-]{chapter.2}{Background studies and Objectives}{}% 10
-\BOOKMARK [1][-]{section.2.1}{History And General Information}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Objectives}{chapter.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.1}{Primary Objectives}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Extended Objectives}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Social, legal and ethical issues}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{Requirement Analysis and Specification}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Target Audience Questionnaire}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{Researching Current Solutions}{chapter.3}% 18
-\BOOKMARK [2][-]{subsection.3.2.1}{Sports news websites}{section.3.2}% 19
-\BOOKMARK [3][-]{subsubsection.3.2.1.1}{BBC Sport Football}{subsection.3.2.1}% 20
-\BOOKMARK [2][-]{subsection.3.2.2}{Football statistics websites}{section.3.2}% 21
-\BOOKMARK [3][-]{subsubsection.3.2.2.1}{WhoScored}{subsection.3.2.2}% 22
-\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Squawka}{subsection.3.2.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.3}{Bookmakers Websites}{section.3.2}% 24
-\BOOKMARK [3][-]{subsubsection.3.2.3.1}{Bet365}{subsection.3.2.3}% 25
-\BOOKMARK [2][-]{subsection.3.2.4}{Communities for sports fans}{section.3.2}% 26
-\BOOKMARK [2][-]{subsection.3.2.5}{OLGB Betting Community}{section.3.2}% 27
-\BOOKMARK [2][-]{subsection.3.2.6}{Black-box prediction applications}{section.3.2}% 28
-\BOOKMARK [2][-]{subsection.3.2.7}{Conclusion}{section.3.2}% 29
-\BOOKMARK [1][-]{section.3.3}{Requirements Specification}{chapter.3}% 30
-\BOOKMARK [2][-]{subsection.3.3.1}{Definitions}{section.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.3.2}{Functional Requirements}{section.3.3}% 32
-\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Authentication and User Profile}{subsection.3.3.2}% 33
-\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Matches Overview}{subsection.3.3.2}% 34
-\BOOKMARK [3][-]{subsubsection.3.3.2.3}{Prediction}{subsection.3.3.2}% 35
-\BOOKMARK [3][-]{subsubsection.3.3.2.4}{Upcoming Match View}{subsection.3.3.2}% 36
-\BOOKMARK [3][-]{subsubsection.3.3.2.5}{Played Match View}{subsection.3.3.2}% 37
-\BOOKMARK [3][-]{subsubsection.3.3.2.6}{Dashboard}{subsection.3.3.2}% 38
-\BOOKMARK [3][-]{subsubsection.3.3.2.7}{Notifications}{subsection.3.3.2}% 39
-\BOOKMARK [3][-]{subsubsection.3.3.2.8}{Leaderboard}{subsection.3.3.2}% 40
-\BOOKMARK [3][-]{subsubsection.3.3.2.9}{Optional requirements}{subsection.3.3.2}% 41
-\BOOKMARK [2][-]{subsection.3.3.3}{Non-functional Requirements}{section.3.3}% 42
-\BOOKMARK [1][-]{section.3.4}{Overall Architecture}{chapter.3}% 43
-\BOOKMARK [1][-]{section.3.5}{Choice of Third Party API}{chapter.3}% 44
-\BOOKMARK [1][-]{section.3.6}{Project Plan}{chapter.3}% 45
-\BOOKMARK [0][-]{chapter.4}{Application Prototype}{}% 46
-\BOOKMARK [1][-]{section.4.1}{Application Structure}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.2}{Analysis of the competitors experience}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.3}{Wireframes}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.4}{Visual Design.}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.5}{Use Cases}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.6}{Database Schema}{chapter.4}% 52
-\BOOKMARK [0][-]{chapter.5}{Implementation}{}% 53
-\BOOKMARK [1][-]{section.5.1}{Choice of Technologies}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.1.1}{Front End}{section.5.1}% 55
-\BOOKMARK [2][-]{subsection.5.1.2}{Back End}{section.5.1}% 56
-\BOOKMARK [1][-]{section.5.2}{Application Architecture}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.3}{Patterns And Conventions}{chapter.5}% 58
-\BOOKMARK [2][-]{subsection.5.3.1}{Application Factory}{section.5.3}% 59
-\BOOKMARK [2][-]{subsection.5.3.2}{Blueprints}{section.5.3}% 60
-\BOOKMARK [2][-]{subsection.5.3.3}{Database Migrations}{section.5.3}% 61
-\BOOKMARK [2][-]{subsection.5.3.4}{Exceptions}{section.5.3}% 62
-\BOOKMARK [1][-]{section.5.4}{Other Implementation Processes}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.4.1}{PEP8}{section.5.4}% 64
-\BOOKMARK [2][-]{subsection.5.4.2}{PyLint}{section.5.4}% 65
-\BOOKMARK [2][-]{subsection.5.4.3}{Version Control}{section.5.4}% 66
-\BOOKMARK [2][-]{subsection.5.4.4}{Own Validation in Forms}{section.5.4}% 67
-\BOOKMARK [2][-]{subsection.5.4.5}{Custom Macros}{section.5.4}% 68
-\BOOKMARK [2][-]{subsection.5.4.6}{Integration with third-party API}{section.5.4}% 69
-\BOOKMARK [2][-]{subsection.5.4.7}{Visual Effects}{section.5.4}% 70
-\BOOKMARK [2][-]{subsection.5.4.8}{Responsive Design}{section.5.4}% 71
-\BOOKMARK [1][-]{section.5.5}{Features Implementation}{chapter.5}% 72
-\BOOKMARK [2][-]{subsection.5.5.1}{Authentication and User Profile}{section.5.5}% 73
-\BOOKMARK [2][-]{subsection.5.5.2}{Matches Overview}{section.5.5}% 74
-\BOOKMARK [2][-]{subsection.5.5.3}{Upcoming Match View}{section.5.5}% 75
-\BOOKMARK [2][-]{subsection.5.5.4}{Prediction}{section.5.5}% 76
-\BOOKMARK [2][-]{subsection.5.5.5}{Played Match View}{section.5.5}% 77
-\BOOKMARK [2][-]{subsection.5.5.6}{Dashboard}{section.5.5}% 78
-\BOOKMARK [2][-]{subsection.5.5.7}{Notifications}{section.5.5}% 79
-\BOOKMARK [2][-]{subsection.5.5.8}{Leaderboard}{section.5.5}% 80
-\BOOKMARK [1][-]{section.5.6}{Application Performance}{chapter.5}% 81
-\BOOKMARK [1][-]{section.5.7}{Deploying the Application}{chapter.5}% 82
-\BOOKMARK [1][-]{section.5.8}{Possible Future Enchancement}{chapter.5}% 83
-\BOOKMARK [1][-]{section.5.9}{Conclusions}{chapter.5}% 84
-\BOOKMARK [0][-]{chapter.6}{Testing \046 Evaluation}{}% 85
-\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 86
-\BOOKMARK [2][-]{subsection.6.1.1}{Unit Testing}{section.6.1}% 87
-\BOOKMARK [2][-]{subsection.6.1.2}{Continuous Integration with Travis CI}{section.6.1}% 88
-\BOOKMARK [2][-]{subsection.6.1.3}{System Testing}{section.6.1}% 89
-\BOOKMARK [2][-]{subsection.6.1.4}{User Acceptance Testing}{section.6.1}% 90
-\BOOKMARK [1][-]{section.6.2}{Evaluation and Future Development}{chapter.6}% 91
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 92
-\BOOKMARK [1][-]{section.7.1}{Assessment of Success}{chapter.7}% 93
-\BOOKMARK [1][-]{section.7.2}{Improvements and Future Work}{chapter.7}% 94
-\BOOKMARK [0][-]{appendix.A}{Questionnaire}{}% 95
-\BOOKMARK [1][-]{section.A.1}{Questions}{appendix.A}% 96
-\BOOKMARK [1][-]{section.A.2}{Answers}{appendix.A}% 97
-\BOOKMARK [0][-]{appendix.B}{Wireframes}{}% 98
-\BOOKMARK [0][-]{appendix.C}{Installation Instructions}{}% 99
-\BOOKMARK [0][-]{appendix.D}{Project Specification}{}% 100
-\BOOKMARK [1][-]{section.D.1}{Functional Requirements}{appendix.D}% 101
-\BOOKMARK [1][-]{section.D.2}{Non-Functional Requirements}{appendix.D}% 102
-\BOOKMARK [0][-]{appendix.E}{Project Management}{}% 103
-\BOOKMARK [0][-]{appendix.F}{Another Appendix}{}% 104
-\BOOKMARK [0][-]{appendix.G}{Implementation}{}% 105
-\BOOKMARK [0][-]{appendix.H}{Project Log}{}% 106
+\BOOKMARK [1][-]{section.1.1}{Background}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Proposed Web Application}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Target Audience}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.4}{Problems Addressed}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Project Aims \046 Objectives}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.6}{Report Structure}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Professional Considerations}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Code Of Conduct}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{Code Of Practice}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Requirement Analysis and Specification}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Target Audience Questionnaire}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.2}{Researching Current Solutions}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.2.1}{Sports news websites}{section.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.1.1}{BBC Sport Football}{subsection.3.2.1}% 18
+\BOOKMARK [2][-]{subsection.3.2.2}{Football statistics websites}{section.3.2}% 19
+\BOOKMARK [3][-]{subsubsection.3.2.2.1}{WhoScored}{subsection.3.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.3.2.2.2}{Squawka}{subsection.3.2.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.3}{Bookmakers Websites}{section.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.3.2.3.1}{Bet365}{subsection.3.2.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.4}{Communities for sports fans}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.5}{OLGB Betting Community}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.6}{Black-box prediction applications}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.7}{Conclusion}{section.3.2}% 27
+\BOOKMARK [1][-]{section.3.3}{Requirements Specification}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.1}{Definitions}{section.3.3}% 29
+\BOOKMARK [2][-]{subsection.3.3.2}{Functional Requirements}{section.3.3}% 30
+\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Authentication and User Profile}{subsection.3.3.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Matches Overview}{subsection.3.3.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.3.2.3}{Prediction}{subsection.3.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.3.2.4}{Upcoming Match View}{subsection.3.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.3.2.5}{Played Match View}{subsection.3.3.2}% 35
+\BOOKMARK [3][-]{subsubsection.3.3.2.6}{Dashboard}{subsection.3.3.2}% 36
+\BOOKMARK [3][-]{subsubsection.3.3.2.7}{Notifications}{subsection.3.3.2}% 37
+\BOOKMARK [3][-]{subsubsection.3.3.2.8}{Leaderboard}{subsection.3.3.2}% 38
+\BOOKMARK [3][-]{subsubsection.3.3.2.9}{Optional requirements}{subsection.3.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.3.3}{Non-functional Requirements}{section.3.3}% 40
+\BOOKMARK [1][-]{section.3.4}{Overall Architecture}{chapter.3}% 41
+\BOOKMARK [1][-]{section.3.5}{Choice of Third Party API}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.6}{Project Plan}{chapter.3}% 43
+\BOOKMARK [0][-]{chapter.4}{Application Prototype}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Application Structure}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Analysis of the competitors experience}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.3}{Wireframes}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.4}{Visual Design}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.5}{Use Cases}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.6}{Database Schema}{chapter.4}% 50
+\BOOKMARK [0][-]{chapter.5}{Implementation}{}% 51
+\BOOKMARK [1][-]{section.5.1}{Choice of Technologies}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.1.1}{Front End}{section.5.1}% 53
+\BOOKMARK [2][-]{subsection.5.1.2}{Back End}{section.5.1}% 54
+\BOOKMARK [1][-]{section.5.2}{Application Architecture}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.3}{Patterns And Conventions}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.3.1}{Application Factory}{section.5.3}% 57
+\BOOKMARK [2][-]{subsection.5.3.2}{Blueprints}{section.5.3}% 58
+\BOOKMARK [2][-]{subsection.5.3.3}{Database Migrations}{section.5.3}% 59
+\BOOKMARK [2][-]{subsection.5.3.4}{Exceptions}{section.5.3}% 60
+\BOOKMARK [1][-]{section.5.4}{Other Implementation Processes}{chapter.5}% 61
+\BOOKMARK [2][-]{subsection.5.4.1}{PEP8}{section.5.4}% 62
+\BOOKMARK [2][-]{subsection.5.4.2}{PyLint}{section.5.4}% 63
+\BOOKMARK [2][-]{subsection.5.4.3}{Version Control}{section.5.4}% 64
+\BOOKMARK [2][-]{subsection.5.4.4}{Own Validation in Forms}{section.5.4}% 65
+\BOOKMARK [2][-]{subsection.5.4.5}{Custom Macros}{section.5.4}% 66
+\BOOKMARK [2][-]{subsection.5.4.6}{Integration with third-party API}{section.5.4}% 67
+\BOOKMARK [2][-]{subsection.5.4.7}{Visual Effects}{section.5.4}% 68
+\BOOKMARK [2][-]{subsection.5.4.8}{Responsive Design}{section.5.4}% 69
+\BOOKMARK [1][-]{section.5.5}{Features Implementation}{chapter.5}% 70
+\BOOKMARK [2][-]{subsection.5.5.1}{Authentication and User Profile}{section.5.5}% 71
+\BOOKMARK [2][-]{subsection.5.5.2}{Matches Overview}{section.5.5}% 72
+\BOOKMARK [2][-]{subsection.5.5.3}{Upcoming Match View}{section.5.5}% 73
+\BOOKMARK [2][-]{subsection.5.5.4}{Prediction}{section.5.5}% 74
+\BOOKMARK [2][-]{subsection.5.5.5}{Played Match View}{section.5.5}% 75
+\BOOKMARK [2][-]{subsection.5.5.6}{Dashboard}{section.5.5}% 76
+\BOOKMARK [2][-]{subsection.5.5.7}{Notifications}{section.5.5}% 77
+\BOOKMARK [2][-]{subsection.5.5.8}{Leaderboard}{section.5.5}% 78
+\BOOKMARK [1][-]{section.5.6}{Application Performance}{chapter.5}% 79
+\BOOKMARK [1][-]{section.5.7}{Deploying the Application}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.8}{Possible Future Enchancement}{chapter.5}% 81
+\BOOKMARK [1][-]{section.5.9}{Conclusions}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter.6}{Testing \046 Evaluation}{}% 83
+\BOOKMARK [1][-]{section.6.1}{Testing}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.1.1}{Unit Testing}{section.6.1}% 85
+\BOOKMARK [2][-]{subsection.6.1.2}{Continuous Integration with Travis CI}{section.6.1}% 86
+\BOOKMARK [2][-]{subsection.6.1.3}{System Testing}{section.6.1}% 87
+\BOOKMARK [2][-]{subsection.6.1.4}{User Acceptance Testing}{section.6.1}% 88
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 89
+\BOOKMARK [1][-]{section.7.1}{Assessment of Success}{chapter.7}% 90
+\BOOKMARK [1][-]{section.7.2}{Evaluation and Future Development}{chapter.7}% 91
+\BOOKMARK [1][-]{section.7.3}{Improvements and Future Work}{chapter.7}% 92
+\BOOKMARK [0][-]{appendix.A}{Questionnaire}{}% 93
+\BOOKMARK [1][-]{section.A.1}{Questions}{appendix.A}% 94
+\BOOKMARK [1][-]{section.A.2}{Answers}{appendix.A}% 95
+\BOOKMARK [0][-]{appendix.B}{Wireframes}{}% 96
+\BOOKMARK [0][-]{appendix.C}{Installation Instructions}{}% 97
+\BOOKMARK [0][-]{appendix.D}{Project Specification}{}% 98
+\BOOKMARK [1][-]{section.D.1}{Functional Requirements}{appendix.D}% 99
+\BOOKMARK [1][-]{section.D.2}{Non-Functional Requirements}{appendix.D}% 100
+\BOOKMARK [0][-]{appendix.E}{Project Management}{}% 101
+\BOOKMARK [0][-]{appendix.F}{Another Appendix}{}% 102
+\BOOKMARK [0][-]{appendix.G}{Implementation}{}% 103
+\BOOKMARK [0][-]{appendix.H}{Project Log}{}% 104

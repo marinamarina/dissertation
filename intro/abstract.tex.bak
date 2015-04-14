@@ -1,6 +1,6 @@
 \beforeabstract
 \prefacesection{Abstract}
-The dissertation will describe the process of building a football betting emulator that uses win/loss points instead of money - SureThing. It is a web application where users can make their own match result predictions and place bets on real football matches in English Premier League. The aim of the emulator is to study the influence of different factors on the match result and to encourage users to take responsibility for their betting decisions.
+The dissertation will describe the process of building a football betting simulator that uses win/loss points instead of money - SureThing. It is a web application where users can make their own match result predictions and place bets on real football matches in the English Premier League. The aim of the simulator is to show the influence of different factors on the match result and to encourage users to make more informed betting decisions.
 
 All the objectives specified in the report were met and the project was successful.
 

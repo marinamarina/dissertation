@@ -1,0 +1,19 @@
+\section{Social, legal and ethical issues}
+\label{sociallegalethicalissues_back}
+
+\subsection{Legal Issues}
+\label{leaglissues_back}
+???
+Finding affordable data source for the future application may become a non-trivial task. Therefore, I am considering using “web scraping” as one of the options to load most recent football data into the system. It can be said that there is a fine line between collecting information using the “web scraping” technique and stealing it. Most of the websites have a copyright disclosure defining the rules for the use of the information they provide. Thus, I will carefully read the disclosure statements and follow them along legally and ethically. 
+
+\subsection{Ethical Issues}
+\label{ethicalissues_back}
+Due to the nature of the application it is inevitable that it will store some basic user data in its database. The application must take all the necessary precautions to protect the stored data and sensitive information. The application will not disclose personal data of its users to any third parties.
+
+\subsection{Social Issues}
+\label{socialissues_back}
+There are several advantages of using the application for a rational punter. First,  the use of application will save time spent on gathering information before making a betting decision. Secondly, the use of it will lead its users to more thoughtful and measured approach to football betting. 
+
+\subsection{Professional Considerations}
+\label{prof_back}
+Although the main aim of the application is to provide transparent prediction to the user, there is still certain amount of calculation happening in the background. I assume that user will trust the betting system when making a betting decision. Therefore ensuring the accuracy of the calculations and providing good test coverage is a very important part of the application development.
