@@ -14,7 +14,7 @@ The markup of the future application will be coded using HTML 5 \citep{documenta
 
 CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \citep{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
 
-In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
+In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3 \citep{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
  
 JavaScript, specifically JQuery library \citep{documentation:jQuery}, will be utilised to add animations and improve overall user experience from using the application.  
 
@@ -31,7 +31,9 @@ In addition, RequireJS  \citep{documentation:RequireJS}, a powerful asynchronous
 
 \subsection{Back End}
 \label{subsec:backend}
-For making an accurate prediction the application requires latest football data. Live data would have to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. Based on the above assumptions, Python was chosen as a primary back end language for this project being known as a language well suited to data manipulation.
+For making an accurate prediction the application requires latest football data. Live data would have to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. 
+
+Based on the above assumptions, Python was chosen as the primary back end language. The language is known for being well suited for data manipulation and analysis, and is therefore used in scientific computing and other highly quantitative domains, for example physics and finance. First of all, Python is a very effective language to be used for data processing. When processing a large amount of data, memory use management becomes very important. Python provides optimised syntax for processing a sequence, such as generator expressions. Generators enable iteration over a sequence without placing a new list, set, or dictionary into the system memory \citep{book:Phillips2010Python3ObjectOrientedProgramming}. Secondly, it is known for being easy to learn and use. This will hopefully allow to increase the speed of development, leaving plenty of time for identifying the bottlenecks and optimising the code. 
 
 The back end of the web application will be built using Python web framework Flask \citep{documentation:Flask}. It is a lightweight framework (the official name is "Python microframework") with a great choice of third-party libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the feature set of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the full-featured frameworks like Django that have a lot of functionality already built-in in the basic installation. In addition, availability of developer-friendly documentation and low learning curve makes Flask a short way to get a simple, Python-powered web site up and running. Therefore, Flask appears to be a great choice for a small project like SureThing. 
 
@@ -679,16 +681,9 @@ response time
 sockets, threads
 multithreading
 how I fixed performance on Match.update\_all\_matches
+How I measured time
 
 \section{Deploying the Application}
-Cloud Deployment is the most recent trend in application hosting. The formal name of this technologu is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.
+Due to the tight time restrictions the application was not deployed. If it would be deployed, 
 
-\section{Possible Future Enchancement}
-\label{sec:enchancement}
-The application can be further developed in many ways.  
-When putting together the project requirements, a number of optional requirements were outlined. 
-
-Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture. 
-
-\section{Conclusions}
-The main conclusions for this chapter.
+Cloud Deployment is the most recent trend in application hosting. The formal name of this technology is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.

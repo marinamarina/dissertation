@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: shchukina-2015-surething.aux
 A level-1 auxiliary file: intro/abstract.aux
 A level-1 auxiliary file: intro/introduction.aux
-A level-1 auxiliary file: background/background.aux
+A level-1 auxiliary file: issues/issues.aux
 A level-1 auxiliary file: req/requirements.aux
 A level-1 auxiliary file: design/design.aux
 A level-1 auxiliary file: impl/implementation.aux
@@ -14,45 +14,45 @@ Database file #1: shchukina-2015-surething.bib
 Warning--I'm ignoring britannica2015gamblingandsports's extra "title" field
 --line 38 of file shchukina-2015-surething.bib
 Warning--I didn't find a database entry for "oddschecker"
-You've used 62 entries,
+You've used 63 entries,
             2773 wiz_defined-function locations,
-            890 strings with 12937 characters,
-and the built_in function-call counts, 17630 in all, are:
-= -- 1699
-> -- 416
-< -- 35
-+ -- 188
-- -- 123
-* -- 878
-:= -- 2346
-add.period$ -- 223
-call.type$ -- 62
-change.case$ -- 249
-chr.to.int$ -- 59
-cite$ -- 124
-duplicate$ -- 955
-empty$ -- 2066
-format.name$ -- 170
-if$ -- 4055
+            896 strings with 13101 characters,
+and the built_in function-call counts, 17922 in all, are:
+= -- 1721
+> -- 426
+< -- 36
++ -- 192
+- -- 126
+* -- 893
+:= -- 2394
+add.period$ -- 226
+call.type$ -- 63
+change.case$ -- 252
+chr.to.int$ -- 60
+cite$ -- 126
+duplicate$ -- 975
+empty$ -- 2098
+format.name$ -- 174
+if$ -- 4116
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 355
-num.names$ -- 140
-pop$ -- 719
+missing$ -- 12
+newline$ -- 360
+num.names$ -- 144
+pop$ -- 731
 preamble$ -- 1
-purify$ -- 192
+purify$ -- 195
 quote$ -- 0
-skip$ -- 781
+skip$ -- 793
 stack$ -- 0
-substring$ -- 124
-swap$ -- 68
+substring$ -- 126
+swap$ -- 69
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 657
+type$ -- 663
 warning$ -- 0
-while$ -- 105
+while$ -- 108
 width$ -- 0
-write$ -- 825
+write$ -- 837
 (There were 2 warnings)

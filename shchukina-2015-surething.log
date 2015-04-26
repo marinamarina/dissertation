@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.5)  13 APR 2015 22:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.5)  25 APR 2015 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -860,11 +860,12 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 45.
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (./shchukina-2015-surething.aux (./intro/abstract.aux)
-(./intro/introduction.aux) (./background/background.aux
+(./intro/introduction.aux) (./issues/issues.aux) (./req/requirements.aux)
+(./design/design.aux
 
-LaTeX Warning: Label `sec:codeofconduct_prof' multiply defined.
+LaTeX Warning: Label `fig:using:mindmap' multiply defined.
 
-) (./req/requirements.aux) (./design/design.aux) (./impl/implementation.aux
+) (./impl/implementation.aux
 
 LaTeX Warning: Label `fig:alertFadeOut' multiply defined.
 
@@ -974,7 +975,7 @@ LaTeX Info: Redefining \nameref on input line 97.
 \openout2 = `intro/abstract.aux'.
 
 
-(./intro/abstract.tex <rgulogo.pdf, id=422, 431.45189pt x 431.45189pt>
+(./intro/abstract.tex <rgulogo.pdf, id=418, 431.45189pt x 431.45189pt>
 File: rgulogo.pdf Graphic file (type pdf)
 
 <use rgulogo.pdf>
@@ -1044,535 +1045,543 @@ Chapter 1.
 [1
 
 
-] [2] [3]) [4]
-\openout2 = `background/background.aux'.
+] [2] [3] [4]) [5]
+\openout2 = `issues/issues.aux'.
 
- (./background/background.tex
+ (./issues/issues.tex
 Chapter 2.
-) [5
+[6
 
 
 
-]
+]) [7]
 \openout2 = `req/requirements.aux'.
 
  (./req/requirements.tex
 Chapter 3.
-<req/images/howMuchDoYouBet.png, id=788, 413.545pt x 461.725pt>
+<req/images/howMuchDoYouBet.png, id=794, 413.545pt x 461.725pt>
 File: req/images/howMuchDoYouBet.png Graphic file (type png)
 
 <use req/images/howMuchDoYouBet.png>
 Package pdftex.def Info: req/images/howMuchDoYouBet.png used on input line 11.
 (pdftex.def)             Requested size: 241.84843pt x 270.02702pt.
- [6
+ [8
 
 
 
 ]
-<req/images/howManySources.png, id=796, 438.63875pt x 452.69125pt>
+<req/images/howManySources.png, id=801, 438.63875pt x 452.69125pt>
 File: req/images/howManySources.png Graphic file (type png)
 
 <use req/images/howManySources.png>
 Package pdftex.def Info: req/images/howManySources.png used on input line 20.
 (pdftex.def)             Requested size: 241.84843pt x 249.60263pt.
 
-<req/images/listTheSources.png, id=797, 905.3825pt x 556.0775pt>
+<req/images/listTheSources.png, id=802, 905.3825pt x 556.0775pt>
 File: req/images/listTheSources.png Graphic file (type png)
 
 <use req/images/listTheSources.png>
 Package pdftex.def Info: req/images/listTheSources.png used on input line 28.
 (pdftex.def)             Requested size: 483.69687pt x 297.0785pt.
- [7 <./req/images/howMuchDoYouBet.png> <./req/images/howManySources.png>]
-<req/images/listYourFactors.png, id=806, 808.01875pt x 481.8pt>
+ [9 <./req/images/howMuchDoYouBet.png> <./req/images/howManySources.png>]
+<req/images/listYourFactors.png, id=811, 808.01875pt x 481.8pt>
 File: req/images/listYourFactors.png Graphic file (type png)
 
 <use req/images/listYourFactors.png>
 Package pdftex.def Info: req/images/listYourFactors.png used on input line 38.
 (pdftex.def)             Requested size: 483.69687pt x 288.42058pt.
- [8 <./req/images/listTheSources.png>]
-[9 <./req/images/listYourFactors.png>] [10]
-<req/images/bbcsport.png, id=834, 758.835pt x 648.4225pt>
+ [10 <./req/images/listTheSources.png>]
+[11 <./req/images/listYourFactors.png>] [12]
+<req/images/bbcsport.png, id=840, 758.835pt x 648.4225pt>
 File: req/images/bbcsport.png Graphic file (type png)
 
 <use req/images/bbcsport.png>
 Package pdftex.def Info: req/images/bbcsport.png used on input line 97.
 (pdftex.def)             Requested size: 386.95897pt x 330.6614pt.
- [11] [12 <./req/images/bbcsport.png>]
-<req/images/squawka.png, id=857, 970.62625pt x 509.905pt>
+ [13] [14 <./req/images/bbcsport.png>]
+<req/images/squawka.png, id=862, 970.62625pt x 509.905pt>
 File: req/images/squawka.png Graphic file (type png)
 
 <use req/images/squawka.png>
-Package pdftex.def Info: req/images/squawka.png used on input line 124.
+Package pdftex.def Info: req/images/squawka.png used on input line 125.
 (pdftex.def)             Requested size: 386.95897pt x 203.28926pt.
- [13 <./req/images/squawka.png>]
+ [15 <./req/images/squawka.png>] [16]
 
-Package natbib Warning: Citation `oddschecker' on page 14 undefined on input li
+Package natbib Warning: Citation `oddschecker' on page 17 undefined on input li
 ne 168.
 
-[14] [15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26]) [27]
+[17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29]) [30]
 \openout2 = `design/design.aux'.
 
 
 (./design/design.tex
 Chapter 4.
-[28
+[31
 
 
 
-] <design/images/mindmap.png, id=973, 1073.00874pt x 475.7775pt>
+] <design/images/mindmap.png, id=983, 1073.00874pt x 475.7775pt>
 File: design/images/mindmap.png Graphic file (type png)
 
 <use design/images/mindmap.png>
-Package pdftex.def Info: design/images/mindmap.png used on input line 19.
+Package pdftex.def Info: design/images/mindmap.png used on input line 29.
 (pdftex.def)             Requested size: 435.32422pt x 193.02277pt.
- [29 <./design/images/mindmap.png>] [30]
+ [32] [33 <./design/images/mindmap.png>]
 File: design/images/mindmap.png Graphic file (type png)
 
 <use design/images/mindmap.png>
-Package pdftex.def Info: design/images/mindmap.png used on input line 63.
+Package pdftex.def Info: design/images/mindmap.png used on input line 73.
 (pdftex.def)             Requested size: 435.32422pt x 193.02277pt.
- [31]
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+ [34]
+<design/images/database_export.jpg, id=1004, 929.4725pt x 666.49pt>
+File: design/images/database_export.jpg Graphic file (type jpg)
+
+<use design/images/database_export.jpg>
+Package pdftex.def Info: design/images/database_export.jpg used on input line 8
+5.
+(pdftex.def)             Requested size: 435.32422pt x 312.15201pt.
+ [35]
+Underfull \hbox (badness 10000) in paragraph at lines 92--95
 []\OT1/cmr/m/n/10.95 what database was used Use this link to de-scribe the ORM 
 and its ad-van-tages:
  []
 
-) [32]
+) [36 <./design/images/database_export.jpg>]
 \openout2 = `impl/implementation.aux'.
 
  (./impl/implementation.tex
 Chapter 5.
-[33
+[37
 
 
 
-] <impl/images/gruntInAction.png, id=1011, 596.2275pt x 414.54875pt>
+] <impl/images/gruntInAction.png, id=1027, 596.2275pt x 414.54875pt>
 File: impl/images/gruntInAction.png Graphic file (type png)
 
 <use impl/images/gruntInAction.png>
 Package pdftex.def Info: impl/images/gruntInAction.png used on input line 25.
 (pdftex.def)             Requested size: 290.22107pt x 201.78333pt.
- [34 <./impl/images/gruntInAction.png>]
-[35] <impl/images/routeExample.png, id=1034, 522.95375pt x 196.735pt>
+ [38 <./impl/images/gruntInAction.png>]
+[39] <impl/images/routeExample.png, id=1051, 522.95375pt x 196.735pt>
 File: impl/images/routeExample.png Graphic file (type png)
 
 <use impl/images/routeExample.png>
-Package pdftex.def Info: impl/images/routeExample.png used on input line 56.
+Package pdftex.def Info: impl/images/routeExample.png used on input line 58.
 (pdftex.def)             Requested size: 338.58632pt x 127.3779pt.
- [36 <./impl/images/routeExample.png>]
-<impl/images/createApp.png, id=1047, 364.36125pt x 93.34875pt>
+ [40] [41 <./impl/images/routeExample.png>]
+<impl/images/createApp.png, id=1070, 364.36125pt x 93.34875pt>
 File: impl/images/createApp.png Graphic file (type png)
 
 <use impl/images/createApp.png>
-Package pdftex.def Info: impl/images/createApp.png used on input line 78.
+Package pdftex.def Info: impl/images/createApp.png used on input line 80.
 (pdftex.def)             Requested size: 241.84843pt x 61.96075pt.
- [37]
-<impl/images/blueprintsRegistration.png, id=1055, 434.62375pt x 111.41624pt>
+
+<impl/images/blueprintsRegistration.png, id=1072, 434.62375pt x 111.41624pt>
 File: impl/images/blueprintsRegistration.png Graphic file (type png)
 
 <use impl/images/blueprintsRegistration.png>
 Package pdftex.def Info: impl/images/blueprintsRegistration.png used on input l
-ine 89.
+ine 91.
 (pdftex.def)             Requested size: 241.84843pt x 61.99995pt.
- [38 <./impl/images/createApp.png> <./impl/images/blueprintsRegistration.png>] 
-[39]
-<impl/images/githubLabelsChoice.png, id=1074, 966.61125pt x 486.81876pt>
+ [42 <./impl/images/createApp.png> <./impl/images/blueprintsRegistration.png>] 
+[43]
+<impl/images/githubLabelsChoice.png, id=1092, 966.61125pt x 486.81876pt>
 File: impl/images/githubLabelsChoice.png Graphic file (type png)
 
 <use impl/images/githubLabelsChoice.png>
 Package pdftex.def Info: impl/images/githubLabelsChoice.png used on input line 
-119.
+121.
 (pdftex.def)             Requested size: 435.32422pt x 219.24469pt.
 
-<impl/images/githubFunctionalityIssues.png, id=1075, 955.57pt x 378.41376pt>
+<impl/images/githubFunctionalityIssues.png, id=1093, 955.57pt x 378.41376pt>
 File: impl/images/githubFunctionalityIssues.png Graphic file (type png)
 
 <use impl/images/githubFunctionalityIssues.png>
 Package pdftex.def Info: impl/images/githubFunctionalityIssues.png used on inpu
-t line 128.
+t line 130.
 (pdftex.def)             Requested size: 435.32422pt x 172.39217pt.
- [40 <./impl/images/githubLabelsChoice.png>]
-<impl/images/customValidator.png, id=1082, 792.9625pt x 196.735pt>
+ [44 <./impl/images/githubLabelsChoice.png>]
+<impl/images/customValidator.png, id=1100, 792.9625pt x 196.735pt>
 File: impl/images/customValidator.png Graphic file (type png)
 
 <use impl/images/customValidator.png>
-Package pdftex.def Info: impl/images/customValidator.png used on input line 141
+Package pdftex.def Info: impl/images/customValidator.png used on input line 143
 .
 (pdftex.def)             Requested size: 435.32422pt x 108.00644pt.
- [41 <./impl/images/githubFunctionalityIssues.png>] [42 <./impl/images/customVa
+ [45 <./impl/images/githubFunctionalityIssues.png>] [46 <./impl/images/customVa
 lidator.png>]
-<impl/images/footballApiWrapperFields.png, id=1096, 617.30624pt x 128.48pt>
+<impl/images/footballApiWrapperFields.png, id=1113, 617.30624pt x 128.48pt>
 File: impl/images/footballApiWrapperFields.png Graphic file (type png)
 
 <use impl/images/footballApiWrapperFields.png>
 Package pdftex.def Info: impl/images/footballApiWrapperFields.png used on input
- line 175.
+ line 177.
 (pdftex.def)             Requested size: 435.32422pt x 90.60585pt.
- [43 <./impl/images/footballApiWrapperFields.png>] <impl/images/alert.png, id=1
-102, 628.3475pt x 268.00125pt>
+ [47 <./impl/images/footballApiWrapperFields.png>] <impl/images/alert.png, id=1
+119, 628.3475pt x 268.00125pt>
 File: impl/images/alert.png Graphic file (type png)
 
 <use impl/images/alert.png>
-Package pdftex.def Info: impl/images/alert.png used on input line 190.
+Package pdftex.def Info: impl/images/alert.png used on input line 192.
 (pdftex.def)             Requested size: 290.22107pt x 123.78096pt.
 
-<impl/images/alertFadeOut.png, id=1103, 631.35875pt x 270.00874pt>
+<impl/images/alertFadeOut.png, id=1120, 631.35875pt x 270.00874pt>
 File: impl/images/alertFadeOut.png Graphic file (type png)
 
 <use impl/images/alertFadeOut.png>
-Package pdftex.def Info: impl/images/alertFadeOut.png used on input line 197.
+Package pdftex.def Info: impl/images/alertFadeOut.png used on input line 199.
 (pdftex.def)             Requested size: 290.22107pt x 124.119pt.
 File: impl/images/alertFadeOut.png Graphic file (type png)
  <use impl/images/alertFadeOut.png>
-Package pdftex.def Info: impl/images/alertFadeOut.png used on input line 207.
+Package pdftex.def Info: impl/images/alertFadeOut.png used on input line 209.
 (pdftex.def)             Requested size: 290.22107pt x 124.119pt.
- [44 <./impl/images/alert.png> <./impl/images/alertFadeOut.png>]
-<impl/images/newMessagesDesktopView.png, id=1112, 572.1375pt x 85.31876pt>
+ [48 <./impl/images/alert.png> <./impl/images/alertFadeOut.png>]
+<impl/images/newMessagesDesktopView.png, id=1130, 572.1375pt x 85.31876pt>
 File: impl/images/newMessagesDesktopView.png Graphic file (type png)
 
 <use impl/images/newMessagesDesktopView.png>
 Package pdftex.def Info: impl/images/newMessagesDesktopView.png used on input l
-ine 216.
+ine 218.
 (pdftex.def)             Requested size: 290.22107pt x 43.27895pt.
 
-<impl/images/newMessagesMobileView.png, id=1113, 628.3475pt x 290.08376pt>
+<impl/images/newMessagesMobileView.png, id=1131, 628.3475pt x 290.08376pt>
 File: impl/images/newMessagesMobileView.png Graphic file (type png)
 
 <use impl/images/newMessagesMobileView.png>
 Package pdftex.def Info: impl/images/newMessagesMobileView.png used on input li
-ne 225.
+ne 227.
 (pdftex.def)             Requested size: 290.22107pt x 133.98015pt.
 
-<impl/images/noMoreNewMessages.png, id=1114, 627.34375pt x 600.2425pt>
+<impl/images/noMoreNewMessages.png, id=1132, 627.34375pt x 600.2425pt>
 File: impl/images/noMoreNewMessages.png Graphic file (type png)
 
 <use impl/images/noMoreNewMessages.png>
 Package pdftex.def Info: impl/images/noMoreNewMessages.png used on input line 2
-34.
+36.
 (pdftex.def)             Requested size: 290.22107pt x 277.69023pt.
- [45 <./impl/images/newMessagesDesktopView.png> <./impl/images/newMessagesMobil
-eView.png>] [46 <./impl/images/noMoreNewMessages.png>]
-<impl/images/responsiveDashboard.png, id=1131, 472.76625pt x 519.9425pt>
+ [49 <./impl/images/newMessagesDesktopView.png> <./impl/images/newMessagesMobil
+eView.png>] [50 <./impl/images/noMoreNewMessages.png>]
+<impl/images/responsiveDashboard.png, id=1149, 472.76625pt x 519.9425pt>
 File: impl/images/responsiveDashboard.png Graphic file (type png)
 
 <use impl/images/responsiveDashboard.png>
 Package pdftex.def Info: impl/images/responsiveDashboard.png used on input line
- 248.
+ 250.
 (pdftex.def)             Requested size: 241.84843pt x 265.98433pt.
 
-<impl/images/responsiveModuleLeaguePosition.png, id=1132, 465.74pt x 416.55624p
+<impl/images/responsiveModuleLeaguePosition.png, id=1150, 465.74pt x 416.55624p
 t>
 File: impl/images/responsiveModuleLeaguePosition.png Graphic file (type png)
  <use impl/images/responsiveModuleLeaguePosition.png>
 Package pdftex.def Info: impl/images/responsiveModuleLeaguePosition.png used on
- input line 255.
+ input line 257.
 (pdftex.def)             Requested size: 241.84843pt x 216.30539pt.
 
 
-LaTeX Warning: Reference `sec:functionalrequirements' on page 47 undefined on i
-nput line 261.
+LaTeX Warning: Reference `sec:functionalrequirements' on page 51 undefined on i
+nput line 263.
 
-[47 <./impl/images/responsiveDashboard.png> <./impl/images/responsiveModuleLeag
+[51 <./impl/images/responsiveDashboard.png> <./impl/images/responsiveModuleLeag
 uePosition.png>]
-<impl/images/registrationFormError.png, id=1139, 852.18375pt x 626.34pt>
+<impl/images/registrationFormError.png, id=1157, 852.18375pt x 626.34pt>
 File: impl/images/registrationFormError.png Graphic file (type png)
 
 <use impl/images/registrationFormError.png>
 Package pdftex.def Info: impl/images/registrationFormError.png used on input li
-ne 270.
+ne 272.
 (pdftex.def)             Requested size: 435.32422pt x 319.96437pt.
- [48 <./impl/images/registrationFormError.png>] <impl/images/gravatar.png, id=1
-151, 745.78625pt x 312.16624pt>
+ [52 <./impl/images/registrationFormError.png>] <impl/images/gravatar.png, id=1
+168, 745.78625pt x 312.16624pt>
 File: impl/images/gravatar.png Graphic file (type png)
 
 <use impl/images/gravatar.png>
-Package pdftex.def Info: impl/images/gravatar.png used on input line 281.
+Package pdftex.def Info: impl/images/gravatar.png used on input line 283.
 (pdftex.def)             Requested size: 435.32422pt x 182.21402pt.
 
-<impl/images/dummyGravatar.png, id=1152, 677.53125pt x 288.07625pt>
+<impl/images/dummyGravatar.png, id=1169, 677.53125pt x 288.07625pt>
 File: impl/images/dummyGravatar.png Graphic file (type png)
 
 <use impl/images/dummyGravatar.png>
-Package pdftex.def Info: impl/images/dummyGravatar.png used on input line 290.
+Package pdftex.def Info: impl/images/dummyGravatar.png used on input line 292.
 (pdftex.def)             Requested size: 435.32422pt x 185.09784pt.
 
-<impl/images/changePassword.png, id=1154, 959.585pt x 562.1pt>
+<impl/images/changePassword.png, id=1171, 959.585pt x 562.1pt>
 File: impl/images/changePassword.png Graphic file (type png)
 
 <use impl/images/changePassword.png>
-Package pdftex.def Info: impl/images/changePassword.png used on input line 300.
+Package pdftex.def Info: impl/images/changePassword.png used on input line 302.
 
 (pdftex.def)             Requested size: 435.32422pt x 255.00113pt.
- [49 <./impl/images/gravatar.png> <./impl/images/dummyGravatar.png>]
-<impl/images/editProfile.png, id=1161, 1000.73875pt x 643.40375pt>
+ [53 <./impl/images/gravatar.png> <./impl/images/dummyGravatar.png>]
+<impl/images/editProfile.png, id=1178, 1000.73875pt x 643.40375pt>
 File: impl/images/editProfile.png Graphic file (type png)
 
 <use impl/images/editProfile.png>
-Package pdftex.def Info: impl/images/editProfile.png used on input line 307.
+Package pdftex.def Info: impl/images/editProfile.png used on input line 309.
 (pdftex.def)             Requested size: 435.32422pt x 279.87837pt.
- [50 <./impl/images/changePassword.png> <./impl/images/editProfile.png>]
-<impl/images/profile.png, id=1169, 881.2925pt x 694.595pt>
+ [54 <./impl/images/changePassword.png> <./impl/images/editProfile.png>]
+<impl/images/profile.png, id=1188, 881.2925pt x 694.595pt>
 File: impl/images/profile.png Graphic file (type png)
 
 <use impl/images/profile.png>
-Package pdftex.def Info: impl/images/profile.png used on input line 316.
+Package pdftex.def Info: impl/images/profile.png used on input line 318.
 (pdftex.def)             Requested size: 435.32422pt x 343.09958pt.
 
-<impl/images/matchesGrouped.png, id=1170, 796.9775pt x 645.41125pt>
+<impl/images/matchesGrouped.png, id=1189, 796.9775pt x 645.41125pt>
 File: impl/images/matchesGrouped.png Graphic file (type png)
 
 <use impl/images/matchesGrouped.png>
-Package pdftex.def Info: impl/images/matchesGrouped.png used on input line 331.
+Package pdftex.def Info: impl/images/matchesGrouped.png used on input line 333.
 
 (pdftex.def)             Requested size: 435.32422pt x 352.53494pt.
- [51 <./impl/images/profile.png>]
-<impl/images/unplayedMatch.png, id=1177, 1187.43625pt x 452.69125pt>
+ [55 <./impl/images/profile.png>]
+<impl/images/unplayedMatch.png, id=1196, 1187.43625pt x 452.69125pt>
 File: impl/images/unplayedMatch.png Graphic file (type png)
 
 <use impl/images/unplayedMatch.png>
-Package pdftex.def Info: impl/images/unplayedMatch.png used on input line 340.
+Package pdftex.def Info: impl/images/unplayedMatch.png used on input line 342.
 (pdftex.def)             Requested size: 435.32422pt x 165.95967pt.
- [52 <./impl/images/matchesGrouped.png> <./impl/images/unplayedMatch.png>]
-<impl/images/playedMatch.png, id=1185, 1131.22626pt x 326.21875pt>
+ [56 <./impl/images/matchesGrouped.png> <./impl/images/unplayedMatch.png>]
+<impl/images/playedMatch.png, id=1203, 1131.22626pt x 326.21875pt>
 File: impl/images/playedMatch.png Graphic file (type png)
 
 <use impl/images/playedMatch.png>
-Package pdftex.def Info: impl/images/playedMatch.png used on input line 349.
+Package pdftex.def Info: impl/images/playedMatch.png used on input line 351.
 (pdftex.def)             Requested size: 435.32422pt x 125.53735pt.
 
-<impl/images/liveMatch.png, id=1186, 971.63pt x 330.23375pt>
+<impl/images/liveMatch.png, id=1204, 971.63pt x 330.23375pt>
 File: impl/images/liveMatch.png Graphic file (type png)
 
 <use impl/images/liveMatch.png>
-Package pdftex.def Info: impl/images/liveMatch.png used on input line 358.
+Package pdftex.def Info: impl/images/liveMatch.png used on input line 360.
 (pdftex.def)             Requested size: 435.32422pt x 147.95378pt.
- [53 <./impl/images/playedMatch.png> <./impl/images/liveMatch.png>]
-<impl/images/upcomingMatchView.png, id=1194, 870.25125pt x 536.0025pt>
+ [57 <./impl/images/playedMatch.png> <./impl/images/liveMatch.png>]
+<impl/images/upcomingMatchView.png, id=1212, 870.25125pt x 536.0025pt>
 File: impl/images/upcomingMatchView.png Graphic file (type png)
 
 <use impl/images/upcomingMatchView.png>
 Package pdftex.def Info: impl/images/upcomingMatchView.png used on input line 3
-86.
+88.
 (pdftex.def)             Requested size: 435.32422pt x 268.13145pt.
- [54]
-<impl/images/upcomingMatchViewSM.png, id=1204, 1087.06125pt x 649.42625pt>
+ [58]
+<impl/images/upcomingMatchViewSM.png, id=1221, 1087.06125pt x 649.42625pt>
 File: impl/images/upcomingMatchViewSM.png Graphic file (type png)
 
 <use impl/images/upcomingMatchViewSM.png>
 Package pdftex.def Info: impl/images/upcomingMatchViewSM.png used on input line
- 400.
+ 402.
 (pdftex.def)             Requested size: 435.32422pt x 260.07309pt.
- [55 <./impl/images/upcomingMatchView.png>] <impl/images/userHunch.png, id=1212
+ [59 <./impl/images/upcomingMatchView.png>] <impl/images/userHunch.png, id=1229
 , 1071.00125pt x 258.9675pt>
 File: impl/images/userHunch.png Graphic file (type png)
 
 <use impl/images/userHunch.png>
-Package pdftex.def Info: impl/images/userHunch.png used on input line 420.
+Package pdftex.def Info: impl/images/userHunch.png used on input line 422.
 (pdftex.def)             Requested size: 435.32422pt x 105.26059pt.
- [56 <./impl/images/upcomingMatchViewSM.png>]
-<impl/images/prediction.png, id=1222, 1073.00874pt x 353.32pt>
+ [60 <./impl/images/upcomingMatchViewSM.png>]
+<impl/images/prediction.png, id=1240, 1073.00874pt x 353.32pt>
 File: impl/images/prediction.png Graphic file (type png)
 
 <use impl/images/prediction.png>
-Package pdftex.def Info: impl/images/prediction.png used on input line 429.
+Package pdftex.def Info: impl/images/prediction.png used on input line 431.
 (pdftex.def)             Requested size: 435.32422pt x 143.34181pt.
 
-<impl/images/matchoverviewex_from_main_page.png, id=1223, 1169.36874pt x 472.76
+<impl/images/matchoverviewex_from_main_page.png, id=1241, 1169.36874pt x 472.76
 625pt>
 File: impl/images/matchoverviewex_from_main_page.png Graphic file (type png)
  <use impl/images/matchoverviewex_from_main_page.png>
 Package pdftex.def Info: impl/images/matchoverviewex_from_main_page.png used on
- input line 442.
+ input line 444.
 (pdftex.def)             Requested size: 435.32422pt x 175.99562pt.
- [57 <./impl/images/userHunch.png> <./impl/images/prediction.png>]
+ [61 <./impl/images/userHunch.png> <./impl/images/prediction.png>]
 
-LaTeX Warning: Reference `subsec:prediction_requirements' on page 58 undefined 
-on input line 455.
+LaTeX Warning: Reference `subsec:prediction_requirements' on page 62 undefined 
+on input line 457.
 
-[58 <./impl/images/matchoverviewex_from_main_page.png>]
-<impl/images/predictionValues.png, id=1239, 814.04124pt x 625.33624pt>
+[62 <./impl/images/matchoverviewex_from_main_page.png>]
+<impl/images/predictionValues.png, id=1257, 814.04124pt x 625.33624pt>
 File: impl/images/predictionValues.png Graphic file (type png)
 
 <use impl/images/predictionValues.png>
 Package pdftex.def Info: impl/images/predictionValues.png used on input line 46
-4.
+6.
 (pdftex.def)             Requested size: 386.95897pt x 297.25726pt.
- [59 <./impl/images/predictionValues.png>]
-<impl/images/predictionLeaguePosition.png, id=1246, 665.48625pt x 209.78375pt>
+ [63 <./impl/images/predictionValues.png>]
+<impl/images/predictionLeaguePosition.png, id=1264, 665.48625pt x 209.78375pt>
 File: impl/images/predictionLeaguePosition.png Graphic file (type png)
 
 <use impl/images/predictionLeaguePosition.png>
 Package pdftex.def Info: impl/images/predictionLeaguePosition.png used on input
- line 480.
+ line 482.
 (pdftex.def)             Requested size: 386.95897pt x 121.98514pt.
 
-<impl/images/predictionForm.png, id=1247, 659.46375pt x 225.84375pt>
+<impl/images/predictionForm.png, id=1265, 659.46375pt x 225.84375pt>
 File: impl/images/predictionForm.png Graphic file (type png)
 
 <use impl/images/predictionForm.png>
-Package pdftex.def Info: impl/images/predictionForm.png used on input line 494.
+Package pdftex.def Info: impl/images/predictionForm.png used on input line 496.
 
 (pdftex.def)             Requested size: 386.95897pt x 132.52296pt.
 
-<impl/images/predictionHomeAway.png, id=1248, 685.56125pt x 277.035pt>
+<impl/images/predictionHomeAway.png, id=1266, 685.56125pt x 277.035pt>
 File: impl/images/predictionHomeAway.png Graphic file (type png)
 
 <use impl/images/predictionHomeAway.png>
 Package pdftex.def Info: impl/images/predictionHomeAway.png used on input line 
-507.
+509.
 (pdftex.def)             Requested size: 386.95897pt x 156.37288pt.
- [60 <./impl/images/predictionLeaguePosition.png> <./impl/images/predictionForm
+ [64 <./impl/images/predictionLeaguePosition.png> <./impl/images/predictionForm
 .png>]
-<impl/images/overallPredictionCalculation.png, id=1260, 585.18625pt x 163.61125
+<impl/images/overallPredictionCalculation.png, id=1277, 585.18625pt x 163.61125
 pt>
 File: impl/images/overallPredictionCalculation.png Graphic file (type png)
  <use impl/images/overallPredictionCalculation.png>
 Package pdftex.def Info: impl/images/overallPredictionCalculation.png used on i
-nput line 519.
+nput line 521.
 (pdftex.def)             Requested size: 386.95897pt x 108.19345pt.
- [61 <./impl/images/predictionHomeAway.png> <./impl/images/overallPredictionCal
+ [65 <./impl/images/predictionHomeAway.png> <./impl/images/overallPredictionCal
 culation.png>]
-<impl/images/matchHeader.png, id=1268, 1102.1175pt x 309.155pt>
+<impl/images/matchHeader.png, id=1285, 1102.1175pt x 309.155pt>
 File: impl/images/matchHeader.png Graphic file (type png)
 
 <use impl/images/matchHeader.png>
-Package pdftex.def Info: impl/images/matchHeader.png used on input line 541.
+Package pdftex.def Info: impl/images/matchHeader.png used on input line 543.
 (pdftex.def)             Requested size: 435.32422pt x 122.11252pt.
 
-<impl/images/predictionStats.png, id=1269, 1073.00874pt x 613.29124pt>
+<impl/images/predictionStats.png, id=1286, 1073.00874pt x 613.29124pt>
 File: impl/images/predictionStats.png Graphic file (type png)
 
 <use impl/images/predictionStats.png>
-Package pdftex.def Info: impl/images/predictionStats.png used on input line 550
+Package pdftex.def Info: impl/images/predictionStats.png used on input line 552
 .
 (pdftex.def)             Requested size: 435.32422pt x 248.81206pt.
- [62 <./impl/images/matchHeader.png>]
-<impl/images/predictionBreakdown.png, id=1276, 1062.97125pt x 251.94125pt>
+ [66 <./impl/images/matchHeader.png>]
+<impl/images/predictionBreakdown.png, id=1294, 1062.97125pt x 251.94125pt>
 File: impl/images/predictionBreakdown.png Graphic file (type png)
 
 <use impl/images/predictionBreakdown.png>
 Package pdftex.def Info: impl/images/predictionBreakdown.png used on input line
- 559.
+ 561.
 (pdftex.def)             Requested size: 435.32422pt x 103.18124pt.
 
-<impl/images/feedback.png, id=1277, 1073.00874pt x 185.69376pt>
+<impl/images/feedback.png, id=1295, 1073.00874pt x 185.69376pt>
 File: impl/images/feedback.png Graphic file (type png)
 
 <use impl/images/feedback.png>
-Package pdftex.def Info: impl/images/feedback.png used on input line 568.
+Package pdftex.def Info: impl/images/feedback.png used on input line 570.
 (pdftex.def)             Requested size: 435.32422pt x 75.33589pt.
- [63 <./impl/images/predictionStats.png> <./impl/images/predictionBreakdown.png
+ [67 <./impl/images/predictionStats.png> <./impl/images/predictionBreakdown.png
 > <./impl/images/feedback.png>]
-<impl/images/typicalDashboard.png, id=1286, 1173.38374pt x 289.08pt>
+<impl/images/typicalDashboard.png, id=1304, 1173.38374pt x 289.08pt>
 File: impl/images/typicalDashboard.png Graphic file (type png)
 
 <use impl/images/typicalDashboard.png>
 Package pdftex.def Info: impl/images/typicalDashboard.png used on input line 58
-3.
+5.
 (pdftex.def)             Requested size: 435.32422pt x 107.24463pt.
 
-<impl/images/dashboardCommittedMatches.png, id=1287, 792.9625pt x 617.30624pt>
+<impl/images/dashboardCommittedMatches.png, id=1305, 792.9625pt x 617.30624pt>
 File: impl/images/dashboardCommittedMatches.png Graphic file (type png)
 
 <use impl/images/dashboardCommittedMatches.png>
 Package pdftex.def Info: impl/images/dashboardCommittedMatches.png used on inpu
-t line 592.
+t line 594.
 (pdftex.def)             Requested size: 435.32422pt x 338.8978pt.
- [64 <./impl/images/typicalDashboard.png>]
-<impl/images/noSavedMatches.png, id=1293, 1113.15875pt x 211.79124pt>
+ [68 <./impl/images/typicalDashboard.png>]
+<impl/images/noSavedMatches.png, id=1311, 1113.15875pt x 211.79124pt>
 File: impl/images/noSavedMatches.png Graphic file (type png)
 
 <use impl/images/noSavedMatches.png>
-Package pdftex.def Info: impl/images/noSavedMatches.png used on input line 601.
+Package pdftex.def Info: impl/images/noSavedMatches.png used on input line 603.
 
 (pdftex.def)             Requested size: 435.32422pt x 82.8277pt.
 
-<impl/images/dashboardMenu.png, id=1294, 884.30376pt x 227.85126pt>
+<impl/images/dashboardMenu.png, id=1312, 884.30376pt x 227.85126pt>
 File: impl/images/dashboardMenu.png Graphic file (type png)
 
 <use impl/images/dashboardMenu.png>
-Package pdftex.def Info: impl/images/dashboardMenu.png used on input line 620.
+Package pdftex.def Info: impl/images/dashboardMenu.png used on input line 622.
 (pdftex.def)             Requested size: 435.32422pt x 112.16612pt.
- [65 <./impl/images/dashboardCommittedMatches.png> <./impl/images/noSavedMatche
+ [69 <./impl/images/dashboardCommittedMatches.png> <./impl/images/noSavedMatche
 s.png>]
-<impl/images/message.png, id=1302, 846.16125pt x 417.56pt>
+<impl/images/message.png, id=1320, 846.16125pt x 417.56pt>
 File: impl/images/message.png Graphic file (type png)
 
 <use impl/images/message.png>
-Package pdftex.def Info: impl/images/message.png used on input line 633.
+Package pdftex.def Info: impl/images/message.png used on input line 635.
 (pdftex.def)             Requested size: 435.32422pt x 214.8196pt.
- [66 <./impl/images/dashboardMenu.png> <./impl/images/message.png>]
-<impl/images/navigationMenu.png, id=1310, 500.87125pt x 78.2925pt>
+ [70 <./impl/images/dashboardMenu.png> <./impl/images/message.png>]
+<impl/images/navigationMenu.png, id=1328, 500.87125pt x 78.2925pt>
 File: impl/images/navigationMenu.png Graphic file (type png)
 
 <use impl/images/navigationMenu.png>
-Package pdftex.def Info: impl/images/navigationMenu.png used on input line 644.
+Package pdftex.def Info: impl/images/navigationMenu.png used on input line 646.
 
 (pdftex.def)             Requested size: 435.32422pt x 68.0494pt.
 
-<impl/images/inbox.png, id=1311, 1057.9525pt x 563.10374pt>
+<impl/images/inbox.png, id=1329, 1057.9525pt x 563.10374pt>
 File: impl/images/inbox.png Graphic file (type png)
 
 <use impl/images/inbox.png>
-Package pdftex.def Info: impl/images/inbox.png used on input line 653.
+Package pdftex.def Info: impl/images/inbox.png used on input line 655.
 (pdftex.def)             Requested size: 435.32422pt x 231.70747pt.
 
-<impl/images/leaderboard.png, id=1312, 1060.96375pt x 328.22626pt>
+<impl/images/leaderboard.png, id=1330, 1060.96375pt x 328.22626pt>
 File: impl/images/leaderboard.png Graphic file (type png)
 
 <use impl/images/leaderboard.png>
-Package pdftex.def Info: impl/images/leaderboard.png used on input line 664.
+Package pdftex.def Info: impl/images/leaderboard.png used on input line 666.
 (pdftex.def)             Requested size: 435.32422pt x 134.6738pt.
- [67 <./impl/images/navigationMenu.png> <./impl/images/inbox.png>] [68 <./impl/
-images/leaderboard.png>]) [69]
+ [71 <./impl/images/navigationMenu.png> <./impl/images/inbox.png>] [72 <./impl/
+images/leaderboard.png>]) [73]
 \openout2 = `eval/evaluation.aux'.
 
 
 (./eval/evaluation.tex
 Chapter 6.
 
-LaTeX Warning: Reference `sec:applicationarchitecture_impl' on page 70 undefine
-d on input line 10.
+LaTeX Warning: Reference `ch:Implementation' on page 74 undefined on input line
+ 9.
 
-[70
+[74
 
 
 
-] <eval/images/travisYml.png, id=1336, 423.5825pt x 186.6975pt>
+] <eval/images/travisYml.png, id=1354, 423.5825pt x 186.6975pt>
 File: eval/images/travisYml.png Graphic file (type png)
 
 <use eval/images/travisYml.png>
-Package pdftex.def Info: eval/images/travisYml.png used on input line 20.
+Package pdftex.def Info: eval/images/travisYml.png used on input line 17.
 (pdftex.def)             Requested size: 290.22107pt x 127.92119pt.
 
-<eval/images/travisBadge.png, id=1337, 811.03pt x 282.05376pt>
+<eval/images/travisBadge.png, id=1355, 811.03pt x 282.05376pt>
 File: eval/images/travisBadge.png Graphic file (type png)
 
 <use eval/images/travisBadge.png>
-Package pdftex.def Info: eval/images/travisBadge.png used on input line 28.
+Package pdftex.def Info: eval/images/travisBadge.png used on input line 25.
 (pdftex.def)             Requested size: 435.32422pt x 151.39865pt.
- [71 <./eval/images/travisYml.png> <./eval/images/travisBadge.png>]) [72]
+ [75 <./eval/images/travisYml.png> <./eval/images/travisBadge.png>]) [76]
 \openout2 = `conclude/conclude.aux'.
 
  (./conclude/conclude.tex
 Chapter 7.
-[73
+[77
 
 
 
-]) [74] (./appendix/appendix.tex
+]) [78] (./appendix/appendix.tex
 Appendix A.
-[75
+[79
 
 
-] [76]
+] [80]
 Underfull \hbox (badness 10000) in paragraph at lines 84--103
 
  []
 
-[77] [78] [79]
+[81] [82] [83]
 Appendix B.
-<appendix/images/wireframes.png, id=1378, 1309.89375pt x 869.2475pt>
+<appendix/images/wireframes.png, id=1395, 1309.89375pt x 869.2475pt>
 File: appendix/images/wireframes.png Graphic file (type png)
 
 <use appendix/images/wireframes.png>
@@ -1585,42 +1594,41 @@ Package pdftex.def Info: appendix/images/wireframes.png used on input line 176.
 
 (pdftex.def)             Requested size: 483.69687pt x 320.97989pt.
 
-[80
+[84
 
-] [81 <./appendix/images/wireframes.png>]
+] [85 <./appendix/images/wireframes.png>]
 Appendix C.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/03/04 1.5c listings language file
-) [82
+) [86
 
 ]
 Appendix D.
-[83
+
+Package natbib Warning: Citation `' on page 87 undefined on input line 207.
+
+[87
 
 ]
 Appendix E.
-[84
-
-]
-Appendix F.
-<appendix/images/samplepng.png, id=1411, 935.74594pt x 928.97063pt>
-File: appendix/images/samplepng.png Graphic file (type png)
-
-<use appendix/images/samplepng.png>
-Package pdftex.def Info: appendix/images/samplepng.png used on input line 238.
-(pdftex.def)             Requested size: 596.37204pt x 592.08691pt.
- [85
-
-] [86] [87 <./appendix/images/samplepng.png>]
-Appendix G.
 [88
 
 ]
-Appendix H.
-) (./shchukina-2015-surething.bbl [89
+Appendix F.
+<appendix/images/samplepng.png, id=1431, 935.74594pt x 928.97063pt>
+File: appendix/images/samplepng.png Graphic file (type png)
+
+<use appendix/images/samplepng.png>
+Package pdftex.def Info: appendix/images/samplepng.png used on input line 240.
+(pdftex.def)             Requested size: 596.37204pt x 592.08691pt.
+ [89
+
+] [90] [91 <./appendix/images/samplepng.png>]
+Appendix G.
+) (./shchukina-2015-surething.bbl [92
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 49--53
@@ -1634,7 +1642,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--53
 . com / articles / continuousIntegration . html #
  []
 
-[90
+[93
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 169--174
@@ -1642,40 +1650,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--174
 /10.95 http : / / www . betstories . com / 2014 / 09 / 24 /
  []
 
-[91] [92]
-Underfull \hbox (badness 1275) in paragraph at lines 280--285
+[94] [95]
+Underfull \hbox (badness 1275) in paragraph at lines 285--290
 []\OT1/cmr/m/n/10.95 Maxim Shir-shin.  Scal-ing down the bem method-ol-ogy for 
 small projects.  [][]$\OT1/cmtt/m/n/10.95 http : / / www .
  []
 
 
-Underfull \hbox (badness 8019) in paragraph at lines 360--365
+Underfull \hbox (badness 8019) in paragraph at lines 365--370
 []\OT1/cmr/m/n/10.95 WilliamHill.  WilliamHill.  [][]$\OT1/cmtt/m/n/10.95 http 
 : / / sports . williamhill . com / bet / en-[]gb / betting / y / 5 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--373
+Underfull \hbox (badness 10000) in paragraph at lines 372--378
 \OT1/cmtt/m/n/10.95 mattupstate . com / python / 2013 / 06 / 26 / how-[]i-[]str
 ucture-[]my-[]flask-[]applications . html # s2l$[][]\OT1/cmr/m/n/10.95 ,
  []
 
-[93])
+[96])
 
 Package natbib Warning: There were undefined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
-[94]
+[97]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (./shchukina-2015-surething.aux (./intro/abstract.aux)
-(./intro/introduction.aux) (./background/background.aux)
-(./req/requirements.aux) (./design/design.aux) (./impl/implementation.aux)
-(./eval/evaluation.aux) (./conclude/conclude.aux))
+(./intro/introduction.aux) (./issues/issues.aux) (./req/requirements.aux)
+(./design/design.aux) (./impl/implementation.aux) (./eval/evaluation.aux)
+(./conclude/conclude.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
 Package rerunfilecheck Info: File `shchukina-2015-surething.out' has not change
 d.
-(rerunfilecheck)             Checksum: 9E6B872D01F1AB23C41DED9FCD6DE2B0;7054.
+(rerunfilecheck)             Checksum: 425AD4A1588805F897524948EE83762F;6969.
 
 
 LaTeX Warning: There were undefined references.
@@ -1685,10 +1693,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 15481 strings out of 493117
- 230291 string characters out of 6135433
- 395552 words of memory out of 5000000
- 18167 multiletter control sequences out of 15000+600000
+ 15498 strings out of 493117
+ 230733 string characters out of 6135433
+ 395918 words of memory out of 5000000
+ 18180 multiletter control sequences out of 15000+600000
  15093 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,13n,47p,1385b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1703,10 +1711,10 @@ al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local
 /texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on shchukina-2015-surething.pdf (107 pages, 5535783 bytes).
+Output written on shchukina-2015-surething.pdf (110 pages, 5660978 bytes).
 PDF statistics:
- 1662 PDF objects out of 1728 (max. 8388607)
- 1403 compressed objects within 15 object streams
- 386 named destinations out of 1000 (max. 500000)
- 1128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1678 PDF objects out of 1728 (max. 8388607)
+ 1415 compressed objects within 15 object streams
+ 389 named destinations out of 1000 (max. 500000)
+ 1125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
