@@ -1,24 +1,24 @@
 \chapter{Implementation}
 \label{ch:implementation}
-From a practical point of view, the aim of this project was to create a working web application that also makes use of the best available development practices, well-designed architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would support a large number of concurrent requests and stay highly responsive. Therefore, great emphasis was put on the scalability and performance.  
+The aim of this project was to create a working web application that also makes use of the best available development practices, has well-designed architecture and is easy to maintain and extend in the future. The application is a relatively small-scale one, but it was developed with a future large-scale application in mind, that would support a large number of concurrent requests and stay highly responsive. Therefore, great emphasis was put on the scalability and performance.  
 
 This chapter examines the process of the application development. 
 
 \section{Choice of Technologies}
 \label{sec:choiceoftechnologies}
-The application will be built using a set of front end and back end technologies. In this section will be justified the choice made in favour of each particular technology used in the project. 
+This section will show the justification for each particular technology chosen for all front end and back end layers.
 
 \subsection{Front End}
 \label{subsec:frontend}
-The markup of the future application will be coded using HTML 5 \citep{documentation:HTML}. The application markup will be built using BEM front end development approach \citep{documentation:BEM}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future \citep{article:BEMForSmallProjects}.
+The markup of the future application will be coded using HTML 5 \citep{documentation:HTML}. The application markup will be built using BEM front end development approach \citep{documentation:BEM}. BEM (short for "Block Element Modifier") is a popular semantic model for markup and a way to organise sections of a website into purposeful blocks and to optimise CSS. The idea behind it is to logically break the HTML down into \emph{independent} blocks, which will allow arbitrary placement of the block anywhere on the page, including nesting the block inside another block. The approach can be  very beneficial for large websites, allowing the code to be reused across pages or even projects. However, a small project like the SureThing can also benefit from BEM by making use of independent, context-free CSS that can be easily amended in the future \citep{article:BEMForSmallProjects}.
 
-CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome those limitations, SASS preprocessor \citep{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
+CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome these limitations, SASS preprocessor \citep{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
 
-In addition to that, SureThing will make use of a popular CSS framework Bootstrap 3 \citep{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
+In addition to that, SureThing will make use of a popular CSS framework, Bootstrap 3 \citep{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
  
-JavaScript, specifically JQuery library \citep{documentation:jQuery}, will be utilised to add animations and improve overall user experience from using the application.  
+JavaScript, specifically JQuery library \citep{documentation:jQuery}, will be utilised to add animations and improve the overall user experience.  
 
-In order to handle time-consuming and repetitive tasks on the front end side, the application will utilise the task-based command-line tool Grunt. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine the all external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
+In order to handle time-consuming and repetitive tasks on the front end side, the application will utilise the task-based command-line tool Grunt. This software comes with a variety of plugins serving different purposes. For this project will be used \emph{grunt-sass} to compile SASS stylesheets into CSS complemented with \emph{grunt-watch} to allow continuous development, \emph{grunt-css} plugin to combine all the external CSS files into one and \emph{grunt-uglify} plugin in order to reduce the size of JavaScript files and speed up loading of the web page in a browser. This is a screenshot of grunt output for this project running in terminal window.
 
 \begin{figure}[H]
 	\begin{center}
@@ -31,9 +31,9 @@ In addition, RequireJS  \citep{documentation:RequireJS}, a powerful asynchronous
 
 \subsection{Back End}
 \label{subsec:backend}
-For making an accurate prediction the application requires latest football data. Live data would have to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. 
+The application requires the latest football data to be able to make an accurate prediction. Live data has to be frequently loaded into the system and processed in an appropriate way. Therefore, there would be a need for at least one separate module dealing with a third party football data API and containing business logic to manipulate the received data. The API wrapper is expected to be integrated into the web application, but separated from the presentation, it also has to be relatively easy to execute as a standalone module, encouraging a nicely decoupled design. 
 
-Based on the above assumptions, Python was chosen as the primary back end language. The language is known for being well suited for data manipulation and analysis, and is therefore used in scientific computing and other highly quantitative domains, for example physics and finance. First of all, Python is a very effective language to be used for data processing. When processing a large amount of data, memory use management becomes very important. Python provides optimised syntax for processing a sequence, such as generator expressions. Generators enable iteration over a sequence without placing a new list, set, or dictionary into the system memory \citep{book:Phillips2010Python3ObjectOrientedProgramming}. Secondly, it is known for being easy to learn and use. This will hopefully allow to increase the speed of development, leaving plenty of time for identifying the bottlenecks and optimising the code. 
+Based on the above assumptions, Python was chosen as the primary back end language. The language is known for being well suited for data manipulation and analysis, and is therefore used in scientific computing and other highly quantitative domains, for example physics and finance. First of all, Python is a very effective language for data processing. When processing a large amount of data, memory use management becomes very important. Python provides optimised syntax for processing a sequence, such as generator expressions. Generators enable iteration over a sequence without placing a new list, set, or dictionary into the system memory \citep{book:Phillips2010Python3ObjectOrientedProgramming}. Secondly, it is known for being easy to learn and use. This will hopefully provide an increase to the speed of development, leaving plenty of time for identifying the bottlenecks and optimising the code. 
 
 The back end of the web application will be built using Python web framework Flask \citep{documentation:Flask}. It is a lightweight framework (the official name is "Python microframework") with a great choice of third-party libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the feature set of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the full-featured frameworks like Django that have a lot of functionality already built-in in the basic installation. In addition, availability of developer-friendly documentation and low learning curve makes Flask a short way to get a simple, Python-powered web site up and running. Therefore, Flask appears to be a great choice for a small project like SureThing. 
 
@@ -260,7 +260,7 @@ SureThing is a fully responsive web application, and the minimum screen resoluti
 \end{figure}
 
 \section{Features Implementation}
-In this section will be described the technical details of the project implementation. Each susbsection is bound to the high level feature of the application, as indroduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}. "User journey", or possible user interactions with the system, will be demonstrated for each view.
+In this section will be described the technical details of the project implementation. Each susbsection is bound to the high level feature of the application, as indroduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}. Navigation scenarios, or possible user interactions with the system, will be demonstrated for each view.
 
 \subsection{Authentication and User Profile}
 
@@ -321,8 +321,8 @@ Clicking on the dropdown option "Profile" will take the user to a separate page 
 	\end{center}
 \end{figure}
 
-\subsubsection*{User Journey}
-\label{subsec:authandprofileuserjourney}
+\subsubsection*{Navigation Scenario}
+\label{subsec:authandprofilenavscenario}
 From the User Profile page user can navigate to the "Edit Profile" form by clicking on the light blue "Edit Profile" button located in the top left corner of the profile page. 
 
 \subsection{Matches Overview}
@@ -362,8 +362,8 @@ In case the match is being played at the very moment, it still belongs to the li
 	\end{center}
 \end{figure}
 
-\subsubsection*{User Journey}
-\label{subsec:matchesoviewuserjourney}
+\subsubsection*{Navigation Scenario}
+\label{subsec:matchesoviewnavscenario}
 Just above the list can be found simple navigation allowing to switch between the lists of unplayed and played matches. On the right hand side of each list item there is a "Preview" button for an upcoming match and a "View match stats" button for a played match. By clicking those buttons user can navigate to views with more detailed information about the match (\emph{Upcoming Match View} or \emph{Played Match View}). User can save the match to the dashboard by clicking "Save" button. This action can be carried out only for an unplayed match.  
 
 \subsection{Upcoming Match View}
@@ -433,8 +433,8 @@ The overall prediction is displayed underneath all modules, in a separate panel.
 	\end{center}
 \end{figure}
 
-\subsubsection*{User journey}
-\label{subsec:upcomingmatchviewuserjourney}
+\subsubsection*{Navigation Scenario}
+\label{subsec:upcomingmatchviewnavscenario}
 In the \textbf{read-only} mode the user can save the match to the dashboard by clicking "Save" button. 
 
 In the \textbf{prediction} mode the user can update the prediction settings by overriding the current values in each of the input fields and pressing the button "Update" that is located at the bottom of the view. The overall prediction output will change every time the user updates the prediction settings or changes the hunch value. Once satisfied with the prediction outcome, the user can commit the match by pressing "Commit" button that is located next to "Update". Before the end of the match, the user can still navigate to the committed match view and see the all the details, including the prediction values, used weights and the final prediction. However, this time "Update" and "Commit" buttons will be disabled.
@@ -572,8 +572,8 @@ An authenticated user can also view a basic feedback indicating whether this par
 	\end{center}
 \end{figure}
 
-\subsubsection*{User journey}
-\label{subsec:playedmatchviewuserjourney}
+\subsubsection*{Navigarion Scenario}
+\label{subsec:playedmatchviewnavscenario}
 The view is static and does not offer any additional interactions.
 
 \subsection{Dashboard}
@@ -605,8 +605,8 @@ In case user does not have any matches saved, the dashboard looks as follows:
 	\end{center}
 \end{figure}
 
-\subsubsection*{User journey}
-\label{subsec:dashboarduserjourney}
+\subsubsection*{Navigation Scenario}
+\label{subsec:dashboardnavscenario}
 In the top left corner user can see a small menu icon representing the dashboard menu. Clicking the button opens up the menu containing three items:
 
 \begin{itemize}
@@ -637,8 +637,8 @@ This feature represents the one-way communication flow from SureThing to the app
 	\end{center}
 \end{figure}
 
-\subsubsection*{User journey}
-\label{subsec:notificationsuserjourney}
+\subsubsection*{Navigation Scenario}
+\label{subsec:notificationsnavscenario}
 Authenticated user can navigate to the notifications inbox by clicking at the envelope-shaped icon located on the right-hand side of the navigation menu. The orange colour of the icon in the screenshot below indicates that the inbox contains unread messages, otherwise the icon color is grey.
 
 \begin{figure}[H]
@@ -668,8 +668,8 @@ Leaderboard is a view that contains a table capturing betting performance accros
 	\end{center}
 \end{figure}
 
-\subsubsection*{User Journey}
-\label{subsec:leaderboarduserjourney}
+\subsubsection*{Navigation Scenario}
+\label{subsec:leaderboardnavscenario}
 Each username in the table is also a link. Clicking on the username of a user will take us to this user's profile page. Thus, an authenticated user can also view profiles of fellow users.
 
 \section{Application Performance}
