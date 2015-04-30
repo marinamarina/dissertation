@@ -5,12 +5,6 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[ADDED(2015)]{documentation:Jinja2}
-TO~BE ADDED.
-\newblock Jinja2, full featured template engine for python.
-\newblock [Online]. Available from: \url{http://jinja.pocoo.org/}, 2015.
-\newblock [Accessed 14-Oct-2014].
-
 \bibitem[Bayer and various contributors(2014)]{documentation:SqlAlchemy}
 Michael Bayer and various contributors.
 \newblock Sqlalchemy orm.
@@ -44,6 +38,12 @@ John Boxall.
 Odds Checker.
 \newblock Your bets bet.
 \newblock [Online]. Available from: \url{ http://www.oddschecker.com/}, 2015.
+
+\bibitem[contributors(2015)]{documentation:Jinja2}
+Various contributors.
+\newblock Jinja2, full featured template engine for python.
+\newblock [Online]. Available from: \url{http://jinja.pocoo.org/}, 2015.
+\newblock [Accessed 14-Oct-2014].
 
 \bibitem[Crockford(2015)]{documentation:JSON}
 Douglas Crockford.

@@ -3,23 +3,29 @@
 This chapter summarises the main outcomes and conclusions resulting from this body of work.
 
 \section{Evaluation}
-There are meny aspects of this project that should be inspected in order to decide if the project was successful or not.
+\label{sec:evaluation_conclusion}
+Say something like "Based on the results from the evaluation and the general feedback from users, the application is amazing blah blah"
 
-Using Agile development approach allowed me to concentrate on the result without wasting my time creating final diagrams and overviews before starting with the implementation. It helped me to cut down the preparation phase to the bare essentials, reduced project overhead and made the whole development process more efficient.
+MAIN POINTS:
+- this section has to answer the question: did we satisfy the objectives stated in the introduction? did we manage to do everything stated 
+in the initial specification (chapter requirements)
+- say smth like: this project was successfull, because
+a) project aim was fullfilled (I developed an application useful for gamblers...balha blah)
+b) almost all requirements that were outline initially were fullfilled (you need to look through the requirements and see if I did not implement some of the mandatory requirements and then mention it, say something like - this requirement was not implemented, as it was not important at this time or due to the time constraints)
+c)  user acceptance tests had very good results - almost no issues
+d) the application design was highly praised by the early users of the application
 
 Overall, I feel the project has been very successful with a well-designed web application as a result.
 
-
-From my point of view, the project was successful. I started with zero knowledge of Python and now I feel that I would be able to use it on an industrial level. The project also made me realise the importance of Test Driven Development, as the application has complicated business logic in the background and good test coverage was a must to ensure smooth development process. The Acceptance Testing allowed me to get valuable user feedback and alter the design/navigation accordingly. In general, I am very pleased with the result and will continue to develop the application further.
-
 The application has a lot of potential for improvement.
 
-
-\chapter{Personal Statement}
-\label{ch:personalstatement_appendix}
+\section{Personal Statement}
+\label{sec:personalstatement_conclusion}
 project management issues - separate ability to give attention to the project, mentioned how it was incorporated into the studies, family. what have i learned, evaluating my performance, pm skills, technical skills, what things did i enjoy doing as part of the project. (put it in conclusion)
 
 Discussion on how the project was managed. What things impacted the success of the project. How does the continually revised versions of the project plan compare to the initial draft developed at the start of the project. Did everything run according the schedule. Did elements such as exams \& coursework have any impact. 
+
+As for the professional development, From my point of view, the project was successful. I started with zero knowledge of Python and now I feel that I would be able to use it on an industrial level. The project also made me realise the importance of Test Driven Development, as the application has complicated business logic in the background and good test coverage was a must to ensure smooth development process. The Acceptance Testing allowed me to get valuable user feedback and alter the design/navigation accordingly. In general, I am very pleased with the result and will continue to develop the application further.
 
 \section{Improvements and Future Work}
 \label{sec:enchancement_conclusion}
@@ -27,7 +33,7 @@ At the moment the developed application is a prototype suggesting what the syste
 There are many ways in which SureThing can be developed in the future. For example, it can remain a self-contained game and become a replacement to the real-world gambling experience. Another option is to link the application with the actual bookmakers and to turn it into a professional gambler's tool used that would provide all the relevant statistics and odds comparison.
 
 The application can be further developed in many ways.  
-When putting together the project requirements, a number of optional requirements were outlined. 
+When putting together the project requirements, a number of optional requirements were outlined. The optional requirements are basically the ways how the application can be further developed. More tests (check with potential users) would be required
 
 Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture. 
 

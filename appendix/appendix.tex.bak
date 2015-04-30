@@ -1,5 +1,5 @@
-\chapter{Questionnaire}
-\label{ch:questionnaire_appendix}
+\chapter{Target Audience Questionnaire}
+\label{ch:ta_questionnaire_appendix}
 The questionnaire presented below was answered by 9 respondents with strong interest in football betting. 
 
 \section{Questions}
@@ -100,7 +100,7 @@ The questionnaire should only take around five minutes to fill in and your answe
   9 & 2-3 times a week & 2-3 sources & Sports info websites (e.g., BBC News, The Guardian) \\ \hline
 \end{tabular}
 \\[10pt]
-\caption{Table illustrating answers to questions 1-3 in the target audience questionnaire}
+\caption{Table illustrating answers to questions 1-3 in the Target Audience Questionnaire}
 \end{sidewaystable}
 
 \noindent
@@ -124,60 +124,86 @@ The questionnaire should only take around five minutes to fill in and your answe
    8 & Form, League position, Result of the previous match for each team, Injuries/suspensions of players, Own hunch & No & I only use one bookmaker to place my bets & Yes \\ \hline
    9 & Form, Own hunch, Whether or not the odds appear to offer good value & No & I only use one bookmaker to place my bets & Yes \\ \hline
   \end{tabular}
- \caption{Table illustrating answers to questions 4-7 in the target audience questionnaire}
+ \caption{Table illustrating answers to questions 4-7 in the Target Audience Questionnaire}
 
 \end{sidewaystable}
 
-\chapter{Wireframes}
-\label{ch:wireframes}
-When the app is launched it silently registers with the server
-allowing the user to use the app immediately. The user is then shown
-the middle-top screen.
-\begin{enumerate}
-\item From the middle top screen, the user can follow arrow 1 by
-  clicking on the middle button "Pick Mission'' to pick a Mission
-  (Run around Arran or Egg for example) and then pick a start and
-  end location. After confirming these choices, the user is taken
-  back to the middle top screen, or at any time can click the
-  "Home'' button to return. 
-\item The user can also view their current acheivements by clicking
-  the "Achievements" button on the middle top screen, following
-  arrow 2. These achievements will be grouped by tabs by category -
-  Distance, Time, Stage and Mission based achievements.
-\item The user can follow arrow 3 from the middle top screen to
-  notify the app that they are starting an exercise period, telling
-  the app to track their distance. If a Mission and start and end
-  location are not picked (as in point 1) then they will instead be
-  redirected to this screen and are unable to start exercising until
-  this choice has been made. Once they have successfully advanced to
-  this screen, it will display their current progress as they move
-  showing the user how close to completion of their current stage
-  and overall route they are. 
-\item When the user has finished exercising, they will click the
-  "End Session'' button and be taken to the first summary screen -
-  following arrow 4. Here statistics from their exercise will be
-  shown and the option to share this on several social media
-  outlets.
-\item The user can then move to the second and final summary screen,
-  following arrow 5, where they will be shown any achievements they
-  were awarded during that session. The user will also have the
-  option to share these on social media outlets. From here, the user
-  can click the "Home" button and be taken back to the middle top
-  screen. 
-\end{enumerate}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{appendix/images/wireframes.png}
-  \caption{Wireframes, initial design}
-  \label{wireframes_1}
-\end{figure}
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{appendix/images/wireframes.png}
-  \caption{Inital sketch of wireframe ideas}
-  \label{wireframes_2}
-\end{figure}
 
+\chapter{User Acceptance Questionnaire}
+\label{ch:ua_questionnaire_appendix}
+The questionnaire presented below was answered by 7 potential end users. 
+
+\section{Questions}
+\label{sec:ua_questions_appendix}
+This questionnaire intends to verify that the developed website is easy to understand and use for the potential users.
+
+Please, complete the following steps using the application: 
+
+\begin{enumerate}
+   \item Create a new account 
+   \item Login 
+   \item Look through the list of matches and choose the ones you are the most interested in, then save them to dashboard
+   \item Set your own prediction weights 
+   \item Commit to betting on a match
+\end{enumerate}
+
+On completing the steps, please answer the following questions:
+
+\textbf{Question 1}\par
+\textbf{Which step did you find the most difficult to carry out and why?}\par
+\emph{Please, provide your own answer.}
+ 
+\textbf{Question 2}\par
+\textbf{How easy was it to set up a new account?}\par
+\emph{Please, rate the following question on a scale of 1 (Very easy) to 10:  (Very confusing).}
+ 
+\textbf{Question 3}\par
+\textbf{Was it easy to find and set the prediction settings?}\par
+ \emph{Please, rate the following question on a scale of 1 (Very easy) to 10:  (Very confusing).}
+  
+\textbf{Question 4}\par
+\textbf{How would you rate the overall user friendliness of the application?}\par
+ \emph{Please, rate the following question on a scale of 1 (Very easy) to 10:  (Very confusing). }
+ 
+ \textbf{Question 5}\par
+\textbf{Did you find there was enough statistics to aid your decision making, and if not, what would you want to see?}\par
+\emph{Please, provide your own answer.}
+ 
+ \textbf{Question 6}\par
+\textbf{What did you find was the best aspect of the application? E.g., design, navigation}\par
+\emph{Please, provide your own answer.}
+
+\textbf{Question 7}\par
+\textbf{What did you find was the worst aspect of the application?}\par
+\emph{Please, provide your own answer.}
+
+\textbf{Question 8}\par
+\textbf{What would you like to see in the application?}\par
+\emph{Please, provide your own answer.}
+
+\section{Answers}
+\label{sec:ua_answers_appendix}
+\noindent
+\begin{sidewaystable}
+\begin{tabular}{
+  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 1
+  |p{\dimexpr.3\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 2
+  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 3
+  |p{\dimexpr.4\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 4
+  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}|% column 5
+  }
+  \hline
+  \centering End User  & \centering Question 1  & \centering Question 2 &  \centering Question 3 & \centering\arraybackslash Question 4   \\ \hline
+  1  & Probably the changing the prediction settings but even that wasn't hard really & More leagues & 10 & 8 \\ \hline
+  2 & Saving matches to the dashboard, wasn't immediately apparent why I had to do that & A way to communicate with friends using the same app, maybe a separate league table for friends than just for all users & 9 & 7 \\ \hline
+  3 & Committing the match, it wasn't immediately apparent that I can only commit a match previously saved in the dashboard & Maybe some news feeds & 7 & 8 \\ \hline
+  4  & Changing the prediction settings, it could have been clearer what I was supposed to do & A help menu or FAQ would be useful & 7 & 6 \\ \hline
+   5 & It was all fairly easy & More leagues, comparison betting odds from different bookies & 10 & 10 \\ \hline
+   6 & Saving matches to the dashboard, wasn't sure why I had to do that & More social interaction, link to FB, Twitter & 8 & 7 \\ \hline
+   7 & Setting the prediction weights, wasn't sure of what to set them to so I juts left them at their default settings & A guide to how to use the app would have been nice & 10 & 7 \\ \hline 
+  \end{tabular}
+ \caption{Table illustrating answers to questions 1-4 in the User Acceptance target Questionnaire}
+ 
 \chapter{Installation Instructions}
 \label{ch:install_appendix}
 The code can be checked out using git by executing the following command in the terminal:
@@ -211,42 +237,6 @@ Some of the handy decorator functions used in the Python code were taken from Fl
 The project was not developed following a single software development methodology. Different techniques from various methodologies were used for the project. Some of the planning was made beforehand in the traditional, Waterfall approach fashion, such as researching the project background, defining application requirements, sketching the application wireframes, etc. On the other hand, some of the design techniques were adopted from the Agile methodology, namely user journeys. 
 
 The project implementation phase was carried out in an iterative manner. For defining the project requirements, the application functionality was divided into clearly defined units (so called "high-level features" introduced in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}), each associated with an implementation iteration. Excel sheets were used for defining the set of tasks for each iteration. GitHub issue tracker was also used as a supporting productivity tool for this project. Code related tasks were recorded as "issues" for the project GitHub repository. In general, the GitHub issue tracker was a very efficient tool for keeping the project organised. 
-
-\chapter{Another Appendix}
-
-This appendix makes use of the \emph{rotating} package to rotate both figures and tables ninety degrees allowing for large datasets and illustrations to be represented.
-
-\begin{sidewaystable}
-\begin{center}
-   \begin{tabular}{llllllllll} 
-   \toprule
-   \textbf{Heading 1} & \textbf{Heading 2}  & \textbf{Heading 3}  & \textbf{Heading 4}  & \textbf{Heading 5}  & \textbf{Heading 6}  & \textbf{Heading 7}  & \textbf{Heading 8}  & \textbf{Heading 9}  & \textbf{Heading 10}  \cr
-   \midrule
-   aaa & bbbb & cccc & dddd & eeee & ffff & gggg & hhhh & iiii & jjjj \cr 
-   aaa & bbbb & cccc & dddd & eeee & ffff & gggg & hhhh & iiii & jjjj \cr 
-   aaa & bbbb & cccc & dddd & eeee & ffff & gggg & hhhh & iiii & jjjj \cr 
-   aaa & bbbb & cccc & dddd & eeee & ffff & gggg & hhhh & iiii & jjjj \cr 
-   aaa & bbbb & cccc & dddd & eeee & ffff & gggg & hhhh & iiii & jjjj \cr 
-   aaa & bbbb & cccc & dddd & eeee & ffff & gggg & hhhh & iiii & jjjj \cr 
-   \bottomrule
-   \end{tabular}
-\caption[A Short Caption for the table]{
-	A much longer caption that will not be listed in the list of tables page.
-}
-\label{tab:sidewaysTable}
-\end{center}
-\end{sidewaystable}
-
-\begin{sidewaysfigure}
-\centerline{\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{appendix/images/samplepng}}
-\caption[A Sideways Figure]{
-	A much longer caption that will not be listed in the list of figures page.
-}
-\label{fig:sidewaysFigure}
-\end{sidewaysfigure}
-
-
-
 
 
 \chapter{Presentation Slides}
