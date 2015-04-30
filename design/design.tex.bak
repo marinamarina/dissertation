@@ -1,5 +1,5 @@
 \chapter{Application Design}
-\label{ch:Design}
+\label{ch:design}
 Before making a start on of the implementation phase, a lot of effort was put into the creation of the application prototype. Prototyping is the process of developing the initial model of the future application in order to determine its correct structure, functionality and the general concept behind it. A prototype is just a model and may differ from the final product.
 
 In order to fully describe a new product, the following aspects of its design should be modelled: product functionality, visual design and navigation. Those aspects are best covered by different techniques: user stories for the application functionality, activity diagrams to describe the user journeys and sketches to capture the visual design. The modelling process will be illustrated in detail in this chapter. 
@@ -8,8 +8,8 @@ First, the project requirements outlined in the previous chapter were used in or
 
 In summary, this chapter describes the process of transforming project requirements into the system design. Several design elements (website structure mind map, a set of wireframes) were produced before the implementation phase. Other elements (user stories, activity diagrams and the database schema) were designed in iterations, alongside with the development of the high-level features introduced in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}. During the prototyping phase the main focus was on creating a visually appealling, simple and highly usable design. 
 
-\section{Application Structure}
-\label{sec:applicationstructure_design}
+\section{Brainstorming}
+\label{sec:brainstorming_design}
 The prototyping process started with producing a large mind map of the future application. The mindmapping is a very useful way to brainstorm on the initial ideas, capture and organise them and was an extremely beneficial tool for this project in particular. The final version of the diagram puts together the structure of application pages, navigation scenarios and other ideas relevant to the visual design. A part of the developed mind map can be found in the figure below.
 
 \begin{figure}[H]

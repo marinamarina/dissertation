@@ -201,20 +201,13 @@ A good example is an alert dismissal. SureThing generates many alerts that give 
 \end{figure}
 
 \subsubsection*{New message notifications}
-Another example is a new message notification. Once the user receives a new in-app message notifying them about the results of their bets, the envelope-shaped icon on the top navigation menu that represents the in-app Inbox turns orange.
+Another example is a new message notification. Once the user receives a new in-app message notifying them about the results of their bets, the envelope-shaped icon on the top navigation menu that represents the in-app Inbox turns orange. When the user navigates to the Inbox and reads or deletes all the new messages, the icon immediately turns grey, indicating that there are no more unread messages in the box.
 
-\begin{figure}[H]
-	\begin{center}
-		\includegraphics[width=.60\textwidth]{impl/images/alertFadeOut}
-		\caption{The same alert fading out.} \label{fig:alertFadeOut}
-	\end{center}
-\end{figure}
-
-When the user navigates to the Inbox and reads or deletes all the new messages, the icon immediately turns grey, indicating that there are no more unread messages in the box.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.60\textwidth]{impl/images/newMessagesDesktopView}
-		\caption{You have new messages. Desktop View.} \label{fig:newmessagesdesktopview}
+		\caption{You have new messages. Desktop View.} 
+		\label{fig:newmessagesdesktopview}
 	\end{center}
 \end{figure}
 
@@ -223,7 +216,8 @@ This is what the same top navigation menu looks like for mobile users.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.60\textwidth]{impl/images/newMessagesMobileView}
-		\caption{You have new messages. Mobile View.} \label{fig:newmessagesmobileview}
+		\caption{You have new messages. Mobile View.} 
+		\label{fig:newmessagesmobileview}
 	\end{center}
 \end{figure}
 
@@ -232,7 +226,8 @@ The user has opened the last unread message and the message icon has turned grey
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.60\textwidth]{impl/images/noMoreNewMessages}
-		\caption{The user just read the last new message, the icon turns grey.} \label{fig:nomorenewmessages}
+		\caption{The user just read the last new message, the icon turns grey.} 
+		\label{fig:nomorenewmessages}
 	\end{center}
 \end{figure}
 
@@ -258,17 +253,17 @@ SureThing is a fully responsive web application, and the minimum screen resoluti
 \end{figure}
 
 \section{Features Implementation}
-In this section the technical details of the project implementation will be described. Each subsection is bound to a high level feature of the application, as introduced in the chapter "Requirements Analysis" \ref{sec:functionalrequirements}. The "user journey", or the possible user interactions with the system, will be demonstrated for each view.
+In this section the technical details of the project implementation will be described. Each subsection is bound to a high level feature of the application, as introduced in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}. The "user journey", or the possible user interactions with the system, will be demonstrated for each view.
 
 \subsection{Authentication and User Profile}
-
 \subsubsection*{Authentication}
 The application requires authentication functionality. In order to simplify the development process, a useful Flask extension, Flask-Login, was utilised to handle the common tasks of logging in and out, as well as for new users registration. For new users, the application offers a registration form. On form submission, SureThing sends the user an email with a verification token, expecting them to confirm the email address and complete the registration. It should be noted that both username and email address provided during the registration should be unique, otherwise the application throws a validation error. The screenshot below is an example of what happens when a new user tries to register using an email address that is already in the database:
 
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=.90\textwidth]{impl/images/registrationFormError}
-		\caption{SureThing offers registration form for the new users. However, the email address is expected to be unique.} \label{fig:registrationformerror}
+		\caption{SureThing offers registration form for the new users. However, the email address is expected to be unique.} 
+		\label{fig:registrationformerror}
 	\end{center}
 \end{figure}
 
@@ -449,7 +444,7 @@ First of all, in each prediction module they will see input fields for setting m
 
 \subsection{Prediction}
 \label{subsec:prediction_implementation}
-After getting familiar with the \emph{Upcoming Match View}, the next logical step is to move on to the Prediction feature of the application. This will aid in understanding how to use the \emph{Upcoming Match View} and what kind of information this view offers to an intended user. The implementation of the Prediction feature was already briefly outlined in the chapter "Requirements Analysis", subsection "Prediction" \ref{subsec:prediction_requirements}. This part of the report will illustrate the practical side of this feature and explain the several levels of prediction settings used in the application, the way the prediction values are calculated and the logic behind the prediction of the match result.
+After getting familiar with the \emph{Upcoming Match View}, the next logical step is to move on to the Prediction feature of the application. This will aid in understanding how to use the \emph{Upcoming Match View} and what kind of information this view offers to an intended user. The implementation of the Prediction feature was already briefly outlined in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}, subsection "Prediction". This part of the report will illustrate the practical side of this feature and explain the several levels of prediction settings used in the application, the way the prediction values are calculated and the logic behind the prediction of the match result.
 
 \subsubsection*{Three levels of prediction weights}
 SureThing has three levels of prediction settings or weights. Firstly, the \emph{system default} prediction settings - a set of weights "recommended" to new users by the system. Once the user is registered with the application, they can set their own set of weights that will override the system default settings - \emph{user default} prediction settings. This can be done through a "Prediction Settings" form, as explained in the subsection "Dashboard" \ref{subsec:dashboard}. From the moment these weights are saved in the database, they will apply to every newly saved match. The application also enables setting \emph {match specific} prediction settings that will only apply to one match. The user can set match specific weights through the Upcoming Match view page in prediction mode \ref{subsubsec:predictionmode_implementation}.
@@ -594,7 +589,7 @@ If the user does not have any matches saved, the dashboard looks as follows:
 
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=.90\textwidth]{impl/images/noSavedMatches}
+		\includegraphics[width=1.0\textwidth]{impl/images/noSavedMatches}
 		\caption{Dashboard with no saved matches.} \label{fig:using: nosavedmatches}
 	\end{center}
 \end{figure}

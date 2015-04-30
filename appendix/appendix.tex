@@ -3,6 +3,7 @@
 The questionnaire presented below was answered by 9 respondents with strong interest in football betting. 
 
 \section{Questions}
+\label{sec:ta_questions_appendix}
 This questionnaire intends to collect information about the way football punters make their betting decisions (decide which team to bet on).
 
 The questionnaire should only take around five minutes to fill in and your answers will be used to aid the development of a web application simulating the football betting experience. The future application will provide its users with all the necessary football statistics (without going too much into detail) and allow them to participate in the prediction process by making their own prediction formula. 
@@ -78,7 +79,7 @@ The questionnaire should only take around five minutes to fill in and your answe
  \end{itemize}
  
 \section{Answers}
-
+\label{sec:ta_answers_appendix}
 \noindent
 \begin{sidewaystable}
 \begin{tabular}{
@@ -183,26 +184,54 @@ On completing the steps, please answer the following questions:
 
 \section{Answers}
 \label{sec:ua_answers_appendix}
+
 \noindent
 \begin{sidewaystable}
 \begin{tabular}{
   |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 1
-  |p{\dimexpr.3\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 2
-  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 3
-  |p{\dimexpr.4\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 4
+  |p{\dimexpr.4\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 2
+  |p{\dimexpr.3\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 3
+  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 4
   |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}|% column 5
   }
   \hline
-  \centering End User  & \centering Question 1  & \centering Question 2 &  \centering Question 3 & \centering\arraybackslash Question 4   \\ \hline
+  \centering Respondent  & \centering Question 1  & \centering Question 2 &  \centering Question 3 & \centering\arraybackslash Question 4   \\ \hline
   1  & Probably the changing the prediction settings but even that wasn't hard really & More leagues & 10 & 8 \\ \hline
   2 & Saving matches to the dashboard, wasn't immediately apparent why I had to do that & A way to communicate with friends using the same app, maybe a separate league table for friends than just for all users & 9 & 7 \\ \hline
-  3 & Committing the match, it wasn't immediately apparent that I can only commit a match previously saved in the dashboard & Maybe some news feeds & 7 & 8 \\ \hline
-  4  & Changing the prediction settings, it could have been clearer what I was supposed to do & A help menu or FAQ would be useful & 7 & 6 \\ \hline
-   5 & It was all fairly easy & More leagues, comparison betting odds from different bookies & 10 & 10 \\ \hline
-   6 & Saving matches to the dashboard, wasn't sure why I had to do that & More social interaction, link to FB, Twitter & 8 & 7 \\ \hline
-   7 & Setting the prediction weights, wasn't sure of what to set them to so I juts left them at their default settings & A guide to how to use the app would have been nice & 10 & 7 \\ \hline 
+ 3 & Committing the match, it wasn't immediately apparent that I can only commit a match previously saved in the dashboard & Maybe some news feeds & 7 & 8 \\ \hline
+  4 &  Changing the prediction settings, it could have been clearer what I was supposed to do & A help menu or FAQ would be useful & 7 & 6 \\ \hline
+  5 &  It was all fairly easy & More leagues, comparison betting odds from different bookies & 10 & 10 \\ \hline
+  6 &  Saving matches to the dashboard, wasn't sure why I had to do that & More social interaction, link to Facebook & 8 & 7 \\ \hline
+  7 &  Setting the prediction weights, wasn't sure of what to set them to so I juts left them at their default settings & A guide to how to use the app would have been nice & 10 & 7 \\ \hline
+
   \end{tabular}
- \caption{Table illustrating answers to questions 1-4 in the User Acceptance target Questionnaire}
+ \caption{Table illustrating answers to questions 1-4 in the User Acceptance Questionnaire}
+
+\end{sidewaystable}
+
+\noindent
+\begin{sidewaystable}
+\begin{tabular}{
+  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 1
+  |p{\dimexpr.1\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 2
+  |p{\dimexpr.3\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 3
+  |p{\dimexpr.3\linewidth-2\tabcolsep-1.3333\arrayrulewidth}% column 4
+  |p{\dimexpr.2\linewidth-2\tabcolsep-1.3333\arrayrulewidth}|% column 5
+  }
+  \hline
+  \centering Respondent  & \centering Question 5  & \centering Question 6 &  \centering Question 7 & \centering\arraybackslash Question 8   \\ \hline
+  1  & 8 & The layout was easy on the eye and simple enough to find your way about & Not enough football leagues represented & Yes \\ \hline
+  2 & 5 & The design was simple but nice to look at & The dashboard seems a but pointless & Yes \\ \hline
+  3 & 8 & The prediction feature was great, especially because I could change it myself & The design was a little boring & Yes \\ \hline
+  4 & 5 & The way the stats and matches were presented, very clear & The way to change the prediction settings could have been explained better & Yes \\ \hline
+  5 &  10 & It was very self explanatory how it all worked together & Lack of football leagues to use & No, betting odds \\ \hline
+  6 &  7 & I liked the design & The dashboard wasn't very useful & Yes \\ \hline
+  7 &  5 &  Navigating from page to page was easy & I was confused about the prediction settings & Yes \\ \hline
+
+  \end{tabular}
+ \caption{Table illustrating answers to questions 5-7 in the User Acceptance Questionnaire}
+
+\end{sidewaystable}
  
 \chapter{Installation Instructions}
 \label{ch:install_appendix}
@@ -230,14 +259,13 @@ Some the application's code was taken from the GitHub repository accompanying th
 	\item user authentication test suite
 \end{itemize}
 
-Some of the handy decorator functions used in the Python code were taken from Flask documentation \citep{documentation:Flask,}, section "View Decorators".
+Some of the handy decorator functions used in the Python code were taken from Flask documentation \citep{documentation:Flask}, section "View Decorators".
 
 \chapter{Project Management}
 \label{ch:pm_appendix}
 The project was not developed following a single software development methodology. Different techniques from various methodologies were used for the project. Some of the planning was made beforehand in the traditional, Waterfall approach fashion, such as researching the project background, defining application requirements, sketching the application wireframes, etc. On the other hand, some of the design techniques were adopted from the Agile methodology, namely user journeys. 
 
 The project implementation phase was carried out in an iterative manner. For defining the project requirements, the application functionality was divided into clearly defined units (so called "high-level features" introduced in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}), each associated with an implementation iteration. Excel sheets were used for defining the set of tasks for each iteration. GitHub issue tracker was also used as a supporting productivity tool for this project. Code related tasks were recorded as "issues" for the project GitHub repository. In general, the GitHub issue tracker was a very efficient tool for keeping the project organised. 
-
 
 \chapter{Presentation Slides}
 \label{ch:slides_appendix}

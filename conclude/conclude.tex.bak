@@ -1,45 +1,60 @@
-\chapter{Conclusion and Evaluation}
-\label{ch:ConclusionEvaluation}
-This chapter summarises the main outcomes and conclusions resulting from this body of work.
+\chapter{Conclusion}
+\label{ch:conclusion}
+
+This final section shows what the main outcomes of the project were and the conclusions that can be drawn from them.
 
 \section{Evaluation}
-\label{sec:evaluation_conclusion}
-Say something like "Based on the results from the evaluation and the general feedback from users, the application is amazing blah blah"
+\label{sec:evaluation_conclusion} 
 
-MAIN POINTS:
-- this section has to answer the question: did we satisfy the objectives stated in the introduction? did we manage to do everything stated 
-in the initial specification (chapter requirements)
-- say smth like: this project was successfull, because
-a) project aim was fullfilled (I developed an application useful for gamblers...balha blah)
-b) almost all requirements that were outline initially were fullfilled (you need to look through the requirements and see if I did not implement some of the mandatory requirements and then mention it, say something like - this requirement was not implemented, as it was not important at this time or due to the time constraints)
-c)  user acceptance tests had very good results - almost no issues
-d) the application design was highly praised by the early users of the application
+The main aim of the project was to create an application for predicting the outcome of football matches and to assist its users on creating their own individual betting system and ultimately make a more informed bet. This was certainly achieved. The 3 main problems facing a user that wants to bet on football were addressed also. Firstly, the application does indeed collect and display all the relevant statistics that a football punter would want to know before making a bet and it does this in a way that is both clear and concise. Secondly, it allows the user to create their own prediction formula, which makes it unique amongst similar football websites which usually are either statistics only or ”black box” (unmodifiable) prediction systems. Thirdly, it monitors the performance of the user which is a vital tool for improving betting decisions (or for showing a user it might be time to give up gambling altogether).
 
-Overall, I feel the project has been very successful with a well-designed web application as a result.
+Going into more detail with regard to the functional requirements of the application that were outlined initially, it can be seen that again most of these were achieved successfully.  From creating, signing in to and managing user accounts, to how thorough the available data is as well as how clearly it is presented, all the way through to what was probably the most important aspect, the prediction feature itself, were all very successfully implemented.  Of all the initial functional requirements stated at the beginning of the project, the user leaderboard was the only one not fully realised due to time constraints.
 
-The application has a lot of potential for improvement.
+The non-functional requirements laid out at the beginning were all met and exceeded expectations. 
+
+Usability - The application is extremely user friendly, it is uncluttered and navigation is highly intuitive. The initial, admittedly small number, of test users praised the design and overall ease of use of the application.
+
+Responsiveness - It is a fully responsive website, tested successfully on a variety of screen resolutions down to a minimum of 640x960 (DVGA).
+
+Performance - With the correct choice of architecture used and by keeping the code streamlined, the performance of the application was optimised as much as possible. Only by spending money on a faster API could it be improved, which is something to be considered if ever taking the application to market.
+
+Cross-browser support - The website was tested and works on all the usual web browsers including Chrome, Firefox, IE9 and Safari.
+
+Maintainability - The code written for the website is clear and understandable.  There is no doubt that other developers would find it easy to see what has been done and why it was done a certain way.
+
+Extensibility - It became clear early on that the application has the potential to be of a much larger scale.  With this in mind, the project was developed to make it a simple matter of adding new and advanced features to it without having to rewrite large parts of the code.
+
+User acceptance testing proved invaluable.  Not only for getting fresh eyes on the project that might catch something missed due to over-familiarity of the project, but also for building confidence that this was a worthwhile endeavour.
+
+Overall, the project has been highly successful, with a very well designed web application as a result.
 
 \section{Personal Statement}
 \label{sec:personalstatement_conclusion}
-project management issues - separate ability to give attention to the project, mentioned how it was incorporated into the studies, family. what have i learned, evaluating my performance, pm skills, technical skills, what things did i enjoy doing as part of the project. (put it in conclusion)
 
-Discussion on how the project was managed. What things impacted the success of the project. How does the continually revised versions of the project plan compare to the initial draft developed at the start of the project. Did everything run according the schedule. Did elements such as exams \& coursework have any impact. 
+I started researching this project in September 2014 and soon after began designing and implementing the application. It would have been nice to be able to focus on this alone but instead I had to fit working on this around studies, exams and courseworks while trying my best not to ignore my husband and 1 year old daughter.  Thankfully, by starting early I gave myself the best chance of producing a worthwhile project whilst still being able to complete my studies.
 
-As for the professional development, From my point of view, the project was successful. I started with zero knowledge of Python and now I feel that I would be able to use it on an industrial level. The project also made me realise the importance of Test Driven Development, as the application has complicated business logic in the background and good test coverage was a must to ensure smooth development process. The Acceptance Testing allowed me to get valuable user feedback and alter the design/navigation accordingly. In general, I am very pleased with the result and will continue to develop the application further.
+With regard to the development of my skills, I am most happy with how well I learned to use the Python programming language. I started with zero knowledge or experience of using it and now I feel I would be able to use it at a professional level. The most surprising thing about the project for me was how useful Test Driven Development was. With the sheer amount of complicated business logic running in the background, good test coverage was essential for a smooth developmental process and although I knew it would be useful, just how useful it turned out to be was an important realisation for me. 
+
+With more time I believe this application could be taken much further, it has surprised me with the scope and scale that could be achieved with the proper development.  As it stands, it is a well built, useful application and I am immensely proud of my work. 
 
 \section{Improvements and Future Work}
 \label{sec:enchancement_conclusion}
-At the moment the developed application is a prototype suggesting what the system is capable of, rather than a fully-functional and well-tested application. 
-There are many ways in which SureThing can be developed in the future. For example, it can remain a self-contained game and become a replacement to the real-world gambling experience. Another option is to link the application with the actual bookmakers and to turn it into a professional gambler's tool used that would provide all the relevant statistics and odds comparison.
 
-The application can be further developed in many ways.  
+At the moment, the developed application is a prototype suggesting what the system is capable of, rather than a fully-functional and thoroughly tested application and there are many ways in which SureThing could be developed in the future.
+
+The most logical improvement would be to support more football leagues. There is nothing in the code of the application that limits it to predicting the results for only the English Premier League and not for any other league in the world. The EPL was chosen because the API for it was free and to have more leagues supported would mean paying money to an API provider. As it is possible to bet on almost every match from almost every league in the world, it makes sense that SureThing would have the option of predicting the outcome of any and all of these matches. In fact, for it to be commercially viable then it must have this option as gamblers would want the widest possible choice of matches to bet on.
+
+There are smaller improvements brought to light by the User Acceptance Testing that could also be made, a tutorial or help menu would be useful for those not overly familiar with football statistics or sports betting in general, and maybe a rethink of the dashboard feature. 
+
+There would also need to be a decision made about the future purpose of the application, namely whether to link it more closely to the gambling industry or to keep it separate and even turn it into an alternative to gambling.  It would be possible to affiliate the application to a specific online bookmakers, and to offer links and odds from that particular website in return for a fee. This is done by many different statistics and prediction websites. However, if the focus was to be on our own users’ needs then it would be a very useful feature to be able to compare all the odds from all the online bookies and recommend the best odds available. As the main aim of the project was to help users with their gambling decisions, this would be the logical way forward.
+
+It is also possible to develop the project as a self contained game and act as a substitute to the gambling experience.  By improving and expanding the community aspects of the application, this becomes a distinct possibility. By adding more social network features such as the option to follow other users or commenting on games, as well as improving the users performance league so friends can play against each other
+
+
+For example, it can remain a self-contained game and become a replacement to the real-world gambling experience. Another option is to link the application with the actual bookmakers and to turn it into a professional gambler's tool used that would provide all the relevant statistics and odds comparison.
+
+The application can be further developed in many ways. 
 When putting together the project requirements, a number of optional requirements were outlined. The optional requirements are basically the ways how the application can be further developed. More tests (check with potential users) would be required
 
-Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture. 
+Although, one of the key features of the application is to try not to overhelm the user with statistics, as opposed to many football stats websites, this view would need a little bit more additional information to complete the big picture.
 
-
- I believe my project does hold commercial promise
- 
- I hope that, through the module, I can at least develop a plausible promise as to what the system is capable of. The current implementation is a prototype, a placeholder… 
- 
- If I were to continue with the project beyond university, my plan would be to develop even more cool features! May the odds be in your favour, username!
