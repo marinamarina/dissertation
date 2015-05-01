@@ -1,7 +1,6 @@
 % Modified template
-
 \documentclass{finalyearproject}
-\usepackage{url, graphicx,parskip,appendix,float}
+\usepackage{url, graphicx,parskip,bibunits,appendix,float}
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -12,21 +11,9 @@
  bottom=20mm,
  }
 
-%Import the natbib package and sets a bibliography  and citation styles
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-\usepackage[biblabel]{cite}
-\usepackage[numbers]{natbib}
-\usepackage{tabularx}
-\newcolumntype{b}{X}
-\newcolumntype{s}{>{\hsize=.3\hsize}X}
-\newcommand{\specialcell}[2][c]{%
-  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
-
 \usepackage[ruled] {algorithm2e}
 \usepackage{url,amsmath,amssymb,fancybox,listings,pdfpages,caption,multicol,datetime,rotating, booktabs}
 %\usepackage[usenames,dvipsnames]{color}
-\usepackage{listings}
 \usepackage[pagebackref=false,pdffitwindow=true]{hyperref}
 
 %NOTE: The hyperref usepackage should be the last \usepackage!!
@@ -37,7 +24,7 @@
 %NOTE: More packages may need to be added to provide additional functionality
 
 \hypersetup{
-    pdftitle    = {Football Match Prediction Application - SureThing},
+    pdftitle    = {Football Betting Application},
     pdfauthor   = {Marina Shchukina},
     pdfsubject  = {Subject Area},
     pdfkeywords = {Comma separated list of keywords},
@@ -87,12 +74,9 @@
     breakautoindent=true, %
     captionpos=b%
 } %\hypersetup{colorlinks=true, citecolor=\color{colIdentifier}}
-\renewcommand{\baselinestretch}{1.5}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 \sloppy %NOTE: To ensure the Right Hand Margin is used (Especially for long URLS)
-\setlength{\parindent}{0cm}
-\setlength{\parskip}{1em}
 
 %NOTE: END of the document configuration settings
 
@@ -104,7 +88,7 @@
 %NOTE: When inserting Figures if the extension of the graphic file is not provided LaTeX will automatically search
 % for the extensions declared above, in the order declared.
 
-\title{\huge{Football Match Prediction Web Application - SureThing}}
+\title{\huge{Football Betting Application}}
 \author{Marina Shchukina}
 \date{\today}
 \degreetitle{Computer Science} % 
@@ -119,17 +103,19 @@
 \tableofcontents  %NOTE: Will generate a list of Program Listings in the Table of Contents Section
 
 \include{intro/introduction}
-\include{issues/issues}
+\include{background/background}
 \include{req/requirements}
 \include{design/design}
 \include{impl/implementation}
-\include{testing/testing}
+\include{eval/evaluation}
 \include{conclude/conclude}
+\include{usingLatex/usingLatex}
 
-\appendix
-\input{appendix/appendix}
-
-\nocite{*}
-\bibliographystyle{plainnat}
+\footnotesize  %NOTE: reduced the size of the text for the bibliography
+%NOTE: set the style for the bibliography and display the references used within the document
+\bibliographystyle{vancouver}
 \bibliography{shchukina-2015-surething}
-\end{document}
+\normalsize
+\appendix
+\include{appendix/appendix}
+\end{document} %NOTE: END of document, nothing after this point

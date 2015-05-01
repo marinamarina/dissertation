@@ -253,7 +253,6 @@ These are the requirements for the basic functionality of the web application, s
 \textbf{Account management}
 \begin{itemize}
 	\item The application will enable users to manage their accounts by changing personal information related to it (for example, location, favourite football team) using a web form.
-	\item Users will be able to change the email address associated with their account.
 	\item Users will be able to change their passwords at any time. 
 	\item The application will provide users with a way to recover their lost passwords.
 \end{itemize}
@@ -404,14 +403,6 @@ Non-functional requirements specify how the system is going to perform.
 	\item \textbf{Extensibility} – The system will be developed with a large-scale application in mind. It should be easy to apply ongoing changes to the project.
 \end{itemize}
 
-\section{Overall Architecture}
-\label{overallarchitecture_req}
-The high level components of this system are quite simple.
-
-Design of an application a a whole, overall design (just boxes and lines)
-Architectural diagram (overview) (aosabook.org/en/moodle.html -example), quite high level
-
-
 \section{Choice of Third Party API}
 \label{sec:thirdpartyapi_req}
 	
@@ -437,7 +428,7 @@ Football API was chosen to be integrated with the application. As already mentio
 
 \section{Project Plan}
 \label{projectplan_req}
-The project progress timetable is presented in the Gantt diagram below. Two main milestones were set for this project: firstly, to develop the first prototype of the application and secondly, to complete the second prototype by the end of April, 2015 (this includes all the testing and bug fixes).
+The project progress timetable was created in the early stage of the project. It can be found in the Gantt diagram in the appendix. Two main milestones were set for this project: firstly, to develop the first prototype of the application and secondly, to complete the second prototype by the end of April, 2015 (this includes all the testing and bug fixes).
 
 The first prototype will have implemented most of the high-level features of the application as introduced in the section "Requirements" \ref{sec:requirements_req}. The second prototype is a more refined version of the application; it will implement all mandatory requirements listed above and have the visual side of the website polished up.
 

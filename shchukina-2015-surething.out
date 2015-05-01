@@ -39,64 +39,63 @@
 \BOOKMARK [3][-]{subsubsection.3.3.2.8}{Leaderboard}{subsection.3.3.2}% 39
 \BOOKMARK [3][-]{subsubsection.3.3.2.9}{Optional requirements}{subsection.3.3.2}% 40
 \BOOKMARK [2][-]{subsection.3.3.3}{Non-functional Requirements}{section.3.3}% 41
-\BOOKMARK [1][-]{section.3.4}{Overall Architecture}{chapter.3}% 42
-\BOOKMARK [1][-]{section.3.5}{Choice of Third Party API}{chapter.3}% 43
-\BOOKMARK [1][-]{section.3.6}{Project Plan}{chapter.3}% 44
-\BOOKMARK [0][-]{chapter.4}{Application Design}{}% 45
-\BOOKMARK [1][-]{section.4.1}{Application Structure}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.2}{Branding and Visual Design}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.3}{Analysis of the competitors experience}{chapter.4}% 48
-\BOOKMARK [1][-]{section.4.4}{Wireframes}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.5}{User Stories}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.6}{Activity Diagrams}{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.7}{Database Schema}{chapter.4}% 52
-\BOOKMARK [0][-]{chapter.5}{Implementation}{}% 53
-\BOOKMARK [1][-]{section.5.1}{Choice of Technologies}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.1.1}{Front End}{section.5.1}% 55
-\BOOKMARK [2][-]{subsection.5.1.2}{Back End}{section.5.1}% 56
-\BOOKMARK [1][-]{section.5.2}{Application Architecture}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.3}{Patterns And Conventions}{chapter.5}% 58
-\BOOKMARK [2][-]{subsection.5.3.1}{Application Factory}{section.5.3}% 59
-\BOOKMARK [2][-]{subsection.5.3.2}{Blueprints}{section.5.3}% 60
-\BOOKMARK [2][-]{subsection.5.3.3}{Database Migrations}{section.5.3}% 61
-\BOOKMARK [2][-]{subsection.5.3.4}{Exceptions}{section.5.3}% 62
-\BOOKMARK [1][-]{section.5.4}{Other Implementation Processes}{chapter.5}% 63
-\BOOKMARK [2][-]{subsection.5.4.1}{PEP8}{section.5.4}% 64
-\BOOKMARK [2][-]{subsection.5.4.2}{PyLint}{section.5.4}% 65
-\BOOKMARK [2][-]{subsection.5.4.3}{Version Control}{section.5.4}% 66
-\BOOKMARK [2][-]{subsection.5.4.4}{Own Validation in Forms}{section.5.4}% 67
-\BOOKMARK [2][-]{subsection.5.4.5}{Custom Macros}{section.5.4}% 68
-\BOOKMARK [2][-]{subsection.5.4.6}{Integration with third-party API}{section.5.4}% 69
-\BOOKMARK [2][-]{subsection.5.4.7}{Visual Effects}{section.5.4}% 70
-\BOOKMARK [2][-]{subsection.5.4.8}{Responsive Design}{section.5.4}% 71
-\BOOKMARK [1][-]{section.5.5}{Features Implementation}{chapter.5}% 72
-\BOOKMARK [2][-]{subsection.5.5.1}{Authentication and User Profile}{section.5.5}% 73
-\BOOKMARK [2][-]{subsection.5.5.2}{Matches Overview}{section.5.5}% 74
-\BOOKMARK [2][-]{subsection.5.5.3}{Upcoming Match View}{section.5.5}% 75
-\BOOKMARK [2][-]{subsection.5.5.4}{Prediction}{section.5.5}% 76
-\BOOKMARK [2][-]{subsection.5.5.5}{Played Match View}{section.5.5}% 77
-\BOOKMARK [2][-]{subsection.5.5.6}{Dashboard}{section.5.5}% 78
-\BOOKMARK [2][-]{subsection.5.5.7}{Notifications}{section.5.5}% 79
-\BOOKMARK [2][-]{subsection.5.5.8}{Leaderboard}{section.5.5}% 80
-\BOOKMARK [1][-]{section.5.6}{Application Performance}{chapter.5}% 81
-\BOOKMARK [1][-]{section.5.7}{Deploying the Application}{chapter.5}% 82
-\BOOKMARK [0][-]{chapter.6}{Testing}{}% 83
-\BOOKMARK [1][-]{section.6.1}{Unit Testing}{chapter.6}% 84
-\BOOKMARK [1][-]{section.6.2}{Continuous Integration with Travis CI}{chapter.6}% 85
-\BOOKMARK [1][-]{section.6.3}{Use case Testing}{chapter.6}% 86
-\BOOKMARK [2][-]{subsection.6.3.1}{Test 1 \205 Use Case 1 Testing}{section.6.3}% 87
-\BOOKMARK [1][-]{section.6.4}{User Acceptance Testing}{chapter.6}% 88
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 89
-\BOOKMARK [1][-]{section.7.1}{Evaluation}{chapter.7}% 90
-\BOOKMARK [1][-]{section.7.2}{Personal Statement}{chapter.7}% 91
-\BOOKMARK [1][-]{section.7.3}{Improvements and Future Work}{chapter.7}% 92
-\BOOKMARK [0][-]{appendix.A}{Target Audience Questionnaire}{}% 93
-\BOOKMARK [1][-]{section.A.1}{Questions}{appendix.A}% 94
-\BOOKMARK [1][-]{section.A.2}{Answers}{appendix.A}% 95
-\BOOKMARK [0][-]{appendix.B}{User Acceptance Questionnaire}{}% 96
-\BOOKMARK [1][-]{section.B.1}{Questions}{appendix.B}% 97
-\BOOKMARK [1][-]{section.B.2}{Answers}{appendix.B}% 98
-\BOOKMARK [0][-]{appendix.C}{Installation Instructions}{}% 99
-\BOOKMARK [0][-]{appendix.D}{Credits}{}% 100
-\BOOKMARK [0][-]{appendix.E}{Project Management}{}% 101
-\BOOKMARK [0][-]{appendix.F}{Presentation Slides}{}% 102
+\BOOKMARK [1][-]{section.3.4}{Choice of Third Party API}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.5}{Project Plan}{chapter.3}% 43
+\BOOKMARK [0][-]{chapter.4}{Application Design}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Brainstorming}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Branding and Visual Design}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.3}{Analysis of the competitors experience}{chapter.4}% 47
+\BOOKMARK [1][-]{section.4.4}{Wireframes}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.5}{User Stories}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.6}{Activity Diagrams}{chapter.4}% 50
+\BOOKMARK [1][-]{section.4.7}{Database Schema}{chapter.4}% 51
+\BOOKMARK [0][-]{chapter.5}{Implementation}{}% 52
+\BOOKMARK [1][-]{section.5.1}{Choice of Technologies}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.1.1}{Front End}{section.5.1}% 54
+\BOOKMARK [2][-]{subsection.5.1.2}{Back End}{section.5.1}% 55
+\BOOKMARK [1][-]{section.5.2}{Application Architecture}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.3}{Patterns And Conventions}{chapter.5}% 57
+\BOOKMARK [2][-]{subsection.5.3.1}{Application Factory}{section.5.3}% 58
+\BOOKMARK [2][-]{subsection.5.3.2}{Blueprints}{section.5.3}% 59
+\BOOKMARK [2][-]{subsection.5.3.3}{Database Migrations}{section.5.3}% 60
+\BOOKMARK [2][-]{subsection.5.3.4}{Exceptions}{section.5.3}% 61
+\BOOKMARK [1][-]{section.5.4}{Other Implementation Processes}{chapter.5}% 62
+\BOOKMARK [2][-]{subsection.5.4.1}{PEP8}{section.5.4}% 63
+\BOOKMARK [2][-]{subsection.5.4.2}{PyLint}{section.5.4}% 64
+\BOOKMARK [2][-]{subsection.5.4.3}{Version Control}{section.5.4}% 65
+\BOOKMARK [2][-]{subsection.5.4.4}{Own Validation in Forms}{section.5.4}% 66
+\BOOKMARK [2][-]{subsection.5.4.5}{Custom Macros}{section.5.4}% 67
+\BOOKMARK [2][-]{subsection.5.4.6}{Integration with third-party API}{section.5.4}% 68
+\BOOKMARK [2][-]{subsection.5.4.7}{Visual Effects}{section.5.4}% 69
+\BOOKMARK [2][-]{subsection.5.4.8}{Responsive Design}{section.5.4}% 70
+\BOOKMARK [1][-]{section.5.5}{Features Implementation}{chapter.5}% 71
+\BOOKMARK [2][-]{subsection.5.5.1}{Authentication and User Profile}{section.5.5}% 72
+\BOOKMARK [2][-]{subsection.5.5.2}{Matches Overview}{section.5.5}% 73
+\BOOKMARK [2][-]{subsection.5.5.3}{Upcoming Match View}{section.5.5}% 74
+\BOOKMARK [2][-]{subsection.5.5.4}{Prediction}{section.5.5}% 75
+\BOOKMARK [2][-]{subsection.5.5.5}{Played Match View}{section.5.5}% 76
+\BOOKMARK [2][-]{subsection.5.5.6}{Dashboard}{section.5.5}% 77
+\BOOKMARK [2][-]{subsection.5.5.7}{Notifications}{section.5.5}% 78
+\BOOKMARK [2][-]{subsection.5.5.8}{Leaderboard}{section.5.5}% 79
+\BOOKMARK [1][-]{section.5.6}{Application Performance}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.7}{Deploying the Application}{chapter.5}% 81
+\BOOKMARK [0][-]{chapter.6}{Testing}{}% 82
+\BOOKMARK [1][-]{section.6.1}{Unit Testing}{chapter.6}% 83
+\BOOKMARK [1][-]{section.6.2}{Continuous Integration with Travis CI}{chapter.6}% 84
+\BOOKMARK [1][-]{section.6.3}{System Testing}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.4}{User Acceptance Testing}{chapter.6}% 86
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 87
+\BOOKMARK [1][-]{section.7.1}{Evaluation}{chapter.7}% 88
+\BOOKMARK [1][-]{section.7.2}{Improvements and Future Work}{chapter.7}% 89
+\BOOKMARK [1][-]{section.7.3}{Personal Statement}{chapter.7}% 90
+\BOOKMARK [0][-]{appendix.A}{Target Audience Questionnaire}{}% 91
+\BOOKMARK [1][-]{section.A.1}{Questions}{appendix.A}% 92
+\BOOKMARK [1][-]{section.A.2}{Answers}{appendix.A}% 93
+\BOOKMARK [0][-]{appendix.B}{Requirements Review}{}% 94
+\BOOKMARK [0][-]{appendix.C}{User Acceptance Questionnaire}{}% 95
+\BOOKMARK [1][-]{section.C.1}{Questions}{appendix.C}% 96
+\BOOKMARK [1][-]{section.C.2}{Answers}{appendix.C}% 97
+\BOOKMARK [0][-]{appendix.D}{Installation Instructions}{}% 98
+\BOOKMARK [0][-]{appendix.E}{Credits}{}% 99
+\BOOKMARK [0][-]{appendix.F}{Project Management}{}% 100
+\BOOKMARK [0][-]{appendix.G}{Presentation Slides}{}% 101

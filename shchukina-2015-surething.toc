@@ -37,14 +37,13 @@
 \contentsline {subsubsection}{\numberline {3.3.2.5}Played Match View}{25}{subsubsection.3.3.2.5}
 \contentsline {subsubsection}{\numberline {3.3.2.6}Dashboard}{25}{subsubsection.3.3.2.6}
 \contentsline {subsubsection}{\numberline {3.3.2.7}Notifications}{26}{subsubsection.3.3.2.7}
-\contentsline {subsubsection}{\numberline {3.3.2.8}Leaderboard}{27}{subsubsection.3.3.2.8}
+\contentsline {subsubsection}{\numberline {3.3.2.8}Leaderboard}{26}{subsubsection.3.3.2.8}
 \contentsline {subsubsection}{\numberline {3.3.2.9}Optional requirements}{27}{subsubsection.3.3.2.9}
 \contentsline {subsection}{\numberline {3.3.3}Non-functional Requirements}{28}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Overall Architecture}{28}{section.3.4}
-\contentsline {section}{\numberline {3.5}Choice of Third Party API}{29}{section.3.5}
-\contentsline {section}{\numberline {3.6}Project Plan}{30}{section.3.6}
+\contentsline {section}{\numberline {3.4}Choice of Third Party API}{28}{section.3.4}
+\contentsline {section}{\numberline {3.5}Project Plan}{29}{section.3.5}
 \contentsline {chapter}{\numberline {4}Application Design}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Application Structure}{32}{section.4.1}
+\contentsline {section}{\numberline {4.1}Brainstorming}{32}{section.4.1}
 \contentsline {section}{\numberline {4.2}Branding and Visual Design}{32}{section.4.2}
 \contentsline {section}{\numberline {4.3}Analysis of the competitors experience}{33}{section.4.3}
 \contentsline {section}{\numberline {4.4}Wireframes}{33}{section.4.4}
@@ -84,20 +83,20 @@
 \contentsline {chapter}{\numberline {6}Testing}{79}{chapter.6}
 \contentsline {section}{\numberline {6.1}Unit Testing}{79}{section.6.1}
 \contentsline {section}{\numberline {6.2}Continuous Integration with Travis CI}{80}{section.6.2}
-\contentsline {section}{\numberline {6.3}Use case Testing}{81}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Test 1 \IeC {\textendash } Use Case 1 Testing}{81}{subsection.6.3.1}
-\contentsline {section}{\numberline {6.4}User Acceptance Testing}{81}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion}{84}{chapter.7}
-\contentsline {section}{\numberline {7.1}Evaluation}{84}{section.7.1}
-\contentsline {section}{\numberline {7.2}Personal Statement}{85}{section.7.2}
-\contentsline {section}{\numberline {7.3}Improvements and Future Work}{86}{section.7.3}
-\contentsline {chapter}{\numberline {A}Target Audience Questionnaire}{88}{appendix.A}
-\contentsline {section}{\numberline {A.1}Questions}{88}{section.A.1}
-\contentsline {section}{\numberline {A.2}Answers}{90}{section.A.2}
-\contentsline {chapter}{\numberline {B}User Acceptance Questionnaire}{93}{appendix.B}
-\contentsline {section}{\numberline {B.1}Questions}{93}{section.B.1}
-\contentsline {section}{\numberline {B.2}Answers}{94}{section.B.2}
-\contentsline {chapter}{\numberline {C}Installation Instructions}{98}{appendix.C}
-\contentsline {chapter}{\numberline {D}Credits}{99}{appendix.D}
-\contentsline {chapter}{\numberline {E}Project Management}{100}{appendix.E}
-\contentsline {chapter}{\numberline {F}Presentation Slides}{101}{appendix.F}
+\contentsline {section}{\numberline {6.3}System Testing}{81}{section.6.3}
+\contentsline {section}{\numberline {6.4}User Acceptance Testing}{82}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion}{85}{chapter.7}
+\contentsline {section}{\numberline {7.1}Evaluation}{85}{section.7.1}
+\contentsline {section}{\numberline {7.2}Improvements and Future Work}{86}{section.7.2}
+\contentsline {section}{\numberline {7.3}Personal Statement}{87}{section.7.3}
+\contentsline {chapter}{\numberline {A}Target Audience Questionnaire}{89}{appendix.A}
+\contentsline {section}{\numberline {A.1}Questions}{89}{section.A.1}
+\contentsline {section}{\numberline {A.2}Answers}{91}{section.A.2}
+\contentsline {chapter}{\numberline {B}Requirements Review}{94}{appendix.B}
+\contentsline {chapter}{\numberline {C}User Acceptance Questionnaire}{95}{appendix.C}
+\contentsline {section}{\numberline {C.1}Questions}{95}{section.C.1}
+\contentsline {section}{\numberline {C.2}Answers}{96}{section.C.2}
+\contentsline {chapter}{\numberline {D}Installation Instructions}{100}{appendix.D}
+\contentsline {chapter}{\numberline {E}Credits}{101}{appendix.E}
+\contentsline {chapter}{\numberline {F}Project Management}{102}{appendix.F}
+\contentsline {chapter}{\numberline {G}Presentation Slides}{103}{appendix.G}
