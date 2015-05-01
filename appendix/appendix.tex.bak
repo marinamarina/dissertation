@@ -136,8 +136,10 @@ The questionnaire should only take around five minutes to fill in and your answe
         \toprule
         Requirement & Satisfied? & Comment \\
         \midrule
-		\specialcell[t]{ The application will allow users to create a new account \\with the application} & Yes  & \specialcell[t]{This takes two arguments with \\ the assumption 		that the first line\\ line is longer\\ than the second.} \\ % aligned with top rule
-		\specialcell[t]{ The application will allow users to sign into their accounts\\ using a web form} &  Yes & Foo bar \\ 
+		\specialcell[t]{ The application will allow users to create a new account \\with the application} & Yes  & \specialcell[t]{Minor drawback: the user should not be allowed to access all the features of the website before verifying their email address. \\ the assumption 		that the first line\\ line is longer\\ than the second.} \\ % aligned with top rule
+		\specialcell[t]{ The application will allow users to sign into their accounts\\ using a web form} &  Yes &  \\ 
+		\specialcell[t]{ The application will allow users to sign into their accounts\\ using a web form} &  Yes &  \\ 
+
         \bottomrule
 \end{tabular}
 
@@ -330,10 +332,3 @@ These are the slides used for the project presentation.
 	\fbox{\includegraphics[width=0.7\columnwidth]{appendix/images/slides008.jpg}}
 	\caption{Slide 8 of the presentation \label{slide8}}
 \end{figure}
-
-
-
-
-
-
-
