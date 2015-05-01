@@ -46,14 +46,12 @@
     year = {2013},
     note={[Accessed 13-Apr-2015]}
 }
-
 @book{book:radice1998software,
   title={{Software engineering: an industrial approach.}},
   author={Radice, Ronald A and Phillips, Richard W},
   year={1998},
   publisher={Prentice-Hall, Inc.},
   note = {[Accessed 8-Mar-2015]}
-
 }
 @book{book:martin2011robert,
 	 author={Martin, Robert C},
@@ -409,7 +407,8 @@
 }
 @misc{article:API_Integration,
 	author={Matt Makai},
-	title={API Integration},
+	key={API Integration},
+	title={{API Integration}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://www.fullstackpython.com/api-integration.html}}
 }
@@ -426,11 +425,18 @@
    year = {2015},
    howpublished= {[Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}},
    note = {[Accessed 22-Feb-2015]}
- }
- 
+ } 
 @misc{web:oddschecker,
 	author={Odds Checker},
-	title={Your Bets Bet},
+	key=	{Your Bets Bet},
+	title={{Your Bets Bet}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{ http://www.oddschecker.com/}}
+}
+@misc{web:testingclass,
+	author={Various contributors},
+	key={Software Testing Class},
+	title={{Software Testing Class}},
+	year={2015},
+	howpublished={[Online]. Available from: \url {http://www.softwaretestingclass.com/system-testing-what-why-how/}}
 }

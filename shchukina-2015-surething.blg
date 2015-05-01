@@ -13,47 +13,45 @@ The style file: plainnat.bst
 Database file #1: shchukina-2015-surething.bib
 Warning--I'm ignoring britannica2015gamblingandsports's extra "title" field
 --line 38 of file shchukina-2015-surething.bib
-Warning--I didn't find a database entry for "oddschecker"
-Warning--I didn't find a database entry for ""
-You've used 63 entries,
+You've used 64 entries,
             2773 wiz_defined-function locations,
-            896 strings with 13110 characters,
-and the built_in function-call counts, 17922 in all, are:
-= -- 1721
-> -- 426
-< -- 36
-+ -- 192
-- -- 126
-* -- 893
-:= -- 2394
-add.period$ -- 226
-call.type$ -- 63
-change.case$ -- 252
+            901 strings with 13290 characters,
+and the built_in function-call counts, 18220 in all, are:
+= -- 1747
+> -- 436
+< -- 37
++ -- 197
+- -- 129
+* -- 910
+:= -- 2439
+add.period$ -- 229
+call.type$ -- 64
+change.case$ -- 256
 chr.to.int$ -- 60
-cite$ -- 126
-duplicate$ -- 975
-empty$ -- 2098
-format.name$ -- 174
-if$ -- 4116
-int.to.chr$ -- 4
+cite$ -- 128
+duplicate$ -- 990
+empty$ -- 2130
+format.name$ -- 178
+if$ -- 4180
+int.to.chr$ -- 5
 int.to.str$ -- 1
 missing$ -- 12
-newline$ -- 360
-num.names$ -- 144
-pop$ -- 731
+newline$ -- 365
+num.names$ -- 148
+pop$ -- 737
 preamble$ -- 1
-purify$ -- 195
+purify$ -- 198
 quote$ -- 0
-skip$ -- 793
+skip$ -- 809
 stack$ -- 0
-substring$ -- 126
-swap$ -- 69
+substring$ -- 128
+swap$ -- 72
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 663
+type$ -- 674
 warning$ -- 0
-while$ -- 108
+while$ -- 111
 width$ -- 0
-write$ -- 837
-(There were 3 warnings)
+write$ -- 849
+(There was 1 warning)

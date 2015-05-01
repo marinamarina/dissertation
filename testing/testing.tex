@@ -1,8 +1,8 @@
 \chapter{Testing}
 \label{ch:testing}
-Testing was an important part of the project. The application interface and the functionality were continuously tested during the development process. In addition to that, the most critical parts of its business logic were covered with unit tests.
+Testing was an important part of the project. The application interface and the functionality were continuously tested throughout the development process. In addition to that, the most critical parts of its business logic were covered with unit tests.
 
-On completion of the implementation phase, the functions of the project were reviewed against the original specification and any issues arising from this testing were noted and will be fixed if time allows. Also, the system was tested for its non-functional requirements, such as performance, responsiveness, cross-browser compatibility, etc.
+On completion of the implementation phase, the System Integration Testing was carried out. During this testing process functions of the project were reviewed against the original specifications and any issues arising from this testing were noted. Also, the system was tested for its non-functional requirements, such as performance, responsiveness, cross-browser compatibility, etc.
 
 Finally, the User Acceptance Testing was performed, making sure that the application works well for the intended end users. 
 
@@ -46,9 +46,9 @@ A Travis status icon indicating whether the tests passed or failed was embedded 
 	\end{center}
 \end{figure}
 
-\section{System Testing}
-\label{sec:system_test}
-System testing is a type of testing conducted on a finalised software.  
+\section{System Integration Testing}
+\label{sec:systemintegration_test}
+System testing is a black-box testing conducted on a finalised software, where its external workings are evaluated against a set of functional and non-functional requirements. The aim of this high-level testing is to find possible defects on different components of the system before the software release \citep{web:testingclass}. 
 
 \subsection*{Functional Testing}
 Functional Testing is concerned with the functional requirements of the developed system. It includes tests based on the initial specifications, use cases, or other high-level descriptions of the software behavior. The testing is performed by the developer, who takes into account the expected outputs and compares them with the actual result for each of the test cases.
@@ -60,17 +60,16 @@ In the final step of the System Testing, the readiness of a software was evaluat
 
 Usability - The application is extremely user friendly, it is uncluttered and navigation is highly intuitive. The initial test users praised the design and overall ease of use of the application.
 
-Responsiveness - The responsiveness of the application was checked with the help of the Chrome Window Resizer extension. SureThing is a fully responsive website, tested successfully on a variety of screen resolutions down to a minimum of 640x960 (DVGA).
+Responsiveness - The responsiveness of the application was checked with the help of the Chrome "Window Resizer" extension. SureThing is a fully responsive website, tested successfully on a variety of screen resolutions down to a minimum of 640x960 (DVGA).
 
-Performance - During the whole development process, the focus was on the performance of the application. It was important to make sure that the user does not have to wait too long for the page to load. Therefore, the loading time for each page was measured and evaluated. If the speed was too slow, the appropriate code optimisation was made to ensure the speed is at an acceptable level. 
-
-With the correct choice of architecture used and by keeping the code streamlined, the performance of the application was optimised as much as possible. Only by spending money on a faster API could it be improved, which is something to be considered if ever taking the application to market.
+Performance - During the whole development process, the focus was on the performance of the application. It was important to make sure that the user does not have to wait too long for the page to load. Therefore, the loading time for each page was measured and evaluated. If the speed was too slow, the appropriate code optimisation was made to ensure the speed is at an acceptable level. At the moment the average load time for the main page and the list of matches saved to the dashboard is 4 seconds and 4.5 seconds for the upcoming match view. All other pages of the application load within 1 second. A Chrome extention "Page load time" was used to perform this testing.
 
 Cross-browser support - The website was tested and works on all the usual web browsers including Chrome, Firefox, IE9 and Safari.
 
 Maintainability - The code written for the website is clear and understandable.  There is no doubt that other developers would find it easy to see what has been done and why it was done a certain way.
 
 Extensibility - It became clear early on that the application has the potential to be of a much larger scale.  With this in mind, the project was developed to make it a simple matter of adding new and advanced features to it without having to rewrite large parts of the code.
+
 
 \section{User Acceptance Testing}
 \label{sec:uat_test}

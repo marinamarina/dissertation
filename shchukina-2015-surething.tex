@@ -18,10 +18,11 @@
 \usepackage[biblabel]{cite}
 \usepackage[numbers]{natbib}
 \usepackage{tabularx}
+\usepackage{pbox}
 \newcolumntype{b}{X}
 \newcolumntype{s}{>{\hsize=.3\hsize}X}
-\newcommand{\specialcell}[2][c]{%
-  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\specialcell}[2][l]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
 
 \usepackage[ruled] {algorithm2e}
 \usepackage{url,amsmath,amssymb,fancybox,listings,pdfpages,caption,multicol,datetime,rotating, booktabs}

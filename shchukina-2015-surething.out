@@ -82,7 +82,7 @@
 \BOOKMARK [0][-]{chapter.6}{Testing}{}% 82
 \BOOKMARK [1][-]{section.6.1}{Unit Testing}{chapter.6}% 83
 \BOOKMARK [1][-]{section.6.2}{Continuous Integration with Travis CI}{chapter.6}% 84
-\BOOKMARK [1][-]{section.6.3}{System Testing}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.3}{System Integration Testing}{chapter.6}% 85
 \BOOKMARK [1][-]{section.6.4}{User Acceptance Testing}{chapter.6}% 86
 \BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 87
 \BOOKMARK [1][-]{section.7.1}{Evaluation}{chapter.7}% 88
@@ -91,7 +91,7 @@
 \BOOKMARK [0][-]{appendix.A}{Target Audience Questionnaire}{}% 91
 \BOOKMARK [1][-]{section.A.1}{Questions}{appendix.A}% 92
 \BOOKMARK [1][-]{section.A.2}{Answers}{appendix.A}% 93
-\BOOKMARK [0][-]{appendix.B}{Requirements Review}{}% 94
+\BOOKMARK [0][-]{appendix.B}{Functional Requirements Review}{}% 94
 \BOOKMARK [0][-]{appendix.C}{User Acceptance Questionnaire}{}% 95
 \BOOKMARK [1][-]{section.C.1}{Questions}{appendix.C}% 96
 \BOOKMARK [1][-]{section.C.2}{Answers}{appendix.C}% 97
