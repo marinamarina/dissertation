@@ -254,7 +254,6 @@ These are the requirements for the basic functionality of the web application, s
 \begin{itemize}
 	\item The application will enable users to manage their accounts by changing personal information related to it (for example, location, favourite football team) using a web form.
 	\item Users will be able to change their passwords at any time. 
-	\item The application will provide users with a way to recover their lost passwords.
 \end{itemize}
 
 \textbf{User profile}
@@ -425,12 +424,3 @@ This is a paid API service. The API restricts by IP addresses and limit calls ba
 \end{itemize}
 	
 Football API was chosen to be integrated with the application. As already mentioned in the "Definitions" \ref{subsec:definitions_req}, it was decided to support only one league for the time being. Football API offers its users free access to the English Premier League, which seems to be a great choice for our application, as this league's worldwide popularity will hopefully make it easier to find other league-related data and information that might be needed during the development process.
-
-\section{Project Plan}
-\label{projectplan_req}
-The project progress timetable was created in the early stage of the project. It can be found in the Gantt diagram in the appendix. Two main milestones were set for this project: firstly, to develop the first prototype of the application and secondly, to complete the second prototype by the end of April, 2015 (this includes all the testing and bug fixes).
-
-The first prototype will have implemented most of the high-level features of the application as introduced in the section "Requirements" \ref{sec:requirements_req}. The second prototype is a more refined version of the application; it will implement all mandatory requirements listed above and have the visual side of the website polished up.
-
-
-

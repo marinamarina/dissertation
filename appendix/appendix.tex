@@ -132,52 +132,58 @@ The questionnaire should only take around five minutes to fill in and your answe
 \chapter{Functional Requirements Review}
 \label{ch:requirementsreview_appendix}
 
+\rowcolors{1}{}{yellow!70!green!65}
+\noindent
 \begin{tabular}{@{}lll@{}}
-  \toprule
+	  \hline
         Requirement & Satisfied? & Comment \\
-   \midrule
-		\specialcell[t]{SureThing should allow its users to create a new \\ account using a standard web form.} & Partly  & \specialcell[t]{Minor drawback: the user should \\ not be allowed to access all the features \\ of the website before verifying their\\ email address. } \\ % aligned with top rule
-		\specialcell[t]{The application should allow to sign into the newly \\ created account. } &  Yes &  \\ 
-		\specialcell[t]{The application should have a special user profile page \\ showing all the essential information \\ about the current user.} &  Yes &  \\ 
-		\specialcell[t]{Users should be able to view profile pages of other \\users of the application.} &  Yes &  \specialcell[t]{At the moment profiles can \\ be accessible through the \\ leaderboard view.} \\ 
+       \hline 
+		\specialcell[t]{SureThing should allow its users to create a new \\ account using a standard web form.} & Partly  & \specialcell[t]{Minor drawback: users should \\ not be allowed to access any pages \\ of the website before verifying their\\ email address. } \\ % aligned with top rule
+		\specialcell[t]{Users should be able to sign into the newly \\ created account. } &  Yes &  \\ 
+		\specialcell[t]{The application should have a special user profile page \\ showing all the essential information about the \\ current user.} &  Yes & Accesible via user dropdown menu. \\ 
+		\specialcell[t]{Users should be able to view profile pages of other \\ users of the application.} &  Yes &  \specialcell[t]{At the moment profiles can only \\ be accessed through the leaderboard \\ view.} \\ 
+		\specialcell[t]{The application will enable users to manage their\\ accounts by changing personal information\\ using a standard web form.} &  Yes &  \\ 
+		\specialcell[t]{	Users will be able to change their passwords \\ at any time using a standard web form.} &  Yes &  \\ 		
 		\specialcell[t]{On the main page of the application, user should \\ be presented with a list of upcoming matches for \\the current season in the league.} &  Yes &  \\ 
-		\specialcell[t]{User should be able to can view a list of matches \\ already played in the current season and switch \\ between upcoming and played matches using \\ navigation tabs.} &  Yes &  \\ 
-		\specialcell[t]{From the main page user should be able to save any \\ unplayed match to the dashboard for a later \\ review.} &  Yes &  \\ 
+		 \specialcell[t]{Users should be able to view a list of matches \\ already played in the current season and switch \\ between upcoming and played matches using \\ navigation tabs.} &  Yes &  \\
  \bottomrule
 \end{tabular}
 
-\begin{tabular}{@{}lll@{}}
-  \toprule
-        Requirement & Satisfied? & Comment \\
-   \midrule
-   		\specialcell[t]{For each of the unplayed matches, user should be \\ able to navigate to the match page and see \\ more details about the match.} &  Yes &  \\ 		
-		\specialcell[t]{For each of the played matches user should be able to \\ navigate to the match page and see statistics \\ related to the played match.} &  Yes &  \\ 
-		\specialcell[t]{User should be easily able to access the dashboard from any page \\ of the website.} &  Yes &  \specialcell[t]{Dashboard is accessible \\ via navigation menu\\ on the top of each page.} \\
-		\specialcell[t]{The dashboard navigation menu should contain the following entries: \\ "Upcoming matches", "Archived matches" and  "Prediction settings"} &  Yes &  \\
-		\specialcell[t]{"Upcoming matches" should be a default view of the Dashboard. } &  Yes &  \\
-		\specialcell[t]{Tab "Archive" in the dashboard menu should navigate \\ the user to a view containing the saved \\ matches that have already been \\ played.} &  Yes &  \\ 
-		\specialcell[t]{In the list of saved matches (both upcoming and played),\\ it will be clearly indicated (colour coded) whether a saved \\ match was committed and what the user \\predicted.} &  Yes &  \\
-		\specialcell[t]{If there are any committed matches in the Archive view, \\ it will be clearly indicated whether the user won \\ or lost a bet.} &  Yes &  \\	  
-		\specialcell[t]{User should be able to remove any unplayed or played match \\ from the dashboard.} &  Yes &  \\ 
-		
-		\specialcell[t]{"Prediction Settings" tab opens a view with a \\ web form, which can be used to save or update the \\ user default prediction weights.} &  Yes &  \\ 
-		\specialcell[t]{User can see the prediction modules with the \\ blocks of relevant football statistics \\ on the upcoming match page.} &  Yes &  \specialcell[t]{If the match page \\ was opened from the\\ dashboard (prediction mode).} \\ 	
-		\specialcell[t]{Upcoming match view: the application should allow the\\ user to set new match specific prediction \\ weights on this page.} &  Yes &  \\ 		
- \bottomrule
-\end{tabular}
+\rowcolors{1}{}{yellow!70!green!65}
 
 \begin{tabular}{@{}lll@{}}
-  \toprule
+  \hline
         Requirement & Satisfied? & Comment \\
-   \midrule
-   		\specialcell[t]{Upcoming match view: the application should allow the\\ user to set new match specific prediction \\ weights on this page.} &  Yes &  \\ 		
-   		\specialcell[t]{The system should be able to notify its users whether they won \\ or lost the bet.} &  Yes &  \\ 		
-		\specialcell[t]{Tab "Archive" in the dashboard menu  navigates the user to \\ a view containing the saved \\ matches that have already been \\ played.} &  Yes &  \\        
- 		\specialcell[t]{"Prediction Settings" tab opens a view with a web form, \\ which can be used to save the \\ user default prediction weights.} &  Yes &  \\ 
-		\specialcell[t]{User can see the prediction modules with the \\ blocks of relevant football statistics \\ on the upcoming match page.} &  Yes &  \\ 
-		\specialcell[t]{Upcoming match view: the application allows the\\ user to set new match specific prediction \\ weights on this page.} &  Yes &  \\ 
-				
- \bottomrule
+    \hline 
+	\specialcell[t]{From the main page users should be able to save any \\ unplayed match to the dashboard for a later \\ review.} &  Yes &  \\  
+   	\specialcell[t]{For each of the unplayed matches, users should be able\\ to navigate to the match page and see more details\\ about the match.} &  Yes &  \\  
+	\specialcell[t]{For each of the played matches users should be able to \\ navigate to the match page and see statistics related \\ to the played match.} &  Partly & \specialcell[t]{The visualisation of the \\ website population's choice \\ of prediction weights was\\ not implemented.} \\
+	\specialcell[t]{Users should be able to easily access the dashboard from \\ any page of the website.} &  Yes &  \specialcell[t]{Dashboard is accessible \\ via navigation menu\\ on the top of each page.} \\
+	\specialcell[t]{The dashboard navigation menu should contain the following \\ entries:  "Upcoming matches", "Archived matches" and \\ "Prediction settings".} &  Yes &  \\  
+	\specialcell[t]{"Upcoming matches" should be a default view of the dashboard. } &  Yes &  \\  
+	\specialcell[t]{Tab "Archive" in the dashboard menu should navigate \\users to a view containing the saved matches that have\\ already been played.} &  Yes &  \\  
+	\specialcell[t]{In the list of saved matches (both upcoming and played),\\ it will be clearly indicated (colour coded) whether a saved \\ match was committed and what was user's prediction.} &  Yes &  \\  
+	\specialcell[t]{If there are any committed matches in the Archive view,  it\\ will be clearly indicated whether the user won or lost a bet.} &  Yes &  \\	 
+	\specialcell[t]{Users should be able to remove any unplayed or played match \\ from the dashboard.} &  Yes &  \\ 
+	\specialcell[t]{"Prediction Settings" tab opens a view with a web form,\\ which can be used to save or update the user default \\ prediction weights.} &  Yes &  \\ 
+	 \specialcell[t]{Users can see the prediction modules with the blocks of\\ relevant football statistics on the upcoming match page.} &  Yes &  \specialcell[t]{If the match page \\ was opened from the\\ dashboard (prediction mode).} \\ 
+	\specialcell[t]{Upcoming match view: SureThing should allow users \\ to set new match specific prediction weights on this page.} &  Yes &  \\ 	
+	\hline
+\end{tabular}
+
+\rowcolors{1}{}{yellow!70!green!65}
+\begin{tabular}{@{}lll@{}}
+	  \hline
+        Requirement & Satisfied? & Comment \\
+       \hline 
+		\specialcell[t]{To calculate prediction values for each module, application\\ will use the system default settings in absence of either \\ the user default prediction  settings or the match specific \\ settings.} &  Yes &  \\ 
+		\specialcell[t]{The application will make use of the user default prediction \\settings (explicitly set by the user using \\ a web form) in absence of the\\ match specific settings.} &  Yes &  \\
+		\specialcell[t]{The application will apply match specific settings if the user\\ has set them for this match.} &  Yes &  \\ 
+		\specialcell[t]{Users should be able to commit the match, once satisfied with \\ the result of the prediction.} &  Yes &  \\ 		
+   		\specialcell[t]{The system should be able to notify its users whether they won \\ or lost the bet.} &  Yes & Via in-app messages. \\
+   		\specialcell[t]{The app will have a leaderboard table, which will display players' \\ usernames, their total win and loss points. The table will be sorted\\ in order of win  points.} &  Yes &  \specialcell[t]{Accessible via navigation \\ menu on the top of each \\ page.}\\ 
+
+ \hline
 \end{tabular}
 
 
@@ -236,6 +242,7 @@ On completing the steps, please answer the following questions:
 \section{Answers}
 \label{sec:ua_answers_appendix}
 
+\rowcolors{1}{}{}
 \noindent
 \begin{sidewaystable}
 \begin{tabular}{
@@ -314,7 +321,7 @@ Some of the handy decorator functions used in the Python code were taken from Fl
 
 \chapter{Project Management}
 \label{ch:pm_appendix}
-The project was not developed following a single software development methodology. Different techniques from various methodologies were used for the project. Some of the planning was made beforehand in the traditional, Waterfall approach fashion, such as researching the project background, defining application requirements, sketching the application wireframes, etc. On the other hand, some of the design techniques were adopted from the Agile methodology, namely user journeys. 
+SureThing was not developed following a single software development methodology. Different techniques from various methodologies were used for the project. Some of the planning was made beforehand in the traditional, Waterfall approach fashion, such as researching the project background, defining application requirements, sketching the application wireframes, etc. On the other hand, some of the design techniques were adopted from the Agile methodology, namely user stories supported by activity diagrams. 
 
 The project implementation phase was carried out in an iterative manner. For defining the project requirements, the application functionality was divided into clearly defined units (so called "high-level features" introduced in the chapter "Requirements Analysis" \ref{ch:requirementanalysis}), each associated with an implementation iteration. Excel sheets were used for defining the set of tasks for each iteration. GitHub issue tracker was also used as a supporting productivity tool for this project. Code related tasks were recorded as "issues" for the project GitHub repository. In general, the GitHub issue tracker was a very efficient tool for keeping the project organised. 
 
