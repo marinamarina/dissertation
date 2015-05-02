@@ -661,15 +661,5 @@ The leaderboard is a view containing a table capturing betting performance acros
 \label{subsec:leaderboarduserjourney}
 Each username in the table is also a link. Clicking on the username of a user will take us to this user's profile page, letting an authenticated user view the profiles of fellow users.
 
-\section{Application Performance}
-\label{sec:applicationperformance}
-Performance is a very important aspect of a web application. DEF
-
-response time
-
-sockets, threads
-multithreading
-how I fixed performance on Match.update\_all\_matches
-
 \section{Deploying the Application}
 Cloud Deployment is the most recent trend in application hosting. The formal name of this technologu is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.

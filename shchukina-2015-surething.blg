@@ -12,46 +12,73 @@ A level-1 auxiliary file: conclude/conclude.aux
 The style file: plainnat.bst
 Database file #1: shchukina-2015-surething.bib
 Warning--I'm ignoring britannica2015gamblingandsports's extra "title" field
---line 38 of file shchukina-2015-surething.bib
+--line 34 of file shchukina-2015-surething.bib
+Warning--to sort, need author or key in art:historyofonlinegambling
+Warning--to sort, need author or key in source:microgaming
+Warning--to sort, need author or key in source:gamblingsites
+Warning--to sort, need author or key in source:bbcsport
+Warning--to sort, need author or key in source:guardiansport
+Warning--to sort, need author or key in source:skysports
+Warning--to sort, need author or key in source:thetimes
+Warning--to sort, need author or key in source:football365
+Warning--to sort, need author or key in source:goal
+Warning--to sort, need author or key in source:whoscored
+Warning--to sort, need author or key in source:squawka
+Warning--to sort, need author or key in source:injuriesandsuspensions
+Warning--to sort, need author or key in source:paddypower
+Warning--to sort, need author or key in source:ladbrokes
+Warning--to sort, need author or key in source:bet365
+Warning--to sort, need author or key in source:williamhill
+Warning--to sort, need author or key in source:olgb
+Warning--to sort, need author or key in source:vitalfootball
+Warning--to sort, need author or key in source:punterslounge
+Warning--to sort, need author or key in source:mathbetting
+Warning--to sort, need author or key in source:footbee
+Warning--to sort, need author or key in source:vitibet
+Warning--to sort, need author or key in source:forebet
+Warning--to sort, need author or key in source:opta
+Warning--to sort, need author or key in source:openfooty
+Warning--to sort, need author or key in source:footballapi
+Warning--to sort, need author or key in source:xmlsoccer
 You've used 64 entries,
             2773 wiz_defined-function locations,
-            901 strings with 13290 characters,
-and the built_in function-call counts, 18220 in all, are:
-= -- 1747
+            869 strings with 12883 characters,
+and the built_in function-call counts, 18110 in all, are:
+= -- 1693
 > -- 436
 < -- 37
-+ -- 197
++ -- 222
 - -- 129
-* -- 910
-:= -- 2439
-add.period$ -- 229
+* -- 989
+:= -- 2334
+add.period$ -- 202
 call.type$ -- 64
-change.case$ -- 256
-chr.to.int$ -- 60
-cite$ -- 128
+change.case$ -- 229
+chr.to.int$ -- 35
+cite$ -- 182
 duplicate$ -- 990
 empty$ -- 2130
 format.name$ -- 178
-if$ -- 4180
-int.to.chr$ -- 5
+if$ -- 4126
+int.to.chr$ -- 30
 int.to.str$ -- 1
 missing$ -- 12
-newline$ -- 365
+newline$ -- 338
 num.names$ -- 148
-pop$ -- 737
+pop$ -- 801
 preamble$ -- 1
-purify$ -- 198
+purify$ -- 171
 quote$ -- 0
-skip$ -- 809
+skip$ -- 772
 stack$ -- 0
-substring$ -- 128
-swap$ -- 72
+substring$ -- 155
+swap$ -- 98
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 674
-warning$ -- 0
+warning$ -- 27
 while$ -- 111
 width$ -- 0
-write$ -- 849
-(There was 1 warning)
+write$ -- 795
+(There were 28 warnings)

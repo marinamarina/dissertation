@@ -133,15 +133,51 @@ The questionnaire should only take around five minutes to fill in and your answe
 \label{ch:requirementsreview_appendix}
 
 \begin{tabular}{@{}lll@{}}
-        \toprule
+  \toprule
         Requirement & Satisfied? & Comment \\
-        \midrule
-		\specialcell[t]{ The application will allow users to create a new account \\with the application} & Yes  & \specialcell[t]{Minor drawback: the user should not be allowed\\ to access all the features of the website before verifying their email address. } \\ % aligned with top rule
-		\specialcell[t]{ The application will have a special user profile page \\ containing all the essential information \\about the current user.} &  Yes &  \\ 
-		\specialcell[t]{ Users will also be able to view profile pages of other users of the application.} &  Yes &  At the moment accessible through leaderboard. \\ 
-		
+   \midrule
+		\specialcell[t]{SureThing should allow its users to create a new \\ account using a standard web form.} & Partly  & \specialcell[t]{Minor drawback: the user should \\ not be allowed to access all the features \\ of the website before verifying their\\ email address. } \\ % aligned with top rule
+		\specialcell[t]{The application should allow to sign into the newly \\ created account. } &  Yes &  \\ 
+		\specialcell[t]{The application should have a special user profile page \\ showing all the essential information \\ about the current user.} &  Yes &  \\ 
+		\specialcell[t]{Users should be able to view profile pages of other \\users of the application.} &  Yes &  \specialcell[t]{At the moment profiles can \\ be accessible through the \\ leaderboard view.} \\ 
+		\specialcell[t]{On the main page of the application, user should \\ be presented with a list of upcoming matches for \\the current season in the league.} &  Yes &  \\ 
+		\specialcell[t]{User should be able to can view a list of matches \\ already played in the current season and switch \\ between upcoming and played matches using \\ navigation tabs.} &  Yes &  \\ 
+		\specialcell[t]{From the main page user should be able to save any \\ unplayed match to the dashboard for a later \\ review.} &  Yes &  \\ 
+ \bottomrule
+\end{tabular}
 
-        \bottomrule
+\begin{tabular}{@{}lll@{}}
+  \toprule
+        Requirement & Satisfied? & Comment \\
+   \midrule
+   		\specialcell[t]{For each of the unplayed matches, user should be \\ able to navigate to the match page and see \\ more details about the match.} &  Yes &  \\ 		
+		\specialcell[t]{For each of the played matches user should be able to \\ navigate to the match page and see statistics \\ related to the played match.} &  Yes &  \\ 
+		\specialcell[t]{User should be easily able to access the dashboard from any page \\ of the website.} &  Yes &  \specialcell[t]{Dashboard is accessible \\ via navigation menu\\ on the top of each page.} \\
+		\specialcell[t]{The dashboard navigation menu should contain the following entries: \\ "Upcoming matches", "Archived matches" and  "Prediction settings"} &  Yes &  \\
+		\specialcell[t]{"Upcoming matches" should be a default view of the Dashboard. } &  Yes &  \\
+		\specialcell[t]{Tab "Archive" in the dashboard menu should navigate \\ the user to a view containing the saved \\ matches that have already been \\ played.} &  Yes &  \\ 
+		\specialcell[t]{In the list of saved matches (both upcoming and played),\\ it will be clearly indicated (colour coded) whether a saved \\ match was committed and what the user \\predicted.} &  Yes &  \\
+		\specialcell[t]{If there are any committed matches in the Archive view, \\ it will be clearly indicated whether the user won \\ or lost a bet.} &  Yes &  \\	  
+		\specialcell[t]{User should be able to remove any unplayed or played match \\ from the dashboard.} &  Yes &  \\ 
+		
+		\specialcell[t]{"Prediction Settings" tab opens a view with a \\ web form, which can be used to save or update the \\ user default prediction weights.} &  Yes &  \\ 
+		\specialcell[t]{User can see the prediction modules with the \\ blocks of relevant football statistics \\ on the upcoming match page.} &  Yes &  \specialcell[t]{If the match page \\ was opened from the\\ dashboard (prediction mode).} \\ 	
+		\specialcell[t]{Upcoming match view: the application should allow the\\ user to set new match specific prediction \\ weights on this page.} &  Yes &  \\ 		
+ \bottomrule
+\end{tabular}
+
+\begin{tabular}{@{}lll@{}}
+  \toprule
+        Requirement & Satisfied? & Comment \\
+   \midrule
+   		\specialcell[t]{Upcoming match view: the application should allow the\\ user to set new match specific prediction \\ weights on this page.} &  Yes &  \\ 		
+   		\specialcell[t]{The system should be able to notify its users whether they won \\ or lost the bet.} &  Yes &  \\ 		
+		\specialcell[t]{Tab "Archive" in the dashboard menu  navigates the user to \\ a view containing the saved \\ matches that have already been \\ played.} &  Yes &  \\        
+ 		\specialcell[t]{"Prediction Settings" tab opens a view with a web form, \\ which can be used to save the \\ user default prediction weights.} &  Yes &  \\ 
+		\specialcell[t]{User can see the prediction modules with the \\ blocks of relevant football statistics \\ on the upcoming match page.} &  Yes &  \\ 
+		\specialcell[t]{Upcoming match view: the application allows the\\ user to set new match specific prediction \\ weights on this page.} &  Yes &  \\ 
+				
+ \bottomrule
 \end{tabular}
 
 
@@ -213,7 +249,7 @@ On completing the steps, please answer the following questions:
   \centering Respondent  & \centering Question 1  & \centering Question 2 &  \centering Question 3 & \centering\arraybackslash Question 4   \\ \hline
   1  & Probably the changing the prediction settings but even that wasn't hard really & More leagues & 10 & 8 \\ \hline
   2 & Saving matches to the dashboard, wasn't immediately apparent why I had to do that & A way to communicate with friends using the same app, maybe a separate league table for friends than just for all users & 9 & 7 \\ \hline
- 3 & Committing the match, it wasn't immediately apparent that I can only commit a match previously saved in the dashboard & Maybe some news feeds & 7 & 8 \\ \hline
+  3 & Committing the match, it wasn't immediately apparent that I can only commit a match previously saved in the dashboard & Maybe some news feeds & 7 & 8 \\ \hline
   4 &  Changing the prediction settings, it could have been clearer what I was supposed to do & A help menu or FAQ would be useful & 7 & 6 \\ \hline
   5 &  It was all fairly easy & More leagues, comparison betting odds from different bookies & 10 & 10 \\ \hline
   6 &  Saving matches to the dashboard, wasn't sure why I had to do that & More social interaction, link to Facebook & 8 & 7 \\ \hline

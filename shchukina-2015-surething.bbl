@@ -5,32 +5,161 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[art(2015)]{art:historyofonlinegambling}
+{The History of Online Gambling}.
+\newblock \url{http://www.onlinegambling.com/online-gambling-history.htm},
+  2015.
+\newblock [Accessed 12-Apr-2015].
+
+\bibitem[sou(2015{\natexlab{a}})]{source:bbcsport}
+{BBC Sport}.
+\newblock \url{http://www.bbc.co.uk/sport}, 2015{\natexlab{a}}.
+\newblock Available online. [Accessed 10-11-2014].
+
+\bibitem[sou(2015{\natexlab{b}})]{source:bet365}
+{Bet365}.
+\newblock \url{http://www.bet365.com}, 2015{\natexlab{b}}.
+\newblock Available online. [Accessed 12-11-2014].
+
+\bibitem[sou(2015{\natexlab{c}})]{source:football365}
+{Football 365}.
+\newblock \url{http://www.football365.com}, 2015{\natexlab{c}}.
+\newblock Available online. [Accessed 10-11-2014].
+
+\bibitem[sou(2015{\natexlab{d}})]{source:footballapi}
+{Football-API}.
+\newblock \url{ http://www.football-api.com}, 2015{\natexlab{d}}.
+\newblock Available online. [Accessed 1-10-2014].
+
+\bibitem[sou(2015{\natexlab{e}})]{source:footbee}
+{Footbee}.
+\newblock \url{http://footbe.net/en/}, 2015{\natexlab{e}}.
+\newblock Available online. [Accessed 14-10-2014].
+
+\bibitem[sou(2015{\natexlab{f}})]{source:forebet}
+{Forebet.com - Mathematical Prediction}.
+\newblock \url{http://www.forebet.com/en/}, 2015{\natexlab{f}}.
+\newblock Available online. [Accessed 14-10-2014].
+
+\bibitem[sou(2015{\natexlab{g}})]{source:gamblingsites}
+{Gambling sites}.
+\newblock \url{http://www.gamblingsites.com/history/microgaming/},
+  2015{\natexlab{g}}.
+\newblock [Accessed 13-Apr-2015].
+
+\bibitem[sou(2015{\natexlab{h}})]{source:goal}
+{Goal.com}.
+\newblock \url{http://www.goal.com/}, 2015{\natexlab{h}}.
+\newblock Available online. [Accessed 10-11-2014].
+
+\bibitem[sou(2015{\natexlab{i}})]{source:guardiansport}
+{Guardian Sport}.
+\newblock \url{http://www.theguardian.com/uk/sport}, 2015{\natexlab{i}}.
+\newblock Available online. [Accessed 10-11-2014].
+
+\bibitem[sou(2015{\natexlab{j}})]{source:injuriesandsuspensions}
+{Injuries And Suspensions}.
+\newblock \url{ http://injuriesandsuspensions.com/}, 2015{\natexlab{j}}.
+\newblock Available online. [Accessed 12-11-2014].
+
+\bibitem[sou(2015{\natexlab{k}})]{source:ladbrokes}
+{Ladbrokes}.
+\newblock \url{ http://betting.ladbrokes.com/en/football-betting},
+  2015{\natexlab{k}}.
+\newblock Available online. [Accessed 12-11-2014].
+
+\bibitem[sou(2015{\natexlab{l}})]{source:mathbetting}
+{Math Betting}.
+\newblock \url{https://apps.betfair.com/trading/mathbetting/},
+  2015{\natexlab{l}}.
+\newblock Available online. [Accessed 14-10-2014].
+
+\bibitem[sou(2015{\natexlab{m}})]{source:microgaming}
+{Microgaming, our story}.
+\newblock \url{http://www.microgaming.co.uk/our-story}, 2015{\natexlab{m}}.
+\newblock [Accessed 13-Apr-2015].
+
+\bibitem[sou(2015{\natexlab{n}})]{source:olgb}
+{OLGB Betting Community}.
+\newblock \url{ http://www.olgb.com}, 2015{\natexlab{n}}.
+\newblock Available online. [Accessed 14-10-2014].
+
+\bibitem[sou(2015{\natexlab{o}})]{source:openfooty}
+{Open Footy}.
+\newblock \url{http://www.footytube.com/openfooty/service.php},
+  2015{\natexlab{o}}.
+\newblock Available online. [Accessed 1-10-2014].
+
+\bibitem[sou(2015{\natexlab{p}})]{source:opta}
+{Opta Sports}.
+\newblock \url{ http://www.optasports.com}, 2015{\natexlab{p}}.
+\newblock Available online. [Accessed 1-10-2014].
+
+\bibitem[sou(2015{\natexlab{q}})]{source:paddypower}
+{Paddy Power}.
+\newblock \url{ http://www.paddypower.com/bet}, 2015{\natexlab{q}}.
+\newblock Available online. [Accessed 12-11-2014].
+
+\bibitem[sou(2015{\natexlab{r}})]{source:punterslounge}
+{Punters Lounge}.
+\newblock \url{http://www.punterslounge.com/}, 2015{\natexlab{r}}.
+\newblock Available online. [Accessed 1-10-2014].
+
+\bibitem[sou(2015{\natexlab{s}})]{source:skysports}
+{Sky Sports}.
+\newblock \url{http://www.skysports.com/}, 2015{\natexlab{s}}.
+\newblock Available online. [Accessed 10-11-2014].
+
+\bibitem[sou(2015{\natexlab{t}})]{source:squawka}
+{Squawka}.
+\newblock \url{ http://www.squawka.com}, 2015{\natexlab{t}}.
+\newblock Available online. [Accessed 12-11-2014].
+
+\bibitem[sou(2015{\natexlab{u}})]{source:thetimes}
+{The Times}.
+\newblock \url{http://www.thetimes.co.uk}, 2015{\natexlab{u}}.
+\newblock Available online. [Accessed 10-11-2014].
+
+\bibitem[sou(2015{\natexlab{v}})]{source:vitalfootball}
+{Vital Football News and Fans community}.
+\newblock \url{ http://www.vitalfootball.co.uk}, 2015{\natexlab{v}}.
+\newblock Available online. [Accessed 14-10-2014].
+
+\bibitem[sou(2015{\natexlab{w}})]{source:vitibet}
+{Vitibet}.
+\newblock \url{http://www.vitibet.com/}, 2015{\natexlab{w}}.
+\newblock Available online. [Accessed 14-10-2014].
+
+\bibitem[sou(2015{\natexlab{x}})]{source:whoscored}
+{Who Scored?}
+\newblock \url{ http://www.whoscored.com}, 2015{\natexlab{x}}.
+\newblock Available online. [Accessed 12-11-2014].
+
+\bibitem[sou(2015{\natexlab{y}})]{source:williamhill}
+{WilliamHill}.
+\newblock
+  \url{http://sports.williamhill.com/bet/en-gb/betting/y/5/Football.html},
+  2015{\natexlab{y}}.
+
+\bibitem[sou(2015{\natexlab{z}})]{source:xmlsoccer}
+{XML Soccer}.
+\newblock \url{ http://www.xmlsoccer.com/}, 2015{\natexlab{z}}.
+\newblock Available online. [Accessed 1-10-2014].
+
 \bibitem[Bayer and various contributors(2014)]{documentation:SqlAlchemy}
 Michael Bayer and various contributors.
-\newblock Sqlalchemy orm.
+\newblock {SQLAlchemy ORM}.
 \newblock [Online]. Available from:
   \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}, 2014.
 
-\bibitem[BBC Sport()]{source:bbcsport}
-BBC Sport.
-\newblock {BBC Sport}.
-\newblock \url{http://www.bbc.co.uk/sport}, 2015.
-\newblock Available online. [Accessed 10-11-2014].
-
-\bibitem[Bet365()]{source:bet365}
-Bet365.
-\newblock {Bet365}.
-\newblock \url{http://www.bet365.com}, 2015.
-\newblock Available online. [Accessed 12-11-2014].
-
 \bibitem[Bocoup(2015)]{documentation:Grunt}
 Open Web Community~Development Bocoup.
-\newblock The javascript task runner.
+\newblock {The JavaScript Task Runner}.
 \newblock [Online]. Available from: \url{http://gruntjs.com/}, 2015.
 
 \bibitem[Boxall(2014)]{article:httpRequestsExceptions}
 John Boxall.
-\newblock A python guide to handling http request failures.
+\newblock {A Python guide to handling HTTP request failures}.
 \newblock [Online]. Available from:
   \url{http://www.mobify.com/blog/http-requests-are-hard/}, 2014.
 
@@ -41,7 +170,7 @@ Odds Checker.
 
 \bibitem[contributors(2015{\natexlab{a}})]{documentation:Jinja2}
 Various contributors.
-\newblock Jinja2, full featured template engine for python.
+\newblock {Jinja2, full featured template engine for Python}.
 \newblock [Online]. Available from: \url{http://jinja.pocoo.org/},
   2015{\natexlab{a}}.
 \newblock [Accessed 14-Oct-2014].
@@ -55,58 +184,22 @@ Various contributors.
 
 \bibitem[Crockford(2015)]{documentation:JSON}
 Douglas Crockford.
-\newblock Json (javascript object notation).
+\newblock {JSON (JavaScript Object Notation)}.
 \newblock [Online]. Available from: \url{http://martinfowler.com/articles/
   continuousIntegration.html#PracticesOfContinuousIntegration}, 2015.
 
 \bibitem[Florestan(2015)]{article:goodArchitecture}
 Nando Florestan.
-\newblock Large web apps in python: A good architecture.
+\newblock {Large web apps in Python: A good architecture.}
 \newblock [Online]. Available from:
   \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html},
   2015.
 \newblock [Accessed 5-Mar-2015].
 
-\bibitem[Football 365()]{source:football365}
-Football 365.
-\newblock {Football 365}.
-\newblock \url{http://www.football365.com}, 2015.
-\newblock Available online. [Accessed 10-11-2014].
-
-\bibitem[Football-API()]{source:footballapi}
-Football-API.
-\newblock {Football-API}.
-\newblock \url{ http://www.football-api.com}, 2015.
-\newblock Available online. [Accessed 1-10-2014].
-
-\bibitem[Footbee()]{source:footbee}
-Footbee.
-\newblock {Footbee}.
-\newblock \url{http://footbe.net/en/}, 2015.
-\newblock Available online. [Accessed 14-10-2014].
-
-\bibitem[Forebet.com - Mathematical Prediction()]{source:forebet}
-Forebet.com - Mathematical Prediction.
-\newblock {Forebet.com - Mathematical Prediction}.
-\newblock \url{http://www.forebet.com/en/}, 2015.
-\newblock Available online. [Accessed 14-10-2014].
-
 \bibitem[Frain(2012)]{book:frain2012responsive}
 Ben Frain.
-\newblock \emph{Responsive web design with HTML5 and CSS3}.
+\newblock \emph{{Responsive web design with HTML5 and CSS3}}.
 \newblock Packt Publishing Ltd, 2012.
-
-\bibitem[Gambling sites()]{source:gamblingsites}
-Gambling sites.
-\newblock {Gambling sites}.
-\newblock \url{http://www.gamblingsites.com/history/microgaming/}, 2015.
-\newblock [Accessed 13-Apr-2015].
-
-\bibitem[Goal.com()]{source:goal}
-Goal.com.
-\newblock {Goal.com}.
-\newblock \url{http://www.goal.com/}, 2015.
-\newblock Available online. [Accessed 10-11-2014].
 
 \bibitem[Grindberg(2014)]{book:Grindberg2014FlaskWebDevelopment}
 Miguel Grindberg.
@@ -114,44 +207,26 @@ Miguel Grindberg.
   Python.}}
 \newblock O’Reilly Media, 2014.
 
-\bibitem[Guardian Sport()]{source:guardiansport}
-Guardian Sport.
-\newblock {Guardian Sport}.
-\newblock \url{http://www.theguardian.com/uk/sport}, 2015.
-\newblock Available online. [Accessed 10-11-2014].
-
 \bibitem[Hampton~Catlin and various contributors(2015)]{documentation:sass}
 Chris~Eppstein Hampton~Catlin, Natalie~Weizenbaum and various contributors.
-\newblock Sass preprocessor.
+\newblock {SASS Preprocessor}.
 \newblock [Online]. Available from: \url{http://sass-lang.com/}, 2015.
-
-\bibitem[ho Scored?()]{source:whoscored}
-ho Scored?
-\newblock {Who Scored?}
-\newblock \url{ http://www.whoscored.com}, 2015.
-\newblock Available online. [Accessed 12-11-2014].
 
 \bibitem[Inc.(2015{\natexlab{a}})]{source:gravatar}
 Automattic Inc.
-\newblock A globally recognized avatar.
+\newblock {A Globally Recognized Avatar}.
 \newblock [Online]. Available from: https://en.gravatar.com/,
   2015{\natexlab{a}}.
 
 \bibitem[Inc.(2015{\natexlab{b}})]{statistaReport}
 Statista Inc.
-\newblock The statistics portal.
+\newblock {The Statistics Portal.}
 \newblock [Online]. Available from: \url{http://www.statista.com/},
   2015{\natexlab{b}}.
 
-\bibitem[Injuries And Suspensions()]{source:injuriesandsuspensions}
-Injuries And Suspensions.
-\newblock {Injuries And Suspensions}.
-\newblock \url{ http://injuriesandsuspensions.com/}, 2015.
-\newblock Available online. [Accessed 12-11-2014].
-
 \bibitem[International(2011)]{documentation:Javascript}
 ECMA International.
-\newblock Ecmascript language specification, 2011.
+\newblock {ECMAScript Language Specification}, 2011.
 
 \bibitem[Keogh and Rose(2013)]{footballbettinggamblingindustry}
 Frank Keogh and Gary Rose.
@@ -159,15 +234,9 @@ Frank Keogh and Gary Rose.
   2013.
 \newblock [Accessed 13-Apr-2015].
 
-\bibitem[Ladbrokes()]{source:ladbrokes}
-Ladbrokes.
-\newblock {Ladbrokes}.
-\newblock \url{ http://betting.ladbrokes.com/en/football-betting}, 2015.
-\newblock Available online. [Accessed 12-11-2014].
-
 \bibitem[Macos(2013)]{art:bettingsystemvariableparameters}
 Jim Macos.
-\newblock Parameters and system variables in a football betting system.
+\newblock {Parameters and System Variables in a Football Betting System}.
 \newblock \url{
   http://www.betstories.com/2013/12/06/football-betting-system-variables-parameters/},
   2013.
@@ -197,45 +266,9 @@ Robert~C Martin.
 \newblock Prentice Hall, 2011.
 \newblock [Accessed 17-Mar-2015].
 
-\bibitem[Math Betting()]{source:mathbetting}
-Math Betting.
-\newblock {Math Betting}.
-\newblock \url{https://apps.betfair.com/trading/mathbetting/}, 2015.
-\newblock Available online. [Accessed 14-10-2014].
-
-\bibitem[Microgaming()]{source:microgaming}
-Microgaming.
-\newblock {Microgaming, our story}.
-\newblock \url{http://www.microgaming.co.uk/our-story}, 2015.
-\newblock [Accessed 13-Apr-2015].
-
-\bibitem[OLGB Betting Community()]{source:olgb}
-OLGB Betting Community.
-\newblock {OLGB Betting Community}.
-\newblock \url{ http://www.olgb.com}, 2015.
-\newblock Available online. [Accessed 14-10-2014].
-
-\bibitem[Open Footy()]{source:openfooty}
-Open Footy.
-\newblock {Open Footy}.
-\newblock \url{http://www.footytube.com/openfooty/service.php}, 2015.
-\newblock Available online. [Accessed 1-10-2014].
-
-\bibitem[Opta Sports()]{source:opta}
-Opta Sports.
-\newblock {Opta Sports}.
-\newblock \url{ http://www.optasports.com}, 2015.
-\newblock Available online. [Accessed 1-10-2014].
-
-\bibitem[Paddy Power()]{source:paddypower}
-Paddy Power.
-\newblock {Paddy Power}.
-\newblock \url{ http://www.paddypower.com/bet}, 2015.
-\newblock Available online. [Accessed 12-11-2014].
-
 \bibitem[Percival(2014)]{book:percival2014test}
 Harry~JW Percival.
-\newblock \emph{Test-Driven Development with Python}.
+\newblock \emph{{Test-Driven Development with Python}}.
 \newblock " O'Reilly Media, Inc.", 2014.
 \newblock [Accessed 16-Mar-2015].
 
@@ -246,15 +279,9 @@ Dusty Phillips.
 
 \bibitem[Pozhilov(2015)]{web:templateProgressus}
 Sergey Pozhilov.
-\newblock Progressus template.
+\newblock {Progressus Template}.
 \newblock [Online]. Available from:
   \url{http://www.gettemplate.com/demo/progressus/}, 2015.
-
-\bibitem[Punters Lounge()]{source:punterslounge}
-Punters Lounge.
-\newblock {Punters Lounge}.
-\newblock \url{http://www.punterslounge.com/}, 2015.
-\newblock Available online. [Accessed 1-10-2014].
 
 \bibitem[Radice and Phillips(1998)]{book:radice1998software}
 Ronald~A Radice and Richard~W Phillips.
@@ -264,135 +291,85 @@ Ronald~A Radice and Richard~W Phillips.
 
 \bibitem[Reitz(2015)]{documentation:PythonRequests}
 Kenneth Reitz.
-\newblock Requests.
+\newblock {Requests}.
 \newblock [Online]. Available from:
   \url{http://docs.python-requests.org/en/latest/api/}, 2015.
 
 \bibitem[Resig(2015)]{documentation:jQuery}
 John Resig.
-\newblock jquery.
+\newblock {jQuery}.
 \newblock [Online]. Available from: \url{http://jquery.com/}, 2015.
 \newblock [Accessed 4-Jan-2015].
 
 \bibitem[Ronacher and various
   contributors(2015{\natexlab{a}})]{documentation:Flask}
 Armin Ronacher and various contributors.
-\newblock Flask micro framework.
+\newblock {Flask Micro Framework}.
 \newblock [Online]. Available from: \url{http://flask.pocoo.org/},
   2015{\natexlab{a}}.
 
 \bibitem[Ronacher and various
   contributors(2015{\natexlab{b}})]{documentation:FlaskApplicationFactories}
 Armin Ronacher and various contributors.
-\newblock Flask micro framework - application factories.
+\newblock {Flask Micro Framework - Application Factories}.
 \newblock [Online]. Available from:
   \url{http://flask.pocoo.org/docs/0.10/patterns/appfactories/},
   2015{\natexlab{b}}.
 
 \bibitem[Shirshin(2014)]{article:BEMForSmallProjects}
 Maxim Shirshin.
-\newblock Scaling down the bem methodology for small projects.
+\newblock {Scaling Down The BEM Methodology For Small Projects}.
 \newblock
   \url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/},
   2014.
 
-\bibitem[Sky Sports()]{source:skysports}
-Sky Sports.
-\newblock {Sky Sports}.
-\newblock \url{http://www.skysports.com/}, 2015.
-\newblock Available online. [Accessed 10-11-2014].
-
-\bibitem[Squawka()]{source:squawka}
-Squawka.
-\newblock {Squawka}.
-\newblock \url{ http://www.squawka.com}, 2015.
-\newblock Available online. [Accessed 12-11-2014].
-
 \bibitem[Surguy(2015)]{web:bootsnipp}
 Max Surguy.
-\newblock Bootsnipp. design elements, playground and code snippets for
-  bootstrap html/css/js framework.
+\newblock {Bootsnipp. Design elements, playground and code snippets for
+  Bootstrap HTML/CSS/JS framework}.
 \newblock [Online]. Available from: \url{http://bootsnipp.com/}, 2015.
-
-\bibitem[The History of Online Gambling()]{art:historyofonlinegambling}
-The History of Online Gambling.
-\newblock {The History of Online Gambling}.
-\newblock \url{http://www.onlinegambling.com/online-gambling-history.htm},
-  2015.
-\newblock [Accessed 12-Apr-2015].
-
-\bibitem[The Times()]{source:thetimes}
-The Times.
-\newblock {The Times}.
-\newblock \url{http://www.thetimes.co.uk}, 2015.
-\newblock Available online. [Accessed 10-11-2014].
 
 \bibitem[tobeadded(2015)]{documentation:RequireJS}
 tobeadded.
-\newblock Requirejs, javascript file and module loader.
+\newblock {RequireJS, JavaScript file and module loader}.
 \newblock [Online]. Available from: \url{http://requirejs.org/}, 2015.
 \newblock [Accessed 4-Jan-2015].
 
 \bibitem[Twitter(2015)]{documentation:Bootstrap3}
 Twitter.
-\newblock Twitter bootstrap css3 framework.
+\newblock {Twitter Bootstrap CSS3 Framework}.
 \newblock [Online]. Available from: \url{http://getbootstrap.com}, 2015.
-
-\bibitem[Vital Football News and Fans community()]{source:vitalfootball}
-Vital Football News and Fans community.
-\newblock { Vital Football News and Fans community}.
-\newblock \url{ http://www.vitalfootball.co.uk}, 2015.
-\newblock Available online. [Accessed 14-10-2014].
-
-\bibitem[Vitibet()]{source:vitibet}
-Vitibet.
-\newblock {Vitibet}.
-\newblock \url{http://www.vitibet.com/}, 2015.
-\newblock Available online. [Accessed 14-10-2014].
 
 \bibitem[WHATWG(2014)]{documentation:HTML}
 W3C~\& WHATWG.
-\newblock Html (hypertext markup language).
+\newblock {HTML (HyperText Markup Language)}.
 \newblock \url{http://www.w3.org/html/}, 2014.
 
 \bibitem[Wikipedia(2015{\natexlab{a}})]{wiki:GitHub}
 Wikipedia.
-\newblock Github --- {W}ikipedia{,} the free encyclopedia.
+\newblock {GitHub --- {W}ikipedia{,} The Free Encyclopedia}.
 \newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/GitHub},
   2015{\natexlab{a}}.
 \newblock [Accessed 9-Mar-2015].
 
 \bibitem[Wikipedia(2015{\natexlab{b}})]{wiki:bet365}
 Wikipedia.
-\newblock Bet365 --- {W}ikipedia{,} the free encyclopedia.
+\newblock {Bet365 --- {W}ikipedia{,} The Free Encyclopedia}.
 \newblock [Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365},
   2015{\natexlab{b}}.
 \newblock [Accessed 22-Feb-2015].
 
-\bibitem[WilliamHill()]{source:williamhill}
-WilliamHill.
-\newblock {WilliamHill}.
-\newblock
-  \url{http://sports.williamhill.com/bet/en-gb/betting/y/5/Football.html},
-  2015.
-
 \bibitem[Wright(2013)]{article:howIstructureMyFlaskApps}
 Matt Wright.
-\newblock How i structure my flask applications.
+\newblock {How I Structure My Flask Applications.}
 \newblock [Online]. Available from:
   \url{http://mattupstate.com/python/2013/06/26/how-i-structure-my-flask-applications.html#s2l},
   2013.
 \newblock [Accessed 12-Mar-2015].
 
-\bibitem[XML Soccer()]{source:xmlsoccer}
-XML Soccer.
-\newblock {XML Soccer}.
-\newblock \url{ http://www.xmlsoccer.com/}, 2015.
-\newblock Available online. [Accessed 1-10-2014].
-
 \bibitem[Yandex(2005)]{documentation:BEM}
 Yandex.
-\newblock Bem methodology.
+\newblock {BEM Methodology}.
 \newblock \url{http://https://bem.info/}, 2005.
 
 \end{thebibliography}

@@ -11,28 +11,24 @@
 
 % BibTeX Entries
 @misc{art:historyofonlinegambling,
-	 key={The History of Online Gambling},
 	 title = {{The History of Online Gambling}},
 	 year={2015},
 	 howpublished={\url{http://www.onlinegambling.com/online-gambling-history.htm}},
 	 note = {[Accessed 12-Apr-2015]}
 }
 @misc{source:microgaming,
-	key={Microgaming},
 	title={{Microgaming, our story}},
 	year={2015},
 	howpublished={\url{http://www.microgaming.co.uk/our-story}},
 	note={[Accessed 13-Apr-2015]}
 }
 @misc{source:gamblingsites,
-	key={Gambling sites},
 	title={{Gambling sites}},
 	year={2015},
 	howpublished={\url{http://www.gamblingsites.com/history/microgaming/}},
 	note={[Accessed 13-Apr-2015]}
 }
 @misc{britannica2015gamblingandsports,
-    key={Gambling and sports},
 	title={{Gambling and sports}},
     author = {Joseph Anthony Maguire},
     title = {{Gambling and sports}},
@@ -40,9 +36,8 @@
     note={[Accessed 13-Apr-2015]}
 }
 @misc{footballbettinggamblingindustry,
-    key={Football betting},
-    author = {Frank Keogh and Gary Rose},
     title = {{Football betting - the global gambling industry worth billions}},
+    author = {Frank Keogh and Gary Rose},
     year = {2013},
     note={[Accessed 13-Apr-2015]}
 }
@@ -54,309 +49,285 @@
   note = {[Accessed 8-Mar-2015]}
 }
 @book{book:martin2011robert,
+	 title = {{The Robert C. Martin Clean Code Collection (Collection)}},
 	 author={Martin, Robert C},
 	 publisher = {Prentice Hall},
-	 title = {{The Robert C. Martin Clean Code Collection (Collection)}},
 	 year = {2011},
 	 note = {[Accessed 17-Mar-2015]}
  }
  @misc{art:simplebettingsystem,
-	author={Jim Macos},
 	title={{Simple betting System}},
+	author={Jim Macos},
 	year={2014},
 	howpublished={\url{http://www.betstories.com/2014/09/24/simple-betting-system/}},
 	note={Available online. [Accessed 13-10-2014]} 
  }
   @misc{art:bettingsystemvariableparameters,
+	title={{Parameters and System Variables in a Football Betting System}},
 	author={Jim Macos},
-	title={Parameters and System Variables in a Football Betting System},
 	year={2013},
 	howpublished={\url{ http://www.betstories.com/2013/12/06/football-betting-system-variables-parameters/}},
 	note={Available online. [Accessed 13-10-2014]} 
  }
  @misc{source:bbcsport,
- 	key = {BBC Sport},
  	title={{BBC Sport}},
  	year={2015},
  	howpublished={\url{http://www.bbc.co.uk/sport}},
  	note={Available online. [Accessed 10-11-2014]} 
  }
   @misc{source:guardiansport,
-   	key = {Guardian Sport},
- 	title={{Guardian Sport}},
- 	year={2015},
- 	howpublished={\url{http://www.theguardian.com/uk/sport}},
- 	note={Available online. [Accessed 10-11-2014]} 
- }
-  @misc{source:skysports,
-   	key={Sky Sports},
- 	title={{Sky Sports}},
- 	year={2015},
- 	howpublished={\url{http://www.skysports.com/}},
- 	note={Available online. [Accessed 10-11-2014]} 
- }
-   @misc{source:thetimes,
-    key={The Times},
- 	title={{The Times}},
- 	year={2015},
- 	howpublished={\url{http://www.thetimes.co.uk}},
- 	note={Available online. [Accessed 10-11-2014]} 
- }
-   @misc{source:football365,
-    key={Football 365},
- 	title={{Football 365}},
- 	year={2015},
- 	howpublished={\url{http://www.football365.com}},
- 	note={Available online. [Accessed 10-11-2014]} 
- }
-   @misc{source:goal,
-    key={Goal.com},
- 	title={{Goal.com}},
- 	year={2015},
- 	howpublished={\url{http://www.goal.com/}},
- 	note={Available online. [Accessed 10-11-2014]} 
- }
- @misc{source:whoscored,
-  	key={ho Scored?},
- 	title={{Who Scored?}},
- 	year={2015},
- 	howpublished={\url{ http://www.whoscored.com}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
- @misc{source:squawka,
-	key={Squawka},
- 	title={{Squawka}},
- 	year={2015},
- 	howpublished={\url{ http://www.squawka.com}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
-  @misc{source:injuriesandsuspensions,
-    key={Injuries And Suspensions},
- 	title={{Injuries And Suspensions}},
- 	year={2015},
- 	howpublished={\url{ http://injuriesandsuspensions.com/}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
+	title={{Guardian Sport}},
+	year={2015},
+	howpublished={\url{http://www.theguardian.com/uk/sport}},
+	note={Available online. [Accessed 10-11-2014]}
+}
+ @misc{source:skysports,
+	title={{Sky Sports}},
+	year={2015},
+	howpublished={\url{http://www.skysports.com/}},
+	note={Available online. [Accessed 10-11-2014]}
+}
+  @misc{source:thetimes,
+	title={{The Times}},
+	year={2015},
+	howpublished={\url{http://www.thetimes.co.uk}},
+	note={Available online. [Accessed 10-11-2014]}
+}
+  @misc{source:football365,
+	title={{Football 365}},
+	year={2015},
+	howpublished={\url{http://www.football365.com}},
+	note={Available online. [Accessed 10-11-2014]}
+}
+  @misc{source:goal,
+	title={{Goal.com}},
+	year={2015},
+	howpublished={\url{http://www.goal.com/}},
+	note={Available online. [Accessed 10-11-2014]}
+}
+@misc{source:whoscored,
+	title={{Who Scored?}},
+	year={2015},
+	howpublished={\url{ http://www.whoscored.com}},
+	note={Available online. [Accessed 12-11-2014]}
+}
+@misc{source:squawka,
+	title={{Squawka}},
+	year={2015},
+	howpublished={\url{ http://www.squawka.com}},
+	note={Available online. [Accessed 12-11-2014]}
+}
+ @misc{source:injuriesandsuspensions,
+	title={{Injuries And Suspensions}},
+	year={2015},
+	howpublished={\url{ http://injuriesandsuspensions.com/}},
+	note={Available online. [Accessed 12-11-2014]}
+}
 @misc{source:paddypower,
-	key={Paddy Power},
- 	title={{Paddy Power}},
- 	year={2015},
- 	howpublished={\url{ http://www.paddypower.com/bet}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
- @misc{source:ladbrokes,
- 	key={Ladbrokes},
- 	title={{Ladbrokes}},
- 	year={2015},
- 	howpublished={\url{ http://betting.ladbrokes.com/en/football-betting}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
- @misc{source:bet365,
- 	key={Bet365},
- 	title={{Bet365}},
- 	year={2015},
- 	howpublished={\url{http://www.bet365.com}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
-  @misc{source:williamhill,
-  	key={WilliamHill},
- 	title={{WilliamHill}},
- 	year={2015},
- 	howpublished={\url{http://sports.williamhill.com/bet/en-gb/betting/y/5/Football.html}}},
- 	note={Available online. [Accessed 12-11-2014]} 
- }
- @misc{source:olgb,
-	key={OLGB Betting Community},
- 	title={{OLGB Betting Community}},
- 	year={2015},
- 	howpublished={\url{ http://www.olgb.com}},
- 	note={Available online. [Accessed 14-10-2014]} 
- }
-  @misc{source:vitalfootball,
-   	key={ Vital Football News and Fans community},
- 	title={{ Vital Football News and Fans community}},
- 	year={2015},
- 	howpublished={\url{ http://www.vitalfootball.co.uk}},
- 	note={Available online. [Accessed 14-10-2014]} 
- }
-  @misc{source:punterslounge,
-   	key={Punters Lounge},
- 	title={{Punters Lounge}},
- 	year={2015},
- 	howpublished={\url{http://www.punterslounge.com/}},
- 	note={Available online. [Accessed 1-10-2014]} 
- }
-  @misc{source:mathbetting,
-   	key={Math Betting},
- 	title={{Math Betting}},
- 	year={2015},
- 	howpublished={\url{https://apps.betfair.com/trading/mathbetting/}},
- 	note={Available online. [Accessed 14-10-2014]} 
- }
- @misc{source:footbee,
-  	key={Footbee},
- 	title={{Footbee}},
- 	year={2015},
- 	howpublished={\url{http://footbe.net/en/}},
- 	note={Available online. [Accessed 14-10-2014]} 
- }
+	title={{Paddy Power}},
+	year={2015},
+	howpublished={\url{ http://www.paddypower.com/bet}},
+	note={Available online. [Accessed 12-11-2014]}
+}
+@misc{source:ladbrokes,
+	title={{Ladbrokes}},
+	year={2015},
+	howpublished={\url{ http://betting.ladbrokes.com/en/football-betting}},
+	note={Available online. [Accessed 12-11-2014]}
+}
+@misc{source:bet365,
+	title={{Bet365}},
+	year={2015},
+	howpublished={\url{http://www.bet365.com}},
+	note={Available online. [Accessed 12-11-2014]}
+}
+ @misc{source:williamhill,
+	title={{WilliamHill}},
+	year={2015},
+	howpublished={\url{http://sports.williamhill.com/bet/en-gb/betting/y/5/Football.html}}},
+	note={Available online. [Accessed 12-11-2014]}
+}
+@misc{source:olgb,
+	title={{OLGB Betting Community}},
+	year={2015},
+	howpublished={\url{ http://www.olgb.com}},
+	note={Available online. [Accessed 14-10-2014]}
+}
+ @misc{source:vitalfootball,
+	title={{Vital Football News and Fans community}},
+	year={2015},
+	howpublished={\url{ http://www.vitalfootball.co.uk}},
+	note={Available online. [Accessed 14-10-2014]}
+}
+ @misc{source:punterslounge,
+	title={{Punters Lounge}},
+	year={2015},
+	howpublished={\url{http://www.punterslounge.com/}},
+	note={Available online. [Accessed 1-10-2014]}
+}
+ @misc{source:mathbetting,
+	title={{Math Betting}},
+	year={2015},
+	howpublished={\url{https://apps.betfair.com/trading/mathbetting/}},
+	note={Available online. [Accessed 14-10-2014]}
+}
+@misc{source:footbee,
+	title={{Footbee}},
+	year={2015},
+	howpublished={\url{http://footbe.net/en/}},
+	note={Available online. [Accessed 14-10-2014]}
+}
 @misc{source:vitibet,
- 	key={Vitibet},
- 	title={{Vitibet}},
- 	year={2015},
- 	howpublished={\url{http://www.vitibet.com/}},
- 	note={Available online. [Accessed 14-10-2014]} 
- }
- @misc{source:forebet,
-  	key={Forebet.com - Mathematical Prediction},
- 	title={{Forebet.com - Mathematical Prediction}},
- 	year={2015},
- 	howpublished={\url{http://www.forebet.com/en/}},
- 	note={Available online. [Accessed 14-10-2014]} 
- }
- @misc{source:opta,
-  	key={Opta Sports},
- 	title={{Opta Sports}},
- 	year={2015},
- 	howpublished={\url{ http://www.optasports.com}},
- 	note={Available online. [Accessed 1-10-2014]} 
- }
-  @misc{source:footballapi,
-   	key={Football-API},
- 	title={{Football-API}},
- 	year={2015},
- 	howpublished={\url{ http://www.football-api.com}},
- 	note={Available online. [Accessed 1-10-2014]} 
- }
- @misc{source:openfooty,
-   	key={Open Footy},
- 	title={{Open Footy}},
- 	year={2015},
- 	howpublished={\url{http://www.footytube.com/openfooty/service.php}},
- 	note={Available online. [Accessed 1-10-2014]} 
+	title={{Vitibet}},
+	year={2015},
+	howpublished={\url{http://www.vitibet.com/}},
+	note={Available online. [Accessed 14-10-2014]}
+}
+@misc{source:forebet,
+	title={{Forebet.com - Mathematical Prediction}},
+	year={2015},
+	howpublished={\url{http://www.forebet.com/en/}},
+	note={Available online. [Accessed 14-10-2014]}
+}
+@misc{source:opta,
+	title={{Opta Sports}},
+	year={2015},
+	howpublished={\url{ http://www.optasports.com}},
+	note={Available online. [Accessed 1-10-2014]}
+}
+ @misc{source:footballapi,
+	title={{Football-API}},
+	year={2015},
+	howpublished={\url{ http://www.football-api.com}},
+	note={Available online. [Accessed 1-10-2014]}
+}
+@misc{source:openfooty,
+	title={{Open Footy}},
+	year={2015},
+	howpublished={\url{http://www.footytube.com/openfooty/service.php}},
+	note={Available online. [Accessed 1-10-2014]}
 }
 @misc{source:xmlsoccer,
-   	key={XML Soccer},
- 	title={{XML Soccer}},
- 	year={2015},
- 	howpublished={\url{ http://www.xmlsoccer.com/}},
- 	note={Available online. [Accessed 1-10-2014]} 
+	title={{XML Soccer}},
+	year={2015},
+	howpublished={\url{ http://www.xmlsoccer.com/}},
+	note={Available online. [Accessed 1-10-2014]}
 }
 @misc{documentation:HTML,
 	author={W3C \& WHATWG},
-	title={HTML (HyperText Markup Language)},
+	title={{HTML (HyperText Markup Language)}},
 	year={2014},
 	howpublished = {\url{http://www.w3.org/html/}}
 }
 @misc{documentation:BEM,
 	author={Yandex},
-	title={BEM Methodology},
+	title={{BEM Methodology}},
 	year={2005},
 	howpublished={\url{http://https://bem.info/}}
 }
 @misc{article:BEMForSmallProjects,
 	author={Maxim Shirshin},
-	title={Scaling Down The BEM Methodology For Small Projects},
+	title={{Scaling Down The BEM Methodology For Small Projects}},
 	year={2014},
 	howpublished={\url{http://www.smashingmagazine.com/2014/07/17/bem-methodology-for-small-projects/}},
 }
 @misc{documentation:sass,
 	author ={Hampton Catlin, Natalie Weizenbaum, Chris Eppstein and various contributors},
-	title ={SASS Preprocessor},
+	title ={{SASS Preprocessor}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://sass-lang.com/}}
 }
 @misc{documentation:Bootstrap3,
 	author={Twitter},
-	title={Twitter Bootstrap CSS3 Framework},
+	title={{Twitter Bootstrap CSS3 Framework}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://getbootstrap.com}}
 }
 @misc{web:templateProgressus,
 	author={Sergey Pozhilov},
-	title={Progressus Template},
+	title={{Progressus Template}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://www.gettemplate.com/demo/progressus/}}
 }
 @misc{web:bootsnipp,
 	author={Max Surguy},
-	title={Bootsnipp. Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework},
+	title={{Bootsnipp. Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://bootsnipp.com/}}
 }
 @misc{statistaReport,
 	author={Statista Inc.},
-	title={The Statistics Portal.},
+	title={{The Statistics Portal.}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://www.statista.com/}}
 }
 @book{book:frain2012responsive,
-  title={Responsive web design with HTML5 and CSS3},
-  author={Frain, Ben},
-  year={2012},
-  publisher={Packt Publishing Ltd}
+ title={{Responsive web design with HTML5 and CSS3}},
+ author={Frain, Ben},
+ year={2012},
+ publisher={Packt Publishing Ltd}
 }
 @misc{documentation:Javascript,
 	author ={ECMA International},
-	title ={ECMAScript Language Specification},
+	title ={{ECMAScript Language Specification}},
 	publisher= {ECMA International},
 	edition={5.1 REV.6},
 	year={2011}
 }
 @misc{documentation:jQuery,
 	author={John Resig},
-	title={jQuery},
+	title={{jQuery}},
 	year={2015},
 	howpublished = {[Online]. Available from: \url{http://jquery.com/}},
 	note = {[Accessed 4-Jan-2015]}
 }
 @misc{documentation:RequireJS,
 	author = {tobeadded},
-	title = {RequireJS, JavaScript file and module loader},
+	title = {{RequireJS, JavaScript file and module loader}},
 	year={2015},
 	howpublished = {[Online]. Available from: \url{http://requirejs.org/}},
 	note = {[Accessed 4-Jan-2015]}
-} 
+}
 @misc{documentation:JSON,
 	author={Douglas Crockford},
-	title={JSON (JavaScript Object Notation)},
+	title={{JSON (JavaScript Object Notation)}},
 	year={2015},
 	howpublished = {[Online]. Available from: \url{http://martinfowler.com/articles/	continuousIntegration.html#PracticesOfContinuousIntegration}}
 }
 @misc{documentation:Grunt,
 	author = {Bocoup, Open Web Community Development},
-	title = {The JavaScript Task Runner},
+	title = {{The JavaScript Task Runner}},
 	year={2015},
 	howpublished = {[Online]. Available from: \url{http://gruntjs.com/}}
 }
 @misc{documentation:Flask,
 	author={Armin Ronacher and various contributors},
-	title={Flask Micro Framework},
+	title={{Flask Micro Framework}},
 	year = {2015},
 	howpublished={[Online]. Available from: \url{http://flask.pocoo.org/}}
 }
 @misc{documentation:FlaskApplicationFactories,
 	author={Armin Ronacher and various contributors},
-	title={Flask Micro Framework - Application Factories},
+	title={{Flask Micro Framework - Application Factories}},
 	year = {2015},
 	howpublished={[Online]. Available from: \url{http://flask.pocoo.org/docs/0.10/patterns/appfactories/}}
 }
 @misc{documentation:Jinja2,
 	author={Various contributors},
-	title={Jinja2, full featured template engine for Python},
+	title={{Jinja2, full featured template engine for Python}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://jinja.pocoo.org/}},
 	note = {[Accessed 14-Oct-2014]}
 }
 @misc{documentation:SqlAlchemy,
 	author={Michael Bayer and various contributors},
-	title={SQLAlchemy ORM},
+	title={{SQLAlchemy ORM}},
 	year={2014},
 	howpublished={[Online]. Available from: \url{http://docs.sqlalchemy.org/en/rel_0_9/orm/}}	
 }
 @misc{source:gravatar,
 	author={Automattic Inc.},
-	title={A Globally Recognized Avatar},
+	title={{A Globally Recognized Avatar}},
 	year={2015},
 	howpublished={[Online]. Available from: https://en.gravatar.com/}
 }
@@ -365,77 +336,74 @@
 	 publisher = {O’Reilly Media},
 	 title = {{Flask Web Development. Developing Web Applications with Python.}},
 	 year = {2014},
- }
+}
 @book{book:Phillips2010Python3ObjectOrientedProgramming,
 	 author = {Dusty Phillips},
 	 publisher = {Packt Publishing},
 	 title = {{Python 3. Object-Oriented Programming.}},
 	 year = {2010},
- }
- @book{book:percival2014test,
-  title={Test-Driven Development with Python},
-  author={Percival, Harry JW},
-  year={2014},
-  publisher={" O'Reilly Media, Inc."},
-  note = {[Accessed 16-Mar-2015]}
+}
+@book{book:percival2014test,
+	 title={{Test-Driven Development with Python}},
+	 author={Percival, Harry JW},
+	 year={2014},
+	 publisher={" O'Reilly Media, Inc."},
+	 note = {[Accessed 16-Mar-2015]}
 }
 @misc{article:goodArchitecture,
 	author={Nando Florestan},
-	title={Large web apps in Python: A good architecture.},
+	title={{Large web apps in Python: A good architecture.}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://nando.oui.com.br/2014/04/01/large_apps_with_sqlalchemy__architecture.html}},
 	note = {[Accessed 5-Mar-2015]}
 }
 @misc{article:howIstructureMyFlaskApps,
 	author={Matt Wright},
-	title={How I Structure My Flask Applications.},
+	title={{How I Structure My Flask Applications.}},
 	year={2013},
 	howpublished={[Online]. Available from: \url{http://mattupstate.com/python/2013/06/26/how-i-structure-my-flask-applications.html#s2l}},
 	note = {[Accessed 12-Mar-2015]}
 }
 @misc{article:httpRequestsExceptions,
 	author={John Boxall},
-	title={A Python guide to handling HTTP request failures},
+	title={{A Python guide to handling HTTP request failures}},
 	year={2014},
 	howpublished={[Online]. Available from: \url{http://www.mobify.com/blog/http-requests-are-hard/}}
 }
 @misc{documentation:PythonRequests,
 	author={Kenneth Reitz},
-	title={Requests},
+	title={{Requests}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://docs.python-requests.org/en/latest/api/}}
 }
 @misc{article:API_Integration,
 	author={Matt Makai},
-	key={API Integration},
 	title={{API Integration}},
 	year={2015},
 	howpublished={[Online]. Available from: \url{http://www.fullstackpython.com/api-integration.html}}
 }
 @misc{wiki:GitHub,
 	author={Wikipedia},
-	title = {GitHub --- {W}ikipedia{,} The Free Encyclopedia},
+	title = {{GitHub --- {W}ikipedia{,} The Free Encyclopedia}},
 	year = {2015},
 	howpublished = {[Online]. Available from: \url{http://en.wikipedia.org/wiki/GitHub}},
 	note = {[Accessed 9-Mar-2015]}
 }
 @misc{wiki:Bet365,
-   author = {Wikipedia},
-   title = {Bet365 --- {W}ikipedia{,} The Free Encyclopedia},
-   year = {2015},
-   howpublished= {[Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}},
-   note = {[Accessed 22-Feb-2015]}
- } 
+  author = {Wikipedia},
+  title = {{Bet365 --- {W}ikipedia{,} The Free Encyclopedia}},
+  year = {2015},
+  howpublished= {[Online]. Available from: \url{http://en.wikipedia.org/wiki/Bet365}},
+  note = {[Accessed 22-Feb-2015]}
+}
 @misc{web:oddschecker,
-	author={Odds Checker},
-	key=	{Your Bets Bet},
 	title={{Your Bets Bet}},
+	author={Odds Checker},
 	year={2015},
 	howpublished={[Online]. Available from: \url{ http://www.oddschecker.com/}}
 }
 @misc{web:testingclass,
 	author={Various contributors},
-	key={Software Testing Class},
 	title={{Software Testing Class}},
 	year={2015},
 	howpublished={[Online]. Available from: \url {http://www.softwaretestingclass.com/system-testing-what-why-how/}}
