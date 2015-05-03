@@ -9,7 +9,7 @@ Gambling is surely one of the oldest forms of entertainment known to man. Wherev
 
 Online gambling really began to take off in 1994 when Antigua and Barbuda passed the Free Trade and Processing Act that entitled this Caribbean nation to grant licenses to those willing to open online casinos. The next industry development milestone was the formation of the Kahnawake Gaming Commission in 1996 in Canada. The commission issued gaming licenses to many online casinos and poker rooms \citep{art:historyofonlinegambling}.
 
-Another important event contributing to the beginnings of the new industry was the creation of a software development company, Microgaming Software Systems, that built the first piece of functional software to be used in the online gaming sites. The company claims they released the first online casino in 1994. It is hard to verify that fact, but they were definitely one of the first. The technology behind their casino was a success and the company concentrated on developing various casino games and supplying them to other online casinos \citep{source:gamblingsites} \citep{source:microgaming} . Since the mid-1990's the industry began to flourish. For example, there were only 15 online casinos in 1996. This number reached 200 sites by the end of 1997 \citep{art:historyofonlinegambling}.  
+Another important event contributing to the beginnings of the new industry was the creation of a software development company, Microgaming Software Systems, that built the first piece of functional software to be used in the online gaming sites. The company claims they released the first online casino in 1994. It is hard to verify that fact, but they were definitely one of the first. The technology behind their casino was a success and the company concentrated on developing various casino games and supplying them to other online casinos \citep{source:gamblingsites} \citep{source:microgaming}. Since the mid-1990's the industry began to flourish. For example, there were only 15 online casinos in 1996. This number reached 200 sites by the end of 1997 \citep{art:historyofonlinegambling}.  
 
 Online sports betting industry took off shortly after the early online casinos and grew exceptionally quickly. Placing bets on sporting events online soon became very popular with gamblers all over the world. The existing bookmakers opened websites and many new companies joined the newly formed market \citep{source:gamblingsites}. Amongst the types of online sports gambling, betting on football is the most popular, leading the industry with a share about 70\% with roughly half a million people betting weekly all over the world \citep{footballbettinggamblingindustry}. The popularity of betting on football, especially the so-called "in-play" betting (a type of betting when punters place bets as the event happens), was fueled by the increased coverage of the football matches by popular satellite television channels. According to \citet{footballbettinggamblingindustry}, the popularity of football gambling skyrocketed before the 1998 World Cup and Euro 2000.
 
@@ -21,7 +21,7 @@ From my experience, the necessity to repeat an action many times could lead to a
 
 \section{Proposed Web Application}
 \label{sec:proposedwebapp_intro}
-A web application aiming to forecast football match results is nothing new. However, most of the existing solutions either overwhelm their users with unstructured statistics or work as a self-contained black-box prediction tool preventing the users from participating in the process of prediction. The proposed system will provide its users with all the necessary information to support their betting decision and allow them to take full control over the prediction output. To the best of my knowledge, no other software offers the same experience as the one proposed in this dissertation.
+A web application aiming to forecast football match results is nothing new. However, most of the existing solutions either overwhelm their users with unstructured statistics or work as a self-contained black-box prediction tool preventing the users from participating in the process of prediction. The proposed system will provide its users with all the necessary information to support their betting decision and allow them to take full control over the output. To the best of my knowledge, no other software offers the same experience as the one proposed in this dissertation.
 
 \section{Target Audience}
 \label{sec:targetaudience_intro}
@@ -31,12 +31,12 @@ The intended users of the application will be people with an interest in footbal
 \label{sec:problemsaddressed_intro}
 
 \subsection*{Problem 1 - Before placing a bet, football punters have to aggregate different pieces of football statistics from various sources.}
-Most football punters will spend a lot of time gathering and analysing information about a football match. This can be anything from watching the previous games on television, reading experts' analysis in newspapers to looking at specialised websites that show every possible statistic about a team or player. The application proposed in this dissertation will do this job for the user. It will aggregate all the data that may affect the outcome of an upcoming match and also make a comparison of the participating teams.
+Most football punters will spend a lot of time gathering and analysing information about a football match. This can be anything from watching the previous games on television, reading experts' analysis in newspapers to looking at specialised websites that show detailed statistics on teams and players. The application proposed in this dissertation will do this job for the user. It will aggregate all the data that may affect the outcome of an upcoming match and also make a comparison of the participating teams.
 
 Among other benefits, the easy access to relevant data will hopefully encourage the application users to make betting decisions based on facts rather that an impulse or other punters’ advice.
 
 \subsection*{Problem 2 - Punters would like to be able to make their own prediction formula.}
-When betting on football, there is always a temptation to base a betting decision on a opinion of someone else or use prediction software and there are those who make a living off selling tips to punters. However, as mentioned previously, serious sports punters want to be able to use their own knowledge and judgement to win, rather than rely on a third party “tipster”.
+When betting on football, there is always a temptation to base a betting decision on a opinion of someone else or use prediction software, and there are those who make a living off selling tips to punters. However, as mentioned previously, serious sports punters want to be able to use their own knowledge and judgement to win, rather than rely on a third party “tipster”.
 
 The choice of factors that can influence a football match result can differ greatly for each punter. One may think that a team’s form is the most important factor going into a match, while another may think that a team’s league position is the best judge of how they are going to do. The users of the proposed application will be able to create their own betting system by picking from the various factors and assigning them a weighting percentage, having the power to influence the prediction output.
 
@@ -58,7 +58,7 @@ The structure of the report is outlined below.
 	\item Chapter 3 \emph{Requirements Analysis and Specification} describes the processes occuring during the requirement analysis phase, such as target audience research and analysis of the existing solutions. The chapter also contains the final list of project mandatory and optional requirements.
 	\item Chapter 4 \emph{Application Prototype} describes the process of designing the application.
 	\item Chapter 5 \emph{Implementation} describes the process of building the application.
-	\item Chapter 6 \emph{Testing} provides results of tests carried out.
+	\item Chapter 6 \emph{Testing} provides results of testing carried out.
 	\item Chapter 7 \emph{Conclusion} evaluates the overall project and provides personal reflection.
 \end{itemize}
 
