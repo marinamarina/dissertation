@@ -36,9 +36,9 @@ Most football punters will spend a lot of time gathering and analysing informati
 Among other benefits, the easy access to relevant data will hopefully encourage the application users to make betting decisions based on facts rather that an impulse or other punters’ advice.
 
 \subsection*{Problem 2 - Punters would like to be able to make their own prediction formula.}
-When betting on football, there is always a temptation to base a betting decision on a opinion of someone else or use prediction software, and there are those who make a living off selling tips to punters. However, as mentioned previously, serious sports punters want to be able to use their own knowledge and judgement to win, rather than rely on a third party “tipster”.
+When betting on football, there is always a temptation to base a betting decision on an opinion of someone else or use prediction software, and there are those who make a living off selling tips to punters. However, as mentioned previously, serious sports punters want to be able to use their own knowledge and judgement to win, rather than rely on a third party “tipster”.
 
-The choice of factors that can influence a football match result can differ greatly for each punter. One may think that a team’s form is the most important factor going into a match, while another may think that a team’s league position is the best judge of how they are going to do. The users of the proposed application will be able to create their own betting system by picking from the various factors and assigning them a weighting percentage, having the power to influence the prediction output.
+The choice of factors that can influence a football match result can differ greatly for each punter. One may think that a team’s form is the most important factor going into a match while another may think that a team’s league position is the best judge of how they are going to do. The users of the proposed application will be able to create their own betting system by picking from the various factors and assigning them a weighting percentage, having the power to influence the prediction output.
 
 \subsection*{Problem 3 - Football punters rarely monitor their betting results.}
 Learning from the past mistakes is a key to becoming successful in any activity. The application will offer a way to monitor the performance of user's betting system in order to be able to improve it over time.
@@ -53,13 +53,13 @@ This report will describe the research, design and implementation of the propose
 The structure of the report is outlined below.
 
 \begin{itemize}
-	\item Chapter 1 \emph{Introduction}
-	\item Chapter 2 \emph{Legal, Social and Ethical Issues} addresses the legal, social and ethical issues relating to the project.
-	\item Chapter 3 \emph{Requirements Analysis and Specification} describes the processes occuring during the requirement analysis phase, such as target audience research and analysis of the existing solutions. The chapter also contains the final list of project mandatory and optional requirements.
-	\item Chapter 4 \emph{Application Prototype} describes the process of designing the application.
-	\item Chapter 5 \emph{Implementation} describes the process of building the application.
-	\item Chapter 6 \emph{Testing} provides results of testing carried out.
-	\item Chapter 7 \emph{Conclusion} evaluates the overall project and provides personal reflection.
+    \item Chapter 1 \emph{Introduction}
+    \item Chapter 2 \emph{Legal, Social and Ethical Issues} addresses the legal, social and ethical issues relating to the project.
+    \item Chapter 3 \emph{Requirements Analysis and Specification} describes the processes occurring during the requirement analysis phase, such as target audience research and analysis of the existing solutions. The chapter also contains the final list of project mandatory and optional requirements.
+    \item Chapter 4 \emph{Application Prototype} describes the process of designing the application.
+    \item Chapter 5 \emph{Implementation} describes the process of building the application.
+    \item Chapter 6 \emph{Testing} provides results of testing carried out.
+    \item Chapter 7 \emph{Conclusion} evaluates the overall project and provides personal reflection.
 \end{itemize}
 
 
