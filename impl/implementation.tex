@@ -14,7 +14,7 @@ The markup of the future application will be coded using HTML 5 \citep{documenta
 
 CSS3 is used to define the visual presentation of the application. In general, CSS has certain limitations of its syntax capabilities. For example, it does not allow the use of variables, macros, mixins (reusable blocks of styles) functions and other features associated with object-oriented development, which inevitably leads to the creation of immensely repetitive stylesheets. In order to overcome these limitations, SASS preprocessor \citep{documentation:sass} will be used in this project. SASS (short for Syntactically Awesome Stylesheets) is a powerful language that extends CSS with a choice of useful functionality, all in CSS-compatible syntax. Use of SASS would allow to make CSS code more efficient and easily maintainable. 
 
-In addition to that, SureThing will make use of a popular CSS framework, Bootstrap 3 \citep{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
+In addition to that, SureThing will make use of a popular CSS framework, Twitter Bootstrap \citep{documentation:Bootstrap3}. Bootstrap provides a number of ready solutions for designing the layout of the future application. Therefore, the overall architecture of the markup will be defined by identifying BEM blocks and elements. This would bring structure into the code across all front end technologies used during the development process. BEM blocks and elements will be complemented with appropriate Bootstrap classes in order to speed up the development process and make the application fully responsive.
  
 JavaScript, specifically JQuery library \citep{documentation:jQuery}, will be utilised to add animations and improve the overall user experience.  
 
@@ -37,7 +37,7 @@ Based on the above assumptions, Python was chosen as the primary back end langua
 
 The back end of the web application will be built using Python web framework Flask \citep{documentation:Flask}. It is a lightweight framework (the official name is "Python microframework") with a great choice of third-party libraries (e.g. Flask-SQLAlchemy or Flask-Login) that can extend the feature set of the framework core in various ways. Flask application is minimalist to begin with, but it can grow with the project needs. For the purpose of this project this is an advantage compared to the full-featured frameworks like Django that have a lot of functionality already built-in to the basic installation. In addition, the availability of developer-friendly documentation and an easy learning curve makes Flask a quick way to get a simple, Python-powered web site up and running. Therefore, Flask appears to be a great choice for a small project like SureThing.
 
-SQLAlchemy was chosen as database solution for this project \citep{documentation:SqlAlchemy}. This is a powerful database framework that supports several databases back ends and offers the high-level Object Relational Mapper (for short, ORM). Using ORM provides a great level of abstraction when working with databases. For example, SQLAlchemy uses classes that map to each table in a database. This means that the records interaction can be kept the same regardless of the underlying database system. This offers a lot of flexibility and allows the use of different database systems for development and production environment. According to \citet{book:Grindberg2014FlaskWebDevelopment}, "Flask-Migrate extension, based on a migration framework Alembic and written by a lead developer of SQLAlchemy, provides a powerful solution to handle database alterations and make database schema updates easily manageable"
+SQLAlchemy was chosen as database solution for this project \citep{documentation:SqlAlchemy}. This is a powerful database framework that supports several databases back ends and offers the high-level Object Relational Mapper (for short, ORM). Using ORM provides a great level of abstraction when working with databases. For example, SQLAlchemy uses classes that map to each table in a database. This means that the records interaction can be kept the same regardless of the underlying database system. This offers a lot of flexibility and allows the use of different database systems for development and production environment. According to \citet{book:Grindberg2014FlaskWebDevelopment}, "Flask-Migrate extension, based on a migration framework Alembic and written by a lead developer of SQLAlchemy, provides a powerful solution to handle database alterations and make database schema updates easily manageable".
 
 \section{Application Architecture}
 \label{sec:applicationarchitecture}
@@ -110,7 +110,7 @@ In this section a number of other implementation processes and tools will be dis
 
 \subsection{Version Control}
 \label{subsec:git}
-Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it also has many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... [It also] provides web-based graphical interface" \citep{wiki:GitHub}. For this project the GitHub issue tracker was used as a "to-do list" to keep the record of tasks ("issues" in GitHub terminology) that needed to be completed in each agile iteration. Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, "performance", "design", "bug", "optional", etc.
+Git version control system was used throughout the development process. Git is known for being a very useful tool for collaboration across teams of developers. However, it also has many benefits for a solo developer. For example, it helps to track changes and restore previous versions of a project, as well as view the code at any point in the past. The project codebase was uploaded to GitHub that is "a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features... [It also] provides web-based graphical interface" \citep{wiki:GitHub}. For this project the GitHub issue tracker was used as a "to-do list" to keep the record of code-related tasks ("issues" in GitHub terminology). Custom labels were used to distinguish different types of issues in the GitHub issue tracker, for example, "performance", "design", "bug", "optional", etc.
 
 \begin{figure}[H]
 	\begin{center}
@@ -231,7 +231,7 @@ The user has opened the last unread message and the message icon has turned grey
 \subsection{Responsive Design}
 According to the popular portal Statista, "As of 2013, worldwide mobile phone internet user penetration was 73.4 percent. In 2017, figures suggest that more than 90 percent of internet users will access online content through their phones" \citep{statistaReport}. There is no doubt that developers need to adapt to the increasing combinations of screen resolution and browsers used by people to access information online. The solution to the expanding variability of the web is to develop a layout that can adapt to any viewport. This approach is known as \emph{responsive web design}. The term was first used by Ethan Marcotte. He combined three already known techniques (flexible grid layout, flexible images, and media and media queries) into a unified approach \citep{book:frain2012responsive}.
 
-Based on the above, it should be assumed that the majority of users will access the website through a device that is not a desktop computer. We need a good fluid grid to build a responsive web application. To handle the responsiveness and to increase development speed SureThing utilises Bootstrap framework \citet{documentation:Bootstrap3}. that offers an responsive fluid grid system that can adjust to the variety of devices or screen sizes. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices.
+Based on the above, it should be assumed that the majority of users will access the website through a device that is not a desktop computer. We need a good fluid grid to build a responsive web application. To handle the responsiveness and to increase development speed SureThing utilises Bootstrap framework \citep{documentation:Bootstrap3} that offers an responsive fluid grid system that can adjust to the variety of devices or screen sizes. The framework has also predefined classes that can be used to change the page layout options, for example to specify how many columns in the grid system an element will occupy or to set the breakpoints at which the columns stacked on small devices will become horizontal on medium/large devices.
 
 SureThing is a fully responsive web application, and the minimum screen resolution supported is 640 x 960 pixels (an example device using this resolution would be the iPhone 4). These are the screenshots of some of the application pages tested with this resolution:
 
@@ -531,7 +531,7 @@ The view contains the already familiar match header, prediction statistics and a
 	\end{center}
 \end{figure}
 
-The prediction statistics block contains information of the betting performance across the SureThing users population with regards to this match. The stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match and if they won or lost the bet.
+The prediction statistics block contains information of the betting performance across the SureThing users population with regards to this match. The stats contain the information on the number of users who saved the match to their dashboards, made a bet on the match and whether they won or lost the bet.
 
 \begin{figure}[H]
 	\begin{center}
@@ -549,7 +549,7 @@ The view also offers a bar chart illustrating a breakdown of user preferences, n
 	\end{center}
 \end{figure}
 
-An authenticated user can also view basic feedback indicating whether this particular user won or lost the bet.
+Authenticated users can also view basic feedback indicating whether they won or lost the bet. 
 
 \begin{figure}[H]
 	\begin{center}
@@ -610,11 +610,11 @@ A panel containing the dashboard menu slides in and covers part of the page. It 
 	\end{center}
 \end{figure}
 
-If there are no saved matches in the dashboard, the user can navigate to the main pages containing upcoming events by clicking the link "Start saving your matches now >".
+If there are no saved matches in the dashboard, the user can navigate to the main pages containing upcoming events by clicking the link "Start saving your matches now ".
 
 \subsection{Notifications}
 \label{subsec:notifications}
-This feature represents the one-way communication flow from SureThing to the application user. Every time a match previously committed by the user is finished (from the technical point of view, the match has changed it’s status to "played"), the application sends users messages notifying them whether their prediction guess was successful. Such messages contain detailed information about the user prediction, as well as a link to the relevant \emph{Played Match View}.
+This feature represents the one-way communication flow from SureThing to the application user. Every time a match previously committed by the user is finished (from the technical point of view, the match has changed it’s status to "played"), the application sends users messages notifying them whether their prediction guess was correct. Such messages contain detailed information about the user prediction, as well as a link to the relevant \emph{Played Match View}.
 
 \begin{figure}[H]
 	\begin{center}
@@ -659,4 +659,6 @@ The leaderboard is a view containing a table capturing betting performance acros
 Each username in the table is also a link. Clicking on the username of a user will take us to this user's profile page, letting an authenticated user view the profiles of fellow users.
 
 \section{Deploying the Application}
-Cloud Deployment is the most recent trend in application hosting. The formal name of this technologu is Platform as a Service (PaaS).  In the PaaS model, a service provider offers a fully managed platform in which applications can run.
+Deploying on a cloud is the most recent trend in application hosting. The formal name of this technology is Platform as a Service (PaaS). In the PaaS model, a service provider offers a fully managed platform in which applications can run.
+
+At the moment the application is deployed on a localhost using WSGI HTTP server Gunicorn. If SureThing was to go live in the future, Cloud Deployment would be the first option to be considered. 

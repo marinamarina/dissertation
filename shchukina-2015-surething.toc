@@ -16,7 +16,7 @@
 \contentsline {chapter}{\numberline {3}Requirement Analysis and Specification}{8}{chapter.3}
 \contentsline {section}{\numberline {3.1}Target Audience Questionnaire}{8}{section.3.1}
 \contentsline {section}{\numberline {3.2}Researching Current Solutions}{12}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Sports news websites}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Sports news websites}{13}{subsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.1.1}BBC Sport Football}{13}{subsubsection.3.2.1.1}
 \contentsline {subsection}{\numberline {3.2.2}Football statistics websites}{14}{subsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.2.1}WhoScored}{14}{subsubsection.3.2.2.1}
